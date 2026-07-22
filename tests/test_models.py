@@ -7,21 +7,21 @@ from models import (
 )
 
 
-def test_schema_loads_and_has_seven_categories():
+def test_schema_loads_and_has_eight_categories():
     schema = load_schema()
-    assert len(schema["categories"]) == 7
+    assert len(schema["categories"]) == 8
 
 
 def test_derived_field_excluded_from_fetchable_and_response_model():
     schema = load_schema()
-    fetchable = fetchable_fields(schema, "geographic_environmental")
+    fetchable = fetchable_fields(schema, "geographic_hazards")
     assert "bd_score" not in fetchable
     assert "elevation_ft" in fetchable
 
-    derived = derived_fields(schema, "geographic_environmental")
+    derived = derived_fields(schema, "geographic_hazards")
     assert "bd_score" in derived
 
-    model = build_category_response_model(schema, "geographic_environmental")
+    model = build_category_response_model(schema, "geographic_hazards")
     assert "bd_score" not in model.model_fields
     assert "elevation_ft" in model.model_fields
 

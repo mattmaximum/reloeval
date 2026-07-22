@@ -87,13 +87,13 @@ def test_build_render_context_derived_field_present_and_computed():
         input_city_state="Austin, TX",
         normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
         slug="austin-tx",
-        categories={"geographic_environmental": {
+        categories={"geographic_hazards": {
             "elevation_ft": StoredFieldValue(value=489.0, status=FieldStatus.VALID, schema_version=1),
             "distance_to_ocean_mi": StoredFieldValue(value=150.0, status=FieldStatus.VALID, schema_version=1),
         }},
     )
     context = build_render_context(schema, record)
-    geo_category = context["categories"][0]  # geographic_environmental is the first category in schema.json
+    geo_category = context["categories"][0]  # geographic_hazards is the first category in schema.json
     field = next(f for f in geo_category["fields"] if f["key"] == "bd_score")
     assert field["display_value"] == "639"
 

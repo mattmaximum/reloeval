@@ -1,7 +1,7 @@
 {
   "categories": {
-    "geographic_environmental": {
-      "label": "Geographic, Environmental & Natural Hazards",
+    "geographic_hazards": {
+      "label": "Geographic & Natural Hazards",
       "fields": {
         "county": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Primary county name"},
         "elevation_ft": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Elevation in feet"},
@@ -14,7 +14,12 @@
         "earthquake_risk": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local earthquake risk score/description"},
         "flood_risk": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local flood risk score/description"},
         "avg_aqi": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Historical average Air Quality Index"},
-        "wildfire_smoke_days_per_year": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average annual days impacted by wildfire smoke"},
+        "wildfire_smoke_days_per_year": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average annual days impacted by wildfire smoke"}
+      }
+    },
+    "geographic_climate": {
+      "label": "Climate & Growing Conditions",
+      "fields": {
         "usda_hardiness_zone": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "USDA Plant Hardiness Zone"},
         "first_frost_date": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average first frost date"},
         "last_frost_date": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average last frost date"},
