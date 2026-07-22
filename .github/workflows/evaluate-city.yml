@@ -37,6 +37,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: evaluate-city-deploy
