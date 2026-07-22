@@ -1,0 +1,490 @@
+{
+  "input_city_state": "Boise, ID",
+  "normalized": {
+    "city": "Boise",
+    "state": "ID",
+    "county": "Ada County"
+  },
+  "slug": "boise-id",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Ada County, Idaho",
+        "source_url": "https://en-us.topographic-map.com/map-4dcw1h/Boise/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 2704.0,
+        "source_url": "https://en-us.topographic-map.com/map-4dcw1h/Boise/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 393.0,
+        "source_url": "https://www.nileguide.com/ocean/Boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 25.0,
+        "source_url": "https://www.shakeout.org/idaho/southwest/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "No active, historically-erupting volcano lies near Boise. The nearest volcanic feature is the dormant Mountain Home-Kuna Lava Field, whose basalt flows extend to within roughly 20-25 miles southeast of the Boise River Valley; the nearest well-known monogenetic volcanic field, Craters of the Moon, is about 170 miles east of Boise. No Holocene eruptions have occurred from these fields.",
+        "source_url": "https://volcano.si.edu/volcano.cfm?vn=324801",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Negligible/None - Boise is an inland city roughly 390+ miles from the Pacific coast and is not exposed to tropical cyclone/hurricane activity.",
+        "source_url": "https://www.nileguide.com/ocean/Boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High - Boise sits adjacent to the fire-prone Boise Foothills and surrounding wildland-urban interface; the majority of census tracts in the city have significant building exposure to wildfire, and regional fire danger frequently reaches 'Extreme' during summer months.",
+        "source_url": "https://climatecheck.com/idaho/boise-city",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Moderate - Idaho ranks 5th in the U.S. for earthquake risk (after CA, AK, NV, UT); Boise lies near the Western Idaho Seismic Zone, with active faults such as Squaw Creek roughly 25 miles away capable of producing a M6-7 event.",
+        "source_url": "https://adacounty.id.gov/emergencymanagement/how-to-prepare-resources/earthquake/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate - Despite three flood-control dams upstream, the Boise River and several foothill gulches (Cottonwood, Hulls, Crane, Stuart) create flash-flood and riverine flood exposure; FEMA has designated Special Flood Hazard Areas along the river through parts of Boise, including Garden City, Harris Ranch, and Southeast Boise.",
+        "source_url": "https://adacounty.id.gov/emergencymanagement/how-to-prepare-resources/flood/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 40.0,
+        "source_url": "https://www.aqi.in/us/dashboard/united-states/idaho/boise/historical-analysis",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 2.8,
+        "source_url": "https://www.iqair.com/air-quality/usa/idaho/boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Boise's municipal water is supplied from two sources: surface water from the Boise River (treated at two plants, originating from Lucky Peak Reservoir) and groundwater from the Snake River Plain/Boise aquifer system pumped via roughly 80-85 municipal wells; groundwater supplies roughly 70% and surface water about 30% of the city's delivered water (older USGS/Boise State studies cite up to 90% groundwater reliance). Suez/Veolia Water Idaho operates most of the delivery infrastructure.",
+        "source_url": "https://www.idahowatersolutions.com/boise-meridian-area-water-information/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Ada County is currently facing significant drought risk. Idaho's winter 2025/2026 snowpack was near record lows (second-warmest winter since 1896), and by July 2026 an estimated 68% of Ada County residents were affected by drought, with much of southwestern Idaho classified as being in 'exceptional drought.' The City of Boise adopted a Drought Emergency Ordinance on July 1, 2026, and jointly declared Stage 2 water conservation with Suez in April 2026—about two months earlier than typical.",
+        "source_url": "https://idahonews.com/news/local/city-of-boise-adopts-drought-emergency-ordinance-as-idaho-faces-dry-summer",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Private domestic wells are generally legal and exempt from Idaho water-right permitting under Idaho Code §42-227 (up to 13,000 gallons/day for household/stock/limited irrigation use), but well drillers must be licensed and wells are subject to IDWR/DEQ inspection. Recent legislative changes (2025 SB 1083 and a 2026 amendment, SB 1222, signed Feb. 17, 2026) restrict new wells in platted subdivisions located within a state-designated moratorium area, Critical Ground Water Area, or Ground Water Management Area to in-home/stock-watering use only—irrigation or other uses in such areas require a formal IDWR permit. Ada County/Boise itself is not currently a designated Critical Groundwater Area, though nearby southern Canyon County was placed under a temporary 5-year groundwater moratorium in March 2026.",
+        "source_url": "https://idwr.idaho.gov/water-rights/domestic-exemption/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 100.0,
+        "source_url": "https://boisedev.com/news/2021/06/22/sw-boise-wells/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Idaho operates under prior-appropriation ('first in time, first in right') water law administered by IDWR. Boise River and Snake River Plain Aquifer water rights in the Treasure Valley are subject to seniority-based curtailment and Swan Falls minimum-flow protections. Regional restrictions are tightening: in March 2026 IDWR issued a temporary 5-year moratorium on new groundwater right applications in southern Canyon County (adjacent to Ada County) pending further study of the Treasure Valley Groundwater Flow Model, and portions of east/southeast Boise have historic restrictions on aquifer access. New domestic wells in subdivisions within any designated moratorium, critical groundwater, or groundwater management area are now limited to in-home/stock use unless a permit is secured for additional uses.",
+        "source_url": "https://idwr.idaho.gov/legal-actions/orders/moratorium-orders/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Backup and emergency water security for Boise relies on Lucky Peak Reservoir storage (Boise River system, operated by the U.S. Army Corps of Engineers), a large redundant network of over 80 municipal groundwater wells across multiple aquifer zones, and interconnected surface-water treatment plants (Marden and Columbia) operated by Suez/Veolia Water Idaho. However, margins are tightening: near-record-low 2026 snowpack, Boise River flows falling below 1,200 cfs, and Snake River flows roughly 31% below the 10-year April average prompted an early (April 2026) Stage 2 conservation declaration and a citywide Drought Emergency Ordinance in July 2026, indicating reduced backup buffer during drought years.",
+        "source_url": "https://water-restrictions.com/idaho/boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 11.88,
+        "source_url": "https://findenergy.com/id/ada-county-electricity/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "High reliability. Idaho Power delivers electricity to Boise/Ada County with strong service quality; Idaho is ranked among the most reliable grids in the U.S. (top-5 lowest SAIDI nationally per a 2026 Western Way/EIA-based study), and Boise-area customers average only about 1.16 outages per year with a typical outage duration of roughly 143 minutes, well below many national benchmarks.",
+        "source_url": "https://findenergy.com/id/boise-city-solar/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 5.33,
+        "source_url": "https://www.solarenergylocal.com/states/idaho/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Idaho Power (the primary utility serving Boise/Ada County) closed traditional Net Energy Metering to new residential/commercial solar customers effective December 21, 2019, and transitioned to a 'net billing' structure in January 2024, under which exported solar energy is credited at a utility-determined avoided-cost rate rather than the full retail rate — roughly 31-32% lower value than old net metering credits. Customers who installed solar and interconnected by December 20, 2019 are grandfathered under the original full-retail net metering terms until December 20, 2045. As of an October 2025 Idaho PUC order, new export compensation rates were further reduced (~31% cut), effective for tariffs issued in 2026.",
+        "source_url": "https://pv-magazine-usa.com/2025/10/06/idaho-drops-solar-compensation-rates-by-31/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 238853.0,
+        "source_url": "https://worldpopulationreview.com/us-cities/idaho/boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 546141.0,
+        "source_url": "https://en.wikipedia.org/wiki/Ada_County,_Idaho",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 38.6,
+        "source_url": "https://worldpopulationreview.com/us-cities/idaho/boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "Boise's population is approximately 79.5% White, 9.6% Hispanic or Latino, 4.7% Two or More Races, with smaller shares of Asian, Black, and Native American residents; median household income ~$83,904.",
+        "source_url": "https://www.idaho-demographics.com/boise-city-demographics",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Boise city proper leans Democratic (electing a Democratic mayor and most local legislators), functioning as a blue urban enclave, while surrounding Ada County has trended Republican-leaning and the state of Idaho overall is strongly Republican.",
+        "source_url": "https://legalclarity.org/is-boise-red-or-blue-the-citys-political-identity/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 222.5,
+        "source_url": "https://www.doorprofit.com/crime-statistics/city/Boise-ID/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 1335.0,
+        "source_url": "https://www.doorprofit.com/crime-statistics/city/Boise-ID/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 65.42,
+        "source_url": "https://www.numbeo.com/quality-of-life/in/Boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Permitless/Constitutional Carry — Idaho allows any U.S. citizen (or active-duty service member) age 18 or older who is not otherwise disqualified to carry a concealed or open firearm without a license anywhere in the state, including within Boise city limits; a voluntary Concealed Weapons License (CWL) is also available for reciprocity purposes in other states.",
+        "source_url": "https://en.wikipedia.org/wiki/Gun_laws_in_Idaho",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "None — Idaho has no state law restricting magazine capacity for long guns or handguns, and the state's firearms preemption statute (Idaho Code § 18-3302J) prevents Boise or any other local jurisdiction from enacting its own magazine capacity limits.",
+        "source_url": "https://giffords.org/lawcenter/state-laws/large-capacity-magazines-in-idaho/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Idaho recognizes both Castle Doctrine and Stand Your Ground protections (codified via Idaho Code §§ 18-4009 and 19-202A), meaning there is no duty to retreat before using force, including deadly force, in self-defense in one's home, vehicle, workplace, or any place a person has a legal right to be, provided the belief in imminent danger is reasonable.",
+        "source_url": "https://giffords.org/lawcenter/state-laws/stand-your-ground-in-idaho/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 52.0,
+        "source_url": "https://ballotpedia.org/Boise_School_District,_Idaho",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 4.28,
+        "source_url": "https://www.niche.com/k12/d/boise-school-district-id/rankings/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Boise High School (public, est. 1881, IB program), Bishop Kelly High School (private Catholic), Riverstone International School (private, IB World School), Timberline High School and Borah High School (Boise School District public high schools), and Les Bois Junior High (Niche A-rated middle school) are among the most notable schools in Boise.",
+        "source_url": "https://en.wikipedia.org/wiki/Boise_High_School",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Very low / minimal regulation. Idaho is classified as a low-regulation 'green' state by HSLDA: parents are not required to notify the state, register, submit curricula, administer standardized tests, or hold any teaching credential. The only statutory requirement is to teach subjects commonly taught in Idaho public schools.",
+        "source_url": "https://www.sonlight.com/pages/homeschooling-in-idaho",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Strong and active co-op presence in the Boise/Treasure Valley area, including St. Gemma's Homeschool Co-op, Venture Christian Co-op, The Journey Co-op, Still Waters Homeschool Group, Classical Conversations campuses, and the Treasure Valley Academy Co-op, plus statewide organizations like Idaho Coalition of Home Educators and CHOIS.",
+        "source_url": "https://www.selahidaho.com/tv-co-ops",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 2.5,
+        "source_url": "https://www.dnb.com/business-directory/company-profiles.saint_alphonsus_regional_medical_center_inc.0b0d6d251025bafcfcee83c447c63a6b.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "St. Luke's Health System is the dominant hospital network in Boise, serving as Idaho's largest employer and most awarded health system with its flagship St. Luke's Boise Medical Center; its chief competitor, Saint Alphonsus Health System (Trinity Health), operates the region's only Level II adult trauma center in Boise.",
+        "source_url": "https://www.practicelink.com/facility/St-Luke-s-Health-System-Boise/St-Luke-s-Health-System/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 525000.0,
+        "source_url": "https://www.redfin.com/city/2287/ID/Boise/housing-market",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 58344.0,
+        "source_url": "https://www.land.com/Ada-County-ID/undeveloped-land/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 238483.0,
+        "source_url": "https://www.landsearch.com/properties/ada-county-id",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate-to-strict: Boise requires building permits for most structures over 200 sq ft, floodplain development permits near the Boise River, Certificate of Appropriateness review for North End/historic districts, and zoning/design-overlay review; fast growth has led to longer review times and occasional phased development limits in Boise/Meridian.",
+        "source_url": "https://www.cityofboise.org/departments/planning-and-development-services/building/homeowners-guide/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Moderate and rising: about 30.9% of Idaho households pay HOA or condo dues (median fee ~$61/month); Boise itself has no citywide HOA (over 30 separate voluntary neighborhood associations exist), but most newer suburban subdivisions in Ada County (e.g., Eagle, East Boise, Meridian) are built with mandatory HOAs, while older core neighborhoods like North End and Downtown are largely HOA-free.",
+        "source_url": "https://ipropertymanagement.com/research/hoa-statistics",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 5.3,
+        "source_url": "https://taxfoundation.org/location/idaho/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 6.0,
+        "source_url": "https://www.avalara.com/taxrates/en/state-rates/idaho/cities/boise.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Strong wired coverage but limited fiber: cable internet available to about 97-100% of Boise addresses, DSL to roughly 71%, fiber (e.g., Quantum Fiber/EarthLink) to only about 17-30%, and satellite (Starlink/HughesNet) near 99-100%; statewide Idaho wired/fixed-wireless broadband access is about 82%, among the lower-ranked states nationally.",
+        "source_url": "https://broadbandnow.com/Idaho/Boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 38.0,
+        "source_url": "https://www.walkscore.com/ID/Boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited but expanding: Valley Regional Transit (VRT) operates about 19-21 fixed bus routes plus on-demand and ACCESS paratransit service across Ada and Canyon counties (Boise, Meridian, Garden City, Eagle, Nampa, Caldwell), with roughly 1.08 million annual riders (2024); Boise itself is rated 'minimal public transportation' and is largely car-dependent outside downtown.",
+        "source_url": "https://en.wikipedia.org/wiki/Valley_Regional_Transit",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.target.com/store-locator/find-stores/boise,ID",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.wholefoodsmarket.com/stores/boise",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://locations.traderjoes.com/id/boise/360/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.costco.com/w/-/id/boise/761",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.sprouts.com/stores/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Legal but tightly regulated. Idaho permits BOTH on-farm and licensed retail sales of raw milk and raw dairy products (one of only ~11-14 states allowing retail sales), governed by IDAPA 02.04.13 and Idaho Code §37-1101. Producers must obtain a permit from the Idaho Dept. of Agriculture, meet bottling/testing requirements, and label products; herdshare/cowshare arrangements are also legal. A 2026 multi-dairy Campylobacter outbreak (100+ illnesses) has increased scrutiny/enforcement, but the underlying retail-sale legality remains unchanged as of mid-2026.",
+        "source_url": "https://www.realmilk.com/real-milk-legal-map/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "High for a mid-size metro. Boise proper hosts two major markets: The Boise Farmers Market (Saturdays, April-October, 1500 Shoreline Dr, food-focused with ~100-mile sourcing radius) and the Capital City Public Market (Idaho's largest outdoor public market since 1994, Saturdays April-December in downtown Boise/The Grove Plaza, up to 150 vendors at peak). Including the wider Treasure Valley (Ada/Canyon counties), there are 6-8+ additional seasonal/weekly markets (Meridian Main Street Market, Eagle Saturday Market, Kuna's Gem State 208 Market, Nampa's 208 Night Market, Caldwell Farmers Market, SO|ME Market, plus a seasonal Boise Farmers Market mobile market), giving residents multiple market options nearly every day of the week April-December.",
+        "source_url": "https://boisedev.com/guides/treasure-valley-markets-guide/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Boise Airport (BOI) is the primary commercial airport, located directly in the city (~4 miles/10-13 min from downtown) with year-round domestic service on multiple major carriers. Beyond BOI itself, there are essentially no other commercial-service airports within a true 2-hour drive: the nearest options are Joslin Field-Magic Valley Regional Airport (TWF) in Twin Falls (~132 miles, roughly 2 hours) and Friedman Memorial/Sun Valley (SUN) in Hailey (~95-150 miles, closer to 2h45m), both at or beyond the 2-hour threshold. Small general-aviation fields (e.g., Nampa Municipal, Caldwell Industrial) exist within the valley but lack scheduled commercial service.",
+        "source_url": "https://www.travelmath.com/nearest-airport/BOI",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "By road, Boise sits within roughly a 4.5-6.5 hour drive of several regional metro hubs: Salt Lake City, UT (~340 miles, ~5 hours via I-84), Spokane, WA (~287 miles, ~4.5 hours), and Portland, OR (~365-430 miles depending on route, ~6-6.5 hours via I-84). Seattle (~500 miles, ~7-8 hours) and Denver (~7.5 hours) fall just outside the 6-hour window. Salt Lake City and Spokane are the most reliably reachable major hubs within 6 hours, with Portland at the outer edge of that range.",
+        "source_url": "https://howlongdrive.com/route/boise-to-salt-lake-city/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
