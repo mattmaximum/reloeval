@@ -9,80 +9,80 @@
   "categories": {
     "geographic_hazards": {
       "county": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Mesa County",
+        "source_url": "https://en.wikipedia.org/wiki/Grand_Junction,_Colorado",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "elevation_ft": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 4646.0,
+        "source_url": "https://en.wikipedia.org/wiki/Grand_Junction,_Colorado",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "distance_to_ocean_mi": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 598.0,
+        "source_url": "https://www.nileguide.com/ocean/Grand-Junction",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "fault_line_distance_mi": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 13.0,
+        "source_url": "https://jwgrandjunction.com/hidden-fault-lines-beneath-colorado-national-monument-diy-mapping-adventure/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "volcano_proximity": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "No active volcanoes are near Grand Junction itself. The nearest volcanic feature is the Dotsero maar/volcano (Colorado's only Holocene-age volcano, last erupted ~4,000 years ago), located roughly 100 driving miles east near Eagle County along I-70. Volcanic hazard to Grand Junction is negligible.",
+        "source_url": "https://www.blm.gov/visit/dotsero-crater-rec-site",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "hurricane_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "None/Very Low - Grand Junction is landlocked in western Colorado with no direct hurricane exposure. Occasionally, remnant moisture from decaying Pacific hurricanes/tropical storms (e.g., Hurricane Priscilla remnants in 2025) can bring heavy rain and flash-flood risk, but there is no tropical storm or hurricane wind/surge threat.",
+        "source_url": "https://countryherald.com/news/grand-junction-co-weather-heavy-rainfall-could-trigger-flash-flooding/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "wildfire_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Moderate - First Street Foundation rates Grand Junction's overall wildfire risk as moderate over the next 30 years, with about 38% of properties in the city (over 12,000) having some wildfire exposure; nearby wildland areas see frequent red flag warnings and fires each summer.",
+        "source_url": "https://firststreet.org/city/grand-junction/831660_fsid/fire",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "earthquake_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Low-to-moderate - The Colorado Geological Survey rates the state's overall earthquake hazard as low-to-moderate. Grand Junction experiences relatively few earthquakes (about 18-19 per year within 100 km, mostly minor), with occasional magnitude 3-4+ events; there are known local faults (e.g., Redlands Fault, Glade Park Fault) but no major seismic hazard.",
+        "source_url": "https://coloradogeologicalsurvey.org/hazards/eq/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "flood_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Moderate to High - Flooding (including snowmelt and flash flooding) is described by Mesa County as the most common natural hazard in the area, occurring on some scale almost every year; most of Grand Junction lies in FEMA Zone X, meaning it is not in the mapped 100-year floodplain but does carry risk from the 500-year flood event and localized flash flooding.",
+        "source_url": "https://www.mesacounty.us/departments-and-services/public-works/floodplain-management/flood-safety",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "avg_aqi": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 34.0,
+        "source_url": "https://air.plumelabs.com/air-quality-in-grand-junction-aw-327349",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "wildfire_smoke_days_per_year": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 15.0,
+        "source_url": "https://www.kjct8.com/2026/07/07/wildfires-are-pushing-smoke-into-grand-valley-conditions-are-expected-carry-throughout-week/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       }
     },
