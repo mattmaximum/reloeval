@@ -1,0 +1,575 @@
+{
+  "input_city_state": "Grand Junction, CO",
+  "normalized": {
+    "city": "Grand Junction",
+    "state": "CO",
+    "county": "Mesa County"
+  },
+  "slug": "grand-junction-co",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "Zone 7a (0°F to 5°F)",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 11 - October 20",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "April 11 - April 20",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 175.0,
+        "source_url": "https://agsci.colostate.edu/research-and-engagement/research-centers/western-colorado-research-center/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 39.1,
+            "avg_low_f": 19.2,
+            "avg_rainfall_in": 0.59,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 47.0,
+            "avg_low_f": 25.0,
+            "avg_rainfall_in": 0.58,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 58.6,
+            "avg_low_f": 32.5,
+            "avg_rainfall_in": 0.78,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 65.8,
+            "avg_low_f": 38.9,
+            "avg_rainfall_in": 0.92,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 76.2,
+            "avg_low_f": 48.2,
+            "avg_rainfall_in": 0.87,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 88.4,
+            "avg_low_f": 56.9,
+            "avg_rainfall_in": 0.47,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 93.7,
+            "avg_low_f": 63.6,
+            "avg_rainfall_in": 0.77,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 90.5,
+            "avg_low_f": 61.9,
+            "avg_rainfall_in": 0.79,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 82.0,
+            "avg_low_f": 52.4,
+            "avg_rainfall_in": 1.22,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 67.8,
+            "avg_low_f": 40.5,
+            "avg_rainfall_in": 1.09,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 52.8,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 0.6,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 39.8,
+            "avg_low_f": 19.8,
+            "avg_rainfall_in": 0.51,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 3200.0,
+        "source_url": "https://www.weather.gov/media/gjt/history/GJT_Station_Digest.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "The City of Grand Junction's primary treated water supply is surface water from the Kannah Creek watershed on Grand Mesa (snowmelt/reservoirs feeding the Grand Junction and Kannah Creek water plants). Most of the rest of the Grand Valley/Mesa County is served by the Ute Water Conservancy District, whose primary raw-water sources are lakes, reservoirs and streams on the north side of Grand Mesa, with the Colorado River mainstem serving as a secondary/emergency source.",
+        "source_url": "https://www.gjcity.org/1389/City-Water-Conservation-Efforts",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "High. Mesa County is currently in severe-to-exceptional drought; the winter of 2025-2026 produced the region's worst snowpack on record (roughly 25% of normal in the Colorado headwaters and about 18% in the Gunnison Basin), and Jan-May 2026 was the driest such period in 132 years of record. Colorado's Governor activated Phase 2 of the state's Drought Response Plan in March 2026, and Mesa County water providers have warned of possible watering restrictions.",
+        "source_url": "https://www.drought.gov/states/colorado/county/mesa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Private wells are legal but tightly regulated. Colorado groundwater is presumed tributary to surface streams and administered under the prior-appropriation ('first in time, first in right') doctrine. Mesa County lies outside any Designated Groundwater Basin, so new wells require a permit from the Colorado Division of Water Resources (State Engineer) under C.R.S. §37-90-137, and many uses require an adjudicated water right/augmentation plan. Small-capacity 'exempt' household wells (generally ≤15 gpm) can be permitted for indoor domestic use, but if a municipal or district water tap is reasonably available, state rules typically require obtaining permission from that provider before drilling a private well, and outdoor irrigation from such wells is often restricted or prohibited.",
+        "source_url": "https://dwr.colorado.gov/services/well-permitting",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 20.0,
+        "source_url": "https://www.energy.gov/sites/default/files/2022-09/GrandJunctionDandPFactSheet.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "All water use in Colorado, including in Mesa County, is governed by the constitutional prior-appropriation doctrine ('first in time, first in right'): senior decreed water rights must be satisfied before junior rights when supply is short, so newer or undecreed users can be curtailed during dry years. The Colorado and Gunnison Rivers in the Grand Valley are heavily appropriated and subject to interstate Colorado River Compact obligations, making new water rights hard to secure; most groundwater withdrawals require a water court decree and, if they would injure a senior stream call, an approved augmentation plan.",
+        "source_url": "https://dwr.colorado.gov/services/water-administration/water-rights",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Backup supply exists but is constrained. Ute Water Conservancy District, which serves most of the Grand Valley, maintains the Colorado River mainstem as a secondary/emergency raw-water source in addition to its primary Grand Mesa reservoirs. The City of Grand Junction is studying conversion of Gunnison River gravel pits into new storage reservoirs to supplement its Kannah Creek watershed supply, which city officials project may need bolstering by around 2039; this project is still in the feasibility/study phase and not yet built. Given the record 2025-2026 drought and low mountain reservoir storage, backup capacity is currently limited, and the City has discussed drought-rate surcharges and watering restrictions if supplies tighten further.",
+        "source_url": "https://www.gjsentinel.com/news/western_colorado/grand-junction-looking-at-gunnison-river-to-supplement-water-supply/article_39baebe0-71dd-11ee-a29e-47ab96f949ad.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.5,
+        "source_url": "https://www.gvp.org/2026-rate-changes",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Good - served by Grand Valley Power (cooperative) and Public Service Co of Colorado (Xcel Energy), with a 230,000-volt transmission line serving the area and two Tier 1 power providers offering redundant connectivity; recent substation upgrades (e.g., $2.2M Highline Substation upgrade completed 2025) support reliable service, though rural mountain terrain can pose occasional outage risks",
+        "source_url": "https://www.gjep.org/move-here/infrastructure/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 6.5,
+        "source_url": "https://www.gridinfo.com/colorado/grand-junction",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Grand Valley Power (GVP), the local electric cooperative serving Grand Junction/Mesa County, offers net metering under its GEN-1 tariff. Under current rules, monthly excess generation is banked, with an annual true-up. GVP has proposed revisions effective April 1, 2026, changing the annual settlement process so that beginning April 2027, all annual banked excess kWh will be purchased down to zero (paid as a bill credit) rather than carried forward indefinitely, aligning payments with the year generation occurred ahead of a 2028 transition to Guzman Energy as wholesale supplier.",
+        "source_url": "https://www.gvp.org/2026-rate-changes",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 70554.0,
+        "source_url": "https://www.city-data.com/city/Grand-Junction-Colorado.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 161260.0,
+        "source_url": "https://census.gov/quickfacts/fact/table/mesacountycolorado/PST045224",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 38.5,
+        "source_url": "http://censusreporter.org/profiles/16000US0831660-grand-junction-co/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "Grand Junction's population is approximately 76% White (non-Hispanic majority), 17% Hispanic, and 4% Two or More Races, with smaller shares of Asian, Black, and Native American residents; county-wide, Mesa County is about 78.4% White, 15.5% Hispanic, and 3.5% Two or More Races.",
+        "source_url": "https://www.colorado-demographics.com/grand-junction-demographics",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Strongly Republican-leaning/conservative. Mesa County is the largest county on Colorado's Western Slope but votes reliably GOP — Trump won about 61% of the Mesa County vote in the 2024 presidential election, and the area is part of Colorado's 3rd Congressional District (Cook PVI R+5), represented by a Republican.",
+        "source_url": "https://gazette.com/2024/11/17/how-colorado-regions-voted-front-range-for-harris-rural-counties-for-trump-cronin-and-loevy-97ea5c5e-a478-11ef-ad6f-7f3d7046d490/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 546.1,
+        "source_url": "https://crimesafe.app/city/grand-junction-co/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 3170.4,
+        "source_url": "https://crimesafe.app/city/grand-junction-co/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 60.0,
+        "source_url": "https://crimesafe.app/city/grand-junction-co/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Shall-issue for concealed carry: Colorado requires a Concealed Handgun Permit (CHP) issued by the county sheriff to carry a concealed firearm in public; the state does not allow permitless/constitutional concealed carry (one narrow exception exists for handguns carried inside a private vehicle). Open carry is generally legal statewide for those 18+ who can legally possess a firearm, though local municipalities may impose additional restrictions in 'sensitive' locations.",
+        "source_url": "https://aliengearholsters.com/blogs/news/colorado-concealed-carry",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "Colorado bans magazines capable of holding more than 15 rounds of ammunition ('large-capacity magazines') under C.R.S. §18-12-302, in effect since July 1, 2013; magazines owned before that date are grandfathered but subject to strict handling limits. Violation is generally a class 2 misdemeanor, escalating to a felony if possessed during a violent crime.",
+        "source_url": "https://www.shouselaw.com/co/blog/laws/what-are-colorado-gun-laws-as-to-magazine-capacity/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Colorado is not a formal 'stand your ground' state by statute, but case law establishes no duty to retreat when using justified force in self-defense, both inside and outside the home. Colorado's 'Make My Day' law (Castle Doctrine, C.R.S. §18-1-704.5), enacted in 1985, allows occupants to use deadly force against an intruder who has unlawfully entered a dwelling if they reasonably believe the intruder intends to commit a crime and use physical force, without any duty to retreat.",
+        "source_url": "https://www.findlaw.com/state/colorado-law/colorado-self-defense-laws.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 44.0,
+        "source_url": "https://www.d51schools.org/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 3.5,
+        "source_url": "https://www.d51schools.org/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Grand Junction High School, Central High School, Fruita Monument High School, Palisade High School, and Colorado Mesa University (higher education) are among the most notable institutions serving Grand Junction; Central High School and Fruita Monument High School are currently slated for major facility upgrades under District 51's 25-year, $582M facility master plan.",
+        "source_url": "https://chna2024.mesacountyhealth.com/2024/Education/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Low - Colorado is classified as a low-regulation state for homeschooling; parents must simply notify the local school district of intent to homeschool and provide 172 days of instruction per year, with no mandatory curriculum approval, teacher qualification requirements, or standardized testing for most families.",
+        "source_url": "https://www.d51schools.org/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Moderate to High - Grand Junction and the broader Grand Valley area host several active homeschool co-ops and support groups (e.g., Grand Valley Homeschool Co-op and church-affiliated groups) that offer group classes, field trips, and social activities, reflecting a well-established homeschooling community typical of Western Slope Colorado.",
+        "source_url": "https://chna2024.mesacountyhealth.com/2024/Education/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.5,
+        "source_url": "https://www.mesacounty.us/departments-and-services/public-health/community-health-data/health-improvement-cycle",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Intermountain Health (formerly SCL Health) - St. Mary's Medical Center is the dominant hospital network serving Grand Junction and Mesa County, operating as a Level II trauma center and regional referral hub for Western Colorado; Community Hospital is the other significant provider in the market.",
+        "source_url": "https://chna2024.mesacountyhealth.com/2024/HealthCareAccess/index.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 430000.0,
+        "source_url": "https://brayandco.com/mesa-county-housing-market-update-june-2026/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 18000.0,
+        "source_url": "https://www.landwatch.com/colorado-land-for-sale/mesa-county",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 120000.0,
+        "source_url": "https://www.landwatch.com/colorado-land-for-sale/mesa-county",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate - City has historically had layered zoning/review requirements, but Grand Junction's 2025 Housing Affordability Code Task Force and Proposition 123 commitments are actively streamlining review processes and expediting qualifying housing project approvals.",
+        "source_url": "https://thebusinesstimes.com/new-homes-outpacing-growth-but-more-needed/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Moderate - Common in newer subdivisions and planned developments around Grand Junction (e.g., Redlands, Orchard Mesa new builds), but many older in-city neighborhoods and rural Mesa County parcels have no HOA.",
+        "source_url": "https://www.gjcity.org/DocumentCenter/View/3406/Grand-Valley-Housing-Needs-Assessment-PDF",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.4,
+        "source_url": "https://tax.colorado.gov/individual-income-tax",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 8.66,
+        "source_url": "https://www.avalara.com/taxrates/en/state-rates/colorado/cities/grand-junction.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Good - Grand Junction has multiple wired providers (Charter Spectrum, CenturyLink/Brightspeed, Mesa County's municipal fiber initiatives) offering broadband speeds above 100 Mbps to most of the urban core, though rural Mesa County areas have more limited access.",
+        "source_url": "https://broadbandnow.com/Colorado/Grand-Junction",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 34.0,
+        "source_url": "https://www.walkscore.com/CO/Grand_Junction",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited - Grand Valley Transit (GVT) operates a network of fixed-route buses within Grand Junction and connections to Fruita and Palisade, but service frequency is low and the city remains largely car-dependent.",
+        "source_url": "https://www.gvt.mesacounty.us/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.target.com/sl/grand-junction/93",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": 110.0
+        },
+        "source_url": "https://www.distance-cities.com/distance-grand-junction-co-to-basalt-co",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": 250.0
+        },
+        "source_url": "https://www.change.org/p/bring-trader-joe-s-to-grand-junction-colorado",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": 118.0
+        },
+        "source_url": "https://www.gjsentinel.com/news/western_colorado/costco-not-coming-to-grand-junction/article_d8c23c5e-9d45-11ef-9914-131a07f9cebc.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.sprouts.com/store/co/grand-junction/grand-junction/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Colorado prohibits retail/store sale of raw milk for human consumption, but allows legal access via registered herdshare (cow-share/goat-share) agreements where a consumer co-owns an animal and picks up milk directly from the registered farm/dairy; resale of herdshare milk is strictly prohibited and it cannot be sold at farmers markets, schools, or food establishments.",
+        "source_url": "https://codes.findlaw.com/co/title-25-health/co-rev-st-sect-25-5-5-117/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Grand Junction/Mesa County has multiple regular farmers markets, including the Downtown 'Market on Main' (weekly Thursday evenings, July–September, on Main Street), the Orchard Mesa Farmers Market (Tuesdays at the Mesa County Fairgrounds), plus additional seasonal markets in nearby Palisade and Fruita, giving the Grand Valley several producer-direct markets within a short drive of the city.",
+        "source_url": "https://www.visitgrandjunction.com/blog/post/farmers-markets-in-grand-junction/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Grand Junction Regional Airport (GJT) is located in the city itself (about 5 miles/13 minutes from downtown) and offers commercial flights on United and American to hubs like Denver, Salt Lake City, Dallas/Ft. Worth, Phoenix, Las Vegas, Chicago, and Los Angeles. Montrose Regional Airport (MTJ), roughly 52 miles/about an hour south, is the only other commercial airport within a 2-hour drive; smaller/regional options like Aspen (ASE) and Eagle County (EGE) are just outside 2 hours (~2.5 hours away).",
+        "source_url": "https://www.closestairportto.com/city/united-states/grand-junction_co/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Denver, CO is about 243 miles / roughly 4 hours by car via I-70, and Salt Lake City, UT is about 284-289 miles / roughly 4.5-5.5 hours by car via I-70 and US-6/191, making both major metro hubs reachable within a 6-hour drive from Grand Junction.",
+        "source_url": "https://www.trippy.com/drive/Grand-Junction-to-Salt-Lake-City",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}

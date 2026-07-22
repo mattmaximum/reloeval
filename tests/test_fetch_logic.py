@@ -72,9 +72,11 @@ def test_normalize_city_unresolvable_raises_city_not_found():
         asyncio.run(normalize_city(client, "asdkjfhaksjdhf not a real place"))
 
 
-def test_fetch_category_total_failure_marks_every_field_unresolved():
+def test_fetch_category_total_failure_marks_every_field_unresolved(monkeypatch):
+    real_sleep = asyncio.sleep
+    monkeypatch.setattr("fetch.asyncio.sleep", lambda *a, **kw: real_sleep(0))
     schema = load_schema()
-    client_handler = lambda name, kw: None  # simulates API error / timeout
+    client_handler = lambda name, kw: None  # simulates API error / timeout on every attempt
     client = FakeAsyncOpenAI(handler=client_handler)
     normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
 
@@ -83,6 +85,40 @@ def test_fetch_category_total_failure_marks_every_field_unresolved():
     field_defs = schema["categories"]["power_energy"]["fields"]
     assert set(result.keys()) == set(field_defs.keys())
     assert all(v.status == FieldStatus.UNRESOLVED for v in result.values())
+
+
+def test_fetch_category_retries_once_and_succeeds_on_second_attempt(monkeypatch):
+    real_sleep = asyncio.sleep
+    monkeypatch.setattr("fetch.asyncio.sleep", lambda *a, **kw: real_sleep(0))
+    schema = load_schema()
+    calls = {"count": 0}
+
+    # power_energy field types: electricity_rate_cents_per_kwh/solar_score are
+    # numbers, grid_reliability/net_metering_policy are strings — give each a
+    # type-appropriate value so every field actually validates.
+    values_by_field = {
+        "electricity_rate_cents_per_kwh": 12.5,
+        "solar_score": 88.0,
+        "grid_reliability": "rare outages",
+        "net_metering_policy": "1:1",
+    }
+
+    def handler(name, kw):
+        calls["count"] += 1
+        if calls["count"] == 1:
+            return None  # first attempt fails (simulated transient error)
+        props = kw["response_format"]["json_schema"]["schema"]["properties"]
+        return {
+            key: {"value": values_by_field[key], "source_url": "https://x.com", "fetched_date": "2026-07-22"}
+            for key in props
+        }
+
+    client = FakeAsyncOpenAI(handler=handler)
+    normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
+    result = asyncio.run(fetch_category(client, schema, "power_energy", normalized))
+
+    assert calls["count"] == 2
+    assert all(v.status == FieldStatus.VALID for v in result.values())
 
 
 def test_fetch_category_partial_validation_failure_isolated_to_one_field():

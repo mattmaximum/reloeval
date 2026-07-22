@@ -137,39 +137,61 @@ async def fetch_category(
     through OpenRouter's OpenAI-compatible endpoint) alongside a
     JSON-schema-constrained response, so the model can search and still
     return a schema-conforming final answer.
+
+    Retries once on failure: firing all categories concurrently
+    (fetch_city_bulk) has been observed to trip transient errors that the
+    same call succeeds at when run alone — a rate limit or timeout under
+    concurrent load, not a structural problem with the category's schema.
     """
     field_defs = fetchable_fields(schema, category_key)
     category_label = schema["categories"][category_key]["label"]
     response_model = build_category_response_model(schema, category_key)
 
     raw: dict = {}
-    try:
-        response = await client.chat.completions.create(
-            model=MODEL,
-            max_tokens=4096,
-            extra_body={"plugins": [{"id": "web"}]},
-            response_format={
-                "type": "json_schema",
-                "json_schema": {
-                    "name": "category_data",
-                    "schema": response_model.model_json_schema(),
+    last_error: Optional[Exception] = None
+    for attempt in range(2):
+        try:
+            response = await client.chat.completions.create(
+                model=MODEL,
+                max_tokens=4096,
+                extra_body={"plugins": [{"id": "web"}]},
+                response_format={
+                    "type": "json_schema",
+                    "json_schema": {
+                        "name": "category_data",
+                        "schema": response_model.model_json_schema(),
+                    },
                 },
-            },
-            messages=[{
-                "role": "user",
-                "content": (
-                    f"Research and report the '{category_label}' fields for "
-                    f"{normalized.city}, {normalized.state} ({normalized.county}). "
-                    "Use web search to find current, accurate information — do "
-                    "not answer from memory alone. Every field needs a "
-                    "source_url and fetched_date "
-                    f"(today is {date.today().isoformat()}) alongside its value."
-                ),
-            }],
+                messages=[{
+                    "role": "user",
+                    "content": (
+                        f"Research and report the '{category_label}' fields for "
+                        f"{normalized.city}, {normalized.state} ({normalized.county}). "
+                        "Use web search to find current, accurate information — do "
+                        "not answer from memory alone. Every field needs a "
+                        "source_url and fetched_date "
+                        f"(today is {date.today().isoformat()}) alongside its value."
+                    ),
+                }],
+            )
+            raw = json.loads(response.choices[0].message.content)
+            last_error = None
+            break
+        except Exception as e:
+            last_error = e
+            if attempt == 0:
+                await asyncio.sleep(2)
+    if last_error is not None:
+        # Category-level failure after retry: every field below falls
+        # through to unresolved, but say so — silently swallowing this
+        # is what made the last two failures take a special diagnostic
+        # script to even see.
+        print(
+            f"WARNING: {category_label} failed after retry for "
+            f"{normalized.city}, {normalized.state}: "
+            f"{type(last_error).__name__}: {last_error}",
+            file=sys.stderr,
         )
-        raw = json.loads(response.choices[0].message.content)
-    except Exception:
-        pass  # category-level failure: every field below falls through to unresolved
 
     result: dict[str, StoredFieldValue] = {}
     for field_key, field_def in field_defs.items():
