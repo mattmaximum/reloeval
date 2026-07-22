@@ -9,4 +9,10 @@ body:
         Replace the issue title above with the city and state you want
         evaluated, in the format `City, ST` (e.g. `Austin, TX`) — this is
         the same format `evaluate.py` takes as a command-line argument.
-        Leave the body empty; only the title is read.
+  - type: input
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Not read by the pipeline — only the issue title matters. Use this for your own reference if you want.
+    validations:
+      required: false
