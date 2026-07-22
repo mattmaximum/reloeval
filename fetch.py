@@ -38,6 +38,12 @@ from models import (
 
 CITIES_DIR = Path(__file__).parent / "cities"
 MODEL = "anthropic/claude-sonnet-5"
+# Category fetches are search-and-extract, not multi-step reasoning -- a
+# cheaper model handles it fine and the web plugin's search results are the
+# real cost driver anyway. normalize_city stays on the pricier MODEL since
+# it's a single cheap forced tool-call regardless of model.
+CATEGORY_MODEL = "anthropic/claude-haiku-4.5"
+WEB_PLUGIN_MAX_RESULTS = 2
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
@@ -152,9 +158,9 @@ async def fetch_category(
     for attempt in range(2):
         try:
             response = await client.chat.completions.create(
-                model=MODEL,
+                model=CATEGORY_MODEL,
                 max_tokens=4096,
-                extra_body={"plugins": [{"id": "web"}]},
+                extra_body={"plugins": [{"id": "web", "max_results": WEB_PLUGIN_MAX_RESULTS}]},
                 response_format={
                     "type": "json_schema",
                     "json_schema": {
