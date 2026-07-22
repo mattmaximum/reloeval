@@ -88,45 +88,130 @@
     },
     "geographic_climate": {
       "usda_hardiness_zone": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "7a",
+        "source_url": "https://www.growableground.com/what-grows-in/idaho/county/ada",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "first_frost_date": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "November 8",
+        "source_url": "https://www.growableground.com/what-grows-in/idaho/county/ada",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "last_frost_date": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "March 9",
+        "source_url": "https://www.growableground.com/what-grows-in/idaho/county/ada",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "growing_season_length_days": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 244.0,
+        "source_url": "https://www.growableground.com/what-grows-in/idaho/county/ada",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "monthly_climate_table": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 37.0,
+            "avg_low_f": 22.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.6
+          },
+          {
+            "month": "February",
+            "avg_high_f": 40.0,
+            "avg_low_f": 24.0,
+            "avg_rainfall_in": 0.4,
+            "avg_snowfall_in": 0.4
+          },
+          {
+            "month": "March",
+            "avg_high_f": 50.0,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 0.4,
+            "avg_snowfall_in": 0.2
+          },
+          {
+            "month": "April",
+            "avg_high_f": 60.0,
+            "avg_low_f": 34.0,
+            "avg_rainfall_in": 0.4,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 71.0,
+            "avg_low_f": 43.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 81.0,
+            "avg_low_f": 52.0,
+            "avg_rainfall_in": 0.6,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 90.0,
+            "avg_low_f": 58.0,
+            "avg_rainfall_in": 0.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 89.0,
+            "avg_low_f": 57.0,
+            "avg_rainfall_in": 0.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 79.0,
+            "avg_low_f": 48.0,
+            "avg_rainfall_in": 0.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 65.0,
+            "avg_low_f": 38.0,
+            "avg_rainfall_in": 0.4,
+            "avg_snowfall_in": 0.1
+          },
+          {
+            "month": "November",
+            "avg_high_f": 48.0,
+            "avg_low_f": 30.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.4
+          },
+          {
+            "month": "December",
+            "avg_high_f": 37.0,
+            "avg_low_f": 22.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.6
+          }
+        ],
+        "source_url": "https://www.weather.gov/boi/climatesummary",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       },
       "annual_sunshine_days": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 286.0,
+        "source_url": "https://www.weather.gov/boi/climatesummary",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
         "schema_version": 1
       }
     },

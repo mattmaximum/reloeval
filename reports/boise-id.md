@@ -19,12 +19,27 @@
 
 ## Climate & Growing Conditions
 
-- **USDA Hardiness Zone:** _(not yet evaluated — run backfill)_
-- **First Frost Date:** _(not yet evaluated — run backfill)_
-- **Last Frost Date:** _(not yet evaluated — run backfill)_
-- **Growing Season Length Days:** _(not yet evaluated — run backfill)_
-- **Monthly Climate Table:** _(not yet evaluated — run backfill)_
-- **Annual Sunshine Days:** _(not yet evaluated — run backfill)_
+- **USDA Hardiness Zone:** 7a ([source](https://www.growableground.com/what-grows-in/idaho/county/ada), checked 2026-07-22)
+- **First Frost Date:** November 8 ([source](https://www.growableground.com/what-grows-in/idaho/county/ada), checked 2026-07-22)
+- **Last Frost Date:** March 9 ([source](https://www.growableground.com/what-grows-in/idaho/county/ada), checked 2026-07-22)
+- **Growing Season Length Days:** 244 ([source](https://www.growableground.com/what-grows-in/idaho/county/ada), checked 2026-07-22)
+**Monthly Climate Table** ([source](https://www.weather.gov/boi/climatesummary), checked 2026-07-22)
+| Month | Avg High (°F) | Avg Low (°F) | Avg Rainfall (in) | Avg Snowfall (in) |
+|---|---|---|---|---|
+| January | 37.0 | 22.0 | 0.5 | 0.6 |
+| February | 40.0 | 24.0 | 0.4 | 0.4 |
+| March | 50.0 | 29.0 | 0.4 | 0.2 |
+| April | 60.0 | 34.0 | 0.4 | 0.0 |
+| May | 71.0 | 43.0 | 0.5 | 0.0 |
+| June | 81.0 | 52.0 | 0.6 | 0.0 |
+| July | 90.0 | 58.0 | 0.3 | 0.0 |
+| August | 89.0 | 57.0 | 0.3 | 0.0 |
+| September | 79.0 | 48.0 | 0.3 | 0.0 |
+| October | 65.0 | 38.0 | 0.4 | 0.1 |
+| November | 48.0 | 30.0 | 0.5 | 0.4 |
+| December | 37.0 | 22.0 | 0.5 | 0.6 |
+
+- **Annual Sunshine Days:** 286 ([source](https://www.weather.gov/boi/climatesummary), checked 2026-07-22)
 
 ## Water Supply & Security
 
