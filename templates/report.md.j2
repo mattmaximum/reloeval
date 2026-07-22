@@ -1,0 +1,23 @@
+# {{ normalized.city }}, {{ normalized.state }} — Relocation Report
+
+*{{ normalized.county }} · Generated {{ generated_date }}*
+
+{% for category in categories %}
+## {{ category.label }}
+
+{% for field in category.fields %}
+{% if field.is_table %}
+**{{ field.label }}**{% if field.citation %} ({{ field.citation }}){% endif %}
+
+| Month | Avg High (°F) | Avg Low (°F) | Avg Rainfall (in) | Avg Snowfall (in) |
+|---|---|---|---|---|
+{% for row in field.display_value %}| {{ row.month }} | {{ row.avg_high_f }} | {{ row.avg_low_f }} | {{ row.avg_rainfall_in }} | {{ row.avg_snowfall_in }} |
+{% endfor %}
+
+{% else %}
+- **{{ field.label }}:** {{ field.display_value }}{% if field.citation %} ({{ field.citation }}){% endif %}{% if field.caveat %} — *{{ field.caveat }}*{% endif %}
+
+{% endif %}
+{% endfor %}
+
+{% endfor %}
