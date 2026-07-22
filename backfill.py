@@ -15,6 +15,7 @@ from openai import AsyncOpenAI
 from fetch import OPENROUTER_BASE_URL, fetch_city_bulk
 from lint import list_cities, run_lint
 from models import load_schema
+from render import render_city
 
 
 async def run_backfill() -> None:
@@ -35,6 +36,7 @@ async def run_backfill() -> None:
         record = next(r for r in records if r.slug == slug)
         print(f"Backfilling {slug}...")
         await fetch_city_bulk(client, schema, record.input_city_state)
+        render_city(slug)
     print(f"Backfilled {len(report)} cities.")
 
 
