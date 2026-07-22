@@ -10,17 +10,17 @@ import asyncio
 import os
 import sys
 
-from anthropic import AsyncAnthropic
+from openai import AsyncOpenAI
 
-from fetch import fetch_city_bulk
+from fetch import OPENROUTER_BASE_URL, fetch_city_bulk
 from lint import list_cities, run_lint
 from models import load_schema
 
 
 async def run_backfill() -> None:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
-        print("ERROR: ANTHROPIC_API_KEY is not set.", file=sys.stderr)
+        print("ERROR: OPENROUTER_API_KEY is not set.", file=sys.stderr)
         sys.exit(1)
 
     schema = load_schema()
@@ -30,7 +30,7 @@ async def run_backfill() -> None:
         print("No gaps found — nothing to backfill.")
         return
 
-    client = AsyncAnthropic(api_key=api_key)
+    client = AsyncOpenAI(base_url=OPENROUTER_BASE_URL, api_key=api_key)
     for slug in report:
         record = next(r for r in records if r.slug == slug)
         print(f"Backfilling {slug}...")

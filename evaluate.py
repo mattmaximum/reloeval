@@ -11,19 +11,19 @@ import asyncio
 import os
 import sys
 
-from anthropic import AsyncAnthropic
+from openai import AsyncOpenAI
 
-from fetch import CityNotFoundError, fetch_city_bulk
+from fetch import OPENROUTER_BASE_URL, CityNotFoundError, fetch_city_bulk
 from models import load_schema
 from render import render_city
 
 
 async def evaluate_city(city_state_input: str) -> str:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
-        print("ERROR: ANTHROPIC_API_KEY is not set.", file=sys.stderr)
+        print("ERROR: OPENROUTER_API_KEY is not set.", file=sys.stderr)
         sys.exit(1)
-    client = AsyncAnthropic(api_key=api_key)
+    client = AsyncOpenAI(base_url=OPENROUTER_BASE_URL, api_key=api_key)
     schema = load_schema()
     try:
         record = await fetch_city_bulk(client, schema, city_state_input)

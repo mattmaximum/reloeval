@@ -15,7 +15,7 @@ from fetch import (
 )
 from models import FieldStatus, NormalizedCity, StoredFieldValue, load_schema
 
-from .fakes import FakeAsyncAnthropic
+from .fakes import FakeAsyncOpenAI
 
 
 def test_slugify_is_case_and_space_insensitive():
@@ -58,7 +58,7 @@ def test_category_needs_fetch_false_when_all_current():
 
 
 def test_normalize_city_success():
-    client = FakeAsyncAnthropic(handler=lambda name, kw: {
+    client = FakeAsyncOpenAI(handler=lambda name, kw: {
         "resolved": True, "city": "Austin", "state": "TX", "county": "Travis County",
     })
     result = asyncio.run(normalize_city(client, "austin tx"))
@@ -67,7 +67,7 @@ def test_normalize_city_success():
 
 
 def test_normalize_city_unresolvable_raises_city_not_found():
-    client = FakeAsyncAnthropic(handler=lambda name, kw: {"resolved": False})
+    client = FakeAsyncOpenAI(handler=lambda name, kw: {"resolved": False})
     with pytest.raises(CityNotFoundError):
         asyncio.run(normalize_city(client, "asdkjfhaksjdhf not a real place"))
 
@@ -75,7 +75,7 @@ def test_normalize_city_unresolvable_raises_city_not_found():
 def test_fetch_category_total_failure_marks_every_field_unresolved():
     schema = load_schema()
     client_handler = lambda name, kw: None  # simulates API error / timeout
-    client = FakeAsyncAnthropic(handler=client_handler)
+    client = FakeAsyncOpenAI(handler=client_handler)
     normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
 
     result = asyncio.run(fetch_category(client, schema, "power_energy", normalized))
@@ -96,7 +96,7 @@ def test_fetch_category_partial_validation_failure_isolated_to_one_field():
             "net_metering_policy": {"value": "1:1", "source_url": "https://x.com", "fetched_date": "2026-07-22"},
         }
 
-    client = FakeAsyncAnthropic(handler=handler)
+    client = FakeAsyncOpenAI(handler=handler)
     normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
     result = asyncio.run(fetch_category(client, schema, "power_energy", normalized))
 
@@ -112,7 +112,7 @@ def test_fetch_city_bulk_new_city_writes_all_categories(isolated_dirs):
         if name == "resolve_city":
             return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
         # Return a plausible value for every field in whichever category was asked for.
-        props = kw["output_config"]["format"]["schema"]["properties"]
+        props = kw["response_format"]["json_schema"]["schema"]["properties"]
         return {
             field_key: {"value": "placeholder", "source_url": "https://x.com", "fetched_date": "2026-07-22"}
             for field_key in props
@@ -120,7 +120,7 @@ def test_fetch_city_bulk_new_city_writes_all_categories(isolated_dirs):
 
     # power_energy and civic fields are numeric — "placeholder" string will fail
     # validation for those, which is fine: exercises the unresolved path too.
-    client = FakeAsyncAnthropic(handler=handler)
+    client = FakeAsyncOpenAI(handler=handler)
 
     record = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
 
@@ -159,7 +159,7 @@ def test_fetch_city_bulk_skips_categories_that_are_fully_valid_and_current(isola
     )
     save_city_record(record)
 
-    client = FakeAsyncAnthropic(handler=fail_if_called)
+    client = FakeAsyncOpenAI(handler=fail_if_called)
     # Should complete without ever invoking the (failing) handler.
     result = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
     assert result.slug == "austin-tx"
@@ -191,13 +191,13 @@ def test_fetch_city_bulk_never_overwrites_flagged_field_even_when_category_refet
     def handler(name, kw):
         if name == "resolve_city":
             return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
-        props = kw["output_config"]["format"]["schema"]["properties"]
+        props = kw["response_format"]["json_schema"]["schema"]["properties"]
         return {
             key: {"value": 12.5, "source_url": "https://new.com", "fetched_date": "2026-07-22"}
             for key in props
         }
 
-    client = FakeAsyncAnthropic(handler=handler)
+    client = FakeAsyncOpenAI(handler=handler)
     result = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
 
     flagged_field = result.categories["power_energy"]["electricity_rate_cents_per_kwh"]

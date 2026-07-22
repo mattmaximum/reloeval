@@ -1,8 +1,10 @@
 """Fetch step: bulk (new/re-run city) and the merge logic backfill relies on.
 
-Standalone script hitting the Anthropic API directly (not a Claude Code
-skill) — a slash command can't natively fire the concurrent per-category
-calls this design requires. Needs ANTHROPIC_API_KEY set in the environment.
+Standalone script hitting OpenRouter's OpenAI-compatible chat completions
+API (not Anthropic directly, and not a Claude Code skill — a slash command
+can't natively fire the concurrent per-category calls this design
+requires). Needs OPENROUTER_API_KEY set in the environment. Still targets
+a Claude model (anthropic/claude-sonnet-5) — only the transport changed.
 
 Bulk mode re-derives what needs fetching from current state every time, so
 "backfill" (see backfill.py) is just calling fetch_city_bulk again after a
@@ -19,7 +21,7 @@ from datetime import date
 from pathlib import Path
 from typing import Optional
 
-from anthropic import AsyncAnthropic
+from openai import AsyncOpenAI
 from pydantic import ValidationError
 
 from atomic_write import atomic_write
@@ -35,7 +37,8 @@ from models import (
 )
 
 CITIES_DIR = Path(__file__).parent / "cities"
-MODEL = "claude-sonnet-5"
+MODEL = "anthropic/claude-sonnet-5"
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
 class CityNotFoundError(ValueError):
@@ -71,41 +74,44 @@ def category_needs_fetch(existing_category: dict[str, StoredFieldValue], field_d
     )
 
 
-async def normalize_city(client: AsyncAnthropic, city_state_input: str) -> NormalizedCity:
+async def normalize_city(client: AsyncOpenAI, city_state_input: str) -> NormalizedCity:
     """Resolve raw input (e.g. "NYC" or "Austin, TX") to canonical
     city/state/county, so different spellings of the same city always
     produce the same slug. Raises CityNotFoundError on an unresolvable
     input rather than writing garbage data."""
-    tool = {
-        "name": "resolve_city",
-        "description": (
-            "Resolve a US city input to its canonical city, state, and "
-            "containing county. If the input cannot be confidently "
-            "resolved to a real US city, set 'resolved' to false."
-        ),
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "resolved": {"type": "boolean"},
-                "city": {"type": "string"},
-                "state": {"type": "string", "description": "Two-letter state abbreviation"},
-                "county": {"type": "string"},
+    tools = [{
+        "type": "function",
+        "function": {
+            "name": "resolve_city",
+            "description": (
+                "Resolve a US city input to its canonical city, state, and "
+                "containing county. If the input cannot be confidently "
+                "resolved to a real US city, set 'resolved' to false."
+            ),
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "resolved": {"type": "boolean"},
+                    "city": {"type": "string"},
+                    "state": {"type": "string", "description": "Two-letter state abbreviation"},
+                    "county": {"type": "string"},
+                },
+                "required": ["resolved"],
             },
-            "required": ["resolved"],
         },
-    }
-    response = await client.messages.create(
+    }]
+    response = await client.chat.completions.create(
         model=MODEL,
         max_tokens=1024,
-        tools=[tool],
-        tool_choice={"type": "tool", "name": "resolve_city"},
+        tools=tools,
+        tool_choice={"type": "function", "function": {"name": "resolve_city"}},
         messages=[{
             "role": "user",
             "content": f"Resolve this US city input to canonical city/state/county: {city_state_input!r}",
         }],
     )
-    tool_use = next(b for b in response.content if b.type == "tool_use")
-    result = tool_use.input
+    tool_call = response.choices[0].message.tool_calls[0]
+    result = json.loads(tool_call.function.arguments)
     if not result.get("resolved"):
         raise CityNotFoundError(
             f"Could not resolve {city_state_input!r} to a known US city. "
@@ -115,7 +121,7 @@ async def normalize_city(client: AsyncAnthropic, city_state_input: str) -> Norma
 
 
 async def fetch_category(
-    client: AsyncAnthropic,
+    client: AsyncOpenAI,
     schema: dict,
     category_key: str,
     normalized: NormalizedCity,
@@ -126,10 +132,11 @@ async def fetch_category(
     field in the category unresolved, the same status a single bad field
     gets.
 
-    Uses output_config.format (not a forced tool_choice) so Claude can call
-    web_search first and still return a schema-conforming final answer —
-    forcing tool_choice to a specific tool would make Claude call it
-    immediately, with no chance to search beforehand.
+    Grounding uses OpenRouter's own web-search plugin (a separate service
+    from Anthropic's native web_search tool — that tool isn't reachable
+    through OpenRouter's OpenAI-compatible endpoint) alongside a
+    JSON-schema-constrained response, so the model can search and still
+    return a schema-conforming final answer.
     """
     field_defs = fetchable_fields(schema, category_key)
     category_label = schema["categories"][category_key]["label"]
@@ -137,34 +144,30 @@ async def fetch_category(
 
     raw: dict = {}
     try:
-        messages = [{
-            "role": "user",
-            "content": (
-                f"Research and report the '{category_label}' fields for "
-                f"{normalized.city}, {normalized.state} ({normalized.county}). "
-                "Use web search to find current, accurate information — do "
-                "not answer from memory alone. Every field needs a "
-                "source_url and fetched_date "
-                f"(today is {date.today().isoformat()}) alongside its value."
-            ),
-        }]
-        request_kwargs = dict(
+        response = await client.chat.completions.create(
             model=MODEL,
             max_tokens=4096,
-            tools=[{"type": "web_search_20260209", "name": "web_search"}],
-            output_config={
-                "format": {"type": "json_schema", "schema": response_model.model_json_schema()},
+            extra_body={"plugins": [{"id": "web"}]},
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "category_data",
+                    "schema": response_model.model_json_schema(),
+                },
             },
+            messages=[{
+                "role": "user",
+                "content": (
+                    f"Research and report the '{category_label}' fields for "
+                    f"{normalized.city}, {normalized.state} ({normalized.county}). "
+                    "Use web search to find current, accurate information — do "
+                    "not answer from memory alone. Every field needs a "
+                    "source_url and fetched_date "
+                    f"(today is {date.today().isoformat()}) alongside its value."
+                ),
+            }],
         )
-        response = await client.messages.create(messages=messages, **request_kwargs)
-        # Server-side web_search runs its own internal loop (max 10 steps);
-        # if it hits that cap mid-research, resume once by resending the
-        # conversation so far rather than losing the category's progress.
-        if response.stop_reason == "pause_turn":
-            messages.append({"role": "assistant", "content": response.content})
-            response = await client.messages.create(messages=messages, **request_kwargs)
-        text = next(b.text for b in response.content if b.type == "text")
-        raw = json.loads(text)
+        raw = json.loads(response.choices[0].message.content)
     except Exception:
         pass  # category-level failure: every field below falls through to unresolved
 
@@ -203,7 +206,7 @@ def save_city_record(record: CityRecord) -> Path:
     return path
 
 
-async def fetch_city_bulk(client: AsyncAnthropic, schema: dict, city_state_input: str) -> CityRecord:
+async def fetch_city_bulk(client: AsyncOpenAI, schema: dict, city_state_input: str) -> CityRecord:
     """Evaluate a city end to end: normalize input, fetch only what's
     missing/stale (merge, never overwrite valid/flagged fields), write.
     Safe to call repeatedly on the same city — a fully up-to-date city
@@ -251,11 +254,11 @@ async def fetch_city_bulk(client: AsyncAnthropic, schema: dict, city_state_input
 
 
 async def _main(city_state_input: str) -> CityRecord:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
-        print("ERROR: ANTHROPIC_API_KEY is not set.", file=sys.stderr)
+        print("ERROR: OPENROUTER_API_KEY is not set.", file=sys.stderr)
         sys.exit(1)
-    client = AsyncAnthropic(api_key=api_key)
+    client = AsyncOpenAI(base_url=OPENROUTER_BASE_URL, api_key=api_key)
     schema = load_schema()
     try:
         return await fetch_city_bulk(client, schema, city_state_input)
