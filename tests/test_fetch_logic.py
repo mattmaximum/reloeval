@@ -112,7 +112,7 @@ def test_fetch_city_bulk_new_city_writes_all_categories(isolated_dirs):
         if name == "resolve_city":
             return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
         # Return a plausible value for every field in whichever category was asked for.
-        props = kw["tools"][0]["input_schema"]["properties"]
+        props = kw["output_config"]["format"]["schema"]["properties"]
         return {
             field_key: {"value": "placeholder", "source_url": "https://x.com", "fetched_date": "2026-07-22"}
             for field_key in props
@@ -191,7 +191,7 @@ def test_fetch_city_bulk_never_overwrites_flagged_field_even_when_category_refet
     def handler(name, kw):
         if name == "resolve_city":
             return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
-        props = kw["tools"][0]["input_schema"]["properties"]
+        props = kw["output_config"]["format"]["schema"]["properties"]
         return {
             key: {"value": 12.5, "source_url": "https://new.com", "fetched_date": "2026-07-22"}
             for key in props

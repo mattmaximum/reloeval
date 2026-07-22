@@ -12,6 +12,7 @@ logic either way.
 from __future__ import annotations
 
 import asyncio
+import json
 import os
 import sys
 from datetime import date
@@ -119,38 +120,51 @@ async def fetch_category(
     category_key: str,
     normalized: NormalizedCity,
 ) -> dict[str, StoredFieldValue]:
-    """Fetch every fetchable field in one category via a single structured
-    tool-use call. Never raises — a total category failure (API error,
-    timeout, malformed response) falls through to marking every field in
-    the category unresolved, the same status a single bad field gets."""
+    """Fetch every fetchable field in one category via a structured,
+    web-search-grounded call. Never raises — a total category failure (API
+    error, timeout, malformed response) falls through to marking every
+    field in the category unresolved, the same status a single bad field
+    gets.
+
+    Uses output_config.format (not a forced tool_choice) so Claude can call
+    web_search first and still return a schema-conforming final answer —
+    forcing tool_choice to a specific tool would make Claude call it
+    immediately, with no chance to search beforehand.
+    """
     field_defs = fetchable_fields(schema, category_key)
     category_label = schema["categories"][category_key]["label"]
     response_model = build_category_response_model(schema, category_key)
 
     raw: dict = {}
     try:
-        tool = {
-            "name": "report_category_data",
-            "description": f"Report data for the '{category_label}' category.",
-            "input_schema": response_model.model_json_schema(),
-        }
-        response = await client.messages.create(
+        messages = [{
+            "role": "user",
+            "content": (
+                f"Research and report the '{category_label}' fields for "
+                f"{normalized.city}, {normalized.state} ({normalized.county}). "
+                "Use web search to find current, accurate information — do "
+                "not answer from memory alone. Every field needs a "
+                "source_url and fetched_date "
+                f"(today is {date.today().isoformat()}) alongside its value."
+            ),
+        }]
+        request_kwargs = dict(
             model=MODEL,
             max_tokens=4096,
-            tools=[tool],
-            tool_choice={"type": "tool", "name": "report_category_data"},
-            messages=[{
-                "role": "user",
-                "content": (
-                    f"Research and report the '{category_label}' fields for "
-                    f"{normalized.city}, {normalized.state} ({normalized.county}). "
-                    "Every field needs a source_url and fetched_date "
-                    f"(today is {date.today().isoformat()}) alongside its value."
-                ),
-            }],
+            tools=[{"type": "web_search_20260209", "name": "web_search"}],
+            output_config={
+                "format": {"type": "json_schema", "schema": response_model.model_json_schema()},
+            },
         )
-        tool_use = next(b for b in response.content if b.type == "tool_use")
-        raw = tool_use.input or {}
+        response = await client.messages.create(messages=messages, **request_kwargs)
+        # Server-side web_search runs its own internal loop (max 10 steps);
+        # if it hits that cap mid-research, resume once by resending the
+        # conversation so far rather than losing the category's progress.
+        if response.stop_reason == "pause_turn":
+            messages.append({"role": "assistant", "content": response.content})
+            response = await client.messages.create(messages=messages, **request_kwargs)
+        text = next(b.text for b in response.content if b.type == "text")
+        raw = json.loads(text)
     except Exception:
         pass  # category-level failure: every field below falls through to unresolved
 
