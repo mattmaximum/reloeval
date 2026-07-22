@@ -1,0 +1,12 @@
+name: New city request
+description: Evaluate a new city (or re-evaluate/backfill an existing one)
+title: "City, ST"
+labels: ["evaluate"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Replace the issue title above with the city and state you want
+        evaluated, in the format `City, ST` (e.g. `Austin, TX`) — this is
+        the same format `evaluate.py` takes as a command-line argument.
+        Leave the body empty; only the title is read.

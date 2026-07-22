@@ -1,0 +1,126 @@
+# Issue → Workflow → Pages flow:
+#
+#   issue opened (title "City, ST", "evaluate" label)
+#     │
+#     ▼
+#   job-level gate: author == repo owner AND "evaluate" label present
+#     │ (anything else: job skipped entirely, no comment, no run)
+#     ▼
+#   run_evaluation.py: fetch_city_bulk → gap-check → render_city
+#     │
+#     ├─ CityNotFoundError / other exception / gap-rate ≥90% ──► comment
+#     │                                                          explaining
+#     │                                                          failure,
+#     │                                                          issue stays
+#     │                                                          open, no
+#     │                                                          commit/deploy
+#     │
+#     ▼ success
+#   build_index.py (repo index.html, .md links)
+#   build_pages_site.py (_site/ with converted .html reports, deploy-only)
+#     │
+#     ▼
+#   commit cities/*.json + reports/*.md + index.html back to main
+#     │
+#     ▼
+#   upload-pages-artifact (_site/) → deploy-pages
+#     │
+#     ▼
+#   comment with live report link + any lint gaps, close issue
+name: Evaluate city
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: evaluate-city-deploy
+  cancel-in-progress: false
+
+jobs:
+  evaluate:
+    if: >
+      github.event.issue.user.login == github.repository_owner &&
+      contains(github.event.issue.labels.*.name, 'evaluate')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run evaluation
+        id: run_eval
+        continue-on-error: true
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python .github/scripts/run_evaluation.py "${{ github.event.issue.title }}"
+
+      - name: Rebuild index and Pages site
+        if: steps.run_eval.outcome == 'success'
+        run: |
+          python build_index.py
+          python .github/scripts/build_pages_site.py
+
+      - name: Commit results
+        if: steps.run_eval.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add cities/ reports/ index.html
+          git diff --staged --quiet || git commit -m "Evaluate ${{ github.event.issue.title }} (issue #${{ github.event.issue.number }})"
+          git push
+
+      - name: Upload Pages artifact
+        if: steps.run_eval.outcome == 'success'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to Pages
+        if: steps.run_eval.outcome == 'success'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Comment success and close issue
+        if: steps.run_eval.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SLUG="${{ steps.run_eval.outputs.slug }}"
+          PAGE_URL="${{ steps.deployment.outputs.page_url }}"
+          gh issue comment "${{ github.event.issue.number }}" --body "$(cat <<EOF
+          Evaluated **$SLUG**. Report: ${PAGE_URL}reports/${SLUG}.html
+
+          ${{ steps.run_eval.outputs.gap_summary }}
+          EOF
+          )"
+          gh issue close "${{ github.event.issue.number }}"
+
+      - name: Comment failure
+        if: steps.run_eval.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body "$(cat <<EOF
+          Couldn't finish evaluating this request:
+
+          ${{ steps.run_eval.outputs.error_message }}
+
+          Leaving this issue open — no partial data was committed or deployed.
+          EOF
+          )"

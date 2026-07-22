@@ -18,3 +18,16 @@ Carried over from the design doc's Deferred Work section (`/office-hours` +
   outside-voice pass as an uncosted risk to the "replaces manual research" premise;
   chose to build the full pipeline anyway — this is the checkpoint to revisit that
   call with real usage data.
+- **Local workflow testing via `act`.** Set up the `act` CLI to run the GitHub
+  Actions workflow locally in Docker instead of pushing and waiting for a real
+  run. Not needed for the initial build; worth doing the first time the workflow
+  needs debugging after it's live. Doesn't perfectly replicate GitHub-hosted
+  runners, so treat as a fast local approximation, not a full substitute for a
+  real E2E test.
+- **Manual re-run trigger (workflow_dispatch).** Add a `workflow_dispatch` trigger
+  alongside the Issue trigger so a city can be re-run from the Actions tab without
+  opening a new issue — useful after a schema change or to recover from a failed
+  run. Really "give `backfill.py` a remote trigger too," not a new capability —
+  `backfill.py` already does this maintenance job locally. Deferred because the
+  Actions-tab form isn't mobile-friendly and this only matters for occasional
+  maintenance, not everyday use (raised during /plan-eng-review, 2026-07-22).
