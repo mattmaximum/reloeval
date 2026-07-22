@@ -1,0 +1,575 @@
+{
+  "input_city_state": "Tampa, FL",
+  "normalized": {
+    "city": "Tampa",
+    "state": "FL",
+    "county": "Hillsborough County"
+  },
+  "slug": "tampa-fl",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Hillsborough County",
+        "source_url": "https://hcfl.gov/residents/public-safety/hazard-mitigation/local-mitigation-strategy",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 6.0,
+        "source_url": "https://www.usgs.gov",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 2.5,
+        "source_url": "https://www.tampa.gov/emergency-management/info/tampa-hazards",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 150.0,
+        "source_url": "https://earthquake.usgs.gov",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "No active volcanoes in Florida region",
+        "source_url": "https://www.usgs.gov/programs/VHP",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "High - Coastal vulnerability identified",
+        "source_url": "https://www.tampa.gov/emergency-management/info/tampa-hazards",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "Moderate - Included in mitigation planning",
+        "source_url": "https://hcfl.gov/residents/public-safety/hazard-mitigation/local-mitigation-strategy",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Low - No major fault lines",
+        "source_url": "https://earthquake.usgs.gov",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "High - Primary hazard concern",
+        "source_url": "https://hcfl.gov/residents/public-safety/hazard-mitigation/local-mitigation-strategy",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 58.0,
+        "source_url": "https://www.iqair.com",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 12.0,
+        "source_url": "https://hcfl.gov/residents/public-safety/hazard-mitigation/local-mitigation-strategy",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "10a",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/florida/tampa/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "Frost Rare",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/florida/tampa/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "Frost Rare",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/florida/tampa/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 365.0,
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/florida/tampa/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 70.4,
+            "avg_low_f": 50.9,
+            "avg_rainfall_in": 3.07,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 73.0,
+            "avg_low_f": 53.8,
+            "avg_rainfall_in": 2.58,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 76.9,
+            "avg_low_f": 57.7,
+            "avg_rainfall_in": 2.88,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 82.1,
+            "avg_low_f": 63.6,
+            "avg_rainfall_in": 2.78,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 87.3,
+            "avg_low_f": 69.3,
+            "avg_rainfall_in": 3.41,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 90.0,
+            "avg_low_f": 74.2,
+            "avg_rainfall_in": 8.88,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 90.2,
+            "avg_low_f": 75.7,
+            "avg_rainfall_in": 8.63,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 90.5,
+            "avg_low_f": 75.7,
+            "avg_rainfall_in": 9.59,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 89.5,
+            "avg_low_f": 74.1,
+            "avg_rainfall_in": 7.14,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 84.7,
+            "avg_low_f": 67.9,
+            "avg_rainfall_in": 2.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 78.0,
+            "avg_low_f": 59.4,
+            "avg_rainfall_in": 1.74,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 73.0,
+            "avg_low_f": 54.0,
+            "avg_rainfall_in": 2.54,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/florida/tampa/climate-data",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 250.0,
+        "source_url": "https://climatecenter.fsu.edu/products-services/data/weather-planner/tampa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Hillsborough River Reservoir (primary source supplemented by Aquifer Storage and Recovery System, Sulphur Springs, Tampa Bypass Canal, and Tampa Bay Seawater Desalination Plant",
+        "source_url": "https://www.tampa.gov/sites/default/files/rfq/docs/26-d-00019-rfqdu.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Stage 3 Regional Supply Shortage - High drought risk with 12-month rainfall deficit of 14.46 inches and C.W. Bill Young Regional Reservoir at 14.7% capacity",
+        "source_url": "https://www.tampabaywater.org/news/recent-rainfall-not-enough-tampa-bay-water-urges-continued-conservation-during-ongoing-drought/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "City water system operates under Water Use Permit (WUP) 20002062.006 from Southwest Florida Water Management District (SWFWMD), and supplemental permit 20006675.006 for Tampa Bypass Canal withdrawal - all legally authorized",
+        "source_url": "https://www.tampa.gov/sites/default/files/rfq/docs/26-d-00019-rfqdu.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://www.tampa.gov/sites/default/files/rfq/docs/26-d-00019-rfqdu.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Authorized withdrawal up to 82 MGD annual average and 120 MGD maximum daily from Hillsborough River Reservoir; must maintain minimum flows of 20-24 cfs in Lower Hillsborough River per MFL rule (40D-8, Florida Administrative Code); Modified Phase III Extreme Water Shortage Order restricts lawn watering to one day per week",
+        "source_url": "https://www.tampa.gov/sites/default/files/rfq/docs/26-d-00019-rfqdu.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Multiple supplemental sources: ASR System (10 MGD recovery capacity), Sulphur Springs (5 MGD average, 20 MGD max day), Tampa Bypass Canal (20 MGD average, 40 MGD peak month), Tampa Bay Seawater Desalination Plant (12.8 MGD average June production)",
+        "source_url": "https://www.tampabaywater.org/news/recent-rainfall-not-enough-tampa-bay-water-urges-continued-conservation-during-ongoing-drought/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 13.5,
+        "source_url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2025/Tampa%20Electric%20Company.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "High - TEC maintains 1,350 MWAC of solar capacity, 27.6 MW of battery storage, and firm purchase agreements with multiple counties to ensure reliable power delivery",
+        "source_url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2025/Tampa%20Electric%20Company.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 18.0,
+        "source_url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2025/Tampa%20Electric%20Company.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Florida net metering allows customers to receive credits for excess solar energy exported to the grid at the same rate paid for grid electricity; TEC supports renewable energy programs including customer-owned solar through net metering framework",
+        "source_url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2025/Tampa%20Electric%20Company.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 413554.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/tampacityflorida/RHI225224",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 1574115.0,
+        "source_url": "https://en.wikipedia.org/wiki/Hillsborough_County,_Florida",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 35.9,
+        "source_url": "https://worldpopulationreview.com/us-cities/florida/tampa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White 49.0%, Black or African American 20.4%, Asian 4.9%, Two or More Races 19.9%, Hispanic or Latino 26.2%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/tampacityflorida/RHI225224",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Republican - Florida 2024 presidential election: Trump 56.1%, Harris 43%, Stein 0.396%",
+        "source_url": "https://datausa.io/profile/geo/tampa-fl",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 444.64,
+        "source_url": "https://www.beautifydata.com/united-states-crimes/fbi-ucr/2024/number-and-rate-of-violent-crimes-per-city/florida/tampa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 1465.3,
+        "source_url": "https://www.opencrime.us/crime-rate-in/tampa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 18.0,
+        "source_url": "https://guardianprotection.com/blog/tampa-crime-rate-statistics",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Permitless concealed carry - Constitutional carry authorized as of July 1, 2023",
+        "source_url": "https://www.usconcealedcarry.com/resources/ccw_reciprocity_map/fl-gun-laws/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No state-level restrictions on magazine capacity",
+        "source_url": "https://giffords.org/lawcenter/state-laws/large-capacity-magazines-in-florida/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Stand Your Ground and Castle Doctrine laws legal - no duty to retreat when lawfully present",
+        "source_url": "https://www.recordinglaw.com/us-laws/self-defense-laws/florida-self-defense-laws/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 233.0,
+        "source_url": "https://www.hillsboroughschools.org/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 90.9,
+        "source_url": "https://www.hillsboroughschools.org/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "H. Lee Moffitt Cancer Center and Research Institute, Tampa General Hospital, University of South Florida, University of Tampa",
+        "source_url": "https://www.tampa.gov/DEO/living-in-tampa/educationhealthcare",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Florida homeschooling requires notification to school district and annual evaluation; moderate regulation",
+        "source_url": "https://www.tampa.gov/DEO/living-in-tampa/educationhealthcare",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Active homeschool community in Tampa Bay area with co-op networks and support groups",
+        "source_url": "https://www.hillsboroughschools.org/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.0,
+        "source_url": "https://www.tampa.gov/DEO/living-in-tampa/educationhealthcare",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Tampa General Hospital (Level I Trauma Center), Florida Hospital network, H. Lee Moffitt Cancer Center",
+        "source_url": "https://www.tampa.gov/DEO/living-in-tampa/educationhealthcare",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 445000.0,
+        "source_url": "https://www.houzeo.com/housing-market/florida/tampa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 76952.0,
+        "source_url": "https://www.land.com/Hillsborough-County-FL/undeveloped-land/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 150000.0,
+        "source_url": "https://www.primelandbuyers.com/blog/florida-land-price-per-acre-by-county",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://permitplace.com/city/tampa-fl-building-permits/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "High - 1800 registered communities",
+        "source_url": "https://www.communitypay.us/directory/florida/tampa/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 0.0,
+        "source_url": "https://taxfoundation.org/location/florida/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 7.5,
+        "source_url": "https://www.avalara.com/us/en/taxrates/state-rates/florida/counties/hillsborough-county.html",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "High - 79% availability",
+        "source_url": "https://ispreports.org/internet-service-providers-tampa-fl/",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 50.0,
+        "source_url": "https://www.walkscore.com/FL/Tampa",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Moderate - HART operates 26 local, 7 express routes",
+        "source_url": "https://en.wikipedia.org/wiki/Hillsborough_Area_Regional_Transit",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/tampabay/Economic_Impact_of_Visitors_to_Hillsborough_County_2025_CLIENT_FINAL_eda43c39-0264-4971-b49a-1c219b14a2b4.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/tampabay/Economic_Impact_of_Visitors_to_Hillsborough_County_2025_CLIENT_FINAL_eda43c39-0264-4971-b49a-1c219b14a2b4.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Florida permits raw milk sales through licensed dairy farms",
+        "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "High density with regional farmers markets serving Tampa Bay Area population of 2+ million residents",
+        "source_url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/tampabay/Economic_Impact_of_Visitors_to_Hillsborough_County_2025_CLIENT_FINAL_eda43c39-0264-4971-b49a-1c219b14a2b4.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Tampa International Airport (TPA) is an award-winning major airport located within Hillsborough County",
+        "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Strong regional travel connections to Orlando via I-4 corridor; significant travel flows to Pinellas, Pasco, Polk, and Manatee counties with coordinated MPO/TPO regional partnerships",
+        "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
