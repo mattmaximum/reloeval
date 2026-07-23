@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ normalized.city }}, {{ normalized.state }}</title>
+{% include "_style.html.j2" %}
+</head>
+<body>
+<a class="back" href="../index.html">&larr; All cities</a>
+<h1>{{ normalized.city }}, {{ normalized.state }}</h1>
+<div class="meta">{{ normalized.county }} &middot; Generated {{ generated_date }}</div>
+<div class="completion-badge">{{ completion.valid }}/{{ completion.total }} fields complete ({{ completion.percent }}%)</div>
+
+{% if scorecard %}
+<div class="scorecard">
+{% for field in scorecard %}
+  <div class="scorecard-item">
+    <div class="label">{{ field.label }}</div>
+    <div class="value">{{ field.display_value }}</div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
+<nav class="toc">
+{% for category in categories %}
+  <a href="#{{ category.key }}">{{ category.label }}</a>
+{% endfor %}
+</nav>
+
+{% for category in categories %}
+<details class="category" id="{{ category.key }}" open>
+  <summary>{{ category.label }}</summary>
+
+  {% set scalar_fields = category.fields | selectattr("is_table", "equalto", false) | list %}
+  {% if scalar_fields %}
+  <table class="field-table field-table--fields">
+    <tr><th>Field</th><th>Value</th><th>Source</th></tr>
+    {% for field in scalar_fields %}
+    <tr{% if field.status == "flagged" %} class="flagged-row"{% endif %}>
+      <td class="field-label">{{ field.label }}</td>
+      <td>
+        {% if field.status == "valid" %}
+          {% if field.risk_badge %}<span class="risk-badge" style="background:{{ field.risk_badge.color }}">{{ field.risk_badge.level }}</span>{% endif %}
+          {{ field.display_value }}
+          {% if field.caveat %}<div class="caveat">{{ field.caveat }}</div>{% endif %}
+        {% elif field.status == "flagged" %}
+          <span class="placeholder">Flagged as incorrect &mdash; pending recheck</span>
+        {% else %}
+          <span class="placeholder">Not yet evaluated</span>
+        {% endif %}
+      </td>
+      <td class="source-link">
+        {% if field.citation_url %}<a href="{{ field.citation_url }}">source</a> &middot; {{ field.citation_date }}{% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  {% for field in category.fields if field.is_table %}
+    <strong>{{ field.label }}</strong>
+    {% if field.citation_url %}(<a href="{{ field.citation_url }}">source</a> &middot; {{ field.citation_date }}){% endif %}
+
+    {% if field.chart_svg %}
+    <div class="chart-wrap">{{ field.chart_svg | safe }}</div>
+    {% endif %}
+
+    {% if field.status == "valid" %}
+    <div class="table-scroll">
+    <table class="field-table">
+      <tr><th>Month</th><th>Avg High (&deg;F)</th><th>Avg Low (&deg;F)</th><th>Avg Rainfall (in)</th><th>Avg Snowfall (in)</th></tr>
+      {% for row in field.display_value %}
+      <tr>
+        <td>{{ row.month }}</td><td>{{ row.avg_high_f }}</td><td>{{ row.avg_low_f }}</td><td>{{ row.avg_rainfall_in }}</td><td>{{ row.avg_snowfall_in }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    </div>
+    {% else %}
+    <p><span class="placeholder">Not yet evaluated</span></p>
+    {% endif %}
+  {% endfor %}
+</details>
+{% endfor %}
+
+</body>
+</html>

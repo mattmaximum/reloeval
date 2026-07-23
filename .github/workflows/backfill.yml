@@ -1,0 +1,69 @@
+# Manual maintenance trigger (Actions tab -> "Run workflow"). Two jobs in
+# one: re-checks every past city for schema-drift gaps (new fields added
+# since a city was last evaluated) via backfill.py, and unconditionally
+# rebuilds + redeploys the site afterward -- so this doubles as a free
+# "redeploy now" button (e.g. after a template/theme change) even when
+# there's nothing to backfill, since backfill.py no-ops cleanly when lint
+# finds zero gaps.
+#
+# No actor/label gate needed here, unlike evaluate-city.yml: workflow_dispatch
+# can only be triggered by someone with write access to the repo (enforced
+# by GitHub itself, not by this file).
+name: Backfill & redeploy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: evaluate-city-deploy
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Backfill any cities with gaps
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python backfill.py
+
+      - name: Rebuild index and Pages site
+        run: |
+          python build_index.py
+          python .github/scripts/build_pages_site.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add cities/ reports/ index.html
+          git diff --staged --quiet || git commit -m "Backfill + redeploy (manual trigger)"
+          git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

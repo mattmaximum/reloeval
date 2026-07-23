@@ -1,5 +1,63 @@
 from models import CityRecord, FieldStatus, NormalizedCity, StoredFieldValue, load_schema
-from render import build_render_context, compute_bd_score, format_retail_presence, humanize, render_city
+from render import build_render_context, compute_bd_score, format_retail_presence, humanize, md_table_cell, render_city
+
+
+def test_md_table_cell_escapes_pipes_and_newlines():
+    assert md_table_cell("Moderate | High\nrisk") == "Moderate \\| High risk"
+
+
+def test_build_render_context_category_carries_schema_key():
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={},
+    )
+    context = build_render_context(schema, record)
+    assert context["categories"][0]["key"] == "geographic_hazards"
+
+
+def test_build_render_context_field_status_reflects_missing_unresolved_flagged_valid():
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={"power_energy": {
+            "solar_score": StoredFieldValue(status=FieldStatus.UNRESOLVED, schema_version=1),
+            "grid_reliability": StoredFieldValue(status=FieldStatus.FLAGGED, schema_version=1),
+            "electricity_rate_cents_per_kwh": StoredFieldValue(
+                value=12.5, source_url="https://x.com", fetched_date="2026-07-22",
+                status=FieldStatus.VALID, schema_version=1),
+        }},
+    )
+    context = build_render_context(schema, record)
+    power = next(c for c in context["categories"] if c["key"] == "power_energy")
+    by_key = {f["key"]: f for f in power["fields"]}
+    assert by_key["net_metering_policy"]["status"] == "missing"
+    assert by_key["solar_score"]["status"] == "unresolved"
+    assert by_key["grid_reliability"]["status"] == "flagged"
+    assert by_key["electricity_rate_cents_per_kwh"]["status"] == "valid"
+    assert by_key["electricity_rate_cents_per_kwh"]["citation_url"] == "https://x.com"
+    assert by_key["electricity_rate_cents_per_kwh"]["citation_date"] == "2026-07-22"
+
+
+def test_build_render_context_highlight_and_risk_field_flags_from_schema():
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={},
+    )
+    context = build_render_context(schema, record)
+    hazards = next(c for c in context["categories"] if c["key"] == "geographic_hazards")
+    by_key = {f["key"]: f for f in hazards["fields"]}
+    assert by_key["bd_score"]["highlight"] is True
+    assert by_key["wildfire_risk"]["risk_field"] is True
+    assert by_key["county"]["highlight"] is False
+    assert by_key["county"]["risk_field"] is False
 
 
 def test_humanize_applies_unit_suffix_and_acronym():
@@ -117,3 +175,23 @@ def test_render_city_end_to_end(isolated_dirs):
     content = out_path.read_text()
     assert "Austin, TX" in content
     assert "12.5" in content
+    assert "| Field | Value | Source |" in content
+
+
+def test_render_city_escapes_pipe_in_field_value(isolated_dirs):
+    from fetch import save_city_record
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={"geographic_hazards": {
+            "volcano_proximity": StoredFieldValue(
+                value="None | negligible risk", source_url="https://x.com", fetched_date="2026-07-22",
+                status=FieldStatus.VALID, schema_version=1),
+        }},
+    )
+    save_city_record(record)
+    out_path = render_city("austin-tx")
+    content = out_path.read_text()
+    assert "None \\| negligible risk" in content

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relocation Evaluator</title>
+{% include "_style.html.j2" %}
+</head>
+<body>
+<h1>Relocation Evaluator</h1>
+{% if cities %}
+<ul class="city-list">
+{% for city in cities %}
+  <li>
+    <a href="{{ city.href }}">{{ city.city }}, {{ city.state }}</a><br>
+    <span class="county">{{ city.county }} &middot; {{ city.completion.valid }}/{{ city.completion.total }} fields ({{ city.completion.percent }}%)</span>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="empty">No cities evaluated yet.</p>
+{% endif %}
+</body>
+</html>

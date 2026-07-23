@@ -6,13 +6,13 @@
         "county": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Primary county name"},
         "elevation_ft": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Elevation in feet"},
         "distance_to_ocean_mi": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Straight-line distance to nearest ocean coastline, in miles (LLM-estimated)"},
-        "bd_score": {"type": "number", "derived": true, "formula": "elevation_ft + distance_to_ocean_mi", "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Computed at render time from elevation_ft + distance_to_ocean_mi. Never fetched."},
+        "bd_score": {"type": "number", "derived": true, "highlight": true, "formula": "elevation_ft + distance_to_ocean_mi", "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Computed at render time from elevation_ft + distance_to_ocean_mi. Never fetched."},
         "fault_line_distance_mi": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Distance to nearest major active fault line, in miles"},
         "volcano_proximity": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Nearest active/dormant volcano and approximate distance"},
-        "hurricane_risk": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local hurricane risk score/description"},
-        "wildfire_risk": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local wildfire risk score/description"},
-        "earthquake_risk": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local earthquake risk score/description"},
-        "flood_risk": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local flood risk score/description"},
+        "hurricane_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local hurricane risk score/description"},
+        "wildfire_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local wildfire risk score/description"},
+        "earthquake_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local earthquake risk score/description"},
+        "flood_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local flood risk score/description"},
         "avg_aqi": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Historical average Air Quality Index"},
         "wildfire_smoke_days_per_year": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average annual days impacted by wildfire smoke"}
       }
@@ -20,7 +20,7 @@
     "geographic_climate": {
       "label": "Climate & Growing Conditions",
       "fields": {
-        "usda_hardiness_zone": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "USDA Plant Hardiness Zone"},
+        "usda_hardiness_zone": {"type": "string", "highlight": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "USDA Plant Hardiness Zone"},
         "first_frost_date": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average first frost date"},
         "last_frost_date": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average last frost date"},
         "growing_season_length_days": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Total length of the growing season, in days"},
@@ -32,7 +32,7 @@
       "label": "Water Supply & Security",
       "fields": {
         "primary_water_source": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Where municipal/regional water originates (aquifer, snowpack, river, reservoir)"},
-        "drought_risk": {"type": "string", "requires_citation": true, "low_confidence": true, "caveat": "Drought risk is a time series, not a single score — reported as current category + historical frequency.", "schema_version": 1, "description": "Current US Drought Monitor category + historical frequency"},
+        "drought_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": true, "caveat": "Drought risk is a time series, not a single score — reported as current category + historical frequency.", "schema_version": 1, "description": "Current US Drought Monitor category + historical frequency"},
         "well_legality": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Legal ability to drill a private residential well, state/county restrictions"},
         "well_depth_to_water_table_ft": {"type": "number", "requires_citation": true, "low_confidence": true, "caveat": "Depth to water table varies parcel-to-parcel within a county — consult a local driller before relying on this figure.", "schema_version": 1, "description": "Typical depth to water table, in feet"},
         "water_rights_restrictions": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State/county restrictions on private water shares"},
@@ -58,7 +58,7 @@
         "political_leaning": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "County-level political majority / recent voting trends (objective record, neutrally framed)"},
         "violent_crime_rate": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Violent crime rate vs. national average"},
         "property_crime_rate": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Property crime rate vs. national average"},
-        "safety_index": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Overall safety index (1-100)"},
+        "safety_index": {"type": "number", "highlight": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Overall safety index (1-100)"},
         "carry_law_type": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State carry law (Constitutional/Permitless vs. Concealed Carry Permit required)"},
         "firearm_magazine_restrictions": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Firearm and magazine capacity restrictions"},
         "self_defense_legal_status": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Self-defense legal protections (Stand Your Ground / Castle Doctrine status)"}
@@ -79,12 +79,12 @@
     "economy_housing_land": {
       "label": "Economy, Housing & Land Development",
       "fields": {
-        "median_home_price": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Median home price"},
+        "median_home_price": {"type": "number", "highlight": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Median home price"},
         "cost_per_acre_unimproved": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average cost per acre, unimproved land"},
         "cost_per_acre_improved": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average cost per acre, improved land"},
         "permitting_strictness": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "County permitting strictness/timelines (septic, building codes)"},
         "hoa_prevalence": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Prevalence of HOAs on available lots in the area"},
-        "state_income_tax_rate": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State income tax rate (0 if none)"},
+        "state_income_tax_rate": {"type": "number", "highlight": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State income tax rate (0 if none)"},
         "combined_sales_tax_rate": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Total combined sales tax rate (state + local)"},
         "broadband_availability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Availability of high-speed fiber / major broadband providers"},
         "walkability_score": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "General walkability score"},

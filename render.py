@@ -56,6 +56,13 @@ def format_scalar(value: Any) -> str:
     return str(value)
 
 
+def md_table_cell(text: str) -> str:
+    """Escape a string for safe use inside a markdown table cell — a
+    literal `|` or embedded newline in an LLM-generated field would
+    otherwise break the row structure."""
+    return text.replace("|", "\\|").replace("\n", " ").strip()
+
+
 def format_retail_presence(value: dict) -> str:
     if not value.get("available"):
         return "No"
@@ -85,14 +92,20 @@ def compute_bd_score(category_fields: dict[str, StoredFieldValue]) -> Optional[f
 
 def build_field_context(field_key: str, field_def: dict, stored: Optional[StoredFieldValue]) -> dict:
     label = humanize(field_key)
+    highlight = field_def.get("highlight", False)
+    risk_field = field_def.get("risk_field", False)
 
     if stored is None:
         return {"key": field_key, "label": label, "type": field_def["type"], "is_table": False,
-                "display_value": PLACEHOLDER_TEXT["missing"], "citation": None, "caveat": None}
+                "status": "missing", "highlight": highlight, "risk_field": risk_field,
+                "display_value": PLACEHOLDER_TEXT["missing"], "citation": None,
+                "citation_url": None, "citation_date": None, "caveat": None}
 
     if stored.status != FieldStatus.VALID:
         return {"key": field_key, "label": label, "type": field_def["type"], "is_table": False,
-                "display_value": PLACEHOLDER_TEXT[stored.status.value], "citation": None, "caveat": None}
+                "status": stored.status.value, "highlight": highlight, "risk_field": risk_field,
+                "display_value": PLACEHOLDER_TEXT[stored.status.value], "citation": None,
+                "citation_url": None, "citation_date": None, "caveat": None}
 
     field_type = field_def["type"]
     if field_type == "table":
@@ -108,7 +121,9 @@ def build_field_context(field_key: str, field_def: dict, stored: Optional[Stored
     caveat = field_def.get("caveat") if field_def.get("low_confidence") else None
     return {
         "key": field_key, "label": label, "type": field_type, "is_table": is_table,
+        "status": "valid", "highlight": highlight, "risk_field": risk_field,
         "display_value": display_value, "citation": citation_text(stored), "caveat": caveat,
+        "citation_url": stored.source_url, "citation_date": stored.fetched_date,
     }
 
 
@@ -121,10 +136,14 @@ def build_derived_field_context(field_key: str, field_def: dict, category_fields
 
     if value is None:
         display_value = PLACEHOLDER_TEXT["missing"]
+        status = "missing"
     else:
         display_value = format_scalar(value)
+        status = "valid"
     return {"key": field_key, "label": label, "type": "number", "is_table": False,
-            "display_value": display_value, "citation": None, "caveat": None}
+            "status": status, "highlight": field_def.get("highlight", False), "risk_field": False,
+            "display_value": display_value, "citation": None,
+            "citation_url": None, "citation_date": None, "caveat": None}
 
 
 def build_render_context(schema: dict, record: CityRecord) -> dict:
@@ -137,7 +156,7 @@ def build_render_context(schema: dict, record: CityRecord) -> dict:
                 field_contexts.append(build_derived_field_context(field_key, field_def, stored_fields))
             else:
                 field_contexts.append(build_field_context(field_key, field_def, stored_fields.get(field_key)))
-        categories.append({"label": category["label"], "fields": field_contexts})
+        categories.append({"key": category_key, "label": category["label"], "fields": field_contexts})
     return {
         "normalized": record.normalized,
         "generated_date": date.today().isoformat(),
@@ -152,6 +171,7 @@ def render_city(slug: str) -> Path:
     context = build_render_context(schema, record)
 
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR), trim_blocks=True, lstrip_blocks=True)
+    env.filters["md_cell"] = md_table_cell
     template = env.get_template("report.md.j2")
     markdown = template.render(**context)
 
