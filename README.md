@@ -1,9 +1,12 @@
 # Relocation Evaluator
 
 **This is a personal project**, built to help research US cities for a real
-family relocation decision. It's not a product, not open for contributions,
-and not something you can use against your own data — see "How to request a
-city" below for exactly who can trigger it.
+family relocation decision. It's public because the research itself might
+be useful to someone else looking at the same cities — but it's **not
+currently open to contributions**, and you can't run it against your own
+data. Every evaluation costs real money (LLM + live web search calls per
+field), so triggering a run is restricted to the repo owner — see "How to
+request a city" below for exactly how that's enforced.
 
 **Browse evaluated cities:** https://mattmaximum.github.io/reloeval/
 
@@ -43,10 +46,12 @@ guessed at.
 3. Submit.
 
 **Only the repo owner can actually trigger a run** — the workflow checks
-that the issue author matches the repo owner before doing anything. Anyone
-else opening an issue (even using the template) is silently inert: no run,
-no cost, no notification beyond GitHub's normal "someone opened an issue"
-behavior.
+that the issue author matches the repo owner before doing anything. This
+isn't a trust or quality-control decision, just a cost one: each
+evaluation makes real, billed API calls, and there's no mechanism here to
+limit or attribute spend to anyone but the owner. Anyone else opening an
+issue (even using the template) is silently inert: no run, no cost, no
+notification beyond GitHub's normal "someone opened an issue" behavior.
 
 ## How it works
 
