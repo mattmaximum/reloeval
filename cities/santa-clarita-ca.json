@@ -1,0 +1,575 @@
+{
+  "input_city_state": "Santa Clarita, CA",
+  "normalized": {
+    "city": "Santa Clarita",
+    "state": "CA",
+    "county": "Los Angeles County"
+  },
+  "slug": "santa-clarita-ca",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "Zone 10a",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/california/santa-clarita/climate-data",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "January 1 - January 10",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/california/santa-clarita/climate-data",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "January 21 - January 31",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/california/santa-clarita/climate-data",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 365.0,
+        "source_url": "https://weatherspark.com/y/1726/Average-Weather-in-Santa-Clarita-California-United-States-Year-Round",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 65.3,
+            "avg_low_f": 44.3,
+            "avg_rainfall_in": 3.47,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 65.9,
+            "avg_low_f": 44.0,
+            "avg_rainfall_in": 4.77,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 69.6,
+            "avg_low_f": 45.8,
+            "avg_rainfall_in": 2.38,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 73.6,
+            "avg_low_f": 48.1,
+            "avg_rainfall_in": 0.76,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 78.3,
+            "avg_low_f": 52.0,
+            "avg_rainfall_in": 0.37,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 84.7,
+            "avg_low_f": 55.9,
+            "avg_rainfall_in": 0.03,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 91.7,
+            "avg_low_f": 60.7,
+            "avg_rainfall_in": 0.05,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 93.2,
+            "avg_low_f": 61.2,
+            "avg_rainfall_in": 0.01,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 90.0,
+            "avg_low_f": 59.0,
+            "avg_rainfall_in": 0.08,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 81.5,
+            "avg_low_f": 54.4,
+            "avg_rainfall_in": 0.58,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 72.7,
+            "avg_low_f": 48.1,
+            "avg_rainfall_in": 0.74,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 64.7,
+            "avg_low_f": 43.8,
+            "avg_rainfall_in": 2.65,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/california/santa-clarita/climate-data",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 278.0,
+        "source_url": "https://weatherspark.com/y/1726/Average-Weather-in-Santa-Clarita-California-United-States-Year-Round",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "State Water Project (SWP) imported water with diversified local supplies",
+        "source_url": "https://yourscvwater.com/sites/default/files/SCVWA/your-water/plans-and-reports/uwmp/SCV-Water-2025-UWMP-Final.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Moderate - region exposed to external risks from SWP; low probability of shortage conditions but exposed to statewide hydrology and Delta operations",
+        "source_url": "https://yourscvwater.com/sites/default/files/SCVWA/your-water/plans-and-reports/wscp/2025-Water-Shortage-Contingency-Plan-Final-June-2026.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Regulated under California state mandates including SBX7-7 and Urban Water Use Objective (UWUO)",
+        "source_url": "https://yourscvwater.com/sites/default/files/SCVWA/your-water/plans-and-reports/uwmp/SCV-Water-2025-UWMP-Final.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://yourscvwater.com/sites/default/files/SCVWA/your-water/plans-and-reports/uwmp/SCV-Water-2025-UWMP-Final.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Subject to state water allocation decisions, Delta operations regulatory requirements, and compliance with evolving state mandates",
+        "source_url": "https://yourscvwater.com/sites/default/files/SCVWA/your-water/plans-and-reports/uwmp/SCV-Water-2025-UWMP-Final.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Diversified supply portfolio maintained; strategic shift underway toward increasing reliance on local water supplies including groundwater treatment",
+        "source_url": "https://yourscvwater.com/sites/default/files/SCVWA/your-water/plans-and-reports/uwmp/SCV-Water-2025-UWMP-Final.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 14.5,
+        "source_url": "https://www.sce.com/sites/default/files/custom-files/PDF_Files/Santa_Clarita_SCE_WSCM_PPT_9_29_25.pdf",
+        "fetched_date": "2026-07-23T21:07:14.199Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "High - SCE implementing extensive grid hardening with 490.5 miles of covered conductor, vegetation management, and 24/7 PSPS monitoring",
+        "source_url": "https://www.sce.com/sites/default/files/custom-files/PDF_Files/Santa_Clarita_SCE_WSCM_PPT_9_29_25.pdf",
+        "fetched_date": "2026-07-23T21:07:14.199Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 7.8,
+        "source_url": "https://www.gridinfo.com/california/santa-clarita",
+        "fetched_date": "2026-07-23T21:07:14.199Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "California net metering policy applies - SCE requires interconnection agreement for solar installations; supports microgrids and battery storage systems",
+        "source_url": "https://www.sce.com/sites/default/files/custom-files/PDF_Files/Santa_Clarita_SCE_WSCM_PPT_9_29_25.pdf",
+        "fetched_date": "2026-07-23T21:07:14.199Z",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 230428.0,
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 10014009.0,
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 38.2,
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "76% White, 28% Hispanic, 36% Filipino among Asian population, 16% Korean among Asian population, 16% Asian Indian among Asian population, 11% Chinese among Asian population, 10% Japanese among Asian population",
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Not available in search results",
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 2.1,
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 11.3,
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 88.7,
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "California statewide: Shall-issue with may-issue elements depending on county discretion",
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "California statewide: 10-round magazine capacity limit",
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "California statewide: Castle Doctrine applies; Stand Your Ground limited; Duty to Retreat in public spaces",
+        "source_url": "https://santaclarita.gov/community-development/demographics/",
+        "fetched_date": "2026-07-23T21:07:43.740Z",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 16.0,
+        "source_url": "https://api.locationinc.com/ca/santa-clarita/schools",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 56.0,
+        "source_url": "https://www.neighborhoodscout.com",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Academy Of The Canyons, Canyon High School, Golden Valley High School, Castaic High School",
+        "source_url": "https://www.neighborhoodscout.com",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate - California requires homeschool curriculum and annual assessment",
+        "source_url": "https://www.neighborhoodscout.com",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Yes - Multiple homeschool co-ops active in Santa Clarita and Los Angeles County area",
+        "source_url": "https://www.neighborhoodscout.com",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 8.5,
+        "source_url": "https://areazine.com/cities/santa-clarita",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Henry Mayo Newhall Hospital, Dignity Health - Southern California",
+        "source_url": "https://areazine.com/cities/santa-clarita",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 820000.0,
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "High",
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 9.3,
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 9.5,
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Excellent",
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 65.0,
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Good",
+        "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.target.com/sl/santa-clarita-east/2030",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.yelp.com/biz/whole-foods-market-santa-clarita-2",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://locations.traderjoes.com/ca/santa-clarita/",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.costco.com/w/-/ca/santa-clarita/447",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": true,
+          "distance_mi": 0.0
+        },
+        "source_url": "https://www.yelp.com/biz/sprouts-farmers-market-santa-clarita-4",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Legal - California allows retail and on-farm sales of raw milk and raw dairy products with appropriate permits and warning labels.",
+        "source_url": "https://www.cdph.ca.gov/Programs/CEH/DFDCS/Pages/FDBPrograms/FoodSafetyProgram/RawMilkandDairyProducts.aspx",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "High - Santa Clarita has multiple certified farmers markets including weekly operations: Santa Clarita Certified Farmers' Market (Sundays at College of the Canyons), Old Town Newhall Farmers Market (Saturdays), Canyon Country Farmers Market (Wednesdays), and Valencia FivePoint Farmers Market (Sundays).",
+        "source_url": "https://www.scvfarmersmarkets.com/",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Multiple - Hollywood Burbank Airport (BUR) is 20 miles away (approximately 30-40 minutes drive); Los Angeles International Airport (LAX) is 35 miles away (approximately 50 minutes to 1 hour depending on traffic).",
+        "source_url": "https://visitsantaclarita.com/plan/transportation/",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Los Angeles metropolitan area is immediately adjacent (30 miles south); accessible destinations within 6 hours by car include Las Vegas, San Francisco Bay Area, San Diego, and surrounding major Southern California cities via Interstate 5 and regional highways.",
+        "source_url": "https://www.travelmath.com/nearest-airport/Santa+Clarita,+CA",
+        "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
