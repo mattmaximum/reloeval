@@ -86,48 +86,37 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": 46.0,
-        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
-        "fetched_date": "2026-07-24",
-        "status": "valid",
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": "Hickory, NC",
-        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
-        "fetched_date": "2026-07-24",
-        "status": "valid",
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Ashe County sits at 2,445 feet elevation, 320 miles from the ocean with moderate wildfire and flood risks but very low earthquake risk. Natural hazards are generally manageable, though you'll experience about 8 days of wildfire smoke annually and face a 46-minute commute to the nearest major metro (Hickory).",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": {
-          "pros": [
-            "Very low earthquake risk",
-            "Low hurricane risk",
-            "High elevation"
-          ],
-          "cons": [
-            "46-min drive to nearest metro",
-            "Moderate wildfire risk",
-            "8 wildfire smoke days/year"
-          ]
-        },
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     },
     "geographic_climate": {
       "usda_hardiness_zone": {
-        "value": "7a (0\u00b0F to 5\u00b0F min)",
+        "value": "7a (0°F to 5°F min)",
         "source_url": "https://theultimatehomestead.com/planting-guide/states/north-carolina/places/west-jefferson-nc/",
         "fetched_date": "2026-07-24",
         "status": "valid",
@@ -254,7 +243,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This location has a mild USDA Zone 7a climate with a 183-day growing season (April 19 to October 19), cool winters averaging 21\u201330\u00b0F, and comfortable summers peaking at 80\u00b0F in July. Annual rainfall is steady at ~40 inches with virtually no snow, and you'll get about 225 sunny days per year.",
+        "value": "This location has a mild USDA Zone 7a climate with a 183-day growing season (April 19 to October 19), cool winters averaging 21–30°F, and comfortable summers peaking at 80°F in July. Annual rainfall is steady at ~40 inches with virtually no snow, and you'll get about 225 sunny days per year.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -266,7 +255,7 @@
             "No winter snow",
             "Long frost-free season (183 days)",
             "225 annual sunny days",
-            "Mild winters (0\u20135\u00b0F minimum)"
+            "Mild winters (0–5°F minimum)"
           ],
           "cons": []
         },
@@ -387,7 +376,7 @@
             "Established cooperative infrastructure"
           ],
           "cons": [
-            "High electricity rate (12.5\u00a2/kWh)",
+            "High electricity rate (12.5¢/kWh)",
             "Poor solar potential (6.2/10)"
           ]
         },
@@ -552,7 +541,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This area has minimal public school infrastructure (only 1 school total) with a below-average district rating of 3.7, though it does offer two early college high schools for motivated students. Healthcare access is severely limited\u2014the nearest trauma center is 45 miles away and the only hospital is a small critical access facility (Ashe Memorial).",
+        "value": "This area has minimal public school infrastructure (only 1 school total) with a below-average district rating of 3.7, though it does offer two early college high schools for motivated students. Healthcare access is severely limited—the nearest trauma center is 45 miles away and the only hospital is a small critical access facility (Ashe Memorial).",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -755,7 +744,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This is a rural mountain area with no chain grocery stores (Target, Whole Foods, Trader Joe's, Costco, Sprouts all unavailable) and moderate seasonal farmers market access. Regional travel is reasonable, with two small airports within 45\u201390 minutes and major metros (Winston-Salem, Greensboro, Charlotte, Raleigh) within 2\u20134 hours of driving.",
+        "value": "This is a rural mountain area with no chain grocery stores (Target, Whole Foods, Trader Joe's, Costco, Sprouts all unavailable) and moderate seasonal farmers market access. Regional travel is reasonable, with two small airports within 45–90 minutes and major metros (Winston-Salem, Greensboro, Charlotte, Raleigh) within 2–4 hours of driving.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -780,10 +769,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "West Jefferson, NC in Ashe County presents a compelling relocation destination for those seeking an affordable, safe rural mountain lifestyle at 2,445 feet elevation with a mild Zone 7a climate, 183-day growing season, and manageable natural hazards despite moderate wildfire and flood risks. The community of just 1,087 people offers very low violent crime, moderate property taxes, and surprisingly affordable raw land ($15,000/acre), though median home prices of $612,500 and limited improved land availability may challenge some buyers. However, prospective residents must carefully weigh significant drawbacks: severely limited healthcare access (nearest trauma center 45 miles away), minimal educational infrastructure (one school with below-average ratings), no chain grocery stores or major retail amenities, weak solar potential despite available net metering, and an aging, demographically homogeneous population in a conservative, rural setting. The regulated public water system provides security though faces moderate drought risk, electricity costs are reasonable at 12.5 cents/kWh through a cooperative, and regional connectivity is adequate with major metros within 2\u20134 hours' drive. This destination suits self-sufficient, telecommuting individuals or retirees prioritizing affordability, safety, and natural beauty while accepting trade-offs in convenience, services, and community diversity.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     }
