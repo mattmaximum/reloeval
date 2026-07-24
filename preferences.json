@@ -1,0 +1,61 @@
+{
+  "lenses": {
+    "family": {
+      "label": "Family Fit",
+      "category_weights": {
+        "geographic_hazards": 2,
+        "geographic_climate": 2,
+        "water_supply": 2,
+        "power_energy": 1,
+        "civic_demographic_legal": 2,
+        "education_healthcare": 3,
+        "economy_housing_land": 2,
+        "amenities_food_travel": 3
+      },
+      "dealbreakers": []
+    },
+    "self_sufficiency": {
+      "label": "Self-Sufficiency & Resilience",
+      "category_weights": {
+        "geographic_hazards": 2,
+        "geographic_climate": 2,
+        "water_supply": 3,
+        "power_energy": 1,
+        "civic_demographic_legal": 2,
+        "education_healthcare": 0,
+        "economy_housing_land": 2,
+        "amenities_food_travel": 2
+      },
+      "dealbreakers": [
+        {
+          "id": "bd_score_min",
+          "description": "BD score must be at least 2000",
+          "category": "geographic_hazards",
+          "field": "bd_score",
+          "condition": "gte",
+          "value": 2000
+        },
+        {
+          "id": "large_metro_proximity",
+          "description": "No metro area with population over 1M within 60 minutes drive",
+          "category": "geographic_hazards",
+          "field": "nearest_large_metro_drive_time_min",
+          "condition": "gte",
+          "value": 60
+        }
+      ]
+    }
+  },
+  "risk_severity_scores": {
+    "low": 90,
+    "moderate": 55,
+    "high": 20
+  },
+  "missing_data_policy": "exclude_and_renormalize",
+  "display_format": "qualitative_label",
+  "label_thresholds": [
+    {"min": 75, "label": "Strong Fit"},
+    {"min": 50, "label": "Good Fit"},
+    {"min": 0, "label": "Weak Fit"}
+  ]
+}

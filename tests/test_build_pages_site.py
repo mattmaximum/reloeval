@@ -28,21 +28,6 @@ def _write_city(cities_dir, slug, city, state, categories=None):
     return record
 
 
-@pytest.mark.parametrize("text,expected", [
-    ("Moderate to High - Flooding is common", "high"),
-    ("Low-to-moderate - few earthquakes", "moderate"),
-    ("None/Very Low - landlocked", "low"),
-    ("High risk of wildfire", "high"),
-])
-def test_classify_risk_picks_highest_severity_mentioned(text, expected):
-    result = build_pages_site.classify_risk(text)
-    assert result["level"] == expected
-
-
-def test_classify_risk_returns_none_when_no_keyword_matches():
-    assert build_pages_site.classify_risk("Frequent outages during storms") is None
-
-
 def test_completion_stats_counts_valid_vs_total():
     schema = load_schema()
     record = CityRecord(
@@ -121,3 +106,23 @@ def test_build_site_handles_city_with_no_gaps_and_no_risk_fields(isolated_site):
     build_pages_site.build_site()
     report_html = (isolated_site["site"] / "reports" / "boise-id.html").read_text()
     assert "Not yet evaluated" in report_html
+
+
+def test_build_site_shows_fit_badges_and_dealbreaker_reason(isolated_site):
+    categories = {
+        "geographic_hazards": {
+            "elevation_ft": StoredFieldValue(value=100.0, status=FieldStatus.VALID, schema_version=1),
+            "distance_to_ocean_mi": StoredFieldValue(value=50.0, status=FieldStatus.VALID, schema_version=1),
+        },
+    }
+    _write_city(isolated_site["cities"], "low-bd-tx", "Low BD", "TX", categories)
+
+    build_pages_site.build_site()
+
+    report_html = (isolated_site["site"] / "reports" / "low-bd-tx.html").read_text()
+    assert "fit-badge" in report_html
+    assert "Dealbreaker" in report_html  # bd_score = 150, well under the 2000 threshold
+    assert "BD score" in report_html
+
+    index_html = (isolated_site["site"] / "index.html").read_text()
+    assert "fit-badge" in index_html

@@ -14,6 +14,20 @@
   <li>
     <a href="{{ city.href }}">{{ city.city }}, {{ city.state }}</a><br>
     <span class="county">{{ city.county }} &middot; {{ city.completion.valid }}/{{ city.completion.total }} fields ({{ city.completion.percent }}%)</span>
+    {% if city.lens_scores %}
+    <div class="fit-scores" style="margin-top:6px;">
+    {% for lens_key, lens in city.lens_scores.items() %}
+      {% if lens.state == "scored" %}
+        {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
+        <span class="fit-badge {{ css_class }}"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}</span>
+      {% elif lens.state == "dealbreaker" %}
+        <span class="fit-badge fit-dealbreaker"><span class="fit-lens-name">{{ lens.label }}:</span> Dealbreaker</span>
+      {% elif lens.state == "needs_data" %}
+        <span class="fit-badge fit-needs-data"><span class="fit-lens-name">{{ lens.label }}:</span> Needs data</span>
+      {% endif %}
+    {% endfor %}
+    </div>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>

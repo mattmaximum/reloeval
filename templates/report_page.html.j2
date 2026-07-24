@@ -12,6 +12,26 @@
 <div class="meta">{{ normalized.county }} &middot; Generated {{ generated_date }}</div>
 <div class="completion-badge">{{ completion.valid }}/{{ completion.total }} fields complete ({{ completion.percent }}%)</div>
 
+{% if lens_scores %}
+<div class="fit-scores">
+{% for lens_key, lens in lens_scores.items() %}
+  {% if lens.state == "scored" %}
+    {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
+    <span class="fit-badge {{ css_class }}"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}</span>
+  {% elif lens.state == "dealbreaker" %}
+    <span class="fit-badge fit-dealbreaker"><span class="fit-lens-name">{{ lens.label }}:</span> Dealbreaker</span>
+  {% elif lens.state == "needs_data" %}
+    <span class="fit-badge fit-needs-data"><span class="fit-lens-name">{{ lens.label }}:</span> Needs data</span>
+  {% endif %}
+{% endfor %}
+</div>
+{% for lens_key, lens in lens_scores.items() %}
+  {% if lens.state == "dealbreaker" %}
+  <div class="fit-reason">{{ lens.label }} dealbreaker: {{ lens.reason }}</div>
+  {% endif %}
+{% endfor %}
+{% endif %}
+
 {% if overall_summary %}
 <p class="overall-summary">{{ overall_summary }}</p>
 {% endif %}

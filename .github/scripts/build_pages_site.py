@@ -16,10 +16,8 @@ an artifact-shaping step for deployment, run only by the CI workflow.
 from __future__ import annotations
 
 import io
-import re
 import sys
 from pathlib import Path
-from typing import Optional
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
@@ -32,31 +30,12 @@ from build_index import gather_cities
 from lint import find_gaps
 from models import fetchable_fields, load_schema
 from render import build_render_context
+from scoring import compute_all_scores
+from severity import classify_severity
 
 ROOT = Path(__file__).parent.parent.parent
 TEMPLATES_DIR = ROOT / "templates"
 SITE_DIR = ROOT / "_site"
-
-# These fields lead with a severity phrase but aren't a controlled
-# vocabulary (e.g. "Moderate to High - Flooding..."), so this is a
-# heuristic read, not a parse. Picks the HIGHEST severity keyword present
-# -- ranges like "Low-to-moderate" or "Moderate to High" are common, and
-# erring toward the more severe reading is the safer default for a hazard
-# field. No match -> no badge, rather than guessing.
-_RISK_PATTERNS = [
-    ("high", re.compile(r"\b(very high|high)\b", re.IGNORECASE)),
-    ("moderate", re.compile(r"\b(moderate|medium)\b", re.IGNORECASE)),
-    ("low", re.compile(r"\b(very low|low|minimal|none)\b", re.IGNORECASE)),
-]
-_RISK_COLORS = {"high": "#b3452b", "moderate": "#b08628", "low": "#4a7a5a"}
-
-
-def classify_risk(text: str) -> Optional[dict]:
-    found = {level for level, pattern in _RISK_PATTERNS if pattern.search(text)}
-    for level in ("high", "moderate", "low"):
-        if level in found:
-            return {"level": level, "color": _RISK_COLORS[level]}
-    return None
 
 
 def completion_stats(schema: dict, record) -> dict:
@@ -100,7 +79,7 @@ def enrich_categories(categories: list[dict]) -> list[dict]:
     for category in categories:
         for field in category["fields"]:
             field["risk_badge"] = (
-                classify_risk(field["display_value"])
+                classify_severity(field["display_value"])
                 if field["risk_field"] and field["status"] == "valid"
                 else None
             )
@@ -141,12 +120,18 @@ def build_site() -> Path:
     report_template = env.get_template("report_page.html.j2")
     index_template = env.get_template("index_page.html.j2")
 
+    records = gather_cities()
+    # Relative scoring needs every city at once (min-max normalization),
+    # so this has to happen here, not per-city inside the loop below.
+    all_scores = compute_all_scores(schema, records)
+
     index_cities = []
-    for record in gather_cities():
+    for record in records:
         context = build_render_context(schema, record)
         context["categories"] = enrich_categories(context["categories"])
         context["completion"] = completion_stats(schema, record)
         context["scorecard"] = build_scorecard(context["categories"])
+        context["lens_scores"] = all_scores[record.slug]
 
         report_html = report_template.render(**context)
         (SITE_DIR / "reports" / f"{record.slug}.html").write_text(report_html)
@@ -157,6 +142,7 @@ def build_site() -> Path:
             "county": record.normalized.county,
             "href": f"reports/{record.slug}.html",
             "completion": context["completion"],
+            "lens_scores": context["lens_scores"],
         })
 
     (SITE_DIR / "index.html").write_text(index_template.render(cities=index_cities))

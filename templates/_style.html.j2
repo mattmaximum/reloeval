@@ -97,6 +97,28 @@
     color: var(--muted);
     margin-bottom: 20px;
   }
+  .fit-scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .fit-badge {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .fit-badge .fit-lens-name { font-weight: 400; opacity: 0.85; }
+  .fit-strong { background: var(--risk-low); }
+  .fit-good { background: var(--risk-moderate); }
+  .fit-weak, .fit-dealbreaker { background: var(--risk-high); }
+  .fit-needs-data { background: var(--risk-unknown); }
+  .fit-reason { font-size: 0.8rem; color: var(--muted); margin: -8px 0 16px; }
   .scorecard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
