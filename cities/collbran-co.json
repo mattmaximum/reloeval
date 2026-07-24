@@ -86,42 +86,31 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": 30.0,
-        "source_url": "https://coloradogeologicalsurvey.org/Docs/Pubs/B-55.pdf",
-        "fetched_date": "2026-07-24",
-        "status": "valid",
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": "Grand Junction",
-        "source_url": "https://coloradogeologicalsurvey.org/Docs/Pubs/B-55.pdf",
-        "fetched_date": "2026-07-24",
-        "status": "valid",
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Mesa County sits at 8,100 ft elevation with moderate-to-high wildfire risk and 12 smoke days annually, plus moderate flood risk, but is far from fault lines (45 mi), volcanoes, and hurricanes. The area is 30 minutes from Grand Junction metro.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": {
-          "pros": [
-            "Minimal hurricane risk",
-            "Low earthquake risk",
-            "Reasonable metro access (30 min)"
-          ],
-          "cons": [
-            "Moderate-to-high wildfire risk",
-            "12 wildfire smoke days/year",
-            "Moderate flood risk"
-          ]
-        },
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     },
@@ -781,10 +770,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Collbran, Colorado presents a compelling option for those seeking a quiet, safe rural retreat in an elevated mountain setting with moderate climate conditions, though it requires careful consideration of several limiting factors. Situated at 8,100 feet in Mesa County with a population of just 356 residents, the area offers near-zero crime, constitutional carry protections, and a serene mountain lifestyle, complemented by mild winters (lows around 11–13°F) and temperate summers with virtually no snow. However, prospective relocators must weigh significant infrastructure and resource constraints: extreme drought conditions threaten water security with supplies at risk of dropping to historic lows despite some backup storage, requiring 30+ mile commutes to healthcare services and major shopping centers, limited local employment and education options (small public school system rated 7.0), and high property costs ($690k median home price with land at $326k–$411k per acre). The area's car-dependent layout with a walkability score of 34.8, combined with moderate wildfire risk and modest solar potential, further necessitate lifestyle adjustments for incoming residents. While the region offers unique attractions such as Grand Junction's proximity (30 minutes), farmers market access to specialty foods like Palisade peaches, and reliable electricity at modest rates (16.54¢/kWh), Collbran is best suited for financially secure, self-sufficient individuals prioritizing peace, safety, and natural beauty over convenience, urban amenities, and healthcare proximity.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     }
