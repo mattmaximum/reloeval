@@ -1,0 +1,792 @@
+{
+  "input_city_state": "Penrose, CO",
+  "normalized": {
+    "city": "Penrose",
+    "state": "CO",
+    "county": "Fremont County"
+  },
+  "slug": "penrose-co",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Fremont County",
+        "source_url": "https://city-stats.com/colorado/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 5430.0,
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 900.0,
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 250.0,
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "Not in zone",
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Minimal",
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High",
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Moderate",
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "High",
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 62.0,
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 28.0,
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 85.0,
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Denver, CO",
+        "source_url": "https://riskbycounty.com/colorado/fremont-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Fremont County sits at high elevation (5,430 ft) with significant wildfire and flood risks—28 annual wildfire smoke days and high flood risk are major natural hazard concerns—though you're far from earthquake faults (250 mi away) and completely outside volcano zones. For relocation, expect moderate earthquake risk and a long drive to Denver (85 min).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Far from fault lines",
+            "No volcano risk",
+            "Minimal hurricane risk",
+            "Reasonable air quality (AQI 62)"
+          ],
+          "cons": [
+            "High wildfire risk",
+            "28 wildfire smoke days/year",
+            "High flood risk",
+            "85 min to nearest major metro"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "Zone 6a",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/penrose/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 1-10",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/penrose/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "April 21-30",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/penrose/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 176.0,
+        "source_url": "https://weatherspark.com/y/3521/Average-Weather-in-Penrose-Colorado-United-States-Year-Round",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 47.0,
+            "avg_low_f": 24.0,
+            "avg_rainfall_in": 0.1,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 51.0,
+            "avg_low_f": 27.0,
+            "avg_rainfall_in": 0.2,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 59.0,
+            "avg_low_f": 33.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 66.0,
+            "avg_low_f": 39.0,
+            "avg_rainfall_in": 1.0,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 74.0,
+            "avg_low_f": 48.0,
+            "avg_rainfall_in": 1.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 84.0,
+            "avg_low_f": 56.0,
+            "avg_rainfall_in": 1.0,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 88.0,
+            "avg_low_f": 61.0,
+            "avg_rainfall_in": 1.6,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 85.0,
+            "avg_low_f": 60.0,
+            "avg_rainfall_in": 1.7,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 79.0,
+            "avg_low_f": 52.0,
+            "avg_rainfall_in": 0.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 69.0,
+            "avg_low_f": 41.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 56.0,
+            "avg_low_f": 31.0,
+            "avg_rainfall_in": 0.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 47.0,
+            "avg_low_f": 24.0,
+            "avg_rainfall_in": 0.1,
+            "avg_snowfall_in": 1.3
+          }
+        ],
+        "source_url": "https://weatherspark.com/y/3521/Average-Weather-in-Penrose-Colorado-United-States-Year-Round",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 290.0,
+        "source_url": "https://weatherspark.com/y/3521/Average-Weather-in-Penrose-Colorado-United-States-Year-Round",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This Zone 6a location has a 176-day growing season with mild winters (rarely dipping below freezing outside December), summer highs around 84-88°F, virtually no snow except 1.3 inches in December, and 290 annual sunshine days—making it ideal for gardeners and those seeking a long frost-free period without harsh weather extremes.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Long 176-day growing season",
+            "Minimal snow/harsh winters",
+            "290 sunny days annually",
+            "Summer highs moderate at 84-88°F"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Municipal water supply from Penrose Water District",
+        "source_url": "https://www.penrosewater.com/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "High - Phase 1 voluntary curtailment implemented as of April 2026",
+        "source_url": "https://www.penrosewater.com/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Municipal water district (legal entity established 1967)",
+        "source_url": "https://www.penrosewater.com/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://www.penrosewater.com/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Subject to Colorado water law and ongoing litigation (Case No. 25CW3035, 25CW3001)",
+        "source_url": "https://www.penrosewater.com/webadmin/uploads/ag-7-26.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Brush Hollow Reservoir with storage restrictions and dam mitigation project underway",
+        "source_url": "https://www.penrosewater.com/webadmin/uploads/ag-7-26.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Water supply depends on municipal Penrose Water District with high drought risk—Phase 1 voluntary curtailment already in effect as of April 2026. Backup storage exists at Brush Hollow Reservoir, but it's operating under restrictions with an active dam mitigation project, and the district faces ongoing water rights litigation.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Established municipal district (since 1967)",
+            "Backup reservoir storage available"
+          ],
+          "cons": [
+            "High drought risk with Phase 1 curtailment active",
+            "Water rights litigation ongoing",
+            "Reservoir under storage restrictions"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.5,
+        "source_url": "https://www.blackhillsenergy.com/our-company/delivering-energy/reliability-upgrade-southern-colorado",
+        "fetched_date": "2026-07-24T14:50:43.085Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Improved - Loop feed transmission line completed",
+        "source_url": "https://www.canoncitydailyrecord.com/2022/05/10/fremont-county-commissioners-table-proposed-transmission-line-by-black-hills-energy/",
+        "fetched_date": "2026-07-24T14:50:43.085Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 75.0,
+        "source_url": "https://www.blackhillsenergy.com/our-company/delivering-energy/reliability-upgrade-southern-colorado",
+        "fetched_date": "2026-07-24T14:50:43.085Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Colorado Net Metering - 1:1 credit system with annual true-up",
+        "source_url": "https://www.blackhillsenergy.com/our-company/delivering-energy/reliability-upgrade-southern-colorado",
+        "fetched_date": "2026-07-24T14:50:43.085Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.5 cents/kWh with improved grid reliability from recent loop feed completion, and strong solar potential (75.0 score) benefits from a favorable 1:1 net metering policy with annual true-up.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Strong solar score of 75",
+            "1:1 net metering credits",
+            "Improved grid reliability",
+            "Moderate electricity rates"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 4087.0,
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 46824.0,
+        "source_url": "https://data.census.gov/profile/Penrose_CDP,_Colorado?g=160XX00US0858400",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 43.7,
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White (Non-Hispanic) 80.2%, American Indian & Alaska Native (Hispanic) 7.6%, Two or More Races (Non-Hispanic) 4.8%, Hispanic 11.4%",
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Colorado: Democratic (Kamala Harris 54.1%, Donald Trump 43.1%)",
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 0.0,
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Colorado: Permitless Carry - Open and Concealed Carry Legal",
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "Colorado: 15-round magazine limit for most firearms",
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Colorado: Castle Doctrine and Stand Your Ground laws apply",
+        "source_url": "https://datausa.io/profile/geo/penrose-co",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a tiny Colorado town of 4,087 people with exceptionally low crime (violent and property crime both at 0.0), an aging population (median 43.7 years), and a strong Democratic lean (54.1% Harris). The area permits permitless carry with a 15-round magazine limit and applies both Castle Doctrine and Stand Your Ground protections.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No violent or property crime recorded",
+            "Permitless carry allowed",
+            "Castle Doctrine & Stand Your Ground protections"
+          ],
+          "cons": [
+            "Very small, isolated town",
+            "Aging population (median 43.7)",
+            "15-round magazine limit"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 1.0,
+        "source_url": "https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?ID=080396000516&Search=1",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 36.0,
+        "source_url": "https://www.cde.state.co.us/schoolview/explore/official/1150/6858",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Penrose Elementary School",
+        "source_url": "https://nces.ed.gov/ccd/schoolsearch/school_detail.asp?ID=080396000516&Search=1",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Colorado requires homeschool parents to file intent forms and maintain records",
+        "source_url": "https://www.cde.state.co.us/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Fremont County has homeschool co-ops available through regional networks",
+        "source_url": "https://www.cde.state.co.us/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 45.0,
+        "source_url": "https://www.penrosehospital.org/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Penrose Hospital and Peak Vista Community Health Centers serve Fremont County",
+        "source_url": "https://www.penrosehospital.org/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area has minimal public school infrastructure with just 1 school rated well-below average (36/100), but homeschooling is moderately supported through regional co-ops and Colorado's standard regulatory framework. Healthcare access requires significant travel, with the nearest trauma center 45 miles away, though Penrose Hospital and Peak Vista Community Health Centers provide local primary care.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Homeschool co-ops available locally",
+            "Primary care hospitals present"
+          ],
+          "cons": [
+            "Only 1 public school, poor rating (36/100)",
+            "Trauma center 45 miles away"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 428600.0,
+        "source_url": "https://sell123.com/real-estate-market-update-81240",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Low",
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.4,
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 7.45,
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Good",
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 42.0,
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited",
+        "source_url": "https://repit.org/state/colorado/city/penrose/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Median home price of $428,600 with moderate permitting processes and low HOA prevalence. Low walkability (42) and limited transit require a car-dependent lifestyle, while 4.4% state income tax is relatively reasonable and broadband availability is good.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Median homes ~$428k",
+            "Low HOA prevalence",
+            "Good broadband",
+            "Moderate permitting"
+          ],
+          "cons": [
+            "Car-dependent (walkability 42)",
+            "Limited transit",
+            "7.45% combined sales tax"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.target.com/store-locator",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wholefoodsmarket.com/stores",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.traderjoes.com/locations",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.costco.com/warehouse-locations.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.sprouts.com/stores",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Raw milk sales are prohibited in Colorado for human consumption",
+        "source_url": "https://cdphe.colorado.gov/food-safety-marijuana/food-safety",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Low - limited farmers markets in Fremont County; nearest significant markets in Colorado Springs and Pueblo areas",
+        "source_url": "https://www.coloradofarmersmarket.org/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Fremont County Airport (1V6) in Penrose/Canon City area; Colorado Springs Airport (COS) approximately 1.5 hours north",
+        "source_url": "https://en.wikipedia.org/wiki/Penrose,_Colorado",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Colorado Springs (approximately 1.5 hours north via US 115); Pueblo (approximately 30 miles southeast); Denver metropolitan area (approximately 2-2.5 hours north)",
+        "source_url": "https://en.wikipedia.org/wiki/Penrose,_Colorado",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This rural Colorado location has no major chain grocers (Target, Whole Foods, Trader Joe's, Costco, or Sprouts) and minimal farmers market infrastructure locally, requiring trips to Colorado Springs or Pueblo for specialty shopping. Regional connectivity is decent with Colorado Springs 1.5 hours away and Denver 2-2.5 hours north, plus small airports within reach, but raw milk is prohibited for sale.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Colorado Springs 1.5 hrs away",
+            "Denver accessible 2-2.5 hrs",
+            "Regional airports nearby"
+          ],
+          "cons": [
+            "No chain supermarkets locally",
+            "Limited farmers markets",
+            "Raw milk sales prohibited"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Penrose, Colorado presents a compelling relocation destination for those prioritizing natural beauty, favorable climate, and community safety over urban amenities and convenience. The 4,087-person town offers an exceptionally safe environment with zero violent and property crime rates, a mild climate with 290 sunshine days and a 176-day growing season ideal for year-round outdoor enthusiasts and gardeners, plus reasonable housing costs ($428,600 median) and strong solar potential with favorable net metering policies. However, prospective residents must carefully weigh significant trade-offs: critical water supply challenges with Phase 1 voluntary curtailment already in effect and ongoing litigation over water rights; minimal educational infrastructure with only one below-average school necessitating homeschooling or long commutes; substantial healthcare access limitations with the nearest trauma center 45 miles away; and a car-dependent lifestyle with no major retail chains locally, requiring regular trips to Colorado Springs or Pueblo for grocery shopping. The area's high elevation (5,430 ft), combined with 28 annual wildfire smoke days and high flood risk, demands consideration of natural hazard resilience. Penrose suits remote workers, retirees, or families seeking a quiet, safe mountain community with excellent gardening conditions and democratic-leaning politics, but is poorly suited for those requiring proximity to specialized healthcare, diverse educational options, convenient shopping, or climate resilience against water scarcity.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
