@@ -1,0 +1,791 @@
+{
+  "input_city_state": "West Jefferson, NC",
+  "normalized": {
+    "city": "West Jefferson",
+    "state": "NC",
+    "county": "Ashe"
+  },
+  "slug": "west-jefferson-nc",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Ashe",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 2445.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 320.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 280.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "Not applicable",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Low",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "Moderate",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Very Low",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 60.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 8.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 46.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Hickory, NC",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Ashe County sits at 2,445 feet elevation, 320 miles from the ocean with moderate wildfire and flood risks but very low earthquake risk. Natural hazards are generally manageable, though you'll experience about 8 days of wildfire smoke annually and face a 46-minute commute to the nearest major metro (Hickory).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low earthquake risk",
+            "Low hurricane risk",
+            "High elevation"
+          ],
+          "cons": [
+            "46-min drive to nearest metro",
+            "Moderate wildfire risk",
+            "8 wildfire smoke days/year"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "7a (0°F to 5°F min)",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/north-carolina/places/west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 19",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/north-carolina/places/west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "April 19",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/north-carolina/places/west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 183.0,
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/north-carolina/places/west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 42.0,
+            "avg_low_f": 21.0,
+            "avg_rainfall_in": 3.1,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 45.0,
+            "avg_low_f": 22.0,
+            "avg_rainfall_in": 2.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 53.0,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 4.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 61.0,
+            "avg_low_f": 36.0,
+            "avg_rainfall_in": 3.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 69.0,
+            "avg_low_f": 45.0,
+            "avg_rainfall_in": 3.2,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 76.0,
+            "avg_low_f": 53.0,
+            "avg_rainfall_in": 3.7,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 80.0,
+            "avg_low_f": 58.0,
+            "avg_rainfall_in": 4.4,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 78.0,
+            "avg_low_f": 56.0,
+            "avg_rainfall_in": 3.6,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 73.0,
+            "avg_low_f": 50.0,
+            "avg_rainfall_in": 3.4,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 63.0,
+            "avg_low_f": 38.0,
+            "avg_rainfall_in": 2.6,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 54.0,
+            "avg_low_f": 30.0,
+            "avg_rainfall_in": 3.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 45.0,
+            "avg_low_f": 23.0,
+            "avg_rainfall_in": 3.0,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/28694",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 225.0,
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/north-carolina/places/west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This location has a mild USDA Zone 7a climate with a 183-day growing season (April 19 to October 19), cool winters averaging 21–30°F, and comfortable summers peaking at 80°F in July. Annual rainfall is steady at ~40 inches with virtually no snow, and you'll get about 225 sunny days per year.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No winter snow",
+            "Long frost-free season (183 days)",
+            "225 annual sunny days",
+            "Mild winters (0–5°F minimum)"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Groundwater from 10 wells and 1 spring in the surrounding area",
+        "source_url": "https://townofwjnc.com/wp-content/uploads/2025/03/2024-CCR.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Moderate - Most wells have moderate susceptibility rating to potential contaminant sources; one well (#10) rated as lower susceptibility",
+        "source_url": "https://townofwjnc.com/wp-content/uploads/2025/03/2024-CCR.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Legal - Town operates regulated public water supply system NC 01 05 010 with no violations received in 2024",
+        "source_url": "https://townofwjnc.com/wp-content/uploads/2025/03/2024-CCR.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://townofwjnc.com/wp-content/uploads/2025/03/2024-CCR.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Subject to North Carolina Department of Environmental Quality regulations; Source Water Assessment Program (SWAP) monitoring required; new well being developed at industrial park for capacity expansion",
+        "source_url": "https://townofwjnc.com/wp-content/uploads/2025/03/2024-CCR.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Multiple redundancy - 10 wells plus 1 spring provide primary sources; additional well under development at industrial park on Ray Taylor Road for capacity strengthening",
+        "source_url": "https://www.ashepostandtimes.com/news/county-approves-west-jefferson-well-at-new-industrial-park/article_86bf43ef-f64a-46c1-b1ee-4cf06e0f0991.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This town has a regulated public water system with 10 wells and 1 spring providing groundwater; moderate drought risk affects most sources, though expansion via a new industrial park well is underway to boost capacity.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Multiple redundant sources (10 wells + spring)",
+            "No compliance violations in 2024",
+            "New well expanding capacity"
+          ],
+          "cons": [
+            "Moderate drought susceptibility on most wells",
+            "Subject to state monitoring/restrictions"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.5,
+        "source_url": "https://www.blueridgeenergy.com/company/locations/ashe",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Blue Ridge Energy cooperative service with established infrastructure",
+        "source_url": "https://e1.nmcdn.io/assets/ncemcs2/wp-content/uploads/2026/03/SiteReport_Ashe_County_Industrial_Site.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 6.2,
+        "source_url": "https://www.blueridgeenergy.com/company/locations/ashe",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "North Carolina net metering available through Blue Ridge Energy cooperative",
+        "source_url": "https://e1.nmcdn.io/assets/ncemcs2/wp-content/uploads/2026/03/SiteReport_Ashe_County_Industrial_Site.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.5 cents/kWh through Blue Ridge Energy cooperative with established grid infrastructure. Solar potential is weak (6.2 score), but net metering is available to offset costs if you do install panels.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Net metering available",
+            "Established cooperative infrastructure"
+          ],
+          "cons": [
+            "High electricity rate (12.5¢/kWh)",
+            "Poor solar potential (6.2/10)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 1087.0,
+        "source_url": "https://www.census.gov/quickfacts/westjeffersonnorthcarolina",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 27000.0,
+        "source_url": "https://www.census.gov/quickfacts/ashcountynorthcarolina",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 42.5,
+        "source_url": "https://www.census.gov/quickfacts/ashcountynorthcarolina",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "Approximately 95% White, 2% Hispanic, 1% Asian, 2% Other races",
+        "source_url": "https://www.census.gov/quickfacts/ashcountynorthcarolina",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Conservative/Republican leaning",
+        "source_url": "https://www.ncsbe.gov/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 1.8,
+        "source_url": "https://www.neighborhoodscout.com/nc/west-jefferson/crime",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 12.4,
+        "source_url": "https://www.neighborhoodscout.com/nc/west-jefferson/crime",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 78.0,
+        "source_url": "https://www.neighborhoodscout.com/nc/west-jefferson/crime",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Shall Issue - North Carolina has constitutional carry laws allowing concealed and open carry without permit",
+        "source_url": "https://townofwjnc.com/about-west-jefferson/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No magazine capacity restrictions in North Carolina",
+        "source_url": "https://www.sos.nc.gov/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "North Carolina recognizes Castle Doctrine and Stand Your Ground principles with duty to retreat in public spaces",
+        "source_url": "https://www.sos.nc.gov/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a tiny, aging, overwhelmingly white (95%) conservative community of just 1,087 people in a rural county, with very low violent crime (1.8 per 100k) but moderate property crime (12.4 per 100k) and strong gun rights protections under North Carolina law.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Exceptional violent crime rate",
+            "Constitutional carry, no magazine limits",
+            "Very safe (78 safety index)"
+          ],
+          "cons": [
+            "Tiny population (1,087)",
+            "Older demographic (42.5 median age)",
+            "Very limited diversity (95% white)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 1.0,
+        "source_url": "https://www.niche.com/k12/ashe-county-high-school-west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 3.7,
+        "source_url": "https://www.niche.com/k12/ashe-county-high-school-west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Ashe County High School, Ashe County Early College High School, Wilkes Early College High School",
+        "source_url": "https://www.niche.com/k12/ashe-county-high-school-west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate",
+        "source_url": "https://www.niche.com/k12/ashe-county-high-school-west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Present in North Carolina",
+        "source_url": "https://www.niche.com/k12/ashe-county-high-school-west-jefferson-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 45.0,
+        "source_url": "https://opennpi.com/hospital/341325",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Ashe Memorial Hospital (Critical Access Hospital)",
+        "source_url": "https://opennpi.com/hospital/341325",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area has minimal public school infrastructure (only 1 school total) with a below-average district rating of 3.7, though it does offer two early college high schools for motivated students. Healthcare access is severely limited—the nearest trauma center is 45 miles away and the only hospital is a small critical access facility (Ashe Memorial).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Early college high school options",
+            "Homeschool co-op available in state"
+          ],
+          "cons": [
+            "Only 1 public school for entire area",
+            "District rating 3.7 (below average)",
+            "Trauma center 45 miles away",
+            "Hospital limited to critical access facility"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 612500.0,
+        "source_url": "https://www.ashepostandtimes.com/news/west-jefferson-board-of-adjustments-approves-special-use-permit-for-new-housing-project/article_62e4dc68-119b-43e7-b90a-2b23aec187d1.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 15000.0,
+        "source_url": "https://app.communityscale.io/dashboard/municipality/3772540/West-Jefferson-NC",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 45000.0,
+        "source_url": "https://app.communityscale.io/dashboard/municipality/3772540/West-Jefferson-NC",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://www.ashepostandtimes.com/news/west-jefferson-board-of-adjustments-approves-special-use-permit-for-new-housing-project/article_62e4dc68-119b-43e7-b90a-2b23aec187d1.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Low",
+        "source_url": "https://www.ashepostandtimes.com/news/west-jefferson-board-of-adjustments-approves-special-use-permit-for-new-housing-project/article_62e4dc68-119b-43e7-b90a-2b23aec187d1.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.99,
+        "source_url": "https://www.ncdor.gov/taxes/individual-income-tax",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 7.25,
+        "source_url": "https://www.ncdor.gov/taxes/sales-tax",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Good",
+        "source_url": "https://app.communityscale.io/dashboard/municipality/3772540/West-Jefferson-NC",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 65.0,
+        "source_url": "https://www.ashepostandtimes.com/news/west-jefferson-board-of-adjustments-approves-special-use-permit-for-new-housing-project/article_62e4dc68-119b-43e7-b90a-2b23aec187d1.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited",
+        "source_url": "https://app.communityscale.io/dashboard/municipality/3772540/West-Jefferson-NC",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Median homes cost $612,500 with affordable raw land at $15,000/acre but improved land at $45,000/acre; taxes are moderate (5% income tax, 7.25% sales tax) and development is straightforward with low HOA prevalence.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Affordable raw land ($15k/acre)",
+            "Low HOA prevalence",
+            "Moderate permitting",
+            "Good broadband availability"
+          ],
+          "cons": [
+            "High median home price ($612.5k)",
+            "Limited transit options",
+            "Improved land pricey ($45k/acre)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.target.com/store-locator",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wholefoodsmarket.com/stores",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.traderjoes.com/home/locations",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.costco.com/warehouse-locations.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.sprouts.com/stores",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Restricted - North Carolina does not allow retail sale of raw milk",
+        "source_url": "https://www.ncagr.gov/dairy",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Moderate - Ashe County has seasonal farmers markets including the West Jefferson Farmers Market operating during growing season",
+        "source_url": "https://townofwjnc.com/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Nearest: Elkin Municipal Airport (approximately 45 minutes) and Statesville Regional Airport (approximately 90 minutes)",
+        "source_url": "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/appendix_a.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Winston-Salem (approximately 2 hours), Greensboro (approximately 2.5 hours), Charlotte (approximately 3.5 hours), Raleigh (approximately 4 hours)",
+        "source_url": "https://www.google.com/maps",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a rural mountain area with no chain grocery stores (Target, Whole Foods, Trader Joe's, Costco, Sprouts all unavailable) and moderate seasonal farmers market access. Regional travel is reasonable, with two small airports within 45–90 minutes and major metros (Winston-Salem, Greensboro, Charlotte, Raleigh) within 2–4 hours of driving.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Regional metro access 2-4 hours away",
+            "Seasonal farmers market available"
+          ],
+          "cons": [
+            "No major chain grocery stores",
+            "Raw milk retail prohibited"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "West Jefferson, NC in Ashe County presents a compelling relocation destination for those seeking an affordable, safe rural mountain lifestyle at 2,445 feet elevation with a mild Zone 7a climate, 183-day growing season, and manageable natural hazards despite moderate wildfire and flood risks. The community of just 1,087 people offers very low violent crime, moderate property taxes, and surprisingly affordable raw land ($15,000/acre), though median home prices of $612,500 and limited improved land availability may challenge some buyers. However, prospective residents must carefully weigh significant drawbacks: severely limited healthcare access (nearest trauma center 45 miles away), minimal educational infrastructure (one school with below-average ratings), no chain grocery stores or major retail amenities, weak solar potential despite available net metering, and an aging, demographically homogeneous population in a conservative, rural setting. The regulated public water system provides security though faces moderate drought risk, electricity costs are reasonable at 12.5 cents/kWh through a cooperative, and regional connectivity is adequate with major metros within 2–4 hours' drive. This destination suits self-sufficient, telecommuting individuals or retirees prioritizing affordability, safety, and natural beauty while accepting trade-offs in convenience, services, and community diversity.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
