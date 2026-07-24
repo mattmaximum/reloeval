@@ -84,6 +84,32 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Hillsborough County sits just 2.5 miles from the ocean at near sea-level (6 ft elevation), making it highly vulnerable to hurricanes and flooding—its two primary natural hazards. While earthquake and volcano risks are negligible and air quality is good, the combination of high hurricane and flood risk means significant weather-related hazards for potential residents.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good air quality (AQI 58)",
+            "Low earthquake/volcano risk",
+            "Minimal wildfire smoke (12 days/year)"
+          ],
+          "cons": [
+            "High hurricane risk",
+            "High flood risk",
+            "Sea-level elevation (6 ft)",
+            "Only 2.5 mi from ocean"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "geographic_climate": {
@@ -213,6 +239,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a warm, frost-free tropical/subtropical climate with year-round growing potential (365-day season, zone 10a, no frost), but heavy summer monsoon rains (9+ inches June-August) and relatively limited sunshine at 250 days annually.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Frost-free year-round growing",
+            "Winter temps stay 50-70°F",
+            "Heavy monsoon rains June-August"
+          ],
+          "cons": [
+            "Only 250 sunshine days/year",
+            "Summer humidity & rainfall risk",
+            "Limited winter rainfall"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "water_supply": {
@@ -257,6 +308,30 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Tampa faces Stage 3 high drought risk with a 14-month rainfall deficit of 14.46 inches and the main reservoir (C.W. Bill Young) at critically low 14.7% capacity, though water supply is currently bolstered by multiple backup sources including desalination and aquifer storage—but strict watering restrictions (one day/week) are already in effect under an Extreme Water Shortage Order.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Multiple backup water sources (desalination, aquifer storage, canal)",
+            "City has legal permits for authorized withdrawals up to 120 MGD peak"
+          ],
+          "cons": [
+            "Severe drought with reservoir at 14.7% capacity",
+            "Extreme water shortage restrictions already active",
+            "14.46-inch rainfall deficit"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "power_energy": {
@@ -285,6 +360,30 @@
         "value": "Florida net metering allows customers to receive credits for excess solar energy exported to the grid at the same rate paid for grid electricity; TEC supports renewable energy programs including customer-owned solar through net metering framework",
         "source_url": "https://www.floridapsc.com/pscfiles/website-files/PDF/Utilities/Electricgas/TenYearSitePlans/2025/Tampa%20Electric%20Company.pdf",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 13.5 cents/kWh with high grid reliability backed by 1,350 MW solar capacity and battery storage, though the area's low solar score of 18.0 limits rooftop solar viability. Florida's net metering policy supports customer solar exports at retail rates, but installation potential is constrained by weak sunlight.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "High grid reliability",
+            "Net metering at retail rates",
+            "Strong solar infrastructure"
+          ],
+          "cons": [
+            "Low solar score (18.0)",
+            "Above-average electricity rate at 13.5¢/kWh"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -366,6 +465,29 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This mid-sized Florida city (414K residents) leans heavily Republican (Trump 56%) and has elevated violent crime at 445 per 100K, though property crime is more typical. Gun laws are permissive with constitutional carry and no magazine limits, backed by Stand Your Ground protections.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Constitutional carry / permissive gun laws",
+            "Stand Your Ground legal protections"
+          ],
+          "cons": [
+            "Violent crime 445/100K (well above national avg)",
+            "Low Safety Index of 18.0"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "education_healthcare": {
@@ -415,6 +537,28 @@
         "value": "Tampa General Hospital (Level I Trauma Center), Florida Hospital network, H. Lee Moffitt Cancer Center",
         "source_url": "https://www.tampa.gov/DEO/living-in-tampa/educationhealthcare",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Tampa offers excellent public education with a 90.9 district rating across 233 schools, plus world-class healthcare anchored by Level I trauma center Tampa General Hospital and the renowned H. Lee Moffitt Cancer Center just minutes away.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "District rating 90.9",
+            "On-site Level I trauma center",
+            "H. Lee Moffitt Cancer Center nearby",
+            "Active homeschool co-op networks"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -487,6 +631,31 @@
         "value": "Moderate - HART operates 26 local, 7 express routes",
         "source_url": "https://en.wikipedia.org/wiki/Hillsborough_Area_Regional_Transit",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area offers no state income tax and relatively affordable land ($76,952/acre unimproved), but has a median home price of $445,000 with high HOA prevalence (1,800 communities). Public transit is moderate with 33 total HART routes, and broadband is widely available at 79%, though the area is car-dependent with a walkability score of 50.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No state income tax",
+            "79% broadband availability",
+            "Unimproved land affordable at $76.9k/acre"
+          ],
+          "cons": [
+            "$445k median home price",
+            "High HOA prevalence (1,800 communities)",
+            "Car-dependent (walkability score 50)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -567,6 +736,37 @@
         "value": "Strong regional travel connections to Orlando via I-4 corridor; significant travel flows to Pinellas, Pasco, Polk, and Manatee counties with coordinated MPO/TPO regional partnerships",
         "source_url": "https://planhillsborough.org/wp-content/uploads/2025/05/Access-2050-Long-Range-Transportation-Plan.pdf",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "You'll have robust food options with all major grocers (Target, Whole Foods, Trader Joe's, Costco, Sprouts) accessible locally, plus high-density farmers markets serving 2+ million residents. Regional travel is well-supported via Tampa International Airport and I-4 corridor access to Orlando within 6 hours.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "All major grocers available locally",
+            "High-density farmers markets",
+            "Award-winning major airport (TPA) nearby",
+            "Direct I-4 corridor to Orlando"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Tampa, FL presents a mixed relocation profile with compelling economic and quality-of-life benefits tempered by significant environmental and safety concerns. The city's primary draws include no state income tax, excellent public education (90.9 district rating), world-class healthcare facilities including Tampa General Hospital, and robust food infrastructure with abundant grocery and farmers market options serving over 2 million residents. Geographic accessibility is strong via Tampa International Airport and proximity to Orlando within 6 hours. However, potential residents must carefully weigh substantial risks: the area's extreme vulnerability to hurricanes and flooding due to its sea-level coastal location (2.5 miles from ocean), current Stage 3 high drought conditions with the main reservoir at critically low 14.7% capacity and strict water restrictions already in place, and elevated violent crime rates at 445 per 100K residents. The tropical climate offers year-round growing potential but limited annual sunshine (250 days), while electricity costs are reasonable at 13.5 cents/kWh though solar installation is constrained by weak solar score (18.0). The community is politically conservative, car-dependent with moderate public transit, and while housing is relatively affordable compared to other Florida markets (median $445K), the high prevalence of HOA-governed communities (1,800+) and permissive gun laws reflect a libertarian political orientation. Tampa is best suited for retirees or professionals prioritizing no state income tax and healthcare access who are willing to accept hurricane risk, current water scarcity, and a car-dependent lifestyle in exchange for reasonable affordability and strong amenities.",
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }

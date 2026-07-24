@@ -84,6 +84,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Grand Junction sits in a relatively low-earthquake zone (18-19/year, mostly minor) with negligible volcano risk, but faces notable flood hazard (the area's most common natural hazard, occurring almost yearly at some scale) and moderate wildfire risk affecting ~38% of properties, plus occasional heavy rain from decaying Pacific hurricanes. Air quality is good (AQI 34) with manageable wildfire smoke (~15 days/year).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good air quality (AQI 34)",
+            "Low earthquake risk",
+            "No volcano/hurricane threat"
+          ],
+          "cons": [
+            "Flooding most common hazard, almost yearly",
+            "Moderate wildfire risk (38% of properties exposed)",
+            "Fault lines 13 miles away"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "geographic_climate": {
@@ -213,6 +238,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This location features USDA Zone 7a winters (lows near 19°F) with virtually no snow, hot but not extreme summers peaking at 93.7°F in July, and an excellent 175-day growing season. Expect abundant sunshine (3200 days annually) with moderate rainfall concentrated in fall (1.22\" in September) and a dry June (0.47\").",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Long 175-day growing season",
+            "Abundant sunshine: 3200 days/year",
+            "Virtually no snow or ice",
+            "Moderate winter lows (~19°F)"
+          ],
+          "cons": [
+            "July highs reach 93.7°F",
+            "Low rainfall June (0.47\")"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "water_supply": {
@@ -257,6 +307,32 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Grand Junction's water supply faces severe drought stress: record-breaking low snowpack (18–25% of normal) and the driest five-month period in 132 years triggered Phase 2 state drought response in 2026, with municipal suppliers warning of imminent watering restrictions and rate hikes. Backup storage is limited and mostly in planning stages, while new water rights are extremely difficult to obtain under Colorado's prior-appropriation system, making long-term supply security uncertain for relocators.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Well water legally permitted (≤15 gpm exempt)",
+            "Backup Colorado River available as emergency source"
+          ],
+          "cons": [
+            "Record drought: 18–25% of normal snowpack",
+            "Driest 5 months in 132 years (Jan–May 2026)",
+            "Watering restrictions and surcharges imminent",
+            "New water rights extremely hard to secure",
+            "Backup storage not yet built (feasibility phase)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "power_energy": {
@@ -285,6 +361,31 @@
         "value": "Grand Valley Power (GVP), the local electric cooperative serving Grand Junction/Mesa County, offers net metering under its GEN-1 tariff. Under current rules, monthly excess generation is banked, with an annual true-up. GVP has proposed revisions effective April 1, 2026, changing the annual settlement process so that beginning April 2027, all annual banked excess kWh will be purchased down to zero (paid as a bill credit) rather than carried forward indefinitely, aligning payments with the year generation occurred ahead of a 2028 transition to Guzman Energy as wholesale supplier.",
         "source_url": "https://www.gvp.org/2026-rate-changes",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.5 cents/kWh with good grid reliability backed by two Tier 1 providers and recent substation upgrades, though rural mountain terrain can trigger occasional outages. Net metering is available but faces a significant policy shift in 2027 when annual solar credits will no longer roll forward indefinitely—excess generation will be paid out annually instead.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "12.5¢/kWh is below U.S. average",
+            "Dual Tier 1 providers + recent $2.2M upgrades",
+            "Net metering currently available"
+          ],
+          "cons": [
+            "Solar credits won't roll forward after 2027",
+            "Occasional outages from mountain terrain",
+            "Solar score only 6.5 (mediocre)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -366,6 +467,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Grand Junction is a mid-sized city of ~71,000 in a heavily Republican county (Trump won 61% in 2024) with above-average violent crime (546.1 per 100k) and notably high property crime (3,170.4 per 100k), though Colorado's 15-round magazine limit and shall-issue concealed carry permitting apply.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Strong political alignment (R+5 district, GOP-dominated)",
+            "Castle Doctrine/self-defense protections solid"
+          ],
+          "cons": [
+            "Violent crime elevated vs. US average",
+            "Property crime rate notably high",
+            "Magazine capacity limited to 15 rounds",
+            "Shall-issue permitting (not permitless)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "education_healthcare": {
@@ -415,6 +541,31 @@
         "value": "Intermountain Health (formerly SCL Health) - St. Mary's Medical Center is the dominant hospital network serving Grand Junction and Mesa County, operating as a Level II trauma center and regional referral hub for Western Colorado; Community Hospital is the other significant provider in the market.",
         "source_url": "https://chna2024.mesacountyhealth.com/2024/HealthCareAccess/index.html",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Grand Junction has 44 public schools with a modest 3.5 district rating, though Central and Fruita Monument High Schools are undergoing major upgrades via a $582M facility plan; healthcare is strong with St. Mary's Medical Center—a Level II trauma center—just 0.5 miles away. Homeschooling is minimally regulated (only 172 instruction days required, no curriculum approval needed) with a well-established co-op community.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Trauma center 0.5 miles away",
+            "Major school facility upgrades planned ($582M)",
+            "Minimal homeschool regulation",
+            "Active homeschool co-op network"
+          ],
+          "cons": [
+            "District rating only 3.5",
+            "Homeschool requires 172 days/year instruction"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -487,6 +638,33 @@
         "value": "Limited - Grand Valley Transit (GVT) operates a network of fixed-route buses within Grand Junction and connections to Fruita and Palisade, but service frequency is low and the city remains largely car-dependent.",
         "source_url": "https://www.gvt.mesacounty.us/",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Grand Junction offers a median home price of $430,000 with moderate permitting that's actively being streamlined, plus good broadband to urban areas (100+ Mbps) and low state income tax at 4.4%. However, the city is car-dependent with a walkability score of just 34 and limited transit options.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Median home $430k",
+            "4.4% state income tax",
+            "Permitting actively streamlining",
+            "100+ Mbps broadband in urban core"
+          ],
+          "cons": [
+            "Walkability score only 34",
+            "Limited public transit",
+            "Rural areas have poor broadband",
+            "Car-dependent"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -567,6 +745,40 @@
         "value": "Denver, CO is about 243 miles / roughly 4 hours by car via I-70, and Salt Lake City, UT is about 284-289 miles / roughly 4.5-5.5 hours by car via I-70 and US-6/191, making both major metro hubs reachable within a 6-hour drive from Grand Junction.",
         "source_url": "https://www.trippy.com/drive/Grand-Junction-to-Salt-Lake-City",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Grand Junction offers convenient local air access via its own regional airport with major hub connections (Denver, Phoenix, Las Vegas, Salt Lake City, Dallas), and easy reach to Denver/Salt Lake City metros within 4–5.5 hours. Grocery shopping is limited to Target and Sprouts locally, with Whole Foods 110 miles away and Costco 118 miles away; however, multiple weekly farmers markets provide producer-direct food access, and raw milk access is available through legal herdshare agreements.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Airport in city with major hub flights",
+            "Multiple weekly farmers markets nearby",
+            "Denver/Salt Lake City under 5.5 hours",
+            "Raw milk legally accessible via herdshare"
+          ],
+          "cons": [
+            "No Whole Foods, Costco, or Trader Joes within 110+ miles",
+            "Limited conventional grocery chains (Target, Sprouts only)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Grand Junction, Colorado presents a mixed relocation profile with notable strengths in climate, energy infrastructure, and regional connectivity, but significant challenges in water security and public safety that warrant careful consideration. The city offers excellent growing conditions (175-day season, 3200 annual sunshine days), moderate housing costs ($430,000 median), low state income tax (4.4%), and good access to major regional hubs via its own airport—making it attractive for remote workers and those seeking outdoor lifestyle amenities. However, prospective relocators must confront severe water supply stress stemming from record-low snowpack and an unprecedented five-month drought that triggered Phase 2 state restrictions in 2026, with municipal suppliers warning of imminent rate hikes and watering restrictions that threaten long-term sustainability. Additionally, the city's above-average violent crime rate (546.1 per 100k) and notably high property crime rate (3,170.4 per 100k)—significantly exceeding national averages—present public safety concerns, while car-dependent infrastructure (walkability score 34), limited local grocery options, and modest school district ratings (3.5) further complicate the calculus. The area's natural hazards are relatively manageable (low seismic activity, good air quality), and strong healthcare services via a nearby Level II trauma center are definite assets, but the combination of water scarcity, crime, and limited walkability suggests Grand Junction works best for self-sufficient, security-conscious relocators prioritizing climate and energy considerations over urban amenities and public safety metrics.",
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }

@@ -84,6 +84,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise offers excellent hurricane protection (390+ miles inland) and low air quality concerns (AQI 40), but faces notable natural hazards: high wildfire risk with adjacent fire-prone foothills reaching extreme danger in summer, moderate earthquake risk from nearby faults capable of M6-7 events, and moderate flood risk along the Boise River despite upstream dams.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "390+ miles from coast, no hurricanes",
+            "Low air quality (AQI 40)",
+            "Minimal wildfire smoke (2.8 days/year)"
+          ],
+          "cons": [
+            "High wildfire risk, extreme summer danger",
+            "Moderate earthquake risk, M6-7 capable faults 25 miles away",
+            "Moderate flood risk along Boise River"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "geographic_climate": {
@@ -213,6 +238,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This location has a 244-day growing season with mild winters (30s-40s°F), warm but not extreme summers (peak 90°F in July), and very low precipitation (mostly 0.3-0.6 inches/month). It receives abundant sunshine at 286 days annually and minimal snow (mostly under 1 inch/month except Dec/Jan).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Long growing season (244 days)",
+            "Abundant sunshine (286 days/year)",
+            "Minimal snow/sleet",
+            "Low precipitation year-round"
+          ],
+          "cons": [
+            "Very dry climate, irrigation needed",
+            "Summer heat reaches 90°F"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "water_supply": {
@@ -257,6 +307,31 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise relies heavily on groundwater (70%) from the Boise aquifer via 80+ municipal wells, with surface water from Lucky Peak Reservoir providing backup. However, the region is currently experiencing exceptional drought—Ada County snowpack was near record lows in winter 2026, flows fell below 1,200 cfs on the Boise River, and the city declared Stage 2 water conservation two months early (April 2026) and a formal Drought Emergency Ordinance in July 2026, significantly eroding water security margins.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Diverse backup systems (80+ wells, two treatment plants)",
+            "Private wells legal up to 13,000 gal/day if permitted",
+            "Groundwater access still available in Ada County (not yet designated critical area)"
+          ],
+          "cons": [
+            "Exceptional drought conditions, record-low snowpack",
+            "Stage 2 conservation declared early; Drought Emergency Ordinance in effect",
+            "Boise River flows 31% below April average; tight backup margins"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "power_energy": {
@@ -285,6 +360,31 @@
         "value": "Idaho Power (the primary utility serving Boise/Ada County) closed traditional Net Energy Metering to new residential/commercial solar customers effective December 21, 2019, and transitioned to a 'net billing' structure in January 2024, under which exported solar energy is credited at a utility-determined avoided-cost rate rather than the full retail rate — roughly 31-32% lower value than old net metering credits. Customers who installed solar and interconnected by December 20, 2019 are grandfathered under the original full-retail net metering terms until December 20, 2045. As of an October 2025 Idaho PUC order, new export compensation rates were further reduced (~31% cut), effective for tariffs issued in 2026.",
         "source_url": "https://pv-magazine-usa.com/2025/10/06/idaho-drops-solar-compensation-rates-by-31/",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise has low electricity rates (11.88¢/kWh) and excellent grid reliability with only 1.16 outages/year and top-5 national ranking. However, solar economics are poor: net metering is closed to new customers and export credits dropped 31% in 2024, then another 31% in 2025, making home solar substantially less attractive unless you installed before December 2019.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Low electricity rate 11.88¢/kWh",
+            "Excellent grid reliability, ~1 outage/year",
+            "Top-5 US grid reliability ranking"
+          ],
+          "cons": [
+            "Net metering closed since 2019",
+            "Solar export credits 31% lower than retail",
+            "Export rates cut another 31% in 2025"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -366,6 +466,32 @@
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise is a mid-sized city (238,853) with median household income of ~$84k and a Democratic-leaning urban core surrounded by Republican-leaning county/state. The city has above-average violent crime (222.5) and property crime (1,335) rates, offset by fairly permissive firearm laws including constitutional carry, no magazine restrictions, and strong Stand Your Ground protections.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Constitutional carry (no license required)",
+            "No magazine capacity restrictions",
+            "Strong Stand Your Ground/Castle Doctrine protections",
+            "Solid median household income ~$84k"
+          ],
+          "cons": [
+            "Violent crime rate 222.5 (above average)",
+            "Property crime rate 1,335 (high)",
+            "Political isolation as blue city in red state/county"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "education_healthcare": {
@@ -415,6 +541,28 @@
         "value": "St. Luke's Health System is the dominant hospital network in Boise, serving as Idaho's largest employer and most awarded health system with its flagship St. Luke's Boise Medical Center; its chief competitor, Saint Alphonsus Health System (Trinity Health), operates the region's only Level II adult trauma center in Boise.",
         "source_url": "https://www.practicelink.com/facility/St-Luke-s-Health-System-Boise/St-Luke-s-Health-System/",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise offers strong public schools (52 schools, 4.28 district rating) with multiple nationally-recognized programs including IB options, plus exceptionally permissive homeschool regulations (no registration, testing, or credential requirements) backed by active co-op infrastructure. Emergency healthcare access is excellent with a Level II trauma center 2.5 miles away and St. Luke's—Idaho's largest and most-awarded health system—as the dominant provider.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "4.28 district rating with IB programs",
+            "Zero homeschool registration/testing required",
+            "Trauma center 2.5 miles away",
+            "Dominant health system is state's most-awarded"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -487,6 +635,32 @@
         "value": "Limited but expanding: Valley Regional Transit (VRT) operates about 19-21 fixed bus routes plus on-demand and ACCESS paratransit service across Ada and Canyon counties (Boise, Meridian, Garden City, Eagle, Nampa, Caldwell), with roughly 1.08 million annual riders (2024); Boise itself is rated 'minimal public transportation' and is largely car-dependent outside downtown.",
         "source_url": "https://en.wikipedia.org/wiki/Valley_Regional_Transit",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise offers moderate housing costs ($525k median) with strict permitting requirements, especially in older neighborhoods, and heavily car-dependent living outside downtown. Broadband is widely available via cable (97-100% coverage) but fiber is limited (17-30%), and newer suburbs increasingly require mandatory HOAs while older core neighborhoods remain HOA-free.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Cable internet reaches ~97-100%",
+            "Older neighborhoods largely HOA-free",
+            "Moderate state income tax (5.3%)"
+          ],
+          "cons": [
+            "Car-dependent (walkability 38)",
+            "Fiber limited to 17-30%",
+            "Moderate-to-strict permitting",
+            "Many new suburbs have mandatory HOAs"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -567,6 +741,41 @@
         "value": "By road, Boise sits within roughly a 4.5-6.5 hour drive of several regional metro hubs: Salt Lake City, UT (~340 miles, ~5 hours via I-84), Spokane, WA (~287 miles, ~4.5 hours), and Portland, OR (~365-430 miles depending on route, ~6-6.5 hours via I-84). Seattle (~500 miles, ~7-8 hours) and Denver (~7.5 hours) fall just outside the 6-hour window. Salt Lake City and Spokane are the most reliably reachable major hubs within 6 hours, with Portland at the outer edge of that range.",
         "source_url": "https://howlongdrive.com/route/boise-to-salt-lake-city/",
         "fetched_date": "2026-07-22",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boise offers exceptional urban grocery access with Target, Whole Foods, Trader Joe's, and Costco all in-town, plus abundant farmers market options (10+ venues region-wide, operating nearly daily April-December) and legal retail raw dairy sales. The primary drawback is airport limited to one commercial hub; while Boise Airport provides reliable year-round service, Salt Lake City and Spokane are the only other major metros reachable within 6 hours by car.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "All major grocery chains in-city",
+            "10+ farmers markets April-December",
+            "Legal retail raw dairy (post-outbreak scrutiny)",
+            "Salt Lake City & Spokane within 4.5-5 hrs"
+          ],
+          "cons": [
+            "Single commercial airport (BOI)",
+            "No other major airports within 2 hrs",
+            "Farmers markets seasonal (April-December only)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Boise, Idaho emerges as a compelling mid-sized relocation destination (population 238,853) offering exceptional strengths in climate, education, healthcare, and food infrastructure: a 244-day growing season with abundant sunshine (286 days/year), excellent public schools with nationally-recognized programs and permissive homeschooling regulations, and outstanding emergency healthcare anchored by St. Luke's Health System. The city also boasts low electricity rates, top-5 grid reliability, strong urban grocery access including legal raw dairy, and robust farmers markets operating nearly year-round. However, prospective relocators must carefully weigh significant headwinds: an acute and worsening water security crisis (exceptional drought conditions forcing Stage 2 conservation and a formal Drought Emergency Ordinance in 2026, despite 70% groundwater reliance and upstream dam backup), notable natural hazards including extreme summer wildfire risk in adjacent foothills, moderate earthquake and flood risks, and deteriorating solar economics due to closed net metering and 62% cumulative export credit reductions. Additional considerations include above-average crime rates (violent crime 222.5, property crime 1,335), limited commercial air connectivity (single hub; nearest major metros 6+ hours away), and car-dependent sprawl outside downtown despite strong transit-oriented core neighborhoods. The region's political bifurcation—Democratic urban core surrounded by Republican county and state—may influence local policy priorities and community fit, while moderate housing costs ($525k median) are partially offset by strict permitting and increasingly mandatory HOAs in newer subdivisions.",
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }

@@ -84,6 +84,31 @@
         "fetched_date": "2026-07-24",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Santa Clarita faces severe earthquake risk (96.93% probability of major quake in 50 years, only 13 miles from San Andreas Fault) and exceptionally high wildfire risk (94% of buildings at risk, worse than 97% of US communities), with 40 wildfire smoke days annually. Flood risk is moderate (26% of buildings, 42% chance of 3-foot flood over 30 years), while hurricane and volcano risks are negligible due to inland location and distance from active volcanic zones.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low hurricane risk",
+            "No active volcanic threat"
+          ],
+          "cons": [
+            "96.93% earthquake probability in 50 years",
+            "94% of buildings in wildfire risk zone",
+            "40 wildfire smoke days annually",
+            "42% flood probability over 30 years"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "geographic_climate": {
@@ -213,6 +238,33 @@
         "fetched_date": "2026-07-23",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This zone enjoys a year-round 365-day growing season with no snow, but summers are intensely hot (93°F+ in July-August) and extremely dry (virtually no rain June-September). Winters are mild with brief frost windows in early January.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Year-round growing season",
+            "No snow or winter storms",
+            "Mild winters (44-65°F)",
+            "Frost-free by late January"
+          ],
+          "cons": [
+            "Extreme summer heat (93°F+)",
+            "Severe summer drought (June-Aug near zero rain)",
+            "Limited sunshine (278 days)",
+            "Intense irrigation demands"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "water_supply": {
@@ -257,6 +309,31 @@
         "fetched_date": "2026-07-23",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Water supply relies on imported State Water Project sources plus diversified local supplies, with moderate drought risk tied to statewide conditions; the region is actively shifting toward greater groundwater reliance to reduce dependence on external sources.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Diversified supply portfolio",
+            "Strategic groundwater expansion underway",
+            "Moderate drought risk (not high)"
+          ],
+          "cons": [
+            "Exposed to Delta operations decisions",
+            "Subject to state allocation constraints",
+            "Vulnerable to statewide hydrology shifts"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "power_energy": {
@@ -285,6 +362,29 @@
         "value": "California net metering policy applies - SCE requires interconnection agreement for solar installations; supports microgrids and battery storage systems",
         "source_url": "https://www.sce.com/sites/default/files/custom-files/PDF_Files/Santa_Clarita_SCE_WSCM_PPT_9_29_25.pdf",
         "fetched_date": "2026-07-23T21:07:14.199Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 14.5 cents/kWh with high grid reliability backed by 490.5 miles of covered conductor and robust vegetation management. Solar potential is solid at 7.8, and California's net metering policy supports rooftop solar with battery storage systems.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "High grid reliability",
+            "Net metering supports solar+storage",
+            "Above-average solar potential (7.8)"
+          ],
+          "cons": [
+            "14.5¢/kWh is above US average"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -366,6 +466,31 @@
         "fetched_date": "2026-07-23T21:07:43.740Z",
         "status": "valid",
         "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a mid-sized city (230k residents) in a large county (10M+) with a diverse population including substantial Filipino and Korean demographics. Crime rates are very low—violent crime of 2.1 and property crime of 11.3 with a safety index of 88.7—making it a notably safe area for relocation.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low violent crime (2.1)",
+            "Very low property crime (11.3)",
+            "High safety index (88.7)",
+            "Diverse demographic mix"
+          ],
+          "cons": [
+            "California firearm restrictions (10-round limit)",
+            "Limited stand-your-ground protections"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "education_healthcare": {
@@ -415,6 +540,30 @@
         "value": "Henry Mayo Newhall Hospital, Dignity Health - Southern California",
         "source_url": "https://areazine.com/cities/santa-clarita",
         "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Santa Clarita has 16 public schools with a below-average district rating of 56, though several named schools (Academy of the Canyons, Canyon High, Golden Valley High, Castaic High) stand out locally. Healthcare access is solid with Henry Mayo Newhall Hospital and Dignity Health nearby, and trauma care is reasonably close at 8.5 miles.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Multiple named quality schools",
+            "Trauma center under 9 miles",
+            "Active homeschool co-ops available"
+          ],
+          "cons": [
+            "District rating 56 (well below average)",
+            "Moderate homeschool regulation strictness"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -487,6 +636,31 @@
         "value": "Good",
         "source_url": "https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf",
         "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Median home prices are high at $820k in an area with moderate building permitting, high HOA prevalence, and 9.3% state income tax plus 9.5% sales tax. The area offers excellent broadband and good transit, with moderate walkability (65/100).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Excellent broadband availability",
+            "Good transit access",
+            "Moderate permitting process"
+          ],
+          "cons": [
+            "High $820k median home price",
+            "High HOA prevalence",
+            "9.3% state income tax"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
@@ -567,6 +741,37 @@
         "value": "Los Angeles metropolitan area is immediately adjacent (30 miles south); accessible destinations within 6 hours by car include Las Vegas, San Francisco Bay Area, San Diego, and surrounding major Southern California cities via Interstate 5 and regional highways.",
         "source_url": "https://www.travelmath.com/nearest-airport/Santa+Clarita,+CA",
         "fetched_date": "2026-07-23",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "You have exceptional walkable access to major grocery chains (Target, Whole Foods, Trader Joe's, Costco, Sprouts all within 0 miles) and multiple weekly farmers markets, plus quick access to two major airports and broader California destinations within 6 hours.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "All major grocers at doorstep",
+            "4 weekly farmers markets",
+            "BUR airport 30-40 min away",
+            "Vegas/San Francisco/San Diego reachable by car"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Santa Clarita, California emerges as a mixed-profile relocation destination offering notable strengths in safety, amenities, and infrastructure alongside significant natural hazard concerns. The mid-sized city of 230,000 residents boasts excellent public safety (violent crime rate of 2.1, safety index of 88.7), strong grocery infrastructure and farmers market access, solid healthcare options including Henry Mayo Newhall Hospital, and reliable power infrastructure with competitive electricity costs and strong solar potential. The year-round growing season and mild winters appeal to those seeking warmer climates, while excellent broadband connectivity and moderate walkability (65/100) support both remote work and local mobility. However, prospective residents must carefully weigh substantial natural hazard risks: Santa Clarita faces a 96.93% probability of a major earthquake within 50 years due to proximity to the San Andreas Fault, and exceptionally high wildfire risk affecting 94% of buildings—worse than 97% of U.S. communities—with 40 smoke days annually. Additionally, median home prices of $820,000 reflect the Southern California premium, coupled with California's 9.3% state income tax and 9.5% sales tax. The below-average school district rating (56) may concern families, though select schools offer stronger local reputations. Overall, Santa Clarita suits climate-seeking relocators and those prioritizing safety and convenience, but is best suited for earthquake and wildfire-resilient households or those with adequate insurance and risk tolerance.",
+        "source_url": null,
+        "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
