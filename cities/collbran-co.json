@@ -86,43 +86,31 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": 35.0,
-        "source_url": "https://coloradogeologicalsurvey.org/Docs/Pubs/B-55.pdf",
+        "value": 236.0,
+        "source_url": "https://www.travelmath.com/drive-distance/from/Collbran,+CO/to/Denver,+CO",
         "fetched_date": "2026-07-24",
         "status": "valid",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": "Grand Junction",
-        "source_url": "https://coloradogeologicalsurvey.org/Docs/Pubs/B-55.pdf",
+        "value": "Denver",
+        "source_url": "https://www.travelmath.com/drive-distance/from/Collbran,+CO/to/Denver,+CO",
         "fetched_date": "2026-07-24",
         "status": "valid",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Mesa County sits at 8,100 ft elevation with moderate-to-high wildfire risk and 12 annual smoke days, plus moderate flood risk and low-to-moderate earthquake risk; the main perks are minimal hurricane exposure and proximity to Grand Junction (35-minute drive).",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": {
-          "pros": [
-            "Minimal hurricane risk",
-            "Close to Grand Junction (35 min)",
-            "No volcanic zone threat"
-          ],
-          "cons": [
-            "Moderate-to-high wildfire risk",
-            "12 smoke days per year",
-            "Moderate flood risk",
-            "45 mi from fault line"
-          ]
-        },
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     },
@@ -782,10 +770,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Collbran, Colorado presents a compelling yet highly specialized relocation destination for those seeking an exceptionally quiet, tight-knit community of just 356 residents in a safe, low-crime environment with zero reported violent or property crimes. Located at 8,100 feet elevation in Mesa County, the area offers moderate climate conditions with mild winters (11–13°F lows) and temperate summers in the mid-80s, plus year-round rainfall supporting a 180-day growing season, though critical data gaps exist regarding annual sunshine hours. The region's primary challenges center on resource constraints: extreme drought conditions threaten water security with snowpack at only 41% of normal and a substantial risk of supplies dropping to historic lows, while healthcare requires a 30-mile trek to the nearest trauma center and educational options are limited to a small public school system. Housing costs are steep at a median of $690,000 with land exceeding $300,000+ per acre, and the area's high car-dependency and walkability score of 34.8 reflect its rural character. Practical considerations include moderate electricity costs (16.54¢/kWh), adequate broadband, permit-friendly governance with constitutional carry protections, and access to regional amenities like Grand Junction (35 minutes away) and Denver (4–5 hours south), though major grocery chains are absent—offset somewhat by robust farmers markets featuring local specialties. This destination suits individuals prioritizing security, solitude, and community cohesion over urban convenience and infrastructure density, provided they can navigate water scarcity concerns and accept geographic isolation.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     }
