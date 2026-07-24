@@ -9,11 +9,24 @@
 <body>
 <h1>Relocation Evaluator</h1>
 
+<p class="site-intro">
+A personal research tool evaluating US cities across ~65 data points &mdash; schools, safety,
+climate, water and power infrastructure, land and legal considerations, and self-sufficiency
+&mdash; using live web search paired with an LLM. It's public because the research might be
+useful to someone else looking at the same cities, but it's not open for anyone to run: every
+evaluation makes real, billed AI API calls, so new cities are added by the site owner one at a
+time, and only the owner can trigger a new evaluation.
+</p>
+<p class="site-intro">
+The Family Fit and Self-Sufficiency scores below are deliberately subjective &mdash; they
+reflect one specific family's priorities and weightings, not an objective ranking. That family
+is small, isn't chasing an off-grid, middle-of-nowhere, maximally-isolated location, and isn't
+optimizing for zero risk either &mdash; some tradeoffs are acceptable.
+<a href="scoring.html">See exactly how the scores are calculated</a>.
+</p>
+
 {% if cities|length >= 2 %}
 <p><a href="compare.html">&#8646; Compare two cities side by side</a></p>
-{% endif %}
-{% if cities %}
-<p><a href="scoring.html">&#9432; How the Fit scores are calculated</a></p>
 {% endif %}
 
 {% if cities %}
@@ -43,6 +56,10 @@
 </ul>
 {% else %}
 <p class="empty">No cities evaluated yet.</p>
+{% endif %}
+
+{% if cities %}
+<p><a href="scoring.html">&#9432; How the Fit scores are calculated</a></p>
 {% endif %}
 </body>
 </html>
