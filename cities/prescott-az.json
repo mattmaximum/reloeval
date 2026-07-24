@@ -1,0 +1,793 @@
+{
+  "input_city_state": "Prescott, AZ",
+  "normalized": {
+    "city": "Prescott",
+    "state": "AZ",
+    "county": "Yavapai County"
+  },
+  "slug": "prescott-az",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Yavapai County",
+        "source_url": "https://www.yavapaiaz.gov/files/sharedassets/public/v/1/resident-services/environmental-safety/documents/2023-yavapai-county-hazard-mitigation-plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 5400.0,
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-274.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 380.0,
+        "source_url": "https://climas.arizona.edu/sites/default/files/migrated_media/Quad-Cities-Climate-Profile_1.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 45.0,
+        "source_url": "https://extension.arizona.edu/sites/extension.arizona.edu/files/attachment/soilsandclimateofyavapaico-2024-1.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "Over 200 miles to nearest volcano (Sunset Crater)",
+        "source_url": "https://cwagaz.org/images/Reports/RefLib/Arizona%20Water%20Atlas%20Vol%208%20Prescott%20AMA.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Minimal",
+        "source_url": "https://riskbycounty.com/arizona/yavapai-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "Very High",
+        "source_url": "https://protectmyzip.com/zip/86301",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Moderate",
+        "source_url": "https://riskbycounty.com/arizona/yavapai-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate to High",
+        "source_url": "https://web.archive.org/web/20181215070052/www.ycflood.com/Projects-Programs-Studies/Prescott-Map-Revision",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 60.0,
+        "source_url": "https://protectmyzip.com/zip/86301",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 25.0,
+        "source_url": "https://riskbycounty.com/arizona/yavapai-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 100.0,
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-274.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Phoenix",
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-274.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Yavapai County sits at 5,400 ft elevation near Phoenix (100-min drive) but faces very high wildfire risk with 25 smoke days annually, moderate-to-high flood risk, and moderate earthquake risk from a fault line 45 miles away. Natural hazards are the dominant concern here, though volcanic and hurricane risks are minimal.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Phoenix metro access",
+            "Low volcano/hurricane risk",
+            "Minimal air quality issues (AQI 60)"
+          ],
+          "cons": [
+            "Very high wildfire risk",
+            "25 wildfire smoke days/year",
+            "Moderate-to-high flood risk",
+            "Moderate earthquake risk"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "7b",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/arizona/prescott/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 11 - October 20",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/arizona/prescott/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "May 1 - May 10",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/arizona/prescott/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 153.0,
+        "source_url": "https://extension.arizona.edu/sites/extension.arizona.edu/files/attachment/soilsandclimateofyavapaico-2024-1.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 51.7,
+            "avg_low_f": 24.5,
+            "avg_rainfall_in": 1.74,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 54.3,
+            "avg_low_f": 26.8,
+            "avg_rainfall_in": 2.13,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 60.0,
+            "avg_low_f": 31.4,
+            "avg_rainfall_in": 1.81,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 66.2,
+            "avg_low_f": 36.3,
+            "avg_rainfall_in": 0.66,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 74.5,
+            "avg_low_f": 43.8,
+            "avg_rainfall_in": 0.52,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 85.2,
+            "avg_low_f": 52.0,
+            "avg_rainfall_in": 0.31,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 88.0,
+            "avg_low_f": 59.2,
+            "avg_rainfall_in": 2.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 85.7,
+            "avg_low_f": 58.4,
+            "avg_rainfall_in": 2.99,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 81.0,
+            "avg_low_f": 51.8,
+            "avg_rainfall_in": 1.59,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 71.8,
+            "avg_low_f": 40.0,
+            "avg_rainfall_in": 1.08,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 60.6,
+            "avg_low_f": 30.3,
+            "avg_rainfall_in": 1.17,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 50.7,
+            "avg_low_f": 23.6,
+            "avg_rainfall_in": 1.42,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/arizona/prescott/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 324.5,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&endDate=9996-12-31&format=pdf&startDate=0001-01-01&stations=USC00026796",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This USDA Zone 7b location has mild winters with virtually no snow, hot dry summers (peaks near 88°F with only 0.31 inches of rain in June), and 153 days of frost-free growing season with abundant sunshine (324.5 days/year). Late spring frosts (May 1–10) and early fall frosts (October 11–20) bracket a moderately long growing window.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Virtually zero snow in winter",
+            "324+ sunny days yearly",
+            "Hot summers (88°F peak)",
+            "No spring/summer flooding risk"
+          ],
+          "cons": [
+            "Very dry June (0.31 in rain)",
+            "Moderately short growing season (153 days)",
+            "Late spring frost window (May 1–10)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Groundwater from confined deep Lower Volcanic Unit aquifer in Little Chino Sub-Basin, supplemented by surface water from Watson and Willow Reservoirs, and treated effluent (reclaimed water)",
+        "source_url": "https://prescott-az.gov/wp-content/uploads/2023/11/ccr-ry2022.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Moderate - City is within Prescott Active Management Area (PrAMA) subject to Arizona Department of Water Resources management plans emphasizing conservation and renewable water sources; holds Designation of Assured Water Supply (DAWS) since 1999 with demonstrated 100-year continuous availability",
+        "source_url": "https://prescott-az.gov/wp-content/uploads/2025/07/WRM-Amended-2022-Water-Management-Policy_Hazardous-Substances-20250730.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Legal - City operates seven active wells within the Prescott Active Management Area with Assured Water Supply Designation; water rights recognized by Arizona Department of Water Resources and compliant with Title 45 Arizona law",
+        "source_url": "https://prescott-az.gov/water-resource-mgmt/current-supplies/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 250.0,
+        "source_url": "https://prescott-az.gov/wp-content/uploads/2023/11/ccr-ry2022.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Subject to Prescott Active Management Area (PrAMA) requirements including mandatory conservation strategies, replacement of groundwater with renewable sources, and groundwater recharge management; 5th Management Plan effective January 2025; City also has legal right to import up to 8,068 acre-feet per year from Big Chino Sub-basin under Arizona Revised Statutes Section 45-555",
+        "source_url": "https://prescott-az.gov/wp-content/uploads/2025/07/WRM-Amended-2022-Water-Management-Policy_Hazardous-Substances-20250730.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Substantial backup sources available including Big Chino Water Ranch (8,067.4 AFY future capacity), Watson and Willow Reservoir surface water, reclaimed/treated effluent for aquifer recharge and recovery, and alternative water portfolio of 7,041.42 AFY; current total portfolio 16,507.44 AFY",
+        "source_url": "https://prescott-az.gov/wp-content/uploads/2025/07/WRM-Amended-2022-Water-Management-Policy_Hazardous-Substances-20250730.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Water supply relies on deep groundwater (250 ft depth) supplemented by surface reservoirs and reclaimed water, with Assured Water Supply designation guaranteeing 100-year availability. The city operates within Arizona's Prescott Active Management Area requiring conservation and renewable source replacement, but holds substantial backup capacity of 16,507 acre-feet annually plus legal rights to import 8,068 acre-feet from Big Chino Sub-basin.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "100-year water supply guarantee (DAWS)",
+            "Substantial backup capacity: 16.5k acre-feet annually",
+            "Diversified sources: groundwater, reservoirs, reclaimed water, import rights"
+          ],
+          "cons": [
+            "Deep wells required: 250 ft to water table",
+            "Mandatory conservation & renewable replacement rules"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 16.4,
+        "source_url": "https://findenergy.com/az/yavapai-county-electricity/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Arizona Public Service (APS) is the primary grid operator for Prescott with balancing authority code AZPS under the WECC region",
+        "source_url": "https://www.gridinfo.com/plant/prescott-solar-plant/58147",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 8.5,
+        "source_url": "https://www.interconnection.fyi/eia/project/58147-pv1",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Arizona allows net metering for renewable energy systems; specific details available through Arizona Corporation Commission and local utility APS policies",
+        "source_url": "https://www.energysage.com/local-data/electricity-cost/az/yavapai-county/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Prescott has relatively high electricity rates at 16.4 cents/kWh, but excellent solar potential (8.5/10 score) with Arizona's net metering policy allowing renewable energy credits. Grid reliability is maintained by Arizona Public Service under WECC, providing stable infrastructure for the region.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "16.4¢/kWh manageable for high-solar region",
+            "Excellent solar score 8.5/10",
+            "Net metering available for renewables"
+          ],
+          "cons": [
+            "16.4¢/kWh above national average"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 48945.0,
+        "source_url": "https://worldpopulationreview.com/us-cities/arizona/prescott",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 252552.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/prescottcityarizona,yavapaicountyarizona/PST045222",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 59.7,
+        "source_url": "https://worldpopulationreview.com/us-cities/arizona/prescott",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White alone 85.5%, Hispanic or Latino 10.1%, Two or more races 7.5%, Black alone 1.5%, Asian alone 2.3%, American Indian alone 1.4%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/prescottcityarizona,yavapaicountyarizona/PST045222",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Donald J. Trump 52.2% (2024 presidential election in Arizona), Kamala Harris 46.7%",
+        "source_url": "https://datausa.io/profile/geo/prescott-az",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 2.8,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/prescottcityarizona/BZA210223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 14.97,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/prescottcityarizona/BZA210223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 85.03,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/prescottcityarizona/BZA210223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Shall Issue - Arizona permits constitutional carry with optional permit system",
+        "source_url": "https://en.wikipedia.org/wiki/Prescott,_Arizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No state-level magazine capacity restrictions in Arizona",
+        "source_url": "https://en.wikipedia.org/wiki/Prescott,_Arizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Castle Doctrine and Stand Your Ground laws apply in Arizona; self-defense is legally recognized",
+        "source_url": "https://en.wikipedia.org/wiki/Prescott,_Arizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a small city (49K population) in a Republican-leaning Arizona county with a notably older population (median age 59.7). It's a safe community with a strong safety index of 85.03, very low violent crime at 2.8 per 100K, and a modest property crime rate of 14.97 per 100K.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low violent crime (2.8 rate)",
+            "Strong safety index (85.03)",
+            "Constitutional carry + Stand Your Ground laws",
+            "Older, stable population (median age 59.7)"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 21.0,
+        "source_url": "https://www.areavibes.com/prescott-az/schools/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 7.5,
+        "source_url": "https://www.niche.com/k12/d/prescott-unified-school-district-az/rankings/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "BASIS Prescott, Tri-City College Prep, Abia Judd Elementary School, Lincoln Elementary School, Prescott High School, La Tierra Community School, Northpoint Expeditionary Learning Academy",
+        "source_url": "https://www.publicschoolreview.com/arizona/prescott",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Low - Arizona has among the least restrictive homeschooling requirements in the United States; parents must file a notarized Affidavit of Intent with no testing mandates, credential requirements, or assessment obligations.",
+        "source_url": "https://svhs.co/homeschooling-arizona-laws/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "High - Multiple homeschool co-ops operate in Prescott area including Prescott-Quad Cities Homeschool Co-op, Prescott Classical Academy, Classical Conversations, and LOVE Homeschool Support Group.",
+        "source_url": "https://pccaz.org/homeschool-co-op",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 10.0,
+        "source_url": "https://www.azdhs.gov/documents/preparedness/emergency-medical-services-trauma-system/trauma/az-designated-trauma-centers.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Yavapai Regional Medical Center (YRMC), part of Dignity Health and CommonSpirit Health; operates West Campus in Prescott (Level 4 Trauma Center) and East Campus in Prescott Valley.",
+        "source_url": "https://www.commonspirit.org/content/dam/commonspiritorg/en/dharz/ceaz/marketing/docs/pdfs/community/2025-yrmc-cb-report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Prescott offers moderate public school options with a 7.5 district rating and 21 schools, plus notably flexible homeschooling (no testing or credentialing required) with strong co-op support. Healthcare access is solid with Yavapai Regional Medical Center's Level 4 Trauma Center on-site and a second campus nearby, though emergency trauma care requires traveling 10 miles.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very relaxed homeschool regulations",
+            "Multiple active homeschool co-ops",
+            "Level 4 Trauma Center in town"
+          ],
+          "cons": [
+            "Below-average district rating (7.5)",
+            "Trauma care 10 miles away"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 550000.0,
+        "source_url": "https://www.yavapaiaz.gov/Mapping-and-Properties/Assessors-Office/News/SFR-Median-Sales-June-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://hdp-us-prod-app-pres-participate-files.s3.us-west-2.amazonaws.com/6617/5803/7644/250515_Prescott_Housing_Needs_Assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://hdp-us-prod-app-pres-participate-files.s3.us-west-2.amazonaws.com/6617/5803/7644/250515_Prescott_Housing_Needs_Assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://hdp-us-prod-app-pres-participate-files.s3.us-west-2.amazonaws.com/6617/5803/7644/250515_Prescott_Housing_Needs_Assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Low to Moderate",
+        "source_url": "https://hdp-us-prod-app-pres-participate-files.s3.us-west-2.amazonaws.com/6617/5803/7644/250515_Prescott_Housing_Needs_Assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.5,
+        "source_url": "https://morrisoninstitute.asu.edu/sites/g/files/litvpz841/files/2025-07/yavapai_2025_county_profile.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 8.35,
+        "source_url": "https://morrisoninstitute.asu.edu/sites/g/files/litvpz841/files/2025-07/yavapai_2025_county_profile.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Good",
+        "source_url": "https://hdp-us-prod-app-pres-participate-files.s3.us-west-2.amazonaws.com/6617/5803/7644/250515_Prescott_Housing_Needs_Assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 65.0,
+        "source_url": "https://app.communityscale.io/dashboard/municipality/0457380/Prescott-AZ",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited",
+        "source_url": "https://hdp-us-prod-app-pres-participate-files.s3.us-west-2.amazonaws.com/6617/5803/7644/250515_Prescott_Housing_Needs_Assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area has a $550K median home price with moderate permitting requirements and good broadband, making it reasonably accessible for relocation; state income tax is 4.5% and combined sales tax is 8.35%, though transit is limited and walkability is moderate.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "$550K median home price",
+            "Good broadband availability",
+            "Low-to-moderate HOA prevalence"
+          ],
+          "cons": [
+            "Limited transit options",
+            "Moderate walkability (65)",
+            "8.35% combined sales tax"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://newhomesprescott.com/blog/cost-of-living-prescott-az-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://newhomesprescott.com/blog/cost-of-living-prescott-az-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://newhomesprescott.com/blog/cost-of-living-prescott-az-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://newhomesprescott.com/blog/cost-of-living-prescott-az-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://newhomesprescott.com/blog/cost-of-living-prescott-az-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Not specified in search results",
+        "source_url": "https://nacog.org/wp-content/uploads/2026/03/2026-Recommendations-Report-FINAL.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Seasonal - Prescott Farmers Market operates seasonally with local produce, meats, and specialty items",
+        "source_url": "https://newhomesprescott.com/blog/cost-of-living-prescott-az-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Ernest A. Love Field (Prescott Airport) - local service; Phoenix Sky Harbor International Airport approximately 2 hours away",
+        "source_url": "https://wanderinarizona.com/closest-airport-to-prescott/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Phoenix area (approximately 2 hours); regional connectivity via proposed vanpool services to Phoenix, Sedona, and Bagdad Mines",
+        "source_url": "https://prescott-az.gov/wp-content/uploads/2023/08/Central-Yavapai-Transit-Implementation-Plan-Update-Final-Report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Prescott has solid everyday grocery access (Target, Trader Joe's, Costco, Sprouts all available locally) and seasonal farmers market options, but lacks premium specialty grocers like Whole Foods. Regional travel is anchored by Phoenix Sky Harbor 2 hours away, with local airport for smaller flights and emerging vanpool services to Phoenix/Sedona.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Major grocers available locally",
+            "Phoenix Sky Harbor within 2 hours",
+            "Emerging vanpool to Phoenix/Sedona"
+          ],
+          "cons": [
+            "No Whole Foods nearby",
+            "Farmers market seasonal only"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Prescott, Arizona presents a compelling but trade-off-heavy relocation destination for those seeking a small-town lifestyle at elevation near Phoenix. This charming community of 49,000 residents offers significant advantages: a safe, retiree-friendly environment (median age 59.7, violent crime 2.8 per 100K), reliable water security backed by a 100-year Assured Water Supply designation and substantial groundwater reserves, excellent solar potential with favorable net metering policies, solid healthcare infrastructure including a Level 4 Trauma Center, and reasonable accessibility with a $550K median home price and good broadband connectivity. The mild winters and 324 sunny days annually appeal to those fleeing harsh climates, while the moderate growing season and no-test homeschooling flexibility attract families with agricultural or educational flexibility. However, prospective relocators must carefully weigh the region's significant natural hazard exposure—particularly the very high wildfire risk (25 smoke days yearly) and moderate-to-high flood risk—against quality-of-life benefits. Additional considerations include above-average electricity costs (16.4¢/kWh), limited public transit and moderate walkability, the older demographic profile, and reliance on a 2-hour drive to Phoenix Sky Harbor for major regional travel. Prescott suits retirees, remote workers, and those prioritizing safety and environmental resilience over urban amenities, but demands careful evaluation of personal risk tolerance regarding natural hazards.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
