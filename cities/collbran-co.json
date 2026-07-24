@@ -249,10 +249,10 @@
         "schema_version": 1
       },
       "annual_sunshine_days": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 240.0,
+        "source_url": "https://www.bestplaces.net/climate/city/colorado/collbran",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "category_summary": {
