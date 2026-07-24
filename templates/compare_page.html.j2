@@ -96,9 +96,13 @@ wrong. Check the source link before relying on anything important.</p>
     return null;
   }
 
-  function row(label, colA, colB, extraClass) {
+  function row(label, colA, colB, extraClass, description) {
     var cls = "compare-row" + (extraClass ? " " + extraClass : "");
     var labelHTML = label === null ? "" : esc(label);
+    if (description) {
+      labelHTML += '<span class="info-icon" tabindex="0">&#9432;<span class="tooltip-text">' +
+        esc(description) + "</span></span>";
+    }
     return '<div class="' + cls + '"><div class="compare-label">' + labelHTML +
       '</div><div class="compare-col">' + colA + '</div><div class="compare-col">' + colB + "</div></div>";
   }
@@ -138,7 +142,7 @@ wrong. Check the source link before relying on anything important.</p>
       for (var j = 0; j < catA.fields.length; j++) {
         var fA = catA.fields[j];
         var fB = fieldByKey(catB, fA.key);
-        html += row(fA.label, fieldCellHTML(fA), fieldCellHTML(fB));
+        html += row(fA.label, fieldCellHTML(fA), fieldCellHTML(fB), null, fA.description);
       }
       html += "</div></div></details>";
     }
