@@ -19,7 +19,7 @@ wrong. Check the source link before relying on anything important.</p>
 {% for lens_key, lens in lens_scores.items() %}
   {% if lens.state == "scored" %}
     {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
-    <span class="fit-badge has-tooltip {{ css_class }}" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
+    <span class="fit-badge has-tooltip {{ css_class }}" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}<span class="tooltip-text">Score: {{ "%.1f"|format(lens.score) }}/100{% if lens.reason %}. {{ lens.reason }}{% endif %}</span></span>
   {% elif lens.state == "dealbreaker" %}
     <span class="fit-badge has-tooltip fit-dealbreaker" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> Dealbreaker{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
   {% elif lens.state == "needs_data" %}

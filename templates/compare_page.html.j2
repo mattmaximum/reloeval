@@ -52,7 +52,11 @@ wrong. Check the source link before relying on anything important.</p>
       cls = "fit-dealbreaker";
       text = "Dealbreaker";
     }
-    var tooltip = lens.reason ? '<span class="tooltip-text">' + esc(lens.reason) + "</span>" : "";
+    var tooltipText = lens.state === "scored" ? "Score: " + lens.score.toFixed(1) + "/100" : "";
+    if (lens.reason) {
+      tooltipText += (tooltipText ? ". " : "") + lens.reason;
+    }
+    var tooltip = tooltipText ? '<span class="tooltip-text">' + esc(tooltipText) + "</span>" : "";
     return '<span class="fit-badge has-tooltip ' + cls + '" tabindex="0"><span class="fit-lens-name">' +
       esc(lens.label) + ":</span> " + esc(text) + tooltip + "</span>";
   }
