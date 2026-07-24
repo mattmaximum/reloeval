@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare Cities</title>
+{% include "_style.html.j2" %}
+</head>
+<body>
+<a class="back" href="index.html">&larr; All cities</a>
+<h1>Compare Cities</h1>
+
+{% if city_count >= 2 %}
+<div class="compare-section">
+  <div class="compare-selectors">
+    <select id="compare-a" aria-label="First city"></select>
+    <span class="compare-vs">vs</span>
+    <select id="compare-b" aria-label="Second city"></select>
+  </div>
+  <div id="compare-table-container"></div>
+</div>
+{% else %}
+<p class="empty">Need at least 2 evaluated cities to compare.</p>
+{% endif %}
+
+{% if city_count >= 2 %}
+<script>
+(function () {
+  var cityData = null;
+
+  function esc(s) {
+    if (s === null || s === undefined) return "";
+    var d = document.createElement("div");
+    d.textContent = String(s);
+    return d.innerHTML;
+  }
+
+  function safeUrl(u) {
+    return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null;
+  }
+
+  function fitBadgeHTML(lens) {
+    if (!lens) return "";
+    var cls = "fit-needs-data", text = "Needs data";
+    if (lens.state === "scored") {
+      cls = lens.fit_label === "Strong Fit" ? "fit-strong" : (lens.fit_label === "Good Fit" ? "fit-good" : "fit-weak");
+      text = lens.fit_label;
+    } else if (lens.state === "dealbreaker") {
+      cls = "fit-dealbreaker";
+      text = "Dealbreaker";
+    }
+    var tooltip = lens.reason ? '<span class="tooltip-text">' + esc(lens.reason) + "</span>" : "";
+    return '<span class="fit-badge has-tooltip ' + cls + '" tabindex="0"><span class="fit-lens-name">' +
+      esc(lens.label) + ":</span> " + esc(text) + tooltip + "</span>";
+  }
+
+  function fieldCellHTML(field) {
+    if (!field) return '<span class="placeholder">Not yet evaluated</span>';
+    if (field.status !== "valid") {
+      var label = field.status === "flagged" ? "Flagged as incorrect" : "Not yet evaluated";
+      return '<span class="placeholder">' + esc(label) + "</span>";
+    }
+    if (field.is_table) {
+      if (!Array.isArray(field.display_value)) return "";
+      var rows = field.display_value.map(function (r) {
+        return "<tr><td>" + esc(r.month) + "</td><td>" + esc(r.avg_high_f) + "</td><td>" + esc(r.avg_low_f) +
+          "</td><td>" + esc(r.avg_rainfall_in) + "</td><td>" + esc(r.avg_snowfall_in) + "</td></tr>";
+      }).join("");
+      return '<div class="table-scroll"><table class="field-table">' +
+        "<tr><th>Month</th><th>Hi (&deg;F)</th><th>Lo (&deg;F)</th><th>Rain (in)</th><th>Snow (in)</th></tr>" +
+        rows + "</table></div>";
+    }
+    var badge = field.risk_badge
+      ? '<span class="risk-badge" style="background:' + esc(field.risk_badge.color) + '">' + esc(field.risk_badge.level) + "</span> "
+      : "";
+    var url = safeUrl(field.citation_url);
+    var citation = url ? ' &middot; <a class="source-link" href="' + esc(url) + '">source</a>' : "";
+    return badge + esc(field.display_value) + citation;
+  }
+
+  function fieldByKey(category, key) {
+    if (!category) return null;
+    for (var i = 0; i < category.fields.length; i++) {
+      if (category.fields[i].key === key) return category.fields[i];
+    }
+    return null;
+  }
+
+  function categoryByKey(city, key) {
+    for (var i = 0; i < city.categories.length; i++) {
+      if (city.categories[i].key === key) return city.categories[i];
+    }
+    return null;
+  }
+
+  function row(label, colA, colB, extraClass) {
+    var cls = "compare-row" + (extraClass ? " " + extraClass : "");
+    var labelHTML = label === null ? "" : esc(label);
+    return '<div class="' + cls + '"><div class="compare-label">' + labelHTML +
+      '</div><div class="compare-col">' + colA + '</div><div class="compare-col">' + colB + "</div></div>";
+  }
+
+  function render() {
+    var slugA = document.getElementById("compare-a").value;
+    var slugB = document.getElementById("compare-b").value;
+    var container = document.getElementById("compare-table-container");
+
+    if (!slugA || !slugB) { container.innerHTML = ""; return; }
+    if (slugA === slugB) {
+      container.innerHTML = '<p class="empty">Pick two different cities to compare.</p>';
+      return;
+    }
+
+    var a = cityData[slugA], b = cityData[slugB];
+    var html = '<div class="compare-table-scroll"><div class="compare-grid">';
+
+    html += row(null, esc(a.city) + ", " + esc(a.state), esc(b.city) + ", " + esc(b.state), "compare-header-row");
+    html += row("Fit",
+      fitBadgeHTML(a.lens_scores.family) + " " + fitBadgeHTML(a.lens_scores.self_sufficiency),
+      fitBadgeHTML(b.lens_scores.family) + " " + fitBadgeHTML(b.lens_scores.self_sufficiency));
+    if (a.overall_summary || b.overall_summary) {
+      html += row("Summary", esc(a.overall_summary), esc(b.overall_summary));
+    }
+    html += "</div></div>";
+
+    for (var i = 0; i < a.categories.length; i++) {
+      var catA = a.categories[i];
+      var catB = categoryByKey(b, catA.key);
+      html += '<details class="category" id="compare-' + esc(catA.key) + '" open><summary>' + esc(catA.label) +
+        '</summary><div class="compare-table-scroll"><div class="compare-grid">';
+
+      if (catA.summary || (catB && catB.summary)) {
+        html += row(null, "<em>" + esc(catA.summary) + "</em>", "<em>" + esc(catB ? catB.summary : "") + "</em>");
+      }
+      for (var j = 0; j < catA.fields.length; j++) {
+        var fA = catA.fields[j];
+        var fB = fieldByKey(catB, fA.key);
+        html += row(fA.label, fieldCellHTML(fA), fieldCellHTML(fB));
+      }
+      html += "</div></div></details>";
+    }
+
+    container.innerHTML = html;
+  }
+
+  function populate() {
+    var slugs = Object.keys(cityData);
+    var selA = document.getElementById("compare-a");
+    var selB = document.getElementById("compare-b");
+    slugs.forEach(function (slug) {
+      var label = cityData[slug].city + ", " + cityData[slug].state;
+      var optA = document.createElement("option");
+      optA.value = slug; optA.textContent = label;
+      selA.appendChild(optA);
+      var optB = document.createElement("option");
+      optB.value = slug; optB.textContent = label;
+      selB.appendChild(optB);
+    });
+    if (slugs.length >= 1) selA.value = slugs[0];
+    if (slugs.length >= 2) selB.value = slugs[1];
+    render();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var selA = document.getElementById("compare-a");
+    var selB = document.getElementById("compare-b");
+    if (!selA || !selB) return;
+    selA.addEventListener("change", render);
+    selB.addEventListener("change", render);
+    fetch("cities-data.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) { cityData = data; populate(); })
+      .catch(function () {
+        document.getElementById("compare-table-container").innerHTML =
+          '<p class="empty">Could not load comparison data.</p>';
+      });
+  });
+})();
+</script>
+{% endif %}
+</body>
+</html>

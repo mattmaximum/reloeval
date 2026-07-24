@@ -15,7 +15,7 @@
       "dealbreakers": []
     },
     "self_sufficiency": {
-      "label": "Self-Sufficiency & Resilience",
+      "label": "Self-Sufficiency",
       "category_weights": {
         "geographic_hazards": 2,
         "geographic_climate": 2,

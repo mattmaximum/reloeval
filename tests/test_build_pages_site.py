@@ -126,3 +126,64 @@ def test_build_site_shows_fit_badges_and_dealbreaker_reason(isolated_site):
 
     index_html = (isolated_site["site"] / "index.html").read_text()
     assert "fit-badge" in index_html
+    assert "Self-Sufficiency" in index_html
+    assert "Self-Sufficiency & Resilience" not in index_html
+
+
+def test_comparison_payload_strips_chart_svg_and_citation_keeps_rest():
+    from render import build_render_context
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={"power_energy": {
+            "electricity_rate_cents_per_kwh": StoredFieldValue(
+                value=12.5, source_url="https://x.com", fetched_date="2026-07-22",
+                status=FieldStatus.VALID, schema_version=1),
+        }},
+    )
+    context = build_render_context(schema, record)
+    context["categories"] = build_pages_site.enrich_categories(context["categories"])
+    context["lens_scores"] = {}
+
+    payload = build_pages_site.comparison_payload(record, context)
+
+    assert payload["city"] == "Austin"
+    power = next(c for c in payload["categories"] if c["key"] == "power_energy")
+    field = next(f for f in power["fields"] if f["key"] == "electricity_rate_cents_per_kwh")
+    assert field["display_value"] == "12.5"
+    assert field["citation_url"] == "https://x.com"
+    assert "chart_svg" not in field
+    assert "citation" not in field
+
+
+def test_build_site_writes_cities_data_json_and_compare_page(isolated_site):
+    _write_city(isolated_site["cities"], "a-tx", "A", "TX")
+    _write_city(isolated_site["cities"], "b-tx", "B", "TX")
+
+    build_pages_site.build_site()
+
+    import json
+    data = json.loads((isolated_site["site"] / "cities-data.json").read_text())
+    assert set(data.keys()) == {"a-tx", "b-tx"}
+    assert data["a-tx"]["city"] == "A"
+    assert "lens_scores" in data["a-tx"]
+
+    compare_html = (isolated_site["site"] / "compare.html").read_text()
+    assert "compare-a" in compare_html
+    assert "compare-b" in compare_html
+    assert "Need at least 2" not in compare_html
+
+
+def test_build_site_compare_page_shows_message_when_fewer_than_two_cities(isolated_site):
+    _write_city(isolated_site["cities"], "only-one-tx", "Only One", "TX")
+
+    build_pages_site.build_site()
+
+    compare_html = (isolated_site["site"] / "compare.html").read_text()
+    assert "Need at least 2 evaluated cities" in compare_html
+    assert 'id="compare-a"' not in compare_html
+
+    index_html = (isolated_site["site"] / "index.html").read_text()
+    assert "Compare two cities" not in index_html  # link only shown with 2+ cities

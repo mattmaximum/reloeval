@@ -16,6 +16,7 @@ an artifact-shaping step for deployment, run only by the CI workflow.
 from __future__ import annotations
 
 import io
+import json
 import sys
 from pathlib import Path
 
@@ -93,6 +94,34 @@ def enrich_categories(categories: list[dict]) -> list[dict]:
     return categories
 
 
+def comparison_payload(record, context: dict) -> dict:
+    """Slimmed-down per-city data for the client-side comparison tool on
+    the index page -- same field contexts the report page uses, minus
+    chart_svg (a full inline SVG per city would bloat a JSON blob meant
+    to hold every evaluated city at once) and the markdown-formatted
+    citation string (HTML only needs citation_url/citation_date)."""
+    return {
+        "city": record.normalized.city,
+        "state": record.normalized.state,
+        "county": record.normalized.county,
+        "overall_summary": context.get("overall_summary"),
+        "lens_scores": context["lens_scores"],
+        "categories": [
+            {
+                "key": category["key"],
+                "label": category["label"],
+                "summary": category.get("summary"),
+                "pros_cons": category.get("pros_cons"),
+                "fields": [
+                    {k: v for k, v in field.items() if k not in ("chart_svg", "citation")}
+                    for field in category["fields"]
+                ],
+            }
+            for category in context["categories"]
+        ],
+    }
+
+
 def build_scorecard(categories: list[dict]) -> list[dict]:
     return [
         field
@@ -119,6 +148,7 @@ def build_site() -> Path:
     env = _env()
     report_template = env.get_template("report_page.html.j2")
     index_template = env.get_template("index_page.html.j2")
+    compare_template = env.get_template("compare_page.html.j2")
 
     records = gather_cities()
     # Relative scoring needs every city at once (min-max normalization),
@@ -126,6 +156,7 @@ def build_site() -> Path:
     all_scores = compute_all_scores(schema, records)
 
     index_cities = []
+    comparison_data = {}
     for record in records:
         context = build_render_context(schema, record)
         context["categories"] = enrich_categories(context["categories"])
@@ -144,8 +175,11 @@ def build_site() -> Path:
             "completion": context["completion"],
             "lens_scores": context["lens_scores"],
         })
+        comparison_data[record.slug] = comparison_payload(record, context)
 
     (SITE_DIR / "index.html").write_text(index_template.render(cities=index_cities))
+    (SITE_DIR / "compare.html").write_text(compare_template.render(city_count=len(records)))
+    (SITE_DIR / "cities-data.json").write_text(json.dumps(comparison_data))
     return SITE_DIR
 
 

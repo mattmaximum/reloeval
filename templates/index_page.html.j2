@@ -8,14 +8,21 @@
 </head>
 <body>
 <h1>Relocation Evaluator</h1>
+
+{% if cities|length >= 2 %}
+<p><a href="compare.html">&#8646; Compare two cities side by side</a></p>
+{% endif %}
+
 {% if cities %}
 <ul class="city-list">
 {% for city in cities %}
-  <li>
-    <a href="{{ city.href }}">{{ city.city }}, {{ city.state }}</a><br>
-    <span class="county">{{ city.county }} &middot; {{ city.completion.valid }}/{{ city.completion.total }} fields ({{ city.completion.percent }}%)</span>
+  <li class="city-row">
+    <div class="city-info">
+      <a href="{{ city.href }}">{{ city.city }}, {{ city.state }}</a><br>
+      <span class="county">{{ city.county }} &middot; {{ city.completion.valid }}/{{ city.completion.total }} fields ({{ city.completion.percent }}%)</span>
+    </div>
     {% if city.lens_scores %}
-    <div class="fit-scores" style="margin-top:6px;">
+    <div class="fit-scores city-fit-scores">
     {% for lens_key, lens in city.lens_scores.items() %}
       {% if lens.state == "scored" %}
         {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
