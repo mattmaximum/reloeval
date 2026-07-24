@@ -105,7 +105,7 @@ async def normalize_city(client: AsyncOpenAI, city_state_input: str) -> Normaliz
                     "state": {"type": "string", "description": "Two-letter state abbreviation"},
                     "county": {"type": "string"},
                 },
-                "required": ["resolved"],
+                "required": ["resolved", "city", "state", "county"],
             },
         },
     }]
@@ -121,7 +121,12 @@ async def normalize_city(client: AsyncOpenAI, city_state_input: str) -> Normaliz
     )
     tool_call = response.choices[0].message.tool_calls[0]
     result = json.loads(tool_call.function.arguments)
-    if not result.get("resolved"):
+    if not result.get("resolved") or not result.get("city") or not result.get("state") or not result.get("county"):
+        # The tool schema requires city/state/county whenever resolved=true,
+        # but a model can still omit or blank one out despite that -- treat
+        # an incomplete resolution the same as an unresolved one rather than
+        # crash with a KeyError deep in normalize_city (seen for real on
+        # "Penrose, CO": resolved=true but county was missing).
         raise CityNotFoundError(
             f"Could not resolve {city_state_input!r} to a known US city. "
             "Check spelling and include a state (e.g. \"Austin, TX\")."

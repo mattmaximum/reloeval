@@ -117,6 +117,14 @@ def test_normalize_city_unresolvable_raises_city_not_found():
         asyncio.run(normalize_city(client, "asdkjfhaksjdhf not a real place"))
 
 
+def test_normalize_city_resolved_true_but_missing_county_raises_city_not_found():
+    # Real failure seen on "Penrose, CO": resolved=true but the model left
+    # county out entirely. Must not crash with a bare KeyError.
+    client = FakeAsyncOpenAI(handler=lambda name, kw: {"resolved": True, "city": "Penrose", "state": "CO"})
+    with pytest.raises(CityNotFoundError):
+        asyncio.run(normalize_city(client, "Penrose, CO"))
+
+
 def test_fetch_category_total_failure_marks_every_field_unresolved(monkeypatch):
     real_sleep = asyncio.sleep
     monkeypatch.setattr("fetch.asyncio.sleep", lambda *a, **kw: real_sleep(0))
