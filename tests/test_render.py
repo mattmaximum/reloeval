@@ -1,5 +1,7 @@
+import pytest
+
 from models import CityRecord, FieldStatus, NormalizedCity, StoredFieldValue, load_schema
-from render import build_render_context, compute_bd_score, format_number, format_retail_presence, format_scalar, humanize, md_table_cell, render_city
+from render import bd_score_emoji, build_render_context, compute_bd_score, format_number, format_retail_presence, format_scalar, humanize, md_table_cell, render_city
 
 
 def test_format_number_adds_thousands_separators():
@@ -199,7 +201,21 @@ def test_build_render_context_derived_field_present_and_computed():
     context = build_render_context(schema, record)
     geo_category = context["categories"][0]  # geographic_hazards is the first category in schema.json
     field = next(f for f in geo_category["fields"] if f["key"] == "bd_score")
-    assert field["display_value"] == "639"
+    assert field["display_value"] == "639 \U0001F534"  # 639 < 2000 -> red circle
+
+
+@pytest.mark.parametrize("value,expected_emoji", [
+    (0.0, "\U0001F534"),      # red: < 2000
+    (1999.9, "\U0001F534"),
+    (2000.0, "\U0001F7E0"),   # orange: 2000-2999
+    (2999.9, "\U0001F7E0"),
+    (3000.0, "\U0001F7E1"),   # yellow: 3000-4999
+    (4999.9, "\U0001F7E1"),
+    (5000.0, "\U0001F7E2"),   # green: 5000+
+    (9000.0, "\U0001F7E2"),
+])
+def test_bd_score_emoji_thresholds(value, expected_emoji):
+    assert bd_score_emoji(value) == expected_emoji
 
 
 def test_render_city_end_to_end(isolated_dirs):

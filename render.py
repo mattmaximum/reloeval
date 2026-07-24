@@ -104,6 +104,19 @@ def compute_bd_score(category_fields: dict[str, StoredFieldValue]) -> Optional[f
     return elevation.value + distance.value
 
 
+def bd_score_emoji(value: float) -> str:
+    """Fixed absolute thresholds (not relative to other cities, unlike the
+    scoring.py sub-scores) -- a personal quick-glance cue, plain text so it
+    shows up in reports/*.md too, not just the HTML pages."""
+    if value < 2000:
+        return "\U0001F534"  # red circle
+    if value < 3000:
+        return "\U0001F7E0"  # orange circle
+    if value < 5000:
+        return "\U0001F7E1"  # yellow circle
+    return "\U0001F7E2"  # green circle
+
+
 def build_field_context(field_key: str, field_def: dict, stored: Optional[StoredFieldValue]) -> dict:
     label = humanize(field_key)
     highlight = field_def.get("highlight", False)
@@ -154,6 +167,8 @@ def build_derived_field_context(field_key: str, field_def: dict, category_fields
         status = "missing"
     else:
         display_value = format_scalar(value, field_def.get("unit"))
+        if field_key == "bd_score":
+            display_value = f"{display_value} {bd_score_emoji(value)}"
         status = "valid"
     return {"key": field_key, "label": label, "type": "number", "is_table": False,
             "status": status, "highlight": field_def.get("highlight", False), "risk_field": False,
