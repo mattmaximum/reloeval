@@ -2,14 +2,14 @@
 
 *Kootenai · Generated 2026-07-24*
 
-Coeur d'Alene, Idaho presents a compelling relocation destination for those seeking a small-town lifestyle with strong community safety and educational institutions, though prospective residents should carefully weigh trade-offs between its advantages and limitations. The city of 58,000 offers exceptional safety with violent crime rates of just 2.8 per 100,000, excellent healthcare facilities including a Level II Trauma Center and 381-bed hospital, and highly-rated K-12 education with standout schools like Coeur d'Alene Charter Academy. Its mountainous terrain and proximity to Spokane (32 minutes) provide outdoor recreation opportunities and regional access, while moderate electricity costs (13.5 cents/kWh) and good grid reliability support economic viability. However, significant environmental and infrastructure concerns warrant consideration: the region experiences elevated wildfire risk with 42 smoke days annually, the critical Rathdrum Prairie Aquifer is experiencing abnormal dryness with development heavily restricted to one dwelling per five acres, and the area lacks major chain retailers, limiting shopping convenience. Additionally, the car-dependent layout (walkability score 65), limited public transit, median home prices of $565,000, and strongly conservative political character (67% Trump support, 86.5% white demographic, permissionless carry laws) may not suit all relocating families. Ultimately, Coeur d'Alene appeals to those prioritizing safety, education, and tight-knit community values while accepting geographic constraints, limited amenities diversity, and environmental vulnerabilities.
+Coeur d'Alene, Idaho presents a compelling relocation destination for those seeking a small-town lifestyle in a politically conservative, safe community with strong educational and healthcare infrastructure. Located in northern Idaho at 2,157 feet elevation, this city of 58,000 offers excellent K-12 schools (including the top-ranked Coeur d'Alene Charter Academy), a Level II Trauma Center, and very low violent crime rates (2.8 per 100K), making it ideal for families prioritizing safety and education. The region's moderate climate features 299 sunny days annually and a 179-day growing season, though residents should prepare for cold, snowy winters and smoky summers with 42 days of air quality concerns annually due to nearby wildfire risk. Economically, the area offers reasonable electricity costs (13.5¢/kWh), good broadband infrastructure, and median home prices of $565,000, though prospective residents should note the car-dependent layout with limited public transit and the absence of major chain retailers—requiring travel to Spokane (40 minutes) for comprehensive shopping and regional airport access. The reliable Rathdrum Prairie Aquifer provides excellent water security despite recent dryness concerns, and the community's relaxed regulatory environment (including permitless carry laws and one-dwelling-per-five-acres zoning over the aquifer) appeals to liberty-minded individuals. While the area experiences moderate seismic and flood risks and requires careful planning around the 42-day smoke season, Coeur d'Alene's combination of safety, education quality, outdoor access, conservative governance, and regional proximity to Seattle (4.7 hours) makes it particularly attractive for established families or remote workers seeking small-town stability without complete geographic isolation.
 
 ## Geographic & Natural Hazards
 
-*Kootenai County has high wildfire risk with 42 smoke days per year, moderate earthquake and flood risks, and sits 85 miles from active fault lines. It's a mountainous area (2,157 ft elevation) with low hurricane risk and minimal volcano concerns, located 32 minutes from Spokane.*
+*Kootenai County sits in northern Idaho at 2,157 ft elevation with moderate earthquake risk (85 miles from a fault line) and high wildfire risk—expect 42 smoky days per year with an average air quality index of 68. The area experiences moderate flood risk, minimal hurricane threat, and is a 4.7-hour drive from Seattle.*
 
-**Pros:** Low hurricane risk, 32-minute drive to Spokane metro, Moderate earthquake/flood risks
-**Cons:** High wildfire risk, 42 smoke days annually, Moderate earthquake risk
+**Pros:** Remote from major metro areas, Minimal hurricane risk
+**Cons:** High wildfire risk, 42 smoke days/year, Moderate earthquake & flood risk, 285-minute drive to nearest large city
 
 | Field | Value | Source |
 |---|---|---|
@@ -25,8 +25,8 @@ Coeur d'Alene, Idaho presents a compelling relocation destination for those seek
 | Flood Risk | Moderate | [source](https://cdapress.com/news/2024/dec/17/coeur-dalene-to-consider-emergency-plan/), checked 2026-07-24 |
 | Avg AQI | 68 | [source](https://www.kcgov.us/DocumentCenter/View/1523/12-Hazardous-Areas-PDF), checked 2026-07-24 |
 | Wildfire Smoke Days Per Year | 42 | [source](https://www.kcgov.us/DocumentCenter/View/1523/12-Hazardous-Areas-PDF), checked 2026-07-24 |
-| Nearest Large Metro Drive Time Min | 32 | [source](https://guidebycity.com/city/coeur-dalene-id/), checked 2026-07-24 |
-| Nearest Large Metro Name | Spokane, Washington | [source](https://www.starr-team.com/starr/RegionalWorkspaces/RegionX/Documents/archive/Kootenai%20County%20Risk%20MAP%20Documents/Discovery_Report_Draft_09142012.pdf), checked 2026-07-24 |
+| Nearest Large Metro Drive Time Min | 284 | [source](https://www.travelmath.com/drive-distance/from/Coeur+d'Alene,+ID/to/Seattle,+WA), checked 2026-07-24 |
+| Nearest Large Metro Name | Seattle | [source](https://www.travelmath.com/drive-distance/from/Coeur+d'Alene,+ID/to/Seattle,+WA), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 

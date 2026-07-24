@@ -100,17 +100,27 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": null,
+        "value": "Kootenai County sits in northern Idaho at 2,157 ft elevation with moderate earthquake risk (85 miles from a fault line) and high wildfire risk—expect 42 smoky days per year with an average air quality index of 68. The area experiences moderate flood risk, minimal hurricane threat, and is a 4.7-hour drive from Seattle.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": null,
+        "value": {
+          "pros": [
+            "Remote from major metro areas",
+            "Minimal hurricane risk"
+          ],
+          "cons": [
+            "High wildfire risk, 42 smoke days/year",
+            "Moderate earthquake & flood risk",
+            "285-minute drive to nearest large city"
+          ]
+        },
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     },
@@ -770,10 +780,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": null,
+        "value": "Coeur d'Alene, Idaho presents a compelling relocation destination for those seeking a small-town lifestyle in a politically conservative, safe community with strong educational and healthcare infrastructure. Located in northern Idaho at 2,157 feet elevation, this city of 58,000 offers excellent K-12 schools (including the top-ranked Coeur d'Alene Charter Academy), a Level II Trauma Center, and very low violent crime rates (2.8 per 100K), making it ideal for families prioritizing safety and education. The region's moderate climate features 299 sunny days annually and a 179-day growing season, though residents should prepare for cold, snowy winters and smoky summers with 42 days of air quality concerns annually due to nearby wildfire risk. Economically, the area offers reasonable electricity costs (13.5¢/kWh), good broadband infrastructure, and median home prices of $565,000, though prospective residents should note the car-dependent layout with limited public transit and the absence of major chain retailers—requiring travel to Spokane (40 minutes) for comprehensive shopping and regional airport access. The reliable Rathdrum Prairie Aquifer provides excellent water security despite recent dryness concerns, and the community's relaxed regulatory environment (including permitless carry laws and one-dwelling-per-five-acres zoning over the aquifer) appeals to liberty-minded individuals. While the area experiences moderate seismic and flood risks and requires careful planning around the 42-day smoke season, Coeur d'Alene's combination of safety, education quality, outdoor access, conservative governance, and regional proximity to Seattle (4.7 hours) makes it particularly attractive for established families or remote workers seeking small-town stability without complete geographic isolation.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     }
