@@ -2,8 +2,6 @@
 
 *Mesa County · Generated 2026-07-24*
 
-Collbran, Colorado presents itself as an exceptionally quiet and safe small-town relocation destination with a population of just 356 residents, zero violent and property crime, and constitutional carry protections in a Democratic-leaning county. The location offers moderate climate conditions with mild winters and consistent year-round precipitation, though critical data gaps exist regarding annual sunshine, and residents must contend with moderate-to-high wildfire risk (12 smoke days annually) and significant drought vulnerability, with water supplies at only 41% of snowpack and a 10-30% risk of dropping to historic lows. While the community benefits from reliable electricity (16.54¢/kWh) and adequate broadband, housing costs are steep at a median of $690,000 with land prices ranging from $326,000–$411,000 per acre, and the car-dependent area (walkability score 34.8) offers limited access to major amenities, requiring travel to Grand Junction (1 hour) or Denver (4–5 hours) for specialized services and chain grocers. Healthcare access necessitates a 30-mile trip to a trauma center, and the small public school system (4 schools, rating 7.0) may limit educational options, making Collbran most suitable for remote workers or retirees seeking solitude, self-sufficiency, and strong community safety, provided they can accept geographic isolation, water scarcity concerns, and elevated housing expenses in exchange for a genuinely crime-free mountain lifestyle.
-
 ## Geographic & Natural Hazards
 
 *Mesa County sits at 8,100 ft elevation, 236 minutes from Denver, with moderate-to-high wildfire risk and 12 smoke days/year, but minimal hurricane threat and low-to-moderate earthquake risk. Fault lines are 45 miles away, and moderate flood risk is present.*
@@ -30,18 +28,13 @@ Collbran, Colorado presents itself as an exceptionally quiet and safe small-town
 
 ## Climate & Growing Conditions
 
-*This Zone 5b location has a moderate 180-day growing season with mild winters (lows around 11–13°F in January/December) and summer highs in the mid-80s, receiving consistent rainfall year-round (averaging ~1.2 inches/month) but virtually no snow. The annual sunshine data is missing (recorded as 0.0 days), which is a significant gap for climate assessment.*
-
-**Pros:** 180-day growing season, Minimal winter snow, Consistent year-round rainfall
-**Cons:** No sunshine data provided, Cold winter lows (11–13°F)
-
 | Field | Value | Source |
 |---|---|---|
 | USDA Hardiness Zone | Zone 5b | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
 | First Frost Date | Sep. 21 - Sep. 30 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
 | Last Frost Date | Apr. 11 - Apr. 20 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
 | Growing Season Length Days | 180 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
-| Annual Sunshine Days | 0 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
+| Annual Sunshine Days | _(not yet evaluated — run backfill)_ |  |
 
 **Monthly Climate Table** ([source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24)
 | Month | Avg High (°F) | Avg Low (°F) | Avg Rainfall (in) | Avg Snowfall (in) |
