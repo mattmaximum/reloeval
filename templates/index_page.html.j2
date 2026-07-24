@@ -10,29 +10,18 @@
 <h1>Relocation Evaluator</h1>
 
 <p class="site-intro">
-A personal research tool evaluating US cities across ~65 data points &mdash; schools, safety,
-climate, water and power infrastructure, land and legal considerations, and self-sufficiency
-&mdash; using live web search paired with an LLM. It's public because the research might be
-useful to someone else looking at the same cities.
+A personal tool comparing US cities across ~65 data points &mdash; schools, safety, climate,
+infrastructure, land/legal, self-sufficiency &mdash; using live web search and an LLM. Public in
+case it helps someone else.
 </p>
-<p class="site-intro">
-It's not open for anyone to run, though &mdash; every evaluation makes real, billed AI API
-calls, so new cities are added by the site owner one at a time, and only the owner can trigger
-a new evaluation. If there's enough interest, opening it up more broadly is something I'd
-consider, but it would need to come with a cost to cover the API usage.
-</p>
-<p class="site-intro">
-<strong>A disclaimer on the Family Fit and Self-Sufficiency scores below:</strong> they're
-deliberately subjective, reflecting one specific family's priorities and weightings, not an
-objective ranking. That family has several young children. They're not chasing an off-grid,
-middle-of-nowhere location, and they're not optimizing for zero risk &mdash; some tradeoffs are
-acceptable to them.
-</p>
-<p class="site-intro">
-Your priorities are probably different, so these scores likely won't match your own
-conclusions. That's expected, not a flaw in the methodology. Feel free to ignore the Fit scores
-and just read each city's underlying research on its own terms.
-</p>
+<ul class="site-intro-notes">
+<li>Adding cities is closed to the public &mdash; it costs real money to run (that could change
+in the future).</li>
+<li>The Family Fit and Self-Sufficiency scores are deliberately subjective &mdash; reflecting one
+family's priorities and weightings, not an objective ranking. That family has several young
+children, isn't chasing an off-grid or isolated location, and accepts some risk tradeoffs. Yours
+will likely differ &mdash; feel free to ignore the scores and just read the data.</li>
+</ul>
 
 {% if cities|length >= 2 %}
 <div class="list-controls">
