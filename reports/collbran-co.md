@@ -2,14 +2,14 @@
 
 *Mesa County · Generated 2026-07-24*
 
-Collbran, Colorado presents a compelling yet highly specialized relocation destination for those seeking an exceptionally quiet, tight-knit community of just 356 residents in a safe, low-crime environment with zero reported violent or property crimes. Located at 8,100 feet elevation in Mesa County, the area offers moderate climate conditions with mild winters (11–13°F lows) and temperate summers in the mid-80s, plus year-round rainfall supporting a 180-day growing season, though critical data gaps exist regarding annual sunshine hours. The region's primary challenges center on resource constraints: extreme drought conditions threaten water security with snowpack at only 41% of normal and a substantial risk of supplies dropping to historic lows, while healthcare requires a 30-mile trek to the nearest trauma center and educational options are limited to a small public school system. Housing costs are steep at a median of $690,000 with land exceeding $300,000+ per acre, and the area's high car-dependency and walkability score of 34.8 reflect its rural character. Practical considerations include moderate electricity costs (16.54¢/kWh), adequate broadband, permit-friendly governance with constitutional carry protections, and access to regional amenities like Grand Junction (35 minutes away) and Denver (4–5 hours south), though major grocery chains are absent—offset somewhat by robust farmers markets featuring local specialties. This destination suits individuals prioritizing security, solitude, and community cohesion over urban convenience and infrastructure density, provided they can navigate water scarcity concerns and accept geographic isolation.
+Collbran, Colorado presents itself as an exceptionally quiet and safe small-town relocation destination with a population of just 356 residents, zero violent and property crime, and constitutional carry protections in a Democratic-leaning county. The location offers moderate climate conditions with mild winters and consistent year-round precipitation, though critical data gaps exist regarding annual sunshine, and residents must contend with moderate-to-high wildfire risk (12 smoke days annually) and significant drought vulnerability, with water supplies at only 41% of snowpack and a 10-30% risk of dropping to historic lows. While the community benefits from reliable electricity (16.54¢/kWh) and adequate broadband, housing costs are steep at a median of $690,000 with land prices ranging from $326,000–$411,000 per acre, and the car-dependent area (walkability score 34.8) offers limited access to major amenities, requiring travel to Grand Junction (1 hour) or Denver (4–5 hours) for specialized services and chain grocers. Healthcare access necessitates a 30-mile trip to a trauma center, and the small public school system (4 schools, rating 7.0) may limit educational options, making Collbran most suitable for remote workers or retirees seeking solitude, self-sufficiency, and strong community safety, provided they can accept geographic isolation, water scarcity concerns, and elevated housing expenses in exchange for a genuinely crime-free mountain lifestyle.
 
 ## Geographic & Natural Hazards
 
-*Mesa County sits at 8,100 ft elevation with moderate-to-high wildfire risk and 12 annual smoke days, plus moderate flood risk and low-to-moderate earthquake risk; the main perks are minimal hurricane exposure and proximity to Grand Junction (35-minute drive).*
+*Mesa County sits at 8,100 ft elevation, 236 minutes from Denver, with moderate-to-high wildfire risk and 12 smoke days/year, but minimal hurricane threat and low-to-moderate earthquake risk. Fault lines are 45 miles away, and moderate flood risk is present.*
 
-**Pros:** Minimal hurricane risk, Close to Grand Junction (35 min), No volcanic zone threat
-**Cons:** Moderate-to-high wildfire risk, 12 smoke days per year, Moderate flood risk, 45 mi from fault line
+**Pros:** Remote from major metro, No volcanic zone, Minimal hurricanes, AQI 68 (moderate)
+**Cons:** Moderate-to-high wildfire risk, 12 wildfire smoke days/year, 45 mi from fault line, Moderate flood risk
 
 | Field | Value | Source |
 |---|---|---|
@@ -25,8 +25,8 @@ Collbran, Colorado presents a compelling yet highly specialized relocation desti
 | Flood Risk | Moderate | [source](https://www.postindependent.com/news/local/mesa-county-declares-state-of-heightened-awareness-for-landslide-near-collbran/), checked 2026-07-24 |
 | Avg AQI | 68 | [source](https://www.mesacounty.us/sites/default/files/2025-05/2020-mesa-county-hazard-mitigation-plan-public-review%2B%281%29-compressed.pdf), checked 2026-07-24 |
 | Wildfire Smoke Days Per Year | 12 | [source](https://riskbycounty.com/colorado/mesa-county), checked 2026-07-24 |
-| Nearest Large Metro Drive Time Min | 35 | [source](https://coloradogeologicalsurvey.org/Docs/Pubs/B-55.pdf), checked 2026-07-24 |
-| Nearest Large Metro Name | Grand Junction | [source](https://coloradogeologicalsurvey.org/Docs/Pubs/B-55.pdf), checked 2026-07-24 |
+| Nearest Large Metro Drive Time Min | 236 | [source](https://www.travelmath.com/drive-distance/from/Collbran,+CO/to/Denver,+CO), checked 2026-07-24 |
+| Nearest Large Metro Name | Denver | [source](https://www.travelmath.com/drive-distance/from/Collbran,+CO/to/Denver,+CO), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 

@@ -100,17 +100,30 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": null,
+        "value": "Mesa County sits at 8,100 ft elevation, 236 minutes from Denver, with moderate-to-high wildfire risk and 12 smoke days/year, but minimal hurricane threat and low-to-moderate earthquake risk. Fault lines are 45 miles away, and moderate flood risk is present.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": null,
+        "value": {
+          "pros": [
+            "Remote from major metro",
+            "No volcanic zone",
+            "Minimal hurricanes",
+            "AQI 68 (moderate)"
+          ],
+          "cons": [
+            "Moderate-to-high wildfire risk",
+            "12 wildfire smoke days/year",
+            "45 mi from fault line",
+            "Moderate flood risk"
+          ]
+        },
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     },
@@ -770,10 +783,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": null,
+        "value": "Collbran, Colorado presents itself as an exceptionally quiet and safe small-town relocation destination with a population of just 356 residents, zero violent and property crime, and constitutional carry protections in a Democratic-leaning county. The location offers moderate climate conditions with mild winters and consistent year-round precipitation, though critical data gaps exist regarding annual sunshine, and residents must contend with moderate-to-high wildfire risk (12 smoke days annually) and significant drought vulnerability, with water supplies at only 41% of snowpack and a 10-30% risk of dropping to historic lows. While the community benefits from reliable electricity (16.54¢/kWh) and adequate broadband, housing costs are steep at a median of $690,000 with land prices ranging from $326,000–$411,000 per acre, and the car-dependent area (walkability score 34.8) offers limited access to major amenities, requiring travel to Grand Junction (1 hour) or Denver (4–5 hours) for specialized services and chain grocers. Healthcare access necessitates a 30-mile trip to a trauma center, and the small public school system (4 schools, rating 7.0) may limit educational options, making Collbran most suitable for remote workers or retirees seeking solitude, self-sufficiency, and strong community safety, provided they can accept geographic isolation, water scarcity concerns, and elevated housing expenses in exchange for a genuinely crime-free mountain lifestyle.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     }
