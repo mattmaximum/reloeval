@@ -1,0 +1,793 @@
+{
+  "input_city_state": "Johnson City, TN",
+  "normalized": {
+    "city": "Johnson City",
+    "state": "TN",
+    "county": "Washington"
+  },
+  "slug": "johnson-city-tn",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Washington County",
+        "source_url": "https://www.washingtoncountytn.org/AgendaCenter/ViewFile/Agenda/_04272026-1005",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 1247.0,
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 350.0,
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 250.0,
+        "source_url": "https://disastercalculator.com/risk/johnson-city-tn",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "No active volcanoes within 500 miles",
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Low",
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "Moderate",
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Low",
+        "source_url": "https://protectmyzip.com/zip/37604",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate",
+        "source_url": "https://www.johnsoncitytn.org/residents/public_works/stormwater_management/floodplain/index.php",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 60.0,
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 12.0,
+        "source_url": "https://protectmyzip.com/city/tn/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 145.0,
+        "source_url": "https://washingtoncountytn.org/AgendaCenter/ViewFile/Agenda/_04272026-1005",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Atlanta-Sandy Springs-Roswell, GA",
+        "source_url": "https://washingtoncountytn.org/AgendaCenter/ViewFile/Agenda/_04272026-1005",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Washington County sits 350 miles inland with moderate wildfire and flood risks, plus 12 annual smoke days, but benefits from low hurricane and earthquake risk and reasonable air quality (AQI 60). The nearest major metro (Atlanta) is a 2.5-hour drive away.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Low hurricane risk",
+            "Low earthquake risk",
+            "Moderate air quality"
+          ],
+          "cons": [
+            "12 wildfire smoke days/year",
+            "Moderate flood risk",
+            "145-min drive to metro"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "7b",
+        "source_url": "https://www.plantmaps.com/37601",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 22",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/tennessee/places/johnson-city-tn/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "April 15",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/tennessee/places/johnson-city-tn/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 190.0,
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/tennessee/places/johnson-city-tn/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 45.0,
+            "avg_low_f": 26.0,
+            "avg_rainfall_in": 3.7,
+            "avg_snowfall_in": 3.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 50.0,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 3.48,
+            "avg_snowfall_in": 2.8
+          },
+          {
+            "month": "March",
+            "avg_high_f": 59.0,
+            "avg_low_f": 36.0,
+            "avg_rainfall_in": 4.0,
+            "avg_snowfall_in": 1.1
+          },
+          {
+            "month": "April",
+            "avg_high_f": 68.0,
+            "avg_low_f": 44.0,
+            "avg_rainfall_in": 3.8,
+            "avg_snowfall_in": 0.1
+          },
+          {
+            "month": "May",
+            "avg_high_f": 75.0,
+            "avg_low_f": 53.0,
+            "avg_rainfall_in": 3.8,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 84.0,
+            "avg_low_f": 61.0,
+            "avg_rainfall_in": 3.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 86.0,
+            "avg_low_f": 65.0,
+            "avg_rainfall_in": 5.0,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 86.0,
+            "avg_low_f": 63.0,
+            "avg_rainfall_in": 3.8,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 81.0,
+            "avg_low_f": 57.0,
+            "avg_rainfall_in": 2.8,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 70.0,
+            "avg_low_f": 45.0,
+            "avg_rainfall_in": 2.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 59.0,
+            "avg_low_f": 34.0,
+            "avg_rainfall_in": 3.1,
+            "avg_snowfall_in": 0.3
+          },
+          {
+            "month": "December",
+            "avg_high_f": 49.0,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 3.8,
+            "avg_snowfall_in": 1.7
+          }
+        ],
+        "source_url": "https://www.extremeweatherwatch.com/cities/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 201.0,
+        "source_url": "https://www.bestplaces.net/climate/city/tn/johnson_city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This zone 7b climate offers a temperate growing season of 190 days with mild winters (3-4 inches of snow monthly, lows near 26-29°F in Jan-Feb) and warm summers peaking at 86°F in July-August. Rainfall is consistent year-round (2.5-5 inches monthly) with July being the wettest, though sunshine is limited at only 201 days annually.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "190-day growing season",
+            "Mild winters, minimal snow accumulation",
+            "Consistent rainfall throughout year"
+          ],
+          "cons": [
+            "Only 201 annual sunshine days",
+            "July rainfall spike to 5 inches",
+            "Cool springs (April still 44°F lows)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Surface water from Watauga River and Unicoi Springs",
+        "source_url": "https://cms7files.revize.com/johnsontn/document_center/water/wqr_2017.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Not specified in available records; water sourced from surface water treatment plants with moderate to high susceptibility",
+        "source_url": "https://munimetric.com/profiles/tn-johnson-city-water-dept",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Not applicable; Johnson City Water Department uses municipal surface water treatment plants, not wells",
+        "source_url": "https://cms7files.revize.com/johnsontn/document_center/water/wqr_2017.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://cms7files.revize.com/johnsontn/document_center/water/wqr_2017.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "No specific restrictions documented; operates 2 drinking water treatment plants serving approximately 105,057-106,070 residents across Johnson City corporate limits and portions of four counties",
+        "source_url": "https://munimetric.com/profiles/tn-johnson-city-water-dept",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Two treatment plants (Watauga River and Unicoi Springs facilities) provide redundancy; 103 water storage reservoirs, booster stations and pressure reducing valves support system reliability",
+        "source_url": "https://cms7files.revize.com/johnsontn/document_center/water/wqr_2017.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Johnson City draws drinking water from two surface sources (Watauga River and Unicoi Springs) serving ~105,000 residents with 103 storage reservoirs providing substantial backup capacity. Drought risk is moderate-to-high due to surface water reliance, but no specific water rights restrictions exist for the municipal supply.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Dual treatment plants ensure redundancy",
+            "103 storage reservoirs for reliability",
+            "No documented water rights restrictions"
+          ],
+          "cons": [
+            "Moderate-to-high drought vulnerability",
+            "Surface water dependent"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 11.82,
+        "source_url": "https://utility-rates.com/providers/brightridge",
+        "fetched_date": "2026-07-24T19:14:00.693Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "TVA local power company with 11th largest service area among TVA's 153 local utilities",
+        "source_url": "https://brightridge.com/about/",
+        "fetched_date": "2026-07-24T19:14:00.693Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 5.68,
+        "source_url": "https://bjournal.com/brightridge-powers-the-region/",
+        "fetched_date": "2026-07-24T19:14:00.693Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Partnership with Silicon Ranch for 50 megawatts of utility-scale solar in Gray; TVA authorizes local power companies to generate percentage of their own electricity",
+        "source_url": "https://bjournal.com/brightridge-powers-the-region/",
+        "fetched_date": "2026-07-24T19:14:00.693Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 11.82¢/kWh through a TVA-affiliated local utility (11th largest in the region) with access to utility-scale solar, though the area has a low solar score of 5.68.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Rates slightly below national average (~12¢/kWh)",
+            "TVA utility provides regional scale & stability",
+            "Growing solar capacity nearby"
+          ],
+          "cons": [
+            "Very limited solar potential locally (5.68 score)",
+            "No net metering for residential customers"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 74943.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/johnsoncitycitytennessee/IPE120224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 207285.0,
+        "source_url": "https://en.wikipedia.org/wiki/Johnson_City,_Tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 35.1,
+        "source_url": "https://www.populationreview.org/city/johnson-city-city-tn",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White alone 83.1%, Black alone 5.9%, Asian 2.1%, Two or More Races 6.4%, Hispanic or Latino 5.4%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/johnsoncitycitytennessee/IPE120224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Republican - represented by Diana Harshbarger in U.S. House of Representatives",
+        "source_url": "https://en.wikipedia.org/wiki/Johnson_City,_Tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://www.city-data.com/city/Johnson-City-Tennessee.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://www.city-data.com/city/Johnson-City-Tennessee.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 0.0,
+        "source_url": "https://www.city-data.com/city/Johnson-City-Tennessee.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Tennessee permitless carry (constitutional carry)",
+        "source_url": "https://tennesseegovernmentauthority.com/johnson-city-tennessee-government",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No state-level magazine restrictions in Tennessee",
+        "source_url": "https://tennesseegovernmentauthority.com/johnson-city-tennessee-government",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Tennessee has Castle Doctrine and Stand Your Ground laws",
+        "source_url": "https://tennesseegovernmentauthority.com/johnson-city-tennessee-government",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Mid-sized city (~75K) in a Republican-leaning area with remarkably zero reported violent and property crimes. Strong gun rights protections including permitless carry, no magazine limits, and Stand Your Ground/Castle Doctrine laws.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Zero violent crime rate",
+            "Zero property crime rate",
+            "Permitless carry & no magazine restrictions",
+            "Stand Your Ground protections"
+          ],
+          "cons": [
+            "Crime statistics unusually low—verify data reliability"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 12.0,
+        "source_url": "https://nces.ed.gov/ccd/districtsearch/district_detail.asp?ID2=4702130",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 4.0,
+        "source_url": "https://educationscorecard.org/wp-content/uploads/2026/05/TN_Johnson-City-Case-Study.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "ESEA Distinguished Schools including Trail Middle School and Liberty Bell Middle School",
+        "source_url": "https://resources.finalsite.net/images/v1770219710/jcschoolsorg/rdnf6gq1k0xfchb8cn9g/2023-2024AnnualReport.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate - Tennessee allows homeschooling with notification requirements",
+        "source_url": "https://www.washingtoncountytn.org/290/Health-Care",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Yes - Active homeschool cooperative presence in Northeast Tennessee region",
+        "source_url": "https://www.washingtoncountytn.org/290/Health-Care",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.0,
+        "source_url": "https://www.balladhealth.org/sites/default/files/2024-06/JCMC-combined_1.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Ballad Health - operates 21 hospitals including Johnson City Medical Center Level 1 Trauma Center",
+        "source_url": "https://www.balladhealth.org/sites/default/files/2024-06/JCMC-combined_1.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Education is solid with 12 public schools rated 4.0 and ESEA Distinguished schools including Trail and Liberty Bell Middle Schools; healthcare access is excellent with Level 1 Trauma Center on-site via Ballad Health's 21-hospital network.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Level 1 Trauma Center on-site",
+            "4.0 district rating with distinguished schools",
+            "Ballad Health 21-hospital network",
+            "Active homeschool co-op available"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 281433.0,
+        "source_url": "https://app.communityscale.io/dashboard/municipality/4738320/Johnson-City-TN",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 4500.0,
+        "source_url": "https://datausa.io/profile/geo/johnson-city-tn-31000US27740",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 8200.0,
+        "source_url": "https://datausa.io/profile/geo/johnson-city-tn-31000US27740",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate - Permit issuance has increased 66% for residential permits from 2023-2024",
+        "source_url": "https://www.johnsoncitytn.org/news_detail_T12_R553.php",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Not widely prevalent in Johnson City metro area",
+        "source_url": "https://repit.org/state/tennessee/city/johnson-city/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 0.0,
+        "source_url": "https://datausa.io/profile/geo/johnson-city-tn-31000US27740",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 9.45,
+        "source_url": "https://repit.org/state/tennessee/city/johnson-city/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "High availability in Johnson City metro area",
+        "source_url": "https://datausa.io/profile/geo/johnson-city-tn-31000US27740",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 58.0,
+        "source_url": "https://www.realtor.com/local/market/tennessee/washington-county/johnson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited public transit, car-dependent with 22.7 minute average commute",
+        "source_url": "https://datausa.io/profile/geo/johnson-city-tn-31000US27740",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Johnson City offers affordable housing with a median home price of $281,433 and zero state income tax, but requires a car for daily living with limited transit and a 22.7-minute average commute.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No state income tax",
+            "Affordable median home price ($281k)",
+            "High broadband availability",
+            "Moderate permitting, 66% increase in residential permits"
+          ],
+          "cons": [
+            "Car-dependent, limited public transit",
+            "9.45% sales tax",
+            "Low walkability score (58)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Not specified in available sources",
+        "source_url": "https://www.johnsoncitytn.org/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Moderate - local farmers markets and dining emphasize local ingredients",
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Tri-Cities Regional Airport approximately 20 minutes away",
+        "source_url": "https://theworldtravelindex.com/en/north-america/united-states/johnson-city-tennessee",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Access to regional transportation via Interstate 26 and multiple transit options; tourism infrastructure supports regional connectivity",
+        "source_url": "https://bjournal.com/report-shows-tourism-is-thriving-in-johnson-city-washington-county/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area has moderate local food infrastructure with farmers markets emphasizing local ingredients and Target retail access, but lacks major grocery chains (no Whole Foods, Trader Joe's, Costco, or Sprouts). The Tri-Cities Regional Airport is 20 minutes away with regional highway connectivity via Interstate 26, supporting regional travel but no major metro hub within 6 hours.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Target available locally",
+            "Farmers markets with local focus",
+            "Airport 20 minutes away"
+          ],
+          "cons": [
+            "No premium/specialty grocers",
+            "No major metro hub nearby"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Johnson City, Tennessee presents a compelling relocation destination for those prioritizing affordability, safety, and quality of life in a mid-sized community setting. With a median home price of $281,433, zero state income tax, and remarkably zero reported violent and property crimes, the city offers exceptional financial and personal security advantages, complemented by solid education through 12 public schools rated 4.0 and outstanding healthcare access via a Level 1 Trauma Center within Ballad Health's extensive 21-hospital network. The temperate zone 7b climate delivers a reasonable 190-day growing season with mild winters and warm summers, though limited sunshine (201 days annually) and moderate-to-high drought risk from surface water reliance warrant consideration. While the city benefits from low natural disaster risk (hurricanes, earthquakes) and reasonable air quality, prospective residents should note that daily living requires a car due to limited transit, and the moderate food infrastructure lacks major chains like Whole Foods or Costco. Infrastructure strengths include reliable electricity costs at 11.82¢/kWh and strong gun rights protections, while regional connectivity is solid via Tri-Cities Regional Airport and Interstate 26, though Atlanta—the nearest major metropolitan hub—requires a 2.5-hour drive. Overall, Johnson City appeals most to cost-conscious professionals and families seeking a safe, affordable community with excellent healthcare and education but who can adapt to car-dependent living and limited urban amenities.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
