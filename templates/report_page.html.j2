@@ -11,6 +11,8 @@
 <h1>{{ normalized.city }}, {{ normalized.state }}</h1>
 <div class="meta">{{ normalized.county }} &middot; Generated {{ generated_date }}</div>
 <div class="completion-badge">{{ completion.valid }}/{{ completion.total }} fields complete ({{ completion.percent }}%)</div>
+<p class="caveat">Researched by an AI model, not a person &mdash; it can and does get things
+wrong. Check the source link before relying on anything important.</p>
 
 {% if lens_scores %}
 <div class="fit-scores">
