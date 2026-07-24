@@ -1,0 +1,793 @@
+{
+  "input_city_state": "Coeur d'Alene, ID",
+  "normalized": {
+    "city": "Coeur d'Alene",
+    "state": "ID",
+    "county": "Kootenai"
+  },
+  "slug": "coeur-d'alene-id",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Kootenai County",
+        "source_url": "https://www.kcgov.us/DocumentCenter/View/1523/12-Hazardous-Areas-PDF",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 2157.0,
+        "source_url": "https://guidebycity.com/city/coeur-dalene-id/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 745.0,
+        "source_url": "https://www.kcgov.us/DocumentCenter/View/1522/11-Natural-Resources-PDF",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 85.0,
+        "source_url": "https://www.idahogeology.org/pub/Maps/Surficial_Geologic_Maps/PDF/SGM-7-m.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "Cascade Range approximately 250 miles southwest",
+        "source_url": "https://ioem.idaho.gov/wp-content/uploads/2018/12/ID-SHMP-Chapter-3-Hazards-in-Idaho.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Minimal",
+        "source_url": "https://cdapress.com/news/2024/dec/17/coeur-dalene-to-consider-emergency-plan/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High",
+        "source_url": "https://cdapress.com/news/2024/dec/17/coeur-dalene-to-consider-emergency-plan/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Moderate",
+        "source_url": "https://cdapress.com/news/2024/dec/17/coeur-dalene-to-consider-emergency-plan/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate",
+        "source_url": "https://cdapress.com/news/2024/dec/17/coeur-dalene-to-consider-emergency-plan/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 68.0,
+        "source_url": "https://www.kcgov.us/DocumentCenter/View/1523/12-Hazardous-Areas-PDF",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 42.0,
+        "source_url": "https://www.kcgov.us/DocumentCenter/View/1523/12-Hazardous-Areas-PDF",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 32.0,
+        "source_url": "https://guidebycity.com/city/coeur-dalene-id/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Spokane, Washington",
+        "source_url": "https://www.starr-team.com/starr/RegionalWorkspaces/RegionX/Documents/archive/Kootenai%20County%20Risk%20MAP%20Documents/Discovery_Report_Draft_09142012.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Kootenai County has high wildfire risk with 42 smoke days per year, moderate earthquake and flood risks, and sits 85 miles from active fault lines. It's a mountainous area (2,157 ft elevation) with low hurricane risk and minimal volcano concerns, located 32 minutes from Spokane.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Low hurricane risk",
+            "32-minute drive to Spokane metro",
+            "Moderate earthquake/flood risks"
+          ],
+          "cons": [
+            "High wildfire risk",
+            "42 smoke days annually",
+            "Moderate earthquake risk"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "6b",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/idaho/places/coeur-d-alene-id/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 18",
+        "source_url": "https://croptrails.farm/frost-dates/83858",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "April 22",
+        "source_url": "https://croptrails.farm/frost-dates/83858",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 179.0,
+        "source_url": "https://croptrails.farm/frost-dates/83858",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 35.0,
+            "avg_low_f": 20.0,
+            "avg_rainfall_in": 3.3,
+            "avg_snowfall_in": 13.2
+          },
+          {
+            "month": "February",
+            "avg_high_f": 41.0,
+            "avg_low_f": 21.0,
+            "avg_rainfall_in": 2.4,
+            "avg_snowfall_in": 8.4
+          },
+          {
+            "month": "March",
+            "avg_high_f": 50.0,
+            "avg_low_f": 31.0,
+            "avg_rainfall_in": 2.6,
+            "avg_snowfall_in": 5.1
+          },
+          {
+            "month": "April",
+            "avg_high_f": 58.0,
+            "avg_low_f": 36.0,
+            "avg_rainfall_in": 2.3,
+            "avg_snowfall_in": 0.8
+          },
+          {
+            "month": "May",
+            "avg_high_f": 67.0,
+            "avg_low_f": 43.0,
+            "avg_rainfall_in": 2.3,
+            "avg_snowfall_in": 0.1
+          },
+          {
+            "month": "June",
+            "avg_high_f": 74.0,
+            "avg_low_f": 50.0,
+            "avg_rainfall_in": 2.0,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 88.0,
+            "avg_low_f": 57.0,
+            "avg_rainfall_in": 0.7,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 87.0,
+            "avg_low_f": 56.0,
+            "avg_rainfall_in": 0.7,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 76.0,
+            "avg_low_f": 46.0,
+            "avg_rainfall_in": 1.2,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 60.0,
+            "avg_low_f": 37.0,
+            "avg_rainfall_in": 2.0,
+            "avg_snowfall_in": 0.3
+          },
+          {
+            "month": "November",
+            "avg_high_f": 44.0,
+            "avg_low_f": 30.0,
+            "avg_rainfall_in": 3.4,
+            "avg_snowfall_in": 4.2
+          },
+          {
+            "month": "December",
+            "avg_high_f": 35.0,
+            "avg_low_f": 24.0,
+            "avg_rainfall_in": 3.4,
+            "avg_snowfall_in": 11.0
+          }
+        ],
+        "source_url": "https://cdalife.com/weather-climate/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 299.0,
+        "source_url": "https://weatherbycounty.com/idaho/kootenai-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This region has a moderate 179-day growing season in USDA zone 6b with cold winters (13.2 inches snow in January, lows to 20°F), hot/dry summers (July highs 88°F, only 0.7 inches rain), and relatively dry conditions year-round except for November-December. It gets 299 annual sunshine days with frost dates from April 22 to October 18.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Abundant sunshine (299 days/year)",
+            "Hot, very dry summer",
+            "Moderate growing season length"
+          ],
+          "cons": [
+            "Heavy January snowfall (13.2 in)",
+            "Significant winter cold (20°F lows)",
+            "Summer drought (0.7 in rain July-Aug)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Rathdrum Prairie Aquifer",
+        "source_url": "https://www.cdaid.org/government/departments/water/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Abnormally Dry - Northern Idaho currently categorized as abnormally dry by National Weather Service with reduced precipitation for aquifer recharge",
+        "source_url": "https://cdapress.com/news/2024/sep/15/aquifer-enterprise/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Legal - Over 2,200 wells tap into the Rathdrum Prairie Aquifer in Kootenai County under regulated wellhead protection area administered by Idaho DEQ",
+        "source_url": "https://cdaid.org/files/Water/2021_Water_Quality_Report_06-03-22.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 215.0,
+        "source_url": "https://www.cdaid.org/government/departments/water/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Sensitive Resource Aquifer designated by Idaho DEQ and sole source aquifer under EPA jurisdiction. Septic density restricted to one dwelling per five acres over aquifer per IDAPA rule 41.01.01.110 and Kootenai County ordinance.",
+        "source_url": "https://iwrri.uidaho.edu/kootenai-county-takes-action-to-protect-ground-water/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "City has 11 wells with capacity to pump 42+ million gallons per day with approximately 6 million gallons of storage. Average winter demand is 7 million gallons per day.",
+        "source_url": "https://www.cdaid.org/government/departments/water/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "The region relies on the Rathdrum Prairie Aquifer, currently experiencing abnormal dryness that reduces recharge rates, though the city maintains substantial backup capacity of 42+ million gallons per day (6x average winter demand). Development is tightly restricted to one dwelling per five acres over the aquifer due to its EPA sole-source designation.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "42+ MGD backup capacity far exceeds demand",
+            "Over 2,200 legal wells already operational"
+          ],
+          "cons": [
+            "Aquifer currently abnormally dry",
+            "Strict septic density limits development",
+            "215 ft well depth may require investment"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 13.5,
+        "source_url": "https://www.kec.com/news-releases/power-costs-are-increasing-heres-why-and-whats-next/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Good - Grid modernization and wildfire resilience projects underway; Rathdrum substation is a major hub with 10 line connections",
+        "source_url": "https://cdapress.com/news/2025/dec/13/idaho-invests-35-million-for-grid-wildfire-resilience-project/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 7.2,
+        "source_url": "https://eredux.com/locations/id/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Idaho allows net metering for qualifying facilities; check with local utility for current policy details",
+        "source_url": "https://lf-puc.idaho.gov/WebLink/DocView.aspx?dbid=0&id=155507",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 13.5 cents/kWh with good grid reliability backed by modernization and wildfire resilience projects; the local Rathdrum substation provides solid redundancy with 10 line connections.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good grid reliability",
+            "Wildfire resilience upgrades underway",
+            "Reasonable 13.5¢/kWh rate"
+          ],
+          "cons": [
+            "Modest solar score of 7.2",
+            "Net metering policy needs utility verification"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 58179.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/coeurdalenecityidaho/SBO050222",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 181996.0,
+        "source_url": "https://la.datausa.io/profile/geo/coeur-dalene-id-31000US17660",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 39.9,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/coeurdalenecityidaho/SBO050222",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White alone 86.5%, Two or More Races 8.6%, Asian alone 1.9%, Hispanic 5.0%, Black alone 0.5%, American Indian and Alaska Native alone 0.5%, Native Hawaiian and Pacific Islander alone 0.0%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/coeurdalenecityidaho/VET605224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Republican - Idaho statewide 2024 presidential election: Donald J. Trump 66.9%, Kamala Harris 30.4%, Robert Kennedy 1.42%",
+        "source_url": "https://la.datausa.io/profile/geo/coeur-dalene-id-31000US17660",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 2.8,
+        "source_url": "https://www.city-data.com/city/Coeur-d-Alene-Idaho.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 18.5,
+        "source_url": "https://www.city-data.com/city/Coeur-d-Alene-Idaho.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 81.5,
+        "source_url": "https://www.city-data.com/city/Coeur-d-Alene-Idaho.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Permitless Carry - Idaho allows constitutional carry for all legal residents",
+        "source_url": "https://la.datausa.io/profile/geo/coeur-dalene-id-31000US17660",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No restrictions - Idaho has no firearm magazine capacity limits",
+        "source_url": "https://la.datausa.io/profile/geo/coeur-dalene-id-31000US17660",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Permitted - Idaho allows self-defense and Stand Your Ground provisions under state law",
+        "source_url": "https://la.datausa.io/profile/geo/coeur-dalene-id-31000US17660",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a small Idaho city of 58,000 in a heavily Republican area (Trump won 67% in 2024) with very low violent crime (2.8 per 100K) and a median age of 40. The area is demographically homogeneous at 86.5% white, with relaxed gun laws including permitless carry and no magazine restrictions.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low violent crime at 2.8 per 100K",
+            "Permitless carry & Stand Your Ground",
+            "Strong Republican alignment if that appeals"
+          ],
+          "cons": [
+            "Low demographic diversity (86.5% white)",
+            "Property crime still moderate at 18.5 per 100K"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 381.0,
+        "source_url": "https://www.uidaho.edu/coeur-d-alene",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 80.0,
+        "source_url": "https://ourhealthnetwork.com/health-report/id/kootenai",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Coeur d'Alene Charter Academy (ranked #1 public high school in Idaho for 2025-26), North Idaho College, University of Idaho Coeur d'Alene",
+        "source_url": "https://www.spokesman.com/stories/2026/apr/27/coeur-dalene-charter-school-ranks-as-top-public-sc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate - Idaho allows homeschooling with general oversight",
+        "source_url": "https://healthandwelfare.idaho.gov/dhw/coeur-dalene-office",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Active homeschool community with support networks in North Idaho",
+        "source_url": "https://www.nic.edu/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.0,
+        "source_url": "https://www.kh.org/wp-content/uploads/2026/04/CHNA_Implementation_2026-2028.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Kootenai Health - Level II Trauma Center, 381-bed hospital, nonprofit integrated health system serving North Idaho and Inland Northwest",
+        "source_url": "https://www.kh.org/wp-content/uploads/2026/04/CHNA_Implementation_2026-2028.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Coeur d'Alene offers strong K-12 education with 381 schools and a district rating of 80, highlighted by the top-ranked Coeur d'Alene Charter Academy, plus excellent healthcare access with a Level II Trauma Center and 381-bed hospital right in the city. Homeschooling is moderately regulated with active community support.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Top-ranked high school in Idaho",
+            "Level II Trauma Center on-site",
+            "381-bed hospital",
+            "Active homeschool co-op community"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 565000.0,
+        "source_url": "https://cdapress.com/news/2026/jul/18/median-price-of-single-family-home-in-kootenai-county-rises-to-565k/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://cdapress.com/news/2026/jul/18/median-price-of-single-family-home-in-kootenai-county-rises-to-565k/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://cdapress.com/news/2026/jul/18/median-price-of-single-family-home-in-kootenai-county-rises-to-565k/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate - recent fee increases proposed due to rapid growth",
+        "source_url": "https://cdapress.com/news/2026/jul/23/coeur-dalenes-rapid-growth-prompts-city-fee-increase-proposal/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Low to Moderate - attainable housing developments use shared-equity models rather than traditional HOAs",
+        "source_url": "https://cdapress.com/news/2026/mar/15/local-leaders-continue-attainable-housing-push/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 5.8,
+        "source_url": "https://www.neilsberg.com/insights/topic/coeur-dalene-id/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 8.5,
+        "source_url": "https://www.neilsberg.com/insights/topic/coeur-dalene-id/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Good - infrastructure development ongoing with regional growth",
+        "source_url": "https://www.spokanejournal.com/articles/17795-continued-economic-growth-housing-shortage-expected-in-north-idaho",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 65.0,
+        "source_url": "https://www.realtor.com/local/market/idaho/kootenai-county/coeur-dalene",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited - car-dependent area with ongoing development",
+        "source_url": "https://www.spokanejournal.com/articles/17795-continued-economic-growth-housing-shortage-expected-in-north-idaho",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Median home prices are $565,000 in a car-dependent area with moderate walkability (score 65) and limited public transit, though broadband availability is good and growing. Permitting is moderate with recent fee increases due to rapid growth, and sales/income taxes are moderate at 8.5% and 5.8% respectively.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good broadband infrastructure expanding",
+            "Low to moderate HOA prevalence",
+            "Moderate permitting process",
+            "5.8% income tax rate"
+          ],
+          "cons": [
+            "$565,000 median home price",
+            "Car-dependent with limited transit",
+            "Recent permitting fee increases",
+            "8.5% combined sales tax"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Not specified in available sources",
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Downtown Coeur d'Alene has local retail food options and community events; specific farmers market density data not provided in sources",
+        "source_url": "https://cdachamber.com/living-here/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Spokane International Airport approximately 40 minutes west; Spokane serving as primary regional hub with multiple airlines",
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Spokane, WA (40 minutes); Boise accessible via US 95; Seattle and Portland accessible for regional connections",
+        "source_url": "https://coeurdalene.org/discover/area-information/transportation/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Coeur d'Alene lacks major chain grocers (no Target, Whole Foods, Trader Joe's, Costco, or Sprouts locally), but has Spokane International Airport 40 minutes away as a regional hub with multiple airlines, and Boise, Seattle, and Portland are accessible for regional travel.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Spokane airport 40 min away",
+            "Multiple metro hubs within 6 hours"
+          ],
+          "cons": [
+            "No major grocery chains locally",
+            "Limited fresh food retail options"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Coeur d'Alene, Idaho presents a compelling relocation destination for those seeking a small-town lifestyle with strong community safety and educational institutions, though prospective residents should carefully weigh trade-offs between its advantages and limitations. The city of 58,000 offers exceptional safety with violent crime rates of just 2.8 per 100,000, excellent healthcare facilities including a Level II Trauma Center and 381-bed hospital, and highly-rated K-12 education with standout schools like Coeur d'Alene Charter Academy. Its mountainous terrain and proximity to Spokane (32 minutes) provide outdoor recreation opportunities and regional access, while moderate electricity costs (13.5 cents/kWh) and good grid reliability support economic viability. However, significant environmental and infrastructure concerns warrant consideration: the region experiences elevated wildfire risk with 42 smoke days annually, the critical Rathdrum Prairie Aquifer is experiencing abnormal dryness with development heavily restricted to one dwelling per five acres, and the area lacks major chain retailers, limiting shopping convenience. Additionally, the car-dependent layout (walkability score 65), limited public transit, median home prices of $565,000, and strongly conservative political character (67% Trump support, 86.5% white demographic, permissionless carry laws) may not suit all relocating families. Ultimately, Coeur d'Alene appeals to those prioritizing safety, education, and tight-knit community values while accepting geographic constraints, limited amenities diversity, and environmental vulnerabilities.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
