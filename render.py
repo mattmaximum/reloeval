@@ -48,11 +48,25 @@ def humanize(field_key: str) -> str:
     return " ".join(words) + suffix_note
 
 
-def format_scalar(value: Any) -> str:
+def format_number(value: float) -> str:
+    """Thousands-separated, trailing-zero-free. Deliberately not `{:g}` --
+    that switches to scientific notation above ~1M (a real risk here:
+    county_population routinely exceeds it), which is unreadable."""
+    if value == int(value):
+        return f"{int(value):,}"
+    return f"{value:,.2f}".rstrip("0").rstrip(".")
+
+
+def format_scalar(value: Any, unit: Optional[str] = None) -> str:
     if isinstance(value, bool):
         return "Yes" if value else "No"
     if isinstance(value, float):
-        return f"{value:g}"
+        formatted = format_number(value)
+        if unit == "currency":
+            return f"${formatted}"
+        if unit == "percent":
+            return f"{formatted}%"
+        return formatted
     return str(value)
 
 
@@ -94,16 +108,17 @@ def build_field_context(field_key: str, field_def: dict, stored: Optional[Stored
     label = humanize(field_key)
     highlight = field_def.get("highlight", False)
     risk_field = field_def.get("risk_field", False)
+    description = field_def.get("description")
 
     if stored is None:
         return {"key": field_key, "label": label, "type": field_def["type"], "is_table": False,
-                "status": "missing", "highlight": highlight, "risk_field": risk_field,
+                "status": "missing", "highlight": highlight, "risk_field": risk_field, "description": description,
                 "display_value": PLACEHOLDER_TEXT["missing"], "citation": None,
                 "citation_url": None, "citation_date": None, "caveat": None}
 
     if stored.status != FieldStatus.VALID:
         return {"key": field_key, "label": label, "type": field_def["type"], "is_table": False,
-                "status": stored.status.value, "highlight": highlight, "risk_field": risk_field,
+                "status": stored.status.value, "highlight": highlight, "risk_field": risk_field, "description": description,
                 "display_value": PLACEHOLDER_TEXT[stored.status.value], "citation": None,
                 "citation_url": None, "citation_date": None, "caveat": None}
 
@@ -115,13 +130,13 @@ def build_field_context(field_key: str, field_def: dict, stored: Optional[Stored
         display_value = format_retail_presence(stored.value)
         is_table = False
     else:
-        display_value = format_scalar(stored.value)
+        display_value = format_scalar(stored.value, field_def.get("unit"))
         is_table = False
 
     caveat = field_def.get("caveat") if field_def.get("low_confidence") else None
     return {
         "key": field_key, "label": label, "type": field_type, "is_table": is_table,
-        "status": "valid", "highlight": highlight, "risk_field": risk_field,
+        "status": "valid", "highlight": highlight, "risk_field": risk_field, "description": description,
         "display_value": display_value, "citation": citation_text(stored), "caveat": caveat,
         "citation_url": stored.source_url, "citation_date": stored.fetched_date,
     }
@@ -138,10 +153,11 @@ def build_derived_field_context(field_key: str, field_def: dict, category_fields
         display_value = PLACEHOLDER_TEXT["missing"]
         status = "missing"
     else:
-        display_value = format_scalar(value)
+        display_value = format_scalar(value, field_def.get("unit"))
         status = "valid"
     return {"key": field_key, "label": label, "type": "number", "is_table": False,
             "status": status, "highlight": field_def.get("highlight", False), "risk_field": False,
+            "description": field_def.get("description"),
             "display_value": display_value, "citation": None,
             "citation_url": None, "citation_date": None, "caveat": None}
 

@@ -1,5 +1,28 @@
 from models import CityRecord, FieldStatus, NormalizedCity, StoredFieldValue, load_schema
-from render import build_render_context, compute_bd_score, format_retail_presence, humanize, md_table_cell, render_city
+from render import build_render_context, compute_bd_score, format_number, format_retail_presence, format_scalar, humanize, md_table_cell, render_city
+
+
+def test_format_number_adds_thousands_separators():
+    assert format_number(4646.0) == "4,646"
+    assert format_number(430000.0) == "430,000"
+    assert format_number(60.0) == "60"
+
+
+def test_format_number_avoids_scientific_notation_for_large_values():
+    # {:g} would render this as "1.23457e+06" -- county_population routinely
+    # exceeds 1M, so that's a real, not hypothetical, case.
+    assert format_number(1234567.891) == "1,234,567.89"
+
+
+def test_format_number_strips_trailing_zeros_on_decimals():
+    assert format_number(4.4) == "4.4"
+    assert format_number(4.40) == "4.4"
+
+
+def test_format_scalar_applies_currency_and_percent_units():
+    assert format_scalar(430000.0, "currency") == "$430,000"
+    assert format_scalar(4.4, "percent") == "4.4%"
+    assert format_scalar(60.0, None) == "60"
 
 
 def test_md_table_cell_escapes_pipes_and_newlines():
@@ -87,6 +110,29 @@ def test_format_retail_presence_available_with_distance():
 
 def test_format_retail_presence_not_available():
     assert format_retail_presence({"available": False}) == "No"
+
+
+def test_build_render_context_carries_description_and_applies_unit():
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={"economy_housing_land": {
+            "median_home_price": StoredFieldValue(
+                value=430000.0, source_url="https://x.com", fetched_date="2026-07-22",
+                status=FieldStatus.VALID, schema_version=1),
+            "state_income_tax_rate": StoredFieldValue(
+                value=4.4, source_url="https://x.com", fetched_date="2026-07-22",
+                status=FieldStatus.VALID, schema_version=1),
+        }},
+    )
+    context = build_render_context(schema, record)
+    econ = next(c for c in context["categories"] if c["key"] == "economy_housing_land")
+    by_key = {f["key"]: f for f in econ["fields"]}
+    assert by_key["median_home_price"]["display_value"] == "$430,000"
+    assert by_key["state_income_tax_rate"]["display_value"] == "4.4%"
+    assert by_key["median_home_price"]["description"] == "Median home price"
 
 
 def test_build_render_context_missing_field_gets_placeholder():

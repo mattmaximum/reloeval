@@ -155,6 +155,38 @@
   .field-table--fields th:nth-child(2), .field-table--fields td:nth-child(2) { width: 58%; }
   .field-table--fields th:nth-child(3), .field-table--fields td:nth-child(3) { width: 22%; }
   .field-label { white-space: nowrap; color: var(--muted); }
+  .info-icon {
+    position: relative;
+    display: inline-block;
+    color: var(--muted);
+    cursor: help;
+    font-size: 0.82em;
+    margin-left: 4px;
+    border-bottom: 1px dotted var(--muted);
+  }
+  .info-icon .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.12s;
+    position: absolute;
+    bottom: 130%;
+    left: 0;
+    background: var(--text);
+    color: var(--bg);
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 400;
+    white-space: normal;
+    width: 220px;
+    z-index: 10;
+    line-height: 1.35;
+    pointer-events: none;
+  }
+  .info-icon:hover .tooltip-text, .info-icon:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
   .source-link { font-size: 0.82rem; white-space: nowrap; }
   .caveat { color: var(--muted); font-size: 0.85rem; }
   .placeholder { color: var(--muted); font-style: italic; }

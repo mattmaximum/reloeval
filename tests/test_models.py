@@ -65,6 +65,15 @@ def test_category_pros_cons_field_present_and_synthesized():
         assert category["fields"]["category_pros_cons"]["synthesized"] is True
 
 
+def test_currency_and_percent_unit_fields_tagged():
+    schema = load_schema()
+    econ = schema["categories"]["economy_housing_land"]["fields"]
+    assert econ["median_home_price"]["unit"] == "currency"
+    assert econ["state_income_tax_rate"]["unit"] == "percent"
+    # a field with no explicit unit shouldn't have one invented
+    assert "unit" not in schema["categories"]["geographic_hazards"]["fields"]["elevation_ft"]
+
+
 def test_pros_cons_model_validates():
     import pytest
     from pydantic import ValidationError

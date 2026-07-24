@@ -20,7 +20,7 @@
 <div class="scorecard">
 {% for field in scorecard %}
   <div class="scorecard-item">
-    <div class="label">{{ field.label }}</div>
+    <div class="label">{{ field.label }}{% if field.description %}<span class="info-icon" tabindex="0">&#9432;<span class="tooltip-text">{{ field.description }}</span></span>{% endif %}</div>
     <div class="value">{{ field.display_value }}</div>
   </div>
 {% endfor %}
@@ -64,7 +64,7 @@
     <tr><th>Field</th><th>Value</th><th>Source</th></tr>
     {% for field in scalar_fields %}
     <tr{% if field.status == "flagged" %} class="flagged-row"{% endif %}>
-      <td class="field-label">{{ field.label }}</td>
+      <td class="field-label">{{ field.label }}{% if field.description %}<span class="info-icon" tabindex="0">&#9432;<span class="tooltip-text">{{ field.description }}</span></span>{% endif %}</td>
       <td>
         {% if field.status == "valid" %}
           {% if field.risk_badge %}<span class="risk-badge" style="background:{{ field.risk_badge.color }}">{{ field.risk_badge.level }}</span>{% endif %}
@@ -85,7 +85,7 @@
   {% endif %}
 
   {% for field in category.fields if field.is_table %}
-    <strong>{{ field.label }}</strong>
+    <strong>{{ field.label }}</strong>{% if field.description %}<span class="info-icon" tabindex="0">&#9432;<span class="tooltip-text">{{ field.description }}</span></span>{% endif %}
     {% if field.citation_url %}(<a href="{{ field.citation_url }}">source</a> &middot; {{ field.citation_date }}){% endif %}
 
     {% if field.chart_svg %}
