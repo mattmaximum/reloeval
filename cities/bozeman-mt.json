@@ -86,43 +86,31 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": 660.0,
-        "source_url": "https://riskbycounty.com/montana/gallatin-county",
+        "value": 450.0,
+        "source_url": "https://www.travelmath.com/driving-time/from/Bozeman,+MT/to/Salt+Lake+City,+UT",
         "fetched_date": "2026-07-24",
         "status": "valid",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": "Seattle-Tacoma-Bellevue, WA",
-        "source_url": "https://riskbycounty.com/montana/gallatin-county",
+        "value": "Salt Lake City-Murray, UT",
+        "source_url": "https://www.travelmath.com/driving-time/from/Bozeman,+MT/to/Salt+Lake+City,+UT",
         "fetched_date": "2026-07-24",
         "status": "valid",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Gallatin County sits on a major fault line with high earthquake risk (FEMA 94.1/100) and near Yellowstone Caldera (~80-90 miles south), plus high wildfire risk with ~30 smoke days annually. It's a remote, high-elevation location (4,817 ft) with very low hurricane risk but distant access to major metros (11+ hours to Seattle-Tacoma).",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": {
-          "pros": [
-            "Very low hurricane risk",
-            "Clean air quality (AQI 45)",
-            "Low flood risk (moderate)"
-          ],
-          "cons": [
-            "Major fault line at 0.0 mi distance",
-            "High earthquake risk (FEMA 94.1/100)",
-            "High wildfire risk with 30 smoke days/year",
-            "Yellowstone Caldera proximity (80-90 mi)"
-          ]
-        },
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     },
@@ -782,10 +770,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Bozeman, Montana presents a compelling relocation destination for those prioritizing natural amenities, educational opportunity, and civic safety, though it requires careful consideration of natural hazards and resource constraints. This mid-sized community of ~59,000 benefits from a strong school district, excellent healthcare infrastructure including a Level III Trauma Center, very low violent crime rates, and robust higher education through Montana State University, alongside constitutional carry protections and reasonable walkability scores. However, prospective residents must weigh significant vulnerabilities: the region sits on a major fault line with FEMA earthquake risk of 94.1/100, faces ongoing drought conditions (sixth consecutive year with only 16 inches annual precipitation), and relies almost entirely on snowpack-fed surface water despite consuming 60% of its reliable supply during recent dry years. Additional concerns include extremely limited sunshine (121 days annually), weak solar potential, high wildfire risk (~30 smoke days yearly), substantial wildfire and earthquake exposure costs, elevated housing costs ($592,600 median), and a combined tax burden of 13.75% alongside moderate-to-high permitting barriers. The absence of major national grocery chains (Whole Foods, Trader Joe's, Costco, Sprouts) and distant access to major metropolitan areas (11+ hours to Seattle-Tacoma) further compound logistics challenges, though the city's proactive water management, tiered drought planning, excellent regional air connectivity, strong local food infrastructure, and low property crime rates partially offset these drawbacks. Bozeman suits affluent, nature-focused professionals and retirees who prioritize outdoor recreation, educational access, and safety over climate resilience and resource abundance, with careful attention to earthquake/wildfire insurance and drought adaptation strategies essential for long-term stability.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     }
