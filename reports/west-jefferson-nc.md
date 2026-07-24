@@ -1,22 +1,22 @@
 # West Jefferson, NC — Relocation Report
 
-*Ashe · Generated 2026-07-24*
+*Ashe County · Generated 2026-07-24*
 
-West Jefferson, NC in Ashe County presents a compelling relocation destination for those seeking an affordable, safe rural mountain lifestyle at 2,445 feet elevation with a mild Zone 7a climate, 183-day growing season, and manageable natural hazards despite moderate wildfire and flood risks. The community of just 1,087 people offers very low violent crime, moderate property taxes, and surprisingly affordable raw land ($15,000/acre), though median home prices of $612,500 and limited improved land availability may challenge some buyers. However, prospective residents must carefully weigh significant drawbacks: severely limited healthcare access (nearest trauma center 45 miles away), minimal educational infrastructure (one school with below-average ratings), no chain grocery stores or major retail amenities, weak solar potential despite available net metering, and an aging, demographically homogeneous population in a conservative, rural setting. The regulated public water system provides security though faces moderate drought risk, electricity costs are reasonable at 12.5 cents/kWh through a cooperative, and regional connectivity is adequate with major metros within 2–4 hours' drive. This destination suits self-sufficient, telecommuting individuals or retirees prioritizing affordability, safety, and natural beauty while accepting trade-offs in convenience, services, and community diversity.
+West Jefferson, NC, located in Ashe County at 2,445 feet elevation in the remote Blue Ridge Mountains, offers a distinctive appeal for those seeking a rural mountain lifestyle prioritizing natural safety and community stability. The region's high altitude and distance from coastal zones virtually eliminate hurricane and earthquake risks, while moderate wildfire and flood hazards are manageable considerations; good air quality (AQI 60) and 225 sunny days annually support outdoor living, though the 183-day growing season (April–October) and cool winters (21–30°F) require careful agricultural planning. A regulated public water system serves the tiny community of 1,087 residents, supported by 10 wells and 1 spring with ongoing capacity expansion, though moderate drought risk warrants monitoring. Energy costs are reasonable at 12.5 cents/kWh through Blue Ridge Energy cooperative, though weak solar potential (6.2 score) limits renewable options despite net metering availability. The overwhelmingly white (95%), conservative, and aging population maintains exceptionally low violent crime (1.8 per 100k), though moderate property crime (12.4 per 100k) and strong gun rights protections define the civic landscape; however, severely limited education infrastructure (single public school with 3.7 district rating) and critical healthcare access gaps (nearest trauma center 45 miles away, only small critical access hospital locally) present significant drawbacks for families and those requiring advanced medical care. Housing remains relatively expensive at a $612,500 median, though raw land is affordable ($15,000/acre), and the area's complete absence of chain grocery stores and minimal urban amenities demand significant lifestyle adjustment—though reasonable regional airport access (45–90 minutes) and proximity to major metros (2–4 hours) provide occasional connectivity for those willing to embrace West Jefferson's deep rurality in exchange for natural beauty, safety from natural disasters, and tight-knit community living.
 
 ## Geographic & Natural Hazards
 
-*Ashe County sits at 2,445 feet elevation, 320 miles from the ocean with moderate wildfire and flood risks but very low earthquake risk. Natural hazards are generally manageable, though you'll experience about 8 days of wildfire smoke annually and face a 46-minute commute to the nearest major metro (Hickory).*
+*Ashe County sits at a high elevation (2,445 ft) and 320 miles from the ocean, making it safe from hurricanes and earthquakes; it faces moderate wildfire and flood risks with about 8 days of wildfire smoke annually, while air quality is generally good (AQI 60). Relocation here means being quite remote—165 minutes to Charlotte, the nearest major metro.*
 
-**Pros:** Very low earthquake risk, Low hurricane risk, High elevation
-**Cons:** 46-min drive to nearest metro, Moderate wildfire risk, 8 wildfire smoke days/year
+**Pros:** High elevation reduces hurricane/earthquake risk, Good air quality (AQI 60), No volcano proximity
+**Cons:** Remote location (165 min to Charlotte), Moderate wildfire & flood risks, 8 wildfire smoke days/year
 
 | Field | Value | Source |
 |---|---|---|
 | County | Ashe | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 | Elevation (ft) | 2,445 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 | Distance To Ocean (mi) | 320 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
-| BD Score | 2,765 🟠 |  |
+| BD Score | 🟠 2,765 |  |
 | Fault Line Distance (mi) | 280 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 | Volcano Proximity | Not applicable | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 | Hurricane Risk | Low | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
@@ -25,8 +25,8 @@ West Jefferson, NC in Ashe County presents a compelling relocation destination f
 | Flood Risk | Moderate | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 | Avg AQI | 60 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 | Wildfire Smoke Days Per Year | 8 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
-| Nearest Large Metro Drive Time Min | 46 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
-| Nearest Large Metro Name | Hickory, NC | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
+| Nearest Large Metro Drive Time Min | 165 | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
+| Nearest Large Metro Name | Charlotte-Concord-Gastonia, NC-SC | [source](https://protectmyzip.com/city/nc/west-jefferson), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 

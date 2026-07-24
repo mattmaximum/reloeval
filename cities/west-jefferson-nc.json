@@ -3,7 +3,7 @@
   "normalized": {
     "city": "West Jefferson",
     "state": "NC",
-    "county": "Ashe"
+    "county": "Ashe County"
   },
   "slug": "west-jefferson-nc",
   "categories": {
@@ -86,31 +86,42 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 165.0,
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Charlotte-Concord-Gastonia, NC-SC",
+        "source_url": "https://protectmyzip.com/city/nc/west-jefferson",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "category_summary": {
-        "value": null,
+        "value": "Ashe County sits at a high elevation (2,445 ft) and 320 miles from the ocean, making it safe from hurricanes and earthquakes; it faces moderate wildfire and flood risks with about 8 days of wildfire smoke annually, while air quality is generally good (AQI 60). Relocation here means being quite remote—165 minutes to Charlotte, the nearest major metro.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": null,
+        "value": {
+          "pros": [
+            "High elevation reduces hurricane/earthquake risk",
+            "Good air quality (AQI 60)",
+            "No volcano proximity"
+          ],
+          "cons": [
+            "Remote location (165 min to Charlotte)",
+            "Moderate wildfire & flood risks",
+            "8 wildfire smoke days/year"
+          ]
+        },
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     },
@@ -769,10 +780,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": null,
+        "value": "West Jefferson, NC, located in Ashe County at 2,445 feet elevation in the remote Blue Ridge Mountains, offers a distinctive appeal for those seeking a rural mountain lifestyle prioritizing natural safety and community stability. The region's high altitude and distance from coastal zones virtually eliminate hurricane and earthquake risks, while moderate wildfire and flood hazards are manageable considerations; good air quality (AQI 60) and 225 sunny days annually support outdoor living, though the 183-day growing season (April–October) and cool winters (21–30°F) require careful agricultural planning. A regulated public water system serves the tiny community of 1,087 residents, supported by 10 wells and 1 spring with ongoing capacity expansion, though moderate drought risk warrants monitoring. Energy costs are reasonable at 12.5 cents/kWh through Blue Ridge Energy cooperative, though weak solar potential (6.2 score) limits renewable options despite net metering availability. The overwhelmingly white (95%), conservative, and aging population maintains exceptionally low violent crime (1.8 per 100k), though moderate property crime (12.4 per 100k) and strong gun rights protections define the civic landscape; however, severely limited education infrastructure (single public school with 3.7 district rating) and critical healthcare access gaps (nearest trauma center 45 miles away, only small critical access hospital locally) present significant drawbacks for families and those requiring advanced medical care. Housing remains relatively expensive at a $612,500 median, though raw land is affordable ($15,000/acre), and the area's complete absence of chain grocery stores and minimal urban amenities demand significant lifestyle adjustment—though reasonable regional airport access (45–90 minutes) and proximity to major metros (2–4 hours) provide occasional connectivity for those willing to embrace West Jefferson's deep rurality in exchange for natural beauty, safety from natural disasters, and tight-knit community living.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     }
