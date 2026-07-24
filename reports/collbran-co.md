@@ -2,6 +2,8 @@
 
 *Mesa County · Generated 2026-07-24*
 
+Collbran, Colorado represents a compelling but niche relocation destination for those seeking a quiet, safe mountain community with strong civic stability and adequate infrastructure, despite significant constraints in accessibility and resources. Located at 8,100 feet elevation in Mesa County and 236 minutes from Denver, this town of 356 residents offers virtually crime-free living, constitutional carry protections, and reasonable electricity costs (16.54¢/kWh) alongside a modest 180-day growing season and abundant sunshine (240 days/year). However, prospective residents must weigh substantial drawbacks: extreme drought conditions with snowpack at only 41% of normal and a meaningful risk of water supply shortages threaten long-term sustainability; housing costs are prohibitively high (median $690k with $326k–$411k per acre), combined with moderate-to-high wildfire risk and 12 annual smoke days. The area's car dependency, limited walkability (34.8), small school system (district rating 7.0), and 30-mile healthcare gap further challenge quality of life, while the absence of major chain grocers and need to rely on farmers markets for staple foods adds friction to daily living. This destination suits remote workers, retirees, or rural lifestyle enthusiasts with deep financial resources who prioritize safety and solitude over convenience and can navigate resource constraints with resilience.
+
 ## Geographic & Natural Hazards
 
 *Mesa County sits at 8,100 ft elevation, 236 minutes from Denver, with moderate-to-high wildfire risk and 12 smoke days/year, but minimal hurricane threat and low-to-moderate earthquake risk. Fault lines are 45 miles away, and moderate flood risk is present.*
@@ -28,13 +30,18 @@
 
 ## Climate & Growing Conditions
 
+*This region has a 180-day growing season with Zone 5b hardiness, warm but not scorching summers (88°F peak), cold winters bottoming near 12°F, and virtually no snowfall despite freezing temperatures. Annual sunshine averages 240 days with moderate rainfall (~14 inches/year) spread fairly evenly.*
+
+**Pros:** 180-day growing season, No snow despite winter cold, 240 annual sunshine days
+**Cons:** 12–17°F winter lows, Late spring frosts (Apr 11–20)
+
 | Field | Value | Source |
 |---|---|---|
 | USDA Hardiness Zone | Zone 5b | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
 | First Frost Date | Sep. 21 - Sep. 30 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
 | Last Frost Date | Apr. 11 - Apr. 20 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
 | Growing Season Length Days | 180 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24 |
-| Annual Sunshine Days | _(not yet evaluated — run backfill)_ |  |
+| Annual Sunshine Days | 240 | [source](https://www.bestplaces.net/climate/city/colorado/collbran), checked 2026-07-24 |
 
 **Monthly Climate Table** ([source](https://www.plantmaps.com/en/clim/f/us/colorado/collbran/climate-data), checked 2026-07-24)
 | Month | Avg High (°F) | Avg Low (°F) | Avg Rainfall (in) | Avg Snowfall (in) |
