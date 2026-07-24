@@ -1,0 +1,795 @@
+{
+  "input_city_state": "Rapid City, SD",
+  "normalized": {
+    "city": "Rapid City",
+    "state": "SD",
+    "county": "Pennington"
+  },
+  "slug": "rapid-city-sd",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Pennington",
+        "source_url": "https://www.rcgov.org/departments/public-works/engineering-services/floodplain-management-713.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 3156.0,
+        "source_url": "https://protectmyzip.com/city/sd/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 1350.0,
+        "source_url": "https://protectmyzip.com/city/sd/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 450.0,
+        "source_url": "https://www.usgs.gov/centers/dakota-water-science-center/science/madison-aquifer-study-rapid-city-area",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "No active volcanoes within 1000 miles",
+        "source_url": "https://www.usgs.gov/centers/dakota-water-science-center/science/madison-aquifer-study-rapid-city-area",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Minimal",
+        "source_url": "https://www.weather.gov/unr",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High",
+        "source_url": "https://protectmyzip.com/city/sd/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Low",
+        "source_url": "https://www.epa.gov/system/files/documents/2024-03/rapid-city-pcap.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate to High",
+        "source_url": "https://www.fludzone.com/flood-zones/south-dakota/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 60.0,
+        "source_url": "https://protectmyzip.com/city/sd/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 35.0,
+        "source_url": "https://www.epa.gov/system/files/documents/2024-03/rapid-city-pcap.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 520.0,
+        "source_url": "https://protectmyzip.com/city/sd/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Minneapolis-St. Paul-Bloomington, MN-WI",
+        "source_url": "https://protectmyzip.com/city/sd/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Pennington County faces high wildfire risk with 35 smoke-impacted days annually, moderate-to-high flood risk, and low earthquake exposure. It's a remote location (520 minutes to the nearest metro), set at 3,156 ft elevation far from coastal hazards.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Low earthquake/volcano risk",
+            "Minimal hurricane exposure"
+          ],
+          "cons": [
+            "High wildfire risk, 35 smoke days/year",
+            "Moderate-to-high flood risk",
+            "Extremely remote (520 min to metro)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "4a-5b",
+        "source_url": "https://www.growableground.com/what-grows-in/south-dakota/rapid-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "October 1",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/south-dakota/places/rapid-city-sd/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "May 14",
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/south-dakota/places/rapid-city-sd/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 140.0,
+        "source_url": "https://theultimatehomestead.com/planting-guide/states/south-dakota/places/rapid-city-sd/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 35.0,
+            "avg_low_f": 13.0,
+            "avg_rainfall_in": 0.6,
+            "avg_snowfall_in": 8.5
+          },
+          {
+            "month": "February",
+            "avg_high_f": 38.0,
+            "avg_low_f": 16.0,
+            "avg_rainfall_in": 0.6,
+            "avg_snowfall_in": 7.2
+          },
+          {
+            "month": "March",
+            "avg_high_f": 49.0,
+            "avg_low_f": 25.0,
+            "avg_rainfall_in": 1.1,
+            "avg_snowfall_in": 6.8
+          },
+          {
+            "month": "April",
+            "avg_high_f": 62.0,
+            "avg_low_f": 35.0,
+            "avg_rainfall_in": 2.2,
+            "avg_snowfall_in": 4.1
+          },
+          {
+            "month": "May",
+            "avg_high_f": 73.0,
+            "avg_low_f": 45.0,
+            "avg_rainfall_in": 2.8,
+            "avg_snowfall_in": 0.5
+          },
+          {
+            "month": "June",
+            "avg_high_f": 83.0,
+            "avg_low_f": 55.0,
+            "avg_rainfall_in": 2.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 90.0,
+            "avg_low_f": 60.0,
+            "avg_rainfall_in": 2.1,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 88.0,
+            "avg_low_f": 59.0,
+            "avg_rainfall_in": 1.8,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 77.0,
+            "avg_low_f": 48.0,
+            "avg_rainfall_in": 1.5,
+            "avg_snowfall_in": 0.2
+          },
+          {
+            "month": "October",
+            "avg_high_f": 65.0,
+            "avg_low_f": 37.0,
+            "avg_rainfall_in": 1.2,
+            "avg_snowfall_in": 2.1
+          },
+          {
+            "month": "November",
+            "avg_high_f": 48.0,
+            "avg_low_f": 26.0,
+            "avg_rainfall_in": 0.8,
+            "avg_snowfall_in": 5.3
+          },
+          {
+            "month": "December",
+            "avg_high_f": 36.0,
+            "avg_low_f": 15.0,
+            "avg_rainfall_in": 0.6,
+            "avg_snowfall_in": 8.6
+          }
+        ],
+        "source_url": "https://weatherspark.com/y/4074/Average-Weather-in-Rapid-City-South-Dakota-United-States-Year-Round",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 260.0,
+        "source_url": "https://en.climate-data.org/north-america/united-states-of-america/south-dakota/rapid-city-17060/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This region has a cold climate with a 140-day growing season (May 14–October 1), USDA zone 4a-5b winters dipping to 13°F, and significant snowfall (8.5–8.6 in/month Jan–Feb), alongside 260 annual sunshine days and modest rainfall.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Long cold-season snow",
+            "90°F summers",
+            "260 sunny days/year",
+            "Moderate total rainfall"
+          ],
+          "cons": [
+            "Short 140-day growing season",
+            "Hard freezes (13°F lows)",
+            "Heavy winter snow accumulation",
+            "May frost risk until May 14"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "83% surface water from Pactola Reservoir and Rapid Creek, 17% groundwater from Minnelusa and Madison Aquifers",
+        "source_url": "https://rapidcitypost.com/rapid-city-water-supply-secure-despite-usgs-study-findings/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Severe to extreme drought conditions in Black Hills region; Pactola Reservoir at 81% capacity with water levels below average but not at lowest percentiles",
+        "source_url": "https://www.newscenter1.tv/news/local/a-deep-dive-into-western-south-dakotas-worsening-drought",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Rapid City's groundwater rights are generally senior, offering greater protection under water law; water rights portfolio sufficient through 2115",
+        "source_url": "https://rapidcitypost.com/rapid-city-water-supply-secure-despite-usgs-study-findings/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 46.0,
+        "source_url": "https://www.newscenter1.tv/news/local/a-deep-dive-into-western-south-dakotas-worsening-drought",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Water use in some bedrock aquifers outpacing refill rates; USGS study raised concerns about potential over-appropriation of groundwater; entities with junior rights would be reduced before Rapid City",
+        "source_url": "https://apnews.com/article/james-jones-south-dakota-rapid-city-missouri-river-general-news-ae0fc7d3727c77a70d3eefce1b525626",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Diverse water mix provides flexibility; Deerfield Reservoir nearly full; Pactola Reservoir at 81% capacity; potential future Missouri River pipeline project for additional senior surface water rights",
+        "source_url": "https://news-block.net/rapid-city-braces-for-drought-while-planned-data-center-touts-low-water-use",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Rapid City has strong senior water rights and a long-term supply through 2115, sourcing 83% from surface water (Pactola Reservoir at 81% capacity, Deerfield Reservoir nearly full) and 17% from groundwater 46 feet down, though the Black Hills region faces severe to extreme drought conditions and USGS studies flag concerns about groundwater over-appropriation in some aquifers.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Senior water rights protect against reductions",
+            "Water security through 2115",
+            "Diverse sources (surface + groundwater)",
+            "Backup reservoirs nearly full"
+          ],
+          "cons": [
+            "Severe to extreme drought risk in region",
+            "Groundwater refill rates lagging use",
+            "Pactola Reservoir below historical average levels"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.5,
+        "source_url": "https://puc.sd.gov/commission/dockets/electric/2026/EL26-003/Vol2Section6/Exh7DHyatt.pdf",
+        "fetched_date": "2026-07-24T18:55:27.037Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Good - recent outage response demonstrated effective safeguards; 250,000 people impacted in November incident but system protection worked as designed",
+        "source_url": "https://www.newscenter1.tv/49-page-report-on-november-power-outage-out",
+        "fetched_date": "2026-07-24T18:55:27.037Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 7.2,
+        "source_url": "https://mylrc.sdlegislature.gov/api/Documents/RequiredReport/307011.pdf?Year=2026",
+        "fetched_date": "2026-07-24T18:55:27.037Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "South Dakota allows net metering; Black Hills Power integrating renewable generation with new Lange II facility supporting renewable integration",
+        "source_url": "https://puc.sd.gov/commission/dockets/electric/2026/EL26-008/Application.pdf",
+        "fetched_date": "2026-07-24T18:55:27.037Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.5 cents/kWh with good grid reliability and effective outage response; solar potential is moderate at 7.2 score, and net metering is available through Black Hills Power's renewable integration infrastructure.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Net metering supported",
+            "Moderate solar viability",
+            "Reliable grid with proven safeguards"
+          ],
+          "cons": [
+            "Electricity slightly above average at 12.5¢/kWh"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 80589.0,
+        "source_url": "https://www.census.gov/quickfacts/table/PST045215/4652980",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 116800.0,
+        "source_url": "https://usafacts.org/answers/how-many-people-live-in-the-us/county/pennington-county-sd/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 37.6,
+        "source_url": "https://www.census.gov/quickfacts/table/PST045215/4652980",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White 77.5%, Two or more races 10.8%, American Indian 5.7%, Asian 2.6%, Black 1.2%, Hispanic 5.9%",
+        "source_url": "https://www.census.gov/quickfacts/table/PST045215/4652980",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Republican - Donald Trump won South Dakota with 63.4% in 2024; represented by Dusty Johnson (Republican) in U.S. House",
+        "source_url": "https://datausa.io/profile/geo/rapid-city-sd",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://www.city-data.com/city/Rapid-City-South-Dakota.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://www.city-data.com/city/Rapid-City-South-Dakota.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 0.0,
+        "source_url": "https://www.city-data.com/city/Rapid-City-South-Dakota.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "South Dakota is a Constitutional Carry state",
+        "source_url": "https://www.pennco.org/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No state-level magazine restrictions in South Dakota",
+        "source_url": "https://en.wikipedia.org/wiki/Pennington_County,_South_Dakota",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "South Dakota has Castle Doctrine and Stand Your Ground laws protecting self-defense rights",
+        "source_url": "https://en.wikipedia.org/wiki/Pennington_County,_South_Dakota",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "A mid-sized city of ~80k in solidly Republican South Dakota with recorded violent and property crime rates of 0.0 and notably permissive self-defense laws (Castle Doctrine, Stand Your Ground, Constitutional Carry, no magazine restrictions).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Zero violent crime recorded",
+            "Zero property crime recorded",
+            "Constitutional Carry + Stand Your Ground",
+            "No magazine restrictions"
+          ],
+          "cons": [
+            "Safety metrics reporting 0.0 may lack detail",
+            "Heavily Republican area (63.4% Trump)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 25.0,
+        "source_url": "https://www.publicschoolreview.com/south-dakota/rapid-city-area-school-district-51-4/4659820-school-district",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 4.0,
+        "source_url": "https://www.publicschoolreview.com/south-dakota/rapid-city-area-school-district-51-4/4659820-school-district",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Rapid Valley Elementary, Central High School, Stevens High School",
+        "source_url": "https://kbhbradio.com/rapid-city-schools-approve-2027-budget/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate",
+        "source_url": "https://doe.sd.gov/ofm/documents/2025/RapidCity.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Present in Black Hills region",
+        "source_url": "https://rapidcitybusinessjournal.com/2026/06/03/monument-health-investment-fuels-new-generation-of-nurses-in-western-south-dakota/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.5,
+        "source_url": "https://monument.health/wp-content/uploads/2025/03/2024-PRC-CHNA-Report-Monument-Health-Rapid-City-Hospital.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Monument Health Rapid City Hospital",
+        "source_url": "https://monument.health/wp-content/uploads/2025/03/2024-PRC-CHNA-Report-Monument-Health-Rapid-City-Hospital.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area has a solid 4.0-rated public school district with 25 schools and nearby top-tier options like Central and Stevens High Schools. Healthcare access is exceptional with a trauma center just 0.5 miles away and Monument Health's major hospital network on-site.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Trauma center 0.5 mi away",
+            "4.0-rated school district",
+            "Major hospital network present"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 299400.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/rapidcitycitysouthdakota,penningtoncountysouthdakota/POP815223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://www.elevaterapidcity.com/resources/housing-dashboard/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://www.elevaterapidcity.com/resources/housing-dashboard/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate - Record permit activity in 2026 with 7,340 permits issued in first half of year",
+        "source_url": "https://kbhbradio.com/rapid-city-sets-building-permit-valuation-record-for-first-half-of-2026/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Not specified in available data",
+        "source_url": "https://www.elevaterapidcity.com/resources/housing-dashboard/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 5.42,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/penningtoncountysouthdakota/PST040225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 7.5,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/rapidcitycitysouthdakota,penningtoncountysouthdakota/POP815223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "90.3% of Rapid City households have broadband subscription",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/rapidcitycitysouthdakota,penningtoncountysouthdakota/POP815223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 0.0,
+        "source_url": "https://www.elevaterapidcity.com/resources/housing-dashboard/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited - Mean travel time to work is 17.5 minutes in Rapid City",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/rapidcitycitysouthdakota,penningtoncountysouthdakota/POP815223",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Rapid City offers a median home price of $299,400 with moderately easy permitting (7,340 permits issued in H1 2026), strong broadband coverage at 90.3%, and reasonable commute times averaging 17.5 minutes. State income tax is 5.42% and sales tax is 7.5%.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "$299K median home price",
+            "90.3% broadband availability",
+            "7,340 permits issued (active development)",
+            "17.5 min average commute"
+          ],
+          "cons": [
+            "5.42% state income tax",
+            "7.5% sales tax",
+            "Limited transit options"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Not specified in available sources",
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Moderate - food access challenges noted; 33,702 residents in food desert census tracts with limited supermarket access",
+        "source_url": "https://bhacf.org/key-barriers-to-food-access-in-rapid-city-identified-with-study-commissioned-by-bhacf/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Rapid City Regional Airport (RAP) - primary commercial airport serving the region",
+        "source_url": "https://605magazine.com/2025/09/30/rapid-city-regional-airport-expanding-south-dakotas-tourism-gateway/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Denver, Dallas, Minneapolis, Phoenix - seasonal destinations from RAP; multiple metro hubs accessible within regional radius",
+        "source_url": "https://605magazine.com/2025/09/30/rapid-city-regional-airport-expanding-south-dakotas-tourism-gateway/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Target is your only major chain grocery option locally, with significant food desert areas affecting 33,702 residents; however, Rapid City Regional Airport offers commercial flights and multiple major metros (Denver, Dallas, Minneapolis, Phoenix) are accessible within 6 hours of driving.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Regional airport with seasonal service",
+            "Multiple major metros within 6hr drive"
+          ],
+          "cons": [
+            "Only Target for chain groceries",
+            "Moderate farmers market density",
+            "33k residents in food deserts"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Rapid City, South Dakota presents a compelling relocation destination for those seeking a mid-sized community with strong fundamentals tempered by notable constraints. The city of approximately 80,000 residents offers exceptional healthcare infrastructure with trauma care and Monument Health's hospital network, solid educational resources with well-rated schools, and a robust economic foundation featuring a median home price of $299,400, strong broadband (90.3%), and reasonable commute times averaging 17.5 minutes. However, prospective residents must weigh significant environmental and lifestyle trade-offs: the region faces high wildfire risk (35 smoke-impacted days annually), severe regional drought conditions despite Rapid City's strong senior water rights and long-term supply security through 2115, and a remote location requiring 520 minutes to reach the nearest metropolitan area. The climate is decidedly harsh, with a short 140-day growing season, January-February snowfall of 8.5-8.6 inches monthly, and winters dropping to 13°F, while food infrastructure is limited with only Target as a major grocery chain and significant food desert areas affecting over 33,700 residents. The political environment aligns with conservative South Dakota values and permissive self-defense laws, and while state taxes are relatively moderate (5.42% income tax, 7.5% sales tax), electricity costs are reasonable at 12.5 per kWh with moderate solar potential. Overall, Rapid City suits those prioritizing healthcare access, education quality, and community stability while accepting geographical isolation, climate severity, air quality challenges from wildfire smoke, and limited retail amenities.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
