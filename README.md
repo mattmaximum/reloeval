@@ -12,7 +12,7 @@ request a city" below for exactly how that's enforced.
 
 ## What it does
 
-For any US city, this researches and reports on ~65 fields across 8
+For any US city, this researches and reports on 83 fields across 8
 categories, using an LLM with live web search for grounding (not just
 model memory):
 
@@ -37,6 +37,16 @@ Every field carries a source citation and fetch date where applicable.
 Fields that can't be confidently resolved are marked as such rather than
 guessed at.
 
+Each city also gets two independent **Fit scores** — Family Fit and
+Self-Sufficiency — computed from category weights and dealbreaker rules
+in `preferences.json`. These reflect one specific household's priorities,
+not an objective ranking; the exact weights and dealbreaker conditions
+are shown on the live [scoring methodology
+page](https://mattmaximum.github.io/reloeval/scoring.html), generated
+directly from that file. There's also a side-by-side [city comparison
+tool](https://mattmaximum.github.io/reloeval/compare.html) once at least
+two cities are evaluated.
+
 ## How to request a city
 
 1. Open a new issue using the **["New city request"](https://github.com/mattmaximum/reloeval/issues/new/choose)**
@@ -52,6 +62,15 @@ evaluation makes real, billed API calls, and there's no mechanism here to
 limit or attribute spend to anyone but the owner. Anyone else opening an
 issue (even using the template) is silently inert: no run, no cost, no
 notification beyond GitHub's normal "someone opened an issue" behavior.
+
+## Reporting a data error or suggestion
+
+Spotted a wrong data point, or have an idea for the site? Open an issue
+using the **["Feedback"](https://github.com/mattmaximum/reloeval/issues/new/choose)**
+template. Unlike the city-request template, this one doesn't trigger
+anything automatically — it's just a place for it to land so I can look
+at it. A source link showing the correct value is the most useful thing
+you can include for a data error.
 
 ## How it works
 
@@ -79,3 +98,10 @@ underlying field set has changed. A separate manual trigger
 permissions) re-checks every past city for new/stale fields and
 redeploys the site — useful after a schema or design change, not needed
 for everyday use.
+
+## License
+
+[MIT](LICENSE) — the code and generated reports are free to reuse. That
+license only covers copying/reuse; it doesn't grant a way to actually
+trigger a new evaluation against this repo's API key, which stays
+owner-only regardless (see "How to request a city" above).
