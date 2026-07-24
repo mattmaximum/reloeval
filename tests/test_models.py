@@ -103,6 +103,26 @@ def test_field_value_model_rejects_wrong_type():
         model(value="not a number", source_url="https://x.com", fetched_date="2026-07-22")
 
 
+def test_field_value_model_rejects_value_above_declared_max():
+    # Regression: annual_sunshine_days was fetched as 3200 (sunshine
+    # *hours*, not days) for Grand Junction, CO and stored as valid --
+    # a day-count field can never exceed 366.
+    import pytest
+    from pydantic import ValidationError
+
+    field_def = {"type": "number", "schema_version": 1, "min": 0, "max": 366}
+    model = build_field_value_model(field_def)
+    with pytest.raises(ValidationError):
+        model(value=3200.0, source_url="https://x.com", fetched_date="2026-07-22")
+
+
+def test_field_value_model_accepts_value_within_declared_bounds():
+    field_def = {"type": "number", "schema_version": 1, "min": 0, "max": 366}
+    model = build_field_value_model(field_def)
+    instance = model(value=245.0, source_url="https://x.com", fetched_date="2026-07-22")
+    assert instance.value == 245.0
+
+
 def test_retail_presence_field_type():
     field_def = {"type": "retail_presence", "schema_version": 1}
     model = build_field_value_model(field_def)

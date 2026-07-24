@@ -127,7 +127,7 @@
     },
     "geographic_climate": {
       "usda_hardiness_zone": {
-        "value": "Zone 7a (0\u00b0F to 5\u00b0F)",
+        "value": "Zone 7a (0°F to 5°F)",
         "source_url": "https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -247,35 +247,24 @@
         "schema_version": 1
       },
       "annual_sunshine_days": {
-        "value": 3200.0,
-        "source_url": "https://www.weather.gov/media/gjt/history/GJT_Station_Digest.pdf",
-        "fetched_date": "2026-07-22",
+        "value": 245.0,
+        "source_url": "https://www.bestplaces.net/climate/city/colorado/grand_junction",
+        "fetched_date": "2026-07-24",
         "status": "valid",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This location features USDA Zone 7a winters (lows near 19\u00b0F) with virtually no snow, hot but not extreme summers peaking at 93.7\u00b0F in July, and an excellent 175-day growing season. Expect abundant sunshine (3200 days annually) with moderate rainfall concentrated in fall (1.22\" in September) and a dry June (0.47\").",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": {
-          "pros": [
-            "Long 175-day growing season",
-            "Abundant sunshine: 3200 days/year",
-            "Virtually no snow or ice",
-            "Moderate winter lows (~19\u00b0F)"
-          ],
-          "cons": [
-            "July highs reach 93.7\u00b0F",
-            "Low rainfall June (0.47\")"
-          ]
-        },
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     },
@@ -295,7 +284,7 @@
         "schema_version": 1
       },
       "well_legality": {
-        "value": "Private wells are legal but tightly regulated. Colorado groundwater is presumed tributary to surface streams and administered under the prior-appropriation ('first in time, first in right') doctrine. Mesa County lies outside any Designated Groundwater Basin, so new wells require a permit from the Colorado Division of Water Resources (State Engineer) under C.R.S. \u00a737-90-137, and many uses require an adjudicated water right/augmentation plan. Small-capacity 'exempt' household wells (generally \u226415 gpm) can be permitted for indoor domestic use, but if a municipal or district water tap is reasonably available, state rules typically require obtaining permission from that provider before drilling a private well, and outdoor irrigation from such wells is often restricted or prohibited.",
+        "value": "Private wells are legal but tightly regulated. Colorado groundwater is presumed tributary to surface streams and administered under the prior-appropriation ('first in time, first in right') doctrine. Mesa County lies outside any Designated Groundwater Basin, so new wells require a permit from the Colorado Division of Water Resources (State Engineer) under C.R.S. §37-90-137, and many uses require an adjudicated water right/augmentation plan. Small-capacity 'exempt' household wells (generally ≤15 gpm) can be permitted for indoor domestic use, but if a municipal or district water tap is reasonably available, state rules typically require obtaining permission from that provider before drilling a private well, and outdoor irrigation from such wells is often restricted or prohibited.",
         "source_url": "https://dwr.colorado.gov/services/well-permitting",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -323,7 +312,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Grand Junction's water supply faces severe drought stress: record-breaking low snowpack (18\u201325% of normal) and the driest five-month period in 132 years triggered Phase 2 state drought response in 2026, with municipal suppliers warning of imminent watering restrictions and rate hikes. Backup storage is limited and mostly in planning stages, while new water rights are extremely difficult to obtain under Colorado's prior-appropriation system, making long-term supply security uncertain for relocators.",
+        "value": "Grand Junction's water supply faces severe drought stress: record-breaking low snowpack (18–25% of normal) and the driest five-month period in 132 years triggered Phase 2 state drought response in 2026, with municipal suppliers warning of imminent watering restrictions and rate hikes. Backup storage is limited and mostly in planning stages, while new water rights are extremely difficult to obtain under Colorado's prior-appropriation system, making long-term supply security uncertain for relocators.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -332,12 +321,12 @@
       "category_pros_cons": {
         "value": {
           "pros": [
-            "Well water legally permitted (\u226415 gpm exempt)",
+            "Well water legally permitted (≤15 gpm exempt)",
             "Backup Colorado River available as emergency source"
           ],
           "cons": [
-            "Record drought: 18\u201325% of normal snowpack",
-            "Driest 5 months in 132 years (Jan\u2013May 2026)",
+            "Record drought: 18–25% of normal snowpack",
+            "Driest 5 months in 132 years (Jan–May 2026)",
             "Watering restrictions and surcharges imminent",
             "New water rights extremely hard to secure",
             "Backup storage not yet built (feasibility phase)"
@@ -379,7 +368,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Electricity costs 12.5 cents/kWh with good grid reliability backed by two Tier 1 providers and recent substation upgrades, though rural mountain terrain can trigger occasional outages. Net metering is available but faces a significant policy shift in 2027 when annual solar credits will no longer roll forward indefinitely\u2014excess generation will be paid out annually instead.",
+        "value": "Electricity costs 12.5 cents/kWh with good grid reliability backed by two Tier 1 providers and recent substation upgrades, though rural mountain terrain can trigger occasional outages. Net metering is available but faces a significant policy shift in 2027 when annual solar credits will no longer roll forward indefinitely—excess generation will be paid out annually instead.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -388,7 +377,7 @@
       "category_pros_cons": {
         "value": {
           "pros": [
-            "12.5\u00a2/kWh is below U.S. average",
+            "12.5¢/kWh is below U.S. average",
             "Dual Tier 1 providers + recent $2.2M upgrades",
             "Net metering currently available"
           ],
@@ -434,7 +423,7 @@
         "schema_version": 1
       },
       "political_leaning": {
-        "value": "Strongly Republican-leaning/conservative. Mesa County is the largest county on Colorado's Western Slope but votes reliably GOP \u2014 Trump won about 61% of the Mesa County vote in the 2024 presidential election, and the area is part of Colorado's 3rd Congressional District (Cook PVI R+5), represented by a Republican.",
+        "value": "Strongly Republican-leaning/conservative. Mesa County is the largest county on Colorado's Western Slope but votes reliably GOP — Trump won about 61% of the Mesa County vote in the 2024 presidential election, and the area is part of Colorado's 3rd Congressional District (Cook PVI R+5), represented by a Republican.",
         "source_url": "https://gazette.com/2024/11/17/how-colorado-regions-voted-front-range-for-harris-rural-counties-for-trump-cronin-and-loevy-97ea5c5e-a478-11ef-ad6f-7f3d7046d490/",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -469,14 +458,14 @@
         "schema_version": 1
       },
       "firearm_magazine_restrictions": {
-        "value": "Colorado bans magazines capable of holding more than 15 rounds of ammunition ('large-capacity magazines') under C.R.S. \u00a718-12-302, in effect since July 1, 2013; magazines owned before that date are grandfathered but subject to strict handling limits. Violation is generally a class 2 misdemeanor, escalating to a felony if possessed during a violent crime.",
+        "value": "Colorado bans magazines capable of holding more than 15 rounds of ammunition ('large-capacity magazines') under C.R.S. §18-12-302, in effect since July 1, 2013; magazines owned before that date are grandfathered but subject to strict handling limits. Violation is generally a class 2 misdemeanor, escalating to a felony if possessed during a violent crime.",
         "source_url": "https://www.shouselaw.com/co/blog/laws/what-are-colorado-gun-laws-as-to-magazine-capacity/",
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
       },
       "self_defense_legal_status": {
-        "value": "Colorado is not a formal 'stand your ground' state by statute, but case law establishes no duty to retreat when using justified force in self-defense, both inside and outside the home. Colorado's 'Make My Day' law (Castle Doctrine, C.R.S. \u00a718-1-704.5), enacted in 1985, allows occupants to use deadly force against an intruder who has unlawfully entered a dwelling if they reasonably believe the intruder intends to commit a crime and use physical force, without any duty to retreat.",
+        "value": "Colorado is not a formal 'stand your ground' state by statute, but case law establishes no duty to retreat when using justified force in self-defense, both inside and outside the home. Colorado's 'Make My Day' law (Castle Doctrine, C.R.S. §18-1-704.5), enacted in 1985, allows occupants to use deadly force against an intruder who has unlawfully entered a dwelling if they reasonably believe the intruder intends to commit a crime and use physical force, without any duty to retreat.",
         "source_url": "https://www.findlaw.com/state/colorado-law/colorado-self-defense-laws.html",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -559,7 +548,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Grand Junction has 44 public schools with a modest 3.5 district rating, though Central and Fruita Monument High Schools are undergoing major upgrades via a $582M facility plan; healthcare is strong with St. Mary's Medical Center\u2014a Level II trauma center\u2014just 0.5 miles away. Homeschooling is minimally regulated (only 172 instruction days required, no curriculum approval needed) with a well-established co-op community.",
+        "value": "Grand Junction has 44 public schools with a modest 3.5 district rating, though Central and Fruita Monument High Schools are undergoing major upgrades via a $582M facility plan; healthcare is strong with St. Mary's Medical Center—a Level II trauma center—just 0.5 miles away. Homeschooling is minimally regulated (only 172 instruction days required, no curriculum approval needed) with a well-established co-op community.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -742,7 +731,7 @@
         "schema_version": 1
       },
       "farmers_market_density": {
-        "value": "Grand Junction/Mesa County has multiple regular farmers markets, including the Downtown 'Market on Main' (weekly Thursday evenings, July\u2013September, on Main Street), the Orchard Mesa Farmers Market (Tuesdays at the Mesa County Fairgrounds), plus additional seasonal markets in nearby Palisade and Fruita, giving the Grand Valley several producer-direct markets within a short drive of the city.",
+        "value": "Grand Junction/Mesa County has multiple regular farmers markets, including the Downtown 'Market on Main' (weekly Thursday evenings, July–September, on Main Street), the Orchard Mesa Farmers Market (Tuesdays at the Mesa County Fairgrounds), plus additional seasonal markets in nearby Palisade and Fruita, giving the Grand Valley several producer-direct markets within a short drive of the city.",
         "source_url": "https://www.visitgrandjunction.com/blog/post/farmers-markets-in-grand-junction/",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -763,7 +752,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Grand Junction offers convenient local air access via its own regional airport with major hub connections (Denver, Phoenix, Las Vegas, Salt Lake City, Dallas), and easy reach to Denver/Salt Lake City metros within 4\u20135.5 hours. Grocery shopping is limited to Target and Sprouts locally, with Whole Foods 110 miles away and Costco 118 miles away; however, multiple weekly farmers markets provide producer-direct food access, and raw milk access is available through legal herdshare agreements.",
+        "value": "Grand Junction offers convenient local air access via its own regional airport with major hub connections (Denver, Phoenix, Las Vegas, Salt Lake City, Dallas), and easy reach to Denver/Salt Lake City metros within 4–5.5 hours. Grocery shopping is limited to Target and Sprouts locally, with Whole Foods 110 miles away and Costco 118 miles away; however, multiple weekly farmers markets provide producer-direct food access, and raw milk access is available through legal herdshare agreements.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -790,10 +779,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Grand Junction, Colorado presents a mixed relocation profile with notable strengths in climate, energy infrastructure, and regional connectivity, but significant challenges in water security and public safety that warrant careful consideration. The city offers excellent growing conditions (175-day season, 3200 annual sunshine days), moderate housing costs ($430,000 median), low state income tax (4.4%), and good access to major regional hubs via its own airport\u2014making it attractive for remote workers and those seeking outdoor lifestyle amenities. However, prospective relocators must confront severe water supply stress stemming from record-low snowpack and an unprecedented five-month drought that triggered Phase 2 state restrictions in 2026, with municipal suppliers warning of imminent rate hikes and watering restrictions that threaten long-term sustainability. Additionally, the city's above-average violent crime rate (546.1 per 100k) and notably high property crime rate (3,170.4 per 100k)\u2014significantly exceeding national averages\u2014present public safety concerns, while car-dependent infrastructure (walkability score 34), limited local grocery options, and modest school district ratings (3.5) further complicate the calculus. The area's natural hazards are relatively manageable (low seismic activity, good air quality), and strong healthcare services via a nearby Level II trauma center are definite assets, but the combination of water scarcity, crime, and limited walkability suggests Grand Junction works best for self-sufficient, security-conscious relocators prioritizing climate and energy considerations over urban amenities and public safety metrics.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     }

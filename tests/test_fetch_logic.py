@@ -195,6 +195,36 @@ def test_fetch_category_partial_validation_failure_isolated_to_one_field():
     assert result["grid_reliability"].value == "rare outages"
 
 
+def test_fetch_category_out_of_range_day_count_falls_back_to_unresolved():
+    # Real failure: annual_sunshine_days was fetched as 3200 for Grand
+    # Junction, CO (sunshine *hours*, not days) and stored as valid --
+    # the schema-declared max=366 (see models.py) now catches this the
+    # same way a wrong-type value already gets isolated to just that field.
+    schema = load_schema()
+    climate_rows = [
+        {"month": m, "avg_high_f": 70.0, "avg_low_f": 50.0, "avg_rainfall_in": 1.0, "avg_snowfall_in": 0.0}
+        for m in _MONTHS
+    ]
+
+    def handler(name, kw):
+        return {
+            "usda_hardiness_zone": {"value": "6a", "source_url": "https://x.com", "fetched_date": "2026-07-22"},
+            "first_frost_date": {"value": "October 15", "source_url": "https://x.com", "fetched_date": "2026-07-22"},
+            "last_frost_date": {"value": "April 20", "source_url": "https://x.com", "fetched_date": "2026-07-22"},
+            "growing_season_length_days": {"value": 178.0, "source_url": "https://x.com", "fetched_date": "2026-07-22"},
+            "monthly_climate_table": {"value": climate_rows, "source_url": "https://x.com", "fetched_date": "2026-07-22"},
+            "annual_sunshine_days": {"value": 3200.0, "source_url": "https://x.com", "fetched_date": "2026-07-22"},
+        }
+
+    client = FakeAsyncOpenAI(handler=handler)
+    normalized = NormalizedCity(city="Grand Junction", state="CO", county="Mesa County")
+    result = asyncio.run(fetch_category(client, schema, "geographic_climate", normalized))
+
+    assert result["annual_sunshine_days"].status == FieldStatus.UNRESOLVED
+    assert result["growing_season_length_days"].status == FieldStatus.VALID
+    assert result["growing_season_length_days"].value == 178.0
+
+
 def test_fetch_category_includes_closed_metro_list_for_geographic_hazards():
     # Regression test: the model repeatedly answered nearest_large_metro_name
     # with the nearest city of ANY size (Grand Junction for Collbran CO,

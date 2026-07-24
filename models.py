@@ -116,11 +116,23 @@ def web_search_fields(schema: dict, category_key: str) -> dict[str, dict]:
 def build_field_value_model(field_def: dict) -> Type[BaseModel]:
     """The {value, source_url, fetched_date} shape the LLM must return for
     one field. Reused both to build the category's structured-output schema
-    and to re-validate each field individually after the call returns."""
+    and to re-validate each field individually after the call returns.
+
+    A schema-declared min/max (e.g. a day-count field physically can't
+    exceed 366) turns an out-of-range fetch into the same isolated
+    per-field "unresolved" fallback a type mismatch already gets, via
+    fetch_category's existing ValidationError handling -- not a new
+    failure path. Added after annual_sunshine_days was fetched as 3200
+    (sunshine *hours*, not days) for Grand Junction, CO and silently
+    stored as valid."""
     value_type = _TYPE_MAP[field_def["type"]]
+    if "min" in field_def or "max" in field_def:
+        value_spec = (value_type, Field(..., ge=field_def.get("min"), le=field_def.get("max")))
+    else:
+        value_spec = (value_type, ...)
     return create_model(
         "FetchedFieldValue",
-        value=(value_type, ...),
+        value=value_spec,
         source_url=(str, ...),
         fetched_date=(str, ...),
     )
