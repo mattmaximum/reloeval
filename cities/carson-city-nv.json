@@ -1,0 +1,800 @@
+{
+  "input_city_state": "Carson City, NV",
+  "normalized": {
+    "city": "Carson City",
+    "state": "NV",
+    "county": "Carson City"
+  },
+  "slug": "carson-city-nv",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Carson City County",
+        "source_url": "https://www.carsoncity.gov/government/departments-a-f/fire-department/divisions/emergency-management-division/hazard-mitigation-plan-8480",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 4737.0,
+        "source_url": "https://www.carsoncity.gov/government/departments-a-f/fire-department/divisions/emergency-management-division/hazard-mitigation-plan-8480",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 520.0,
+        "source_url": "https://forestry.nv.gov/uploads/missions/20250219_2023_Carson_City_Fire_Department_CWPP.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 5.0,
+        "source_url": "https://nbmg.unr.edu/nhmpc/Presentations/Earthquake_Hazard_Presentations/Earthquake_Hazards_in_Carson_City_7February2012.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "Not applicable - no active volcanoes in region",
+        "source_url": "https://www.carsoncity.gov/government/departments-a-f/fire-department/divisions/emergency-management-division/hazard-mitigation-plan-8480",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Minimal",
+        "source_url": "https://riskbycounty.com/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High",
+        "source_url": "https://riskbycounty.com/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Very High",
+        "source_url": "https://riskbycounty.com/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate",
+        "source_url": "https://riskbycounty.com/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 58.0,
+        "source_url": "https://www.augurisk.com/risk/state/nevada/carson-city/32510",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 28.0,
+        "source_url": "https://forestry.nv.gov/uploads/missions/20250219_2023_Carson_City_Fire_Department_CWPP.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 60.0,
+        "source_url": "https://www.google.com/maps",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "San Francisco-Oakland-Fremont, CA",
+        "source_url": "https://www.google.com/maps",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Carson City sits at a high-elevation (4,737 ft) inland location with very high earthquake risk due to a fault line just 5 miles away, high wildfire risk with 28 smoke days per year, and a moderate flood risk. It's about an hour's drive from San Francisco-Oakland but relatively isolated otherwise, with minimal hurricane exposure.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good air quality (AQI 58)",
+            "No active volcanoes nearby",
+            "Minimal hurricane risk"
+          ],
+          "cons": [
+            "Very high earthquake risk—fault line 5 miles away",
+            "High wildfire risk with 28 smoke days/year",
+            "Only metro access is 60 min away"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "6a-7b",
+        "source_url": "https://www.growableground.com/what-grows-in/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "May 4",
+        "source_url": "https://weatherbycounty.com/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "October 28",
+        "source_url": "https://www.growableground.com/what-grows-in/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 138.0,
+        "source_url": "https://weatherspark.com/y/1539/Average-Weather-in-Carson-City-Nevada-United-States-Year-Round",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 45.5,
+            "avg_low_f": 24.1,
+            "avg_rainfall_in": 1.72,
+            "avg_snowfall_in": 3.6
+          },
+          {
+            "month": "February",
+            "avg_high_f": 49.5,
+            "avg_low_f": 27.0,
+            "avg_rainfall_in": 1.48,
+            "avg_snowfall_in": 1.7
+          },
+          {
+            "month": "March",
+            "avg_high_f": 56.2,
+            "avg_low_f": 31.6,
+            "avg_rainfall_in": 1.24,
+            "avg_snowfall_in": 1.6
+          },
+          {
+            "month": "April",
+            "avg_high_f": 61.7,
+            "avg_low_f": 35.8,
+            "avg_rainfall_in": 0.51,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 70.4,
+            "avg_low_f": 42.9,
+            "avg_rainfall_in": 0.51,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 80.9,
+            "avg_low_f": 49.2,
+            "avg_rainfall_in": 0.37,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 89.5,
+            "avg_low_f": 54.8,
+            "avg_rainfall_in": 0.18,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 87.8,
+            "avg_low_f": 52.5,
+            "avg_rainfall_in": 0.14,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 80.7,
+            "avg_low_f": 45.6,
+            "avg_rainfall_in": 0.24,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 66.2,
+            "avg_low_f": 39.8,
+            "avg_rainfall_in": 0.55,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 54.5,
+            "avg_low_f": 28.4,
+            "avg_rainfall_in": 0.9,
+            "avg_snowfall_in": 0.7
+          },
+          {
+            "month": "December",
+            "avg_high_f": 44.6,
+            "avg_low_f": 23.9,
+            "avg_rainfall_in": 1.5,
+            "avg_snowfall_in": 6.4
+          }
+        ],
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataTypes=MLY-TMAX-NORMAL%2CMLY-TMIN-NORMAL%2CMLY-TAVG-NORMAL%2CMLY-PRCP-NORMAL%2CMLY-SNOW-NORMAL&dataset=normals-monthly-1991-2020&format=pdf&stations=USC00261485",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 145.0,
+        "source_url": "https://weatherbycounty.com/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This region has a moderate climate with cool winters (USDA 6a-7b, January lows around 24°F) and warm summers (July highs near 90°F), a relatively short 138-day growing season, and very limited sunshine at just 145 days annually. Late spring frosts (May 4) and early fall frosts (October 28) compress the planting window, while winter snowfall averages 3.6-6.4 inches in Jan-Feb and Dec, and summer months are notably dry (under 0.2 inches in July-August).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Short, relatively mild winters",
+            "Dry summers require less irrigation"
+          ],
+          "cons": [
+            "Only 145 sunshine days yearly—very gloomy",
+            "138-day growing season is short",
+            "Late May frost date limits spring planting",
+            "Early October frost date shortens fall crops",
+            "July-August extremely dry (0.14-0.18 in rainfall)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Groundwater from three basins (utilizing 29 wells on average) and surface waters from Ash Canyon Creek, Kings Canyon Creek, Carson River, and the Marlette/Hobart system",
+        "source_url": "https://www.carsoncity.gov/government/departments-g-z/public-works/divisions/water",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Moderate - Carson River watershed 30-year drought plan indicates some purveyors (Gardnerville and Minden) may exceed pumping capacities by 2051; current streamflow at 78.7 cubic feet per second as of June 18, 2026",
+        "source_url": "https://www.cwsd.org/wp-content/uploads/2026/01/Wrap_up_30-Year_Plan_Pres-EJ-.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Legal - Carson City operates 30 groundwater wells through the Water Division; wells are part of an established conjunctive use system managing surface and groundwater resources",
+        "source_url": "https://www.carsoncity.gov/government/departments-g-z/public-works/divisions/water",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 400.0,
+        "source_url": "https://www.rci-nv.com/photos/2024/03/Final-CSWPP-CC-Dec-2023.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Subject to Nevada Division of Water Resources regulation; during water shortage declarations on Carson River, junior water rights holders cannot place a call for irrigation water; mitigation strategies and dedicated storage may be necessary",
+        "source_url": "https://www.cwsd.org/wp-content/uploads/2026/01/Wrap_up_30-Year_Plan_Pres-EJ-.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "High - Carson City practices conjunctive use maximizing surface water to reduce well dependency; regional transmission mains connect to Carson Valley water supply and Lyon County; storage capacity includes 14 booster tanks and interconnections across counties",
+        "source_url": "https://www.carsoncity.gov/government/departments-g-z/public-works/divisions/water",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Carson City draws from three groundwater basins (29 wells average) plus surface waters from Ash Canyon Creek, Kings Canyon Creek, Carson River, and the Marlette/Hobart system. Drought risk is moderate—the Carson River watershed's 30-year plan warns some purveyor pumping may exceed capacity by 2051, with current streamflow at 78.7 cubic feet/second—but the city maintains high backup via conjunctive use strategy, 14 booster tanks, and cross-county interconnections to Carson Valley and Lyon County supplies.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Conjunctive use maximizes surface water, reducing well reliance",
+            "Cross-county interconnections and 14 booster tanks provide strong backup",
+            "High groundwater availability with legal 30-well operation",
+            "Regional transmission mains to Carson Valley and Lyon County"
+          ],
+          "cons": [
+            "Moderate drought risk; some purveyors may exceed pumping by 2051",
+            "Junior water rights holders face irrigation call restrictions during shortages",
+            "Deep well water table at 400 feet",
+            "Possible need for mitigation strategies and dedicated storage"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 15.0,
+        "source_url": "https://www.energysage.com/local-data/electricity-cost/nv/carson-city-city-county/carson-city/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Poor - Critical failure risk by 2030, 40% of substations operating below standards, recent outages affecting 1,900+ customers",
+        "source_url": "https://news-usa.today/carson-city-power-outage-thousands-affected-again/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 88.0,
+        "source_url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-6.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Nevada supports net metering with battery storage integration and distributed resources planning",
+        "source_url": "https://www.nvenergy.com/publish/content/dam/nvenergy/brochures_arch/about-nvenergy/rates-regulatory/recent-regulatory-filings/2026-irp/NPC-SPPC-Volume-6.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 15.0 cents/kWh with concerning grid reliability issues—40% of substations are substandard and critical failures are projected by 2030, though recent outages only affected 1,900+ customers. The area has an excellent solar score of 88.0 and supportive net metering policy with battery storage integration, making renewables viable.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Excellent solar potential (88 score)",
+            "Net metering + battery storage support"
+          ],
+          "cons": [
+            "Poor grid reliability, critical failure risk by 2030",
+            "40% substandard substations",
+            "Above-average electricity rates (15¢/kWh)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 58571.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 58571.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 42.8,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White alone 67.9%, Hispanic or Latino 26.4%, Black alone 1.8%, Asian alone 3.7%, Native Hawaiian and Other Pacific Islander 0.1%, Two or more races 5.7%, American Indian and Alaska Native alone percent not specified",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Republican - Donald J. Trump received 50.6% of the popular vote in the 2024 presidential election in Nevada",
+        "source_url": "https://datausa.io/profile/geo/carson-city-nv?redirect=true",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 0.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 0.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/carsoncitynevada/PST045225",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Nevada is a constitutional carry state with no permit requirement for carrying concealed or open handguns",
+        "source_url": "https://www.leg.state.nv.us/CityCharters/CtyCCCC.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "Nevada has no state-level firearm magazine capacity restrictions",
+        "source_url": "https://www.leg.state.nv.us/CityCharters/CtyCCCC.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Nevada recognizes Castle Doctrine and Stand Your Ground provisions allowing defensive use of force",
+        "source_url": "https://www.leg.state.nv.us/CityCharters/CtyCCCC.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This city of 58,571 is a Republican-leaning Nevada community with a median age of 42.8 and notably a 67.9% white population. Crime data shows zero recorded violent and property crime rates with a 0.0 safety index, and the area operates under Nevada's constitutional carry gun laws with no permits required and no magazine restrictions.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Zero violent crime rate",
+            "Zero property crime rate",
+            "Constitutional carry/no gun permits",
+            "Median age suggests stable community"
+          ],
+          "cons": [
+            "Crime statistics seem implausibly low (likely data gap)",
+            "Republican-dominated area"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 10.0,
+        "source_url": "https://www.publicschoolreview.com/nevada/carson-city-school-district/3200390-school-district",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 6.0,
+        "source_url": "https://www.publicschoolreview.com/nevada/carson-city-school-district/3200390-school-district",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Carson City School District ranked in top 20% for Graduation Rate; average testing ranking 6/10 in top 50% of Nevada public schools",
+        "source_url": "https://www.publicschoolreview.com/nevada/carson-city-school-district/3200390-school-district",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Information not available in search results",
+        "source_url": "https://www.dhs.nv.gov/siteassets/content/programs/office-of-analytics/community-health-profile/county-profiles/Carson_City.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Information not available in search results",
+        "source_url": "https://www.carsonnow.org/04/07/2026/the-missing-middle-carson-city-residents-face-issues-in-housing-childcare-mental-health-and-more-according-to-new-social-services-landscape-assessment",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.0,
+        "source_url": "https://rhtcompass.com/nv/counties/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Carson Tahoe Regional Medical Center",
+        "source_url": "https://rhtcompass.com/nv/counties/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Carson City has 10 public schools with a moderate district rating of 6/10, though the school district stands out for top 20% graduation rates; healthcare access is excellent with a trauma center on-site and Carson Tahoe Regional Medical Center as the dominant provider.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Top 20% graduation rates",
+            "On-site trauma center",
+            "Established hospital network"
+          ],
+          "cons": [
+            "Moderate district rating (6/10)",
+            "Average testing performance (6/10)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 507.5,
+        "source_url": "https://www.houzeo.com/housing-market/nevada/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 10445.0,
+        "source_url": "https://www.landsearch.com/properties/carson-city-municipality-nv",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 344627.0,
+        "source_url": "https://www.landsearch.com/mountain/carson-city-municipality-nv",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://permitplace.com/city/carson-city-nv-building-permits/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "High - 3,390 community associations",
+        "source_url": "https://www.hoamanagement.com/city/carson-city-hoa-management/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 0.0,
+        "source_url": "https://www.tax-rates.org/nevada/income-tax",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 7.6,
+        "source_url": "https://www.salestaxhandbook.com/nevada/rates/carson-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "High - 91% cable available",
+        "source_url": "https://broadbandnow.com/Nevada/Carson-City",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 36.0,
+        "source_url": "https://www.walkscore.com/NV/Carson_City",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "JAC public transit with 4 fixed routes",
+        "source_url": "https://www.carson.org/our-city/public-transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area offers no state income tax, affordable median home prices at $507.5K with extensive HOA communities (3,390 associations), and strong broadband coverage (91% cable). However, it's car-dependent with a low walkability score of 36 and limited public transit (4 fixed routes), making relocation suitable mainly for those comfortable with a driving lifestyle.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No state income tax",
+            "Median home price $507.5K",
+            "91% cable broadband available",
+            "3,390+ HOA communities for amenities"
+          ],
+          "cons": [
+            "Low walkability score (36)",
+            "Limited transit (4 routes)",
+            "7.6% combined sales tax",
+            "High HOA prevalence"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://carsoncity.gov/our-city/public-transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://carsoncity.gov/our-city/public-transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://carsoncity.gov/our-city/public-transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://carsoncity.gov/our-city/public-transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://carsoncity.gov/our-city/public-transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Not specified in available sources",
+        "source_url": "https://carsoncitychamber.com/community/transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Limited information available; local food entrepreneurship developing through initiatives like The Depot commissary kitchen",
+        "source_url": "https://www.carsonnow.org/07/08/2026/the-depot-is-not-a-restaurant-carson-city-bbqs-new-event-center-and-central-hub-for-nontraditional-food-entrepreneurs",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Carson City Airport 1.5 miles north; Reno/Tahoe International Airport 30-40 minutes away",
+        "source_url": "https://carsoncitychamber.com/community/transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Reno 30-40 minutes via Highway 395; Lake Tahoe accessible; San Francisco Bay Area approximately 4-5 hours via Highway 50 West corridor",
+        "source_url": "https://carsoncitychamber.com/community/transportation",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This location lacks major chain grocers (no Target, Whole Foods, Trader Joe's, Costco, or Sprouts) but offers regional airport access via Carson City 1.5 miles away and Reno/Tahoe International 30-40 minutes away; metro areas like Reno and San Francisco Bay Area are within 4-5 hours by car.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Quick airport access (1.5 miles)",
+            "Reno & Bay Area reachable within 4-5 hours"
+          ],
+          "cons": [
+            "No major grocery chains nearby",
+            "Limited retail food infrastructure"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Carson City, Nevada presents a mixed profile for potential relocators seeking an affordable, low-tax mountain community with some notable trade-offs. Situated at 4,737 feet elevation, this Republican-leaning city of 58,571 offers no state income tax, accessible median home prices ($507.5K), excellent healthcare infrastructure including a trauma center, and strong solar potential (88.0 score), supported by Nevada's constitutional carry laws and reportedly zero violent crime. However, prospective residents must carefully weigh significant drawbacks: high earthquake risk from a nearby fault line, elevated wildfire hazards (28 smoke days annually), limited sunshine (145 days/year) and a compressed growing season (138 days), plus concerning grid infrastructure challenges with 40% substandard substations and projected critical failures by 2030. Water security remains moderate with adequate backup systems through conjunctive use and county interconnections, though long-term capacity concerns loom post-2051. The city is highly car-dependent (walkability score 36) with minimal public transit and limited amenities, notably lacking major grocery chains, making it most suitable for remote workers or retirees comfortable driving for services and willing to accept natural hazard exposure in exchange for affordability and regulatory freedom.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
