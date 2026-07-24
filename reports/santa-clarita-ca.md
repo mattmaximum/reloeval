@@ -1,23 +1,23 @@
 # Santa Clarita, CA — Relocation Report
 
-*Los Angeles County · Generated 2026-07-23*
+*Los Angeles County · Generated 2026-07-24*
 
 ## Geographic & Natural Hazards
 
 | Field | Value | Source |
 |---|---|---|
-| County | _(not yet evaluated — run backfill)_ |  |
-| Elevation (ft) | _(not yet evaluated — run backfill)_ |  |
-| Distance To Ocean (mi) | _(not yet evaluated — run backfill)_ |  |
-| BD Score | _(not yet evaluated — run backfill)_ |  |
-| Fault Line Distance (mi) | _(not yet evaluated — run backfill)_ |  |
-| Volcano Proximity | _(not yet evaluated — run backfill)_ |  |
-| Hurricane Risk | _(not yet evaluated — run backfill)_ |  |
-| Wildfire Risk | _(not yet evaluated — run backfill)_ |  |
-| Earthquake Risk | _(not yet evaluated — run backfill)_ |  |
-| Flood Risk | _(not yet evaluated — run backfill)_ |  |
-| Avg AQI | _(not yet evaluated — run backfill)_ |  |
-| Wildfire Smoke Days Per Year | _(not yet evaluated — run backfill)_ |  |
+| County | Los Angeles County | [source](https://en.wikipedia.org/wiki/Santa_Clarita_Valley), checked 2026-07-24 |
+| Elevation (ft) | 1207 | [source](https://www.topozone.com/california/los-angeles-ca/city/santa-clarita/), checked 2026-07-24 |
+| Distance To Ocean (mi) | 27.02 | [source](https://www.distantias.com/what-is-the-nearest-beach-to-santa_clarita-california-united_states.php), checked 2026-07-24 |
+| BD Score | 1234.02 |  |
+| Fault Line Distance (mi) | 13 | [source](https://filecenter.santa-clarita.com/Planning/via-princessa/4_4_GeoSoils060112.pdf), checked 2026-07-24 |
+| Volcano Proximity | Low - No active volcanoes in immediate region; California's active volcanic zones are in northern and southeastern CA, far from Santa Clarita | [source](https://usgs.gov/observatories/calvo/science/california-has-active-and-hazardous-volcanoes), checked 2026-07-24 |
+| Hurricane Risk | Very Low - Santa Clarita's inland location (27 miles from coast, elevated terrain) provides minimal hurricane exposure | [source](https://climatecheck.com/california/santa-clarita), checked 2026-07-24 |
+| Wildfire Risk | Very High - 94% of buildings at risk; homes have greater risk than 97% of US communities | [source](https://apps.wildfirerisk.org/explore/risk-to-homes/06/06037/0600069088), checked 2026-07-24 |
+| Earthquake Risk | Very High - 96.93% probability of major earthquake within 50km in next 50 years; proximity to San Andreas Fault | [source](https://www.homefacts.com/earthquakes/California/Los-Angeles-County/Santa-Clarita.html), checked 2026-07-24 |
+| Flood Risk | Moderate - 26% of buildings at risk; 42% chance of 3-foot flood over 30 years; 3,600 acres of floodplain | [source](https://climatecheck.com/california/santa-clarita), checked 2026-07-24 |
+| Avg AQI | 64 | [source](https://www.iqair.com/us/usa/california/santa-clarita), checked 2026-07-24 |
+| Wildfire Smoke Days Per Year | 40 | [source](https://today.ucsd.edu/story/california-communities-recovery-time-between-wildfire-smoke-events-is-shrinking), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 

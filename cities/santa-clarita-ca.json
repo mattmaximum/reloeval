@@ -9,80 +9,80 @@
   "categories": {
     "geographic_hazards": {
       "county": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Los Angeles County",
+        "source_url": "https://en.wikipedia.org/wiki/Santa_Clarita_Valley",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "elevation_ft": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 1207.0,
+        "source_url": "https://www.topozone.com/california/los-angeles-ca/city/santa-clarita/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "distance_to_ocean_mi": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 27.02,
+        "source_url": "https://www.distantias.com/what-is-the-nearest-beach-to-santa_clarita-california-united_states.php",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "fault_line_distance_mi": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 13.0,
+        "source_url": "https://filecenter.santa-clarita.com/Planning/via-princessa/4_4_GeoSoils060112.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "volcano_proximity": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Low - No active volcanoes in immediate region; California's active volcanic zones are in northern and southeastern CA, far from Santa Clarita",
+        "source_url": "https://usgs.gov/observatories/calvo/science/california-has-active-and-hazardous-volcanoes",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "hurricane_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Very Low - Santa Clarita's inland location (27 miles from coast, elevated terrain) provides minimal hurricane exposure",
+        "source_url": "https://climatecheck.com/california/santa-clarita",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "wildfire_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Very High - 94% of buildings at risk; homes have greater risk than 97% of US communities",
+        "source_url": "https://apps.wildfirerisk.org/explore/risk-to-homes/06/06037/0600069088",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "earthquake_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Very High - 96.93% probability of major earthquake within 50km in next 50 years; proximity to San Andreas Fault",
+        "source_url": "https://www.homefacts.com/earthquakes/California/Los-Angeles-County/Santa-Clarita.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "flood_risk": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Moderate - 26% of buildings at risk; 42% chance of 3-foot flood over 30 years; 3,600 acres of floodplain",
+        "source_url": "https://climatecheck.com/california/santa-clarita",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "avg_aqi": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 64.0,
+        "source_url": "https://www.iqair.com/us/usa/california/santa-clarita",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "wildfire_smoke_days_per_year": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 40.0,
+        "source_url": "https://today.ucsd.edu/story/california-communities-recovery-time-between-wildfire-smoke-events-is-shrinking",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       }
     },
