@@ -254,7 +254,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This Zone 7a location has mild winters with virtually no snow, consistent rainfall around 5 inches monthly, and a short 112-day growing season. Summer temperatures peak near 79°F with relatively moderate humidity, but the area only gets 200 days of annual sunshine, which is notably low.",
+        "value": "This Zone 7a location has mild winters with virtually no snow, consistent rainfall around 5 inches monthly, and a short 112-day growing season. Summer temperatures peak near 79\u00b0F with relatively moderate humidity, but the area only gets 200 days of annual sunshine, which is notably low.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -264,7 +264,7 @@
         "value": {
           "pros": [
             "No snow winters",
-            "Moderate summer heat (under 80°F)",
+            "Moderate summer heat (under 80\u00b0F)",
             "Steady year-round rainfall"
           ],
           "cons": [
@@ -385,7 +385,7 @@
       "category_pros_cons": {
         "value": {
           "pros": [
-            "8.68¢/kWh is very cheap",
+            "8.68\u00a2/kWh is very cheap",
             "Net metering via hydroelectric offsets",
             "Reliable small-town utility"
           ],
@@ -479,7 +479,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Small city of ~20,000 with unusually young median age of 24.5 years, leans Democratic, and offers above-average safety with violent crime at 2.8 per 100k and safety index of 72—balanced by moderate property crime at 18.5 and permissive firearms laws including Castle Doctrine and Stand Your Ground protections.",
+        "value": "Small city of ~20,000 with unusually young median age of 24.5 years, leans Democratic, and offers above-average safety with violent crime at 2.8 per 100k and safety index of 72\u2014balanced by moderate property crime at 18.5 and permissive firearms laws including Castle Doctrine and Stand Your Ground protections.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -757,7 +757,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Boone offers local farmers markets and strong regional connections to larger metros (Asheville 45 min, Greensboro 90 min, Charlotte 2.5-3 hours), but retail is limited—Target is available but major chains like Whole Foods, Trader Joe's, Costco, and Sprouts are absent. Food infrastructure is tourism-focused ($155.79M food/beverage economy) with raw dairy sales permitted under North Carolina regulations.",
+        "value": "Boone offers local farmers markets and strong regional connections to larger metros (Asheville 45 min, Greensboro 90 min, Charlotte 2.5-3 hours), but retail is limited\u2014Target is available but major chains like Whole Foods, Trader Joe's, Costco, and Sprouts are absent. Food infrastructure is tourism-focused ($155.79M food/beverage economy) with raw dairy sales permitted under North Carolina regulations.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -783,12 +783,13 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Boone, NC presents a compelling relocation destination for those seeking a small-town mountain lifestyle in an elevated Appalachian setting with a young, educated, and safe community. The area's 3,333-foot elevation minimizes hurricane and seismic risks, while a strong 90.3-rated school district and nearby Appalachian State University make it attractive for families and young professionals—reflected in its unusually low median age of 24.5 years and above-average violent crime safety index of 72. Moderate housing costs around $517,500 paired with low electricity rates of 8.68 cents/kWh and a lean 4.99% state income tax support affordability, though the 112-day growing season and low sunshine (200 days annually) may challenge agricultural interests and mood-sensitive individuals. While the area benefits from reasonable regional connectivity to Asheville and Greensboro and a vibrant food/beverage economy focused on tourism and local farmers markets, prospective residents should weigh the trade-offs of limited major retail chains, moderate drought vulnerability requiring potential water restrictions, and dependence on nearby metros for specialized services. Boone works best for those prioritizing community, outdoor access, education, and affordability over climate diversity, urban amenities, and extensive sunshine.",
+        "value": "Boone, NC presents a compelling relocation destination for those seeking a small-town mountain lifestyle in an elevated Appalachian setting with a young, educated, and safe community. The area's 3,333-foot elevation minimizes hurricane and seismic risks, while a strong 90.3-rated school district and nearby Appalachian State University make it attractive for families and young professionals\u2014reflected in its unusually low median age of 24.5 years and above-average violent crime safety index of 72. Moderate housing costs around $517,500 paired with low electricity rates of 8.68 cents/kWh and a lean 4.99% state income tax support affordability, though the 112-day growing season and low sunshine (200 days annually) may challenge agricultural interests and mood-sensitive individuals. While the area benefits from reasonable regional connectivity to Asheville and Greensboro and a vibrant food/beverage economy focused on tourism and local farmers markets, prospective residents should weigh the trade-offs of limited major retail chains, moderate drought vulnerability requiring potential water restrictions, and dependence on nearby metros for specialized services. Boone works best for those prioritizing community, outdoor access, education, and affordability over climate diversity, urban amenities, and extensive sunshine.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-24"
 }

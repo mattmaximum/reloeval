@@ -168,12 +168,12 @@ def build_derived_field_context(field_key: str, field_def: dict, category_fields
     else:
         display_value = format_scalar(value, field_def.get("unit"))
         if field_key == "bd_score":
-            display_value = f"{display_value} {bd_score_emoji(value)}"
+            display_value = f"{bd_score_emoji(value)} {format_number(round(value))}"
         status = "valid"
     return {"key": field_key, "label": label, "type": "number", "is_table": False,
             "status": status, "highlight": field_def.get("highlight", False), "risk_field": False,
             "description": field_def.get("description"),
-            "display_value": display_value, "citation": None,
+            "display_value": display_value, "value": value, "citation": None,
             "citation_url": None, "citation_date": None, "caveat": None}
 
 

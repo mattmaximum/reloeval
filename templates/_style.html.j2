@@ -244,27 +244,65 @@
   .chart-wrap { margin: 12px 0 20px; }
   .chart-wrap svg { max-width: 100%; height: auto; }
   ul.city-list { list-style: none; padding: 0; }
-  ul.city-list li.city-row {
-    display: flex;
-    justify-content: space-between;
+  .city-row {
+    display: grid;
+    grid-template-columns: minmax(120px, 1.1fr) 100px minmax(90px, 1fr) 110px 135px 155px;
     align-items: center;
     gap: 12px;
-    flex-wrap: wrap;
-    padding: 12px 0;
+    padding: 5px 0;
     border-bottom: 1px solid var(--border);
   }
-  .city-info { min-width: 180px; }
+  .city-header-row {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--muted);
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 8px;
+  }
+  .city-info { min-width: 0; }
   ul.city-list a { text-decoration: none; font-weight: 600; font-size: 1.05rem; }
-  .county { color: var(--muted); font-size: 0.88rem; }
-  .city-fit-scores {
-    flex-direction: column;
-    align-items: flex-end;
+  .city-county, .city-fields, .city-bd-score { color: var(--muted); font-size: 0.88rem; }
+  .city-fit-cell .fit-badge {
+    padding: 2px 8px;
+    font-size: 0.76rem;
     gap: 4px;
-    flex-shrink: 0;
-    margin-left: auto;
   }
   .empty { color: var(--muted); }
   .site-intro { margin: 0 0 14px; }
+  .list-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .button-link {
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 6px;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .button-link:hover { opacity: 0.88; }
+  .sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .sort-controls select {
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 0.9rem;
+  }
   .compare-section {
     background: var(--card-bg);
     border: 1px solid var(--border);

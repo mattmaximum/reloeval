@@ -100,7 +100,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Fremont County sits at high elevation (5,430 ft) with significant wildfire and flood risks—28 annual wildfire smoke days and high flood risk are major natural hazard concerns—though you're far from earthquake faults (250 mi away) and completely outside volcano zones. For relocation, expect moderate earthquake risk and a long drive to Denver (85 min).",
+        "value": "Fremont County sits at high elevation (5,430 ft) with significant wildfire and flood risks\u201428 annual wildfire smoke days and high flood risk are major natural hazard concerns\u2014though you're far from earthquake faults (250 mi away) and completely outside volcano zones. For relocation, expect moderate earthquake risk and a long drive to Denver (85 min).",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -256,7 +256,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This Zone 6a location has a 176-day growing season with mild winters (rarely dipping below freezing outside December), summer highs around 84-88°F, virtually no snow except 1.3 inches in December, and 290 annual sunshine days—making it ideal for gardeners and those seeking a long frost-free period without harsh weather extremes.",
+        "value": "This Zone 6a location has a 176-day growing season with mild winters (rarely dipping below freezing outside December), summer highs around 84-88\u00b0F, virtually no snow except 1.3 inches in December, and 290 annual sunshine days\u2014making it ideal for gardeners and those seeking a long frost-free period without harsh weather extremes.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -268,7 +268,7 @@
             "Long 176-day growing season",
             "Minimal snow/harsh winters",
             "290 sunny days annually",
-            "Summer highs moderate at 84-88°F"
+            "Summer highs moderate at 84-88\u00b0F"
           ],
           "cons": []
         },
@@ -322,7 +322,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Water supply depends on municipal Penrose Water District with high drought risk—Phase 1 voluntary curtailment already in effect as of April 2026. Backup storage exists at Brush Hollow Reservoir, but it's operating under restrictions with an active dam mitigation project, and the district faces ongoing water rights litigation.",
+        "value": "Water supply depends on municipal Penrose Water District with high drought risk\u2014Phase 1 voluntary curtailment already in effect as of April 2026. Backup storage exists at Brush Hollow Reservoir, but it's operating under restrictions with an active dam mitigation project, and the district faces ongoing water rights litigation.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -788,5 +788,6 @@
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-24"
 }

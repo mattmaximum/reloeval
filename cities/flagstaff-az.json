@@ -325,7 +325,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Flagstaff has a certified 100-year adequate water supply from diverse sources (groundwater, Lake Mary surface water, reclaimed water at 1,871 AFY), with legal well operations under Arizona's ADWR program and permitted allocations totaling 32,210 AFY—though Lake Mary productivity is declining and you're relying on an aquifer at 520 ft depth.",
+        "value": "Flagstaff has a certified 100-year adequate water supply from diverse sources (groundwater, Lake Mary surface water, reclaimed water at 1,871 AFY), with legal well operations under Arizona's ADWR program and permitted allocations totaling 32,210 AFY\u2014though Lake Mary productivity is declining and you're relying on an aquifer at 520 ft depth.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -787,12 +787,13 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Flagstaff, Arizona presents a compelling relocation destination for those seeking a vibrant college town with a temperate mountain climate, excellent civic services, and strong infrastructure. Located at 7,000 feet elevation near Phoenix, this community of 77,260 combines a diverse, educated population with notably low crime rates and strong public schools, supported by a robust healthcare system anchored by a trauma center. The area benefits from a certified 100-year water supply from multiple sources, moderate electricity costs (12.5¢/kWh) with growing grid reliability, and solid broadband connectivity with good walkability (72), while proximity to major airports enables convenient regional travel. However, potential relocators should carefully weigh significant environmental and climate trade-offs: the region faces high wildfire risk (experiencing 22 smoke days annually) with moderate-to-high flood exposure, endures a harsh winter climate (USDA Zone 5b) with a short 113-day growing season and extended frost seasons, and offers a considerably higher median home price ($450k) coupled with moderate-to-strict development permitting. While the economic fundamentals and quality of life amenities are solid, Flagstaff's appeal ultimately depends on whether the outdoor recreation and cultural benefits of a mountain college town outweigh the constraints of its cold climate, natural hazards, housing costs, and limited specialty retail access.",
+        "value": "Flagstaff, Arizona presents a compelling relocation destination for those seeking a vibrant college town with a temperate mountain climate, excellent civic services, and strong infrastructure. Located at 7,000 feet elevation near Phoenix, this community of 77,260 combines a diverse, educated population with notably low crime rates and strong public schools, supported by a robust healthcare system anchored by a trauma center. The area benefits from a certified 100-year water supply from multiple sources, moderate electricity costs (12.5\u00a2/kWh) with growing grid reliability, and solid broadband connectivity with good walkability (72), while proximity to major airports enables convenient regional travel. However, potential relocators should carefully weigh significant environmental and climate trade-offs: the region faces high wildfire risk (experiencing 22 smoke days annually) with moderate-to-high flood exposure, endures a harsh winter climate (USDA Zone 5b) with a short 113-day growing season and extended frost seasons, and offers a considerably higher median home price ($450k) coupled with moderate-to-strict development permitting. While the economic fundamentals and quality of life amenities are solid, Flagstaff's appeal ultimately depends on whether the outdoor recreation and cultural benefits of a mountain college town outweigh the constraints of its cold climate, natural hazards, housing costs, and limited specialty retail access.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-24"
 }

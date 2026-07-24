@@ -86,7 +86,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Hillsborough County sits just 2.5 miles from the ocean at near sea-level (6 ft elevation), making it highly vulnerable to hurricanes and flooding—its two primary natural hazards. While earthquake and volcano risks are negligible and air quality is good, the combination of high hurricane and flood risk means significant weather-related hazards for potential residents.",
+        "value": "Hillsborough County sits just 2.5 miles from the ocean at near sea-level (6 ft elevation), making it highly vulnerable to hurricanes and flooding\u2014its two primary natural hazards. While earthquake and volcano risks are negligible and air quality is good, the combination of high hurricane and flood risk means significant weather-related hazards for potential residents.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -265,7 +265,7 @@
         "value": {
           "pros": [
             "Frost-free year-round growing",
-            "Winter temps stay 50-70°F",
+            "Winter temps stay 50-70\u00b0F",
             "Heavy monsoon rains June-August"
           ],
           "cons": [
@@ -324,7 +324,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Tampa faces Stage 3 high drought risk with a 14-month rainfall deficit of 14.46 inches and the main reservoir (C.W. Bill Young) at critically low 14.7% capacity, though water supply is currently bolstered by multiple backup sources including desalination and aquifer storage—but strict watering restrictions (one day/week) are already in effect under an Extreme Water Shortage Order.",
+        "value": "Tampa faces Stage 3 high drought risk with a 14-month rainfall deficit of 14.46 inches and the main reservoir (C.W. Bill Young) at critically low 14.7% capacity, though water supply is currently bolstered by multiple backup sources including desalination and aquifer storage\u2014but strict watering restrictions (one day/week) are already in effect under an Extreme Water Shortage Order.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -393,7 +393,7 @@
           ],
           "cons": [
             "Low solar score (18.0)",
-            "Above-average electricity rate at 13.5¢/kWh"
+            "Above-average electricity rate at 13.5\u00a2/kWh"
           ]
         },
         "source_url": null,
@@ -785,5 +785,6 @@
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-22"
 }

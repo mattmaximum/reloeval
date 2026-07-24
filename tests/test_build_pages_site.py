@@ -91,7 +91,8 @@ def test_build_site_writes_report_with_risk_badge_and_chart(isolated_site):
 
     index_html = (isolated_site["site"] / "index.html").read_text()
     assert 'href="reports/grand-junction-co.html"' in index_html
-    assert "fields" in index_html  # completion count shown on the index too
+    assert "Fields" in index_html  # completion column header shown on the index too
+    assert "city-fields" in index_html
 
 
 def test_build_site_empty_state_when_no_cities(isolated_site):
@@ -186,7 +187,7 @@ def test_build_site_compare_page_shows_message_when_fewer_than_two_cities(isolat
     assert 'id="compare-a"' not in compare_html
 
     index_html = (isolated_site["site"] / "index.html").read_text()
-    assert "Compare two cities" not in index_html  # link only shown with 2+ cities
+    assert "Compare 2 cities" not in index_html  # button only shown with 2+ cities
 
 
 def test_build_site_writes_scoring_page_linked_from_index_and_compare(isolated_site):

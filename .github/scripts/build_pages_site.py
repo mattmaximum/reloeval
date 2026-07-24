@@ -19,6 +19,7 @@ import io
 import json
 import sys
 from pathlib import Path
+from typing import Optional
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
@@ -122,6 +123,13 @@ def comparison_payload(record, context: dict) -> dict:
     }
 
 
+def find_field(categories: list[dict], category_key: str, field_key: str) -> Optional[dict]:
+    category = next((c for c in categories if c["key"] == category_key), None)
+    if category is None:
+        return None
+    return next((f for f in category["fields"] if f["key"] == field_key), None)
+
+
 def build_scorecard(categories: list[dict]) -> list[dict]:
     return [
         field
@@ -168,6 +176,8 @@ def build_site() -> Path:
         report_html = report_template.render(**context)
         (SITE_DIR / "reports" / f"{record.slug}.html").write_text(report_html)
 
+        bd_score_field = find_field(context["categories"], "geographic_hazards", "bd_score")
+
         index_cities.append({
             "city": record.normalized.city,
             "state": record.normalized.state,
@@ -175,6 +185,8 @@ def build_site() -> Path:
             "href": f"reports/{record.slug}.html",
             "completion": context["completion"],
             "lens_scores": context["lens_scores"],
+            "first_evaluated_date": record.first_evaluated_date,
+            "bd_score_field": bd_score_field,
         })
         comparison_data[record.slug] = comparison_payload(record, context)
 

@@ -13,44 +13,79 @@
 A personal research tool evaluating US cities across ~65 data points &mdash; schools, safety,
 climate, water and power infrastructure, land and legal considerations, and self-sufficiency
 &mdash; using live web search paired with an LLM. It's public because the research might be
-useful to someone else looking at the same cities, but it's not open for anyone to run: every
-evaluation makes real, billed AI API calls, so new cities are added by the site owner one at a
-time, and only the owner can trigger a new evaluation.
+useful to someone else looking at the same cities.
 </p>
 <p class="site-intro">
-The Family Fit and Self-Sufficiency scores below are deliberately subjective &mdash; they
-reflect one specific family's priorities and weightings, not an objective ranking. That family
-is small, isn't chasing an off-grid, middle-of-nowhere, maximally-isolated location, and isn't
-optimizing for zero risk either &mdash; some tradeoffs are acceptable.
-<a href="scoring.html">See exactly how the scores are calculated</a>.
+It's not open for anyone to run, though &mdash; every evaluation makes real, billed AI API
+calls, so new cities are added by the site owner one at a time, and only the owner can trigger
+a new evaluation. If there's enough interest, opening it up more broadly is something I'd
+consider, but it would need to come with a cost to cover the API usage.
+</p>
+<p class="site-intro">
+<strong>A disclaimer on the Family Fit and Self-Sufficiency scores below:</strong> they're
+deliberately subjective, reflecting one specific family's priorities and weightings, not an
+objective ranking. That family has several young children, isn't chasing an off-grid,
+middle-of-nowhere, maximally-isolated location, and isn't optimizing for zero risk either
+&mdash; some tradeoffs are acceptable. If your own priorities are different (and they probably
+are), these scores will likely not match what you'd conclude yourself &mdash; that's expected,
+not a flaw in the methodology. Feel free to ignore the Fit scores entirely and just read each
+city's underlying research on its own terms.
 </p>
 
 {% if cities|length >= 2 %}
-<p><a href="compare.html">&#8646; Compare two cities side by side</a></p>
+<div class="list-controls">
+  <a class="button-link" href="compare.html">Compare 2 cities</a>
+  <div class="sort-controls">
+    <label for="city-sort">Sort by:</label>
+    <select id="city-sort">
+      <option value="default">Default order</option>
+      <option value="bd-desc">BD Score: High to Low</option>
+      <option value="family-desc">Family Fit: High to Low</option>
+      <option value="self-suff-desc">Self-Sufficiency: High to Low</option>
+      <option value="state-asc">State (A-Z)</option>
+      <option value="recent-desc">Most Recently Added</option>
+    </select>
+  </div>
+</div>
 {% endif %}
 
+{% macro fit_cell(lens, emoji) %}
+  {% if lens.state == "scored" %}
+    {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
+    <span class="fit-badge has-tooltip {{ css_class }}" tabindex="0">{{ emoji }} {{ lens.fit_label }}{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
+  {% elif lens.state == "dealbreaker" %}
+    <span class="fit-badge has-tooltip fit-dealbreaker" tabindex="0">{{ emoji }} Dealbreaker{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
+  {% elif lens.state == "needs_data" %}
+    <span class="fit-badge has-tooltip fit-needs-data" tabindex="0">{{ emoji }} Needs data{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
+  {% endif %}
+{% endmacro %}
+
 {% if cities %}
+<div class="city-row city-header-row">
+  <div>City, State</div>
+  <div>BD Score<span class="info-icon" tabindex="0">&#9432;<span class="tooltip-text">Elevation (ft) + distance to the ocean (mi), added together. Higher is generally more inland/elevated. The color bands are fixed personal thresholds, not an objective scale.</span></span></div>
+  <div>County</div>
+  <div>Fields<span class="info-icon" tabindex="0">&#9432;<span class="tooltip-text">Fields with data out of the total tracked &mdash; measures completeness, not quality.</span></span></div>
+  <div>Family Fit</div>
+  <div>Self-Sufficiency</div>
+</div>
 <ul class="city-list">
 {% for city in cities %}
-  <li class="city-row">
+  <li class="city-row"
+      data-family-score="{{ city.lens_scores.family.score if city.lens_scores.family.state == 'scored' else -1 }}"
+      data-self-suff-score="{{ city.lens_scores.self_sufficiency.score if city.lens_scores.self_sufficiency.state == 'scored' else -1 }}"
+      data-bd-score="{{ city.bd_score_field.value if city.bd_score_field and city.bd_score_field.status == 'valid' else -1 }}"
+      data-state="{{ city.state }}"
+      data-city="{{ city.city }}"
+      data-first-evaluated="{{ city.first_evaluated_date or '0000-00-00' }}">
     <div class="city-info">
-      <a href="{{ city.href }}">{{ city.city }}, {{ city.state }}</a><br>
-      <span class="county">{{ city.county }} &middot; {{ city.completion.valid }}/{{ city.completion.total }} fields ({{ city.completion.percent }}%)</span>
+      <a href="{{ city.href }}">{{ city.city }}, {{ city.state }}</a>
     </div>
-    {% if city.lens_scores %}
-    <div class="fit-scores city-fit-scores">
-    {% for lens_key, lens in city.lens_scores.items() %}
-      {% if lens.state == "scored" %}
-        {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
-        <span class="fit-badge has-tooltip {{ css_class }}" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
-      {% elif lens.state == "dealbreaker" %}
-        <span class="fit-badge has-tooltip fit-dealbreaker" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> Dealbreaker{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
-      {% elif lens.state == "needs_data" %}
-        <span class="fit-badge has-tooltip fit-needs-data" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> Needs data{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
-      {% endif %}
-    {% endfor %}
-    </div>
-    {% endif %}
+    <div class="city-bd-score">{% if city.bd_score_field and city.bd_score_field.status == "valid" %}{{ city.bd_score_field.display_value }}{% else %}<span class="placeholder">Not yet evaluated</span>{% endif %}</div>
+    <div class="city-county">{{ city.county }}</div>
+    <div class="city-fields">{{ city.completion.valid }}/{{ city.completion.total }} ({{ city.completion.percent }}%)</div>
+    <div class="city-fit-cell">{{ fit_cell(city.lens_scores.family, "👨‍👩‍👧") }}</div>
+    <div class="city-fit-cell">{{ fit_cell(city.lens_scores.self_sufficiency, "🛡️") }}</div>
   </li>
 {% endfor %}
 </ul>
@@ -60,6 +95,36 @@ optimizing for zero risk either &mdash; some tradeoffs are acceptable.
 
 {% if cities %}
 <p><a href="scoring.html">&#9432; How the Fit scores are calculated</a></p>
+{% endif %}
+
+{% if cities|length >= 2 %}
+<script>
+(function () {
+  var citySort = document.getElementById("city-sort");
+  var list = document.querySelector("ul.city-list");
+  if (!citySort || !list) return;
+
+  var originalOrder = Array.prototype.slice.call(list.children);
+
+  var sorters = {
+    "default": function (a, b) { return originalOrder.indexOf(a) - originalOrder.indexOf(b); },
+    "bd-desc": function (a, b) { return parseFloat(b.dataset.bdScore) - parseFloat(a.dataset.bdScore); },
+    "family-desc": function (a, b) { return parseFloat(b.dataset.familyScore) - parseFloat(a.dataset.familyScore); },
+    "self-suff-desc": function (a, b) { return parseFloat(b.dataset.selfSuffScore) - parseFloat(a.dataset.selfSuffScore); },
+    "state-asc": function (a, b) {
+      var cmp = a.dataset.state.localeCompare(b.dataset.state);
+      return cmp !== 0 ? cmp : a.dataset.city.localeCompare(b.dataset.city);
+    },
+    "recent-desc": function (a, b) { return b.dataset.firstEvaluated.localeCompare(a.dataset.firstEvaluated); },
+  };
+
+  citySort.addEventListener("change", function () {
+    var items = Array.prototype.slice.call(list.children);
+    items.sort(sorters[citySort.value]);
+    items.forEach(function (li) { list.appendChild(li); });
+  });
+})();
+</script>
 {% endif %}
 </body>
 </html>

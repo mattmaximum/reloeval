@@ -221,6 +221,48 @@ def test_fetch_city_bulk_new_city_writes_all_categories(isolated_dirs):
     assert loaded.slug == "austin-tx"
 
 
+def test_fetch_city_bulk_sets_first_evaluated_date_for_new_city(isolated_dirs):
+    from datetime import date
+    schema = load_schema()
+
+    def handler(name, kw):
+        if name == "resolve_city":
+            return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
+        return {"summary": "x", "pros": [], "cons": []}
+
+    client = FakeAsyncOpenAI(handler=handler)
+    record = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
+    assert record.first_evaluated_date == date.today().isoformat()
+
+
+def test_fetch_city_bulk_preserves_first_evaluated_date_on_backfill(isolated_dirs):
+    schema = load_schema()
+    from models import CityRecord
+    existing = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={"power_energy": {
+            "solar_score": StoredFieldValue(status=FieldStatus.UNRESOLVED, schema_version=1),
+        }},
+        first_evaluated_date="2020-01-01",
+    )
+    save_city_record(existing)
+
+    def handler(name, kw):
+        if name == "resolve_city":
+            return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
+        props = kw["response_format"]["json_schema"]["schema"]["properties"]
+        return {
+            key: {"value": 12.5, "source_url": "https://x.com", "fetched_date": "2026-07-22"}
+            for key in props
+        }
+
+    client = FakeAsyncOpenAI(handler=handler)
+    result = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
+    assert result.first_evaluated_date == "2020-01-01"  # untouched by the backfill
+
+
 def test_fetch_city_bulk_skips_categories_that_are_fully_valid_and_current(isolated_dirs):
     schema = load_schema()
 

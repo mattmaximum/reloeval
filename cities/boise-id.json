@@ -254,7 +254,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This location has a 244-day growing season with mild winters (30s-40s°F), warm but not extreme summers (peak 90°F in July), and very low precipitation (mostly 0.3-0.6 inches/month). It receives abundant sunshine at 286 days annually and minimal snow (mostly under 1 inch/month except Dec/Jan).",
+        "value": "This location has a 244-day growing season with mild winters (30s-40s\u00b0F), warm but not extreme summers (peak 90\u00b0F in July), and very low precipitation (mostly 0.3-0.6 inches/month). It receives abundant sunshine at 286 days annually and minimal snow (mostly under 1 inch/month except Dec/Jan).",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -270,7 +270,7 @@
           ],
           "cons": [
             "Very dry climate, irrigation needed",
-            "Summer heat reaches 90°F"
+            "Summer heat reaches 90\u00b0F"
           ]
         },
         "source_url": null,
@@ -288,14 +288,14 @@
         "schema_version": 1
       },
       "drought_risk": {
-        "value": "Ada County is currently facing significant drought risk. Idaho's winter 2025/2026 snowpack was near record lows (second-warmest winter since 1896), and by July 2026 an estimated 68% of Ada County residents were affected by drought, with much of southwestern Idaho classified as being in 'exceptional drought.' The City of Boise adopted a Drought Emergency Ordinance on July 1, 2026, and jointly declared Stage 2 water conservation with Suez in April 2026—about two months earlier than typical.",
+        "value": "Ada County is currently facing significant drought risk. Idaho's winter 2025/2026 snowpack was near record lows (second-warmest winter since 1896), and by July 2026 an estimated 68% of Ada County residents were affected by drought, with much of southwestern Idaho classified as being in 'exceptional drought.' The City of Boise adopted a Drought Emergency Ordinance on July 1, 2026, and jointly declared Stage 2 water conservation with Suez in April 2026\u2014about two months earlier than typical.",
         "source_url": "https://idahonews.com/news/local/city-of-boise-adopts-drought-emergency-ordinance-as-idaho-faces-dry-summer",
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
       },
       "well_legality": {
-        "value": "Private domestic wells are generally legal and exempt from Idaho water-right permitting under Idaho Code §42-227 (up to 13,000 gallons/day for household/stock/limited irrigation use), but well drillers must be licensed and wells are subject to IDWR/DEQ inspection. Recent legislative changes (2025 SB 1083 and a 2026 amendment, SB 1222, signed Feb. 17, 2026) restrict new wells in platted subdivisions located within a state-designated moratorium area, Critical Ground Water Area, or Ground Water Management Area to in-home/stock-watering use only—irrigation or other uses in such areas require a formal IDWR permit. Ada County/Boise itself is not currently a designated Critical Groundwater Area, though nearby southern Canyon County was placed under a temporary 5-year groundwater moratorium in March 2026.",
+        "value": "Private domestic wells are generally legal and exempt from Idaho water-right permitting under Idaho Code \u00a742-227 (up to 13,000 gallons/day for household/stock/limited irrigation use), but well drillers must be licensed and wells are subject to IDWR/DEQ inspection. Recent legislative changes (2025 SB 1083 and a 2026 amendment, SB 1222, signed Feb. 17, 2026) restrict new wells in platted subdivisions located within a state-designated moratorium area, Critical Ground Water Area, or Ground Water Management Area to in-home/stock-watering use only\u2014irrigation or other uses in such areas require a formal IDWR permit. Ada County/Boise itself is not currently a designated Critical Groundwater Area, though nearby southern Canyon County was placed under a temporary 5-year groundwater moratorium in March 2026.",
         "source_url": "https://idwr.idaho.gov/water-rights/domestic-exemption/",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -323,7 +323,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Boise relies heavily on groundwater (70%) from the Boise aquifer via 80+ municipal wells, with surface water from Lucky Peak Reservoir providing backup. However, the region is currently experiencing exceptional drought—Ada County snowpack was near record lows in winter 2026, flows fell below 1,200 cfs on the Boise River, and the city declared Stage 2 water conservation two months early (April 2026) and a formal Drought Emergency Ordinance in July 2026, significantly eroding water security margins.",
+        "value": "Boise relies heavily on groundwater (70%) from the Boise aquifer via 80+ municipal wells, with surface water from Lucky Peak Reservoir providing backup. However, the region is currently experiencing exceptional drought\u2014Ada County snowpack was near record lows in winter 2026, flows fell below 1,200 cfs on the Boise River, and the city declared Stage 2 water conservation two months early (April 2026) and a formal Drought Emergency Ordinance in July 2026, significantly eroding water security margins.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -371,14 +371,14 @@
         "schema_version": 1
       },
       "net_metering_policy": {
-        "value": "Idaho Power (the primary utility serving Boise/Ada County) closed traditional Net Energy Metering to new residential/commercial solar customers effective December 21, 2019, and transitioned to a 'net billing' structure in January 2024, under which exported solar energy is credited at a utility-determined avoided-cost rate rather than the full retail rate — roughly 31-32% lower value than old net metering credits. Customers who installed solar and interconnected by December 20, 2019 are grandfathered under the original full-retail net metering terms until December 20, 2045. As of an October 2025 Idaho PUC order, new export compensation rates were further reduced (~31% cut), effective for tariffs issued in 2026.",
+        "value": "Idaho Power (the primary utility serving Boise/Ada County) closed traditional Net Energy Metering to new residential/commercial solar customers effective December 21, 2019, and transitioned to a 'net billing' structure in January 2024, under which exported solar energy is credited at a utility-determined avoided-cost rate rather than the full retail rate \u2014 roughly 31-32% lower value than old net metering credits. Customers who installed solar and interconnected by December 20, 2019 are grandfathered under the original full-retail net metering terms until December 20, 2045. As of an October 2025 Idaho PUC order, new export compensation rates were further reduced (~31% cut), effective for tariffs issued in 2026.",
         "source_url": "https://pv-magazine-usa.com/2025/10/06/idaho-drops-solar-compensation-rates-by-31/",
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Boise has low electricity rates (11.88¢/kWh) and excellent grid reliability with only 1.16 outages/year and top-5 national ranking. However, solar economics are poor: net metering is closed to new customers and export credits dropped 31% in 2024, then another 31% in 2025, making home solar substantially less attractive unless you installed before December 2019.",
+        "value": "Boise has low electricity rates (11.88\u00a2/kWh) and excellent grid reliability with only 1.16 outages/year and top-5 national ranking. However, solar economics are poor: net metering is closed to new customers and export credits dropped 31% in 2024, then another 31% in 2025, making home solar substantially less attractive unless you installed before December 2019.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -387,7 +387,7 @@
       "category_pros_cons": {
         "value": {
           "pros": [
-            "Low electricity rate 11.88¢/kWh",
+            "Low electricity rate 11.88\u00a2/kWh",
             "Excellent grid reliability, ~1 outage/year",
             "Top-5 US grid reliability ranking"
           ],
@@ -461,21 +461,21 @@
         "schema_version": 1
       },
       "carry_law_type": {
-        "value": "Permitless/Constitutional Carry — Idaho allows any U.S. citizen (or active-duty service member) age 18 or older who is not otherwise disqualified to carry a concealed or open firearm without a license anywhere in the state, including within Boise city limits; a voluntary Concealed Weapons License (CWL) is also available for reciprocity purposes in other states.",
+        "value": "Permitless/Constitutional Carry \u2014 Idaho allows any U.S. citizen (or active-duty service member) age 18 or older who is not otherwise disqualified to carry a concealed or open firearm without a license anywhere in the state, including within Boise city limits; a voluntary Concealed Weapons License (CWL) is also available for reciprocity purposes in other states.",
         "source_url": "https://en.wikipedia.org/wiki/Gun_laws_in_Idaho",
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
       },
       "firearm_magazine_restrictions": {
-        "value": "None — Idaho has no state law restricting magazine capacity for long guns or handguns, and the state's firearms preemption statute (Idaho Code § 18-3302J) prevents Boise or any other local jurisdiction from enacting its own magazine capacity limits.",
+        "value": "None \u2014 Idaho has no state law restricting magazine capacity for long guns or handguns, and the state's firearms preemption statute (Idaho Code \u00a7 18-3302J) prevents Boise or any other local jurisdiction from enacting its own magazine capacity limits.",
         "source_url": "https://giffords.org/lawcenter/state-laws/large-capacity-magazines-in-idaho/",
         "fetched_date": "2026-07-22",
         "status": "valid",
         "schema_version": 1
       },
       "self_defense_legal_status": {
-        "value": "Idaho recognizes both Castle Doctrine and Stand Your Ground protections (codified via Idaho Code §§ 18-4009 and 19-202A), meaning there is no duty to retreat before using force, including deadly force, in self-defense in one's home, vehicle, workplace, or any place a person has a legal right to be, provided the belief in imminent danger is reasonable.",
+        "value": "Idaho recognizes both Castle Doctrine and Stand Your Ground protections (codified via Idaho Code \u00a7\u00a7 18-4009 and 19-202A), meaning there is no duty to retreat before using force, including deadly force, in self-defense in one's home, vehicle, workplace, or any place a person has a legal right to be, provided the belief in imminent danger is reasonable.",
         "source_url": "https://giffords.org/lawcenter/state-laws/stand-your-ground-in-idaho/",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -559,7 +559,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Boise offers strong public schools (52 schools, 4.28 district rating) with multiple nationally-recognized programs including IB options, plus exceptionally permissive homeschool regulations (no registration, testing, or credential requirements) backed by active co-op infrastructure. Emergency healthcare access is excellent with a Level II trauma center 2.5 miles away and St. Luke's—Idaho's largest and most-awarded health system—as the dominant provider.",
+        "value": "Boise offers strong public schools (52 schools, 4.28 district rating) with multiple nationally-recognized programs including IB options, plus exceptionally permissive homeschool regulations (no registration, testing, or credential requirements) backed by active co-op infrastructure. Emergency healthcare access is excellent with a Level II trauma center 2.5 miles away and St. Luke's\u2014Idaho's largest and most-awarded health system\u2014as the dominant provider.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -731,7 +731,7 @@
         "schema_version": 1
       },
       "raw_dairy_legality": {
-        "value": "Legal but tightly regulated. Idaho permits BOTH on-farm and licensed retail sales of raw milk and raw dairy products (one of only ~11-14 states allowing retail sales), governed by IDAPA 02.04.13 and Idaho Code §37-1101. Producers must obtain a permit from the Idaho Dept. of Agriculture, meet bottling/testing requirements, and label products; herdshare/cowshare arrangements are also legal. A 2026 multi-dairy Campylobacter outbreak (100+ illnesses) has increased scrutiny/enforcement, but the underlying retail-sale legality remains unchanged as of mid-2026.",
+        "value": "Legal but tightly regulated. Idaho permits BOTH on-farm and licensed retail sales of raw milk and raw dairy products (one of only ~11-14 states allowing retail sales), governed by IDAPA 02.04.13 and Idaho Code \u00a737-1101. Producers must obtain a permit from the Idaho Dept. of Agriculture, meet bottling/testing requirements, and label products; herdshare/cowshare arrangements are also legal. A 2026 multi-dairy Campylobacter outbreak (100+ illnesses) has increased scrutiny/enforcement, but the underlying retail-sale legality remains unchanged as of mid-2026.",
         "source_url": "https://www.realmilk.com/real-milk-legal-map/",
         "fetched_date": "2026-07-22",
         "status": "valid",
@@ -787,12 +787,13 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Boise, Idaho emerges as a compelling mid-sized relocation destination (population 238,853) offering exceptional strengths in climate, education, healthcare, and food infrastructure: a 244-day growing season with abundant sunshine (286 days/year), excellent public schools with nationally-recognized programs and permissive homeschooling regulations, and outstanding emergency healthcare anchored by St. Luke's Health System. The city also boasts low electricity rates, top-5 grid reliability, strong urban grocery access including legal raw dairy, and robust farmers markets operating nearly year-round. However, prospective relocators must carefully weigh significant headwinds: an acute and worsening water security crisis (exceptional drought conditions forcing Stage 2 conservation and a formal Drought Emergency Ordinance in 2026, despite 70% groundwater reliance and upstream dam backup), notable natural hazards including extreme summer wildfire risk in adjacent foothills, moderate earthquake and flood risks, and deteriorating solar economics due to closed net metering and 62% cumulative export credit reductions. Additional considerations include above-average crime rates (violent crime 222.5, property crime 1,335), limited commercial air connectivity (single hub; nearest major metros 6+ hours away), and car-dependent sprawl outside downtown despite strong transit-oriented core neighborhoods. The region's political bifurcation—Democratic urban core surrounded by Republican county and state—may influence local policy priorities and community fit, while moderate housing costs ($525k median) are partially offset by strict permitting and increasingly mandatory HOAs in newer subdivisions.",
+        "value": "Boise, Idaho emerges as a compelling mid-sized relocation destination (population 238,853) offering exceptional strengths in climate, education, healthcare, and food infrastructure: a 244-day growing season with abundant sunshine (286 days/year), excellent public schools with nationally-recognized programs and permissive homeschooling regulations, and outstanding emergency healthcare anchored by St. Luke's Health System. The city also boasts low electricity rates, top-5 grid reliability, strong urban grocery access including legal raw dairy, and robust farmers markets operating nearly year-round. However, prospective relocators must carefully weigh significant headwinds: an acute and worsening water security crisis (exceptional drought conditions forcing Stage 2 conservation and a formal Drought Emergency Ordinance in 2026, despite 70% groundwater reliance and upstream dam backup), notable natural hazards including extreme summer wildfire risk in adjacent foothills, moderate earthquake and flood risks, and deteriorating solar economics due to closed net metering and 62% cumulative export credit reductions. Additional considerations include above-average crime rates (violent crime 222.5, property crime 1,335), limited commercial air connectivity (single hub; nearest major metros 6+ hours away), and car-dependent sprawl outside downtown despite strong transit-oriented core neighborhoods. The region's political bifurcation\u2014Democratic urban core surrounded by Republican county and state\u2014may influence local policy priorities and community fit, while moderate housing costs ($525k median) are partially offset by strict permitting and increasingly mandatory HOAs in newer subdivisions.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-22"
 }

@@ -201,7 +201,7 @@ def test_build_render_context_derived_field_present_and_computed():
     context = build_render_context(schema, record)
     geo_category = context["categories"][0]  # geographic_hazards is the first category in schema.json
     field = next(f for f in geo_category["fields"] if f["key"] == "bd_score")
-    assert field["display_value"] == "639 \U0001F534"  # 639 < 2000 -> red circle
+    assert field["display_value"] == "\U0001F534 639"  # 639 < 2000 -> red circle
 
 
 @pytest.mark.parametrize("value,expected_emoji", [

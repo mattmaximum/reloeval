@@ -496,6 +496,10 @@ async def fetch_city_bulk(client: AsyncOpenAI, schema: dict, city_state_input: s
         normalized=normalized,
         slug=slug,
         categories=merged_categories,
+        # Set once on first evaluation, never touched again -- a later
+        # backfill re-fetching a stale field must not look like the city
+        # was "just added."
+        first_evaluated_date=existing.first_evaluated_date if existing else date.today().isoformat(),
     )
     save_city_record(record)
     return record

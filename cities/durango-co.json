@@ -86,7 +86,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "La Plata County sits at 6,512 feet in Colorado's mountains with good air quality (AQI 42) but faces notable wildfire exposure—most homes are in the Wildland Urban Interface with 18 smoke days yearly—plus moderate flood risk from the Animas River and proximity to the San Juan volcanic field 40 miles north. Earthquake and hurricane risks are low, and you're safely distant from any fault lines (35 miles).",
+        "value": "La Plata County sits at 6,512 feet in Colorado's mountains with good air quality (AQI 42) but faces notable wildfire exposure\u2014most homes are in the Wildland Urban Interface with 18 smoke days yearly\u2014plus moderate flood risk from the Animas River and proximity to the San Juan volcanic field 40 miles north. Earthquake and hurricane risks are low, and you're safely distant from any fault lines (35 miles).",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -256,7 +256,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This Zone 6b location has a moderate 180-day growing season with cold winters averaging 40°F highs and lows around 14°F, plus significant snow (35-40 inches January-February combined). Summers are warm (87°F peaks in July) with relatively dry springs/early summers but moderate rainfall in late summer/early fall.",
+        "value": "This Zone 6b location has a moderate 180-day growing season with cold winters averaging 40\u00b0F highs and lows around 14\u00b0F, plus significant snow (35-40 inches January-February combined). Summers are warm (87\u00b0F peaks in July) with relatively dry springs/early summers but moderate rainfall in late summer/early fall.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -271,7 +271,7 @@
           ],
           "cons": [
             "Heavy winter snow (19.4 in January alone)",
-            "Cold winters (avg lows 14°F)",
+            "Cold winters (avg lows 14\u00b0F)",
             "Short spring/early summer rainfall"
           ]
         },
@@ -325,7 +325,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Durango depends on the Animas River and Lake Nighthorse for water, but faces high drought risk with aging infrastructure and a severely constrained allocation (3,800 ac-ft/year) shared primarily with tribal entities. Emergency backup is extremely tight—Terminal Reservoir holds only two weeks of supply, though Lake Nighthorse access would extend that to four months.",
+        "value": "Durango depends on the Animas River and Lake Nighthorse for water, but faces high drought risk with aging infrastructure and a severely constrained allocation (3,800 ac-ft/year) shared primarily with tribal entities. Emergency backup is extremely tight\u2014Terminal Reservoir holds only two weeks of supply, though Lake Nighthorse access would extend that to four months.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -380,7 +380,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Electricity costs 12.5¢/kWh with improved grid reliability from battery storage and modernization; the area has good solar potential (7.8 score) and supports net metering for renewable integration.",
+        "value": "Electricity costs 12.5\u00a2/kWh with improved grid reliability from battery storage and modernization; the area has good solar potential (7.8 score) and supports net metering for renewable integration.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -389,7 +389,7 @@
       "category_pros_cons": {
         "value": {
           "pros": [
-            "12.5¢/kWh is below national average",
+            "12.5\u00a2/kWh is below national average",
             "Strong solar potential (7.8/10)",
             "Net metering + renewable support"
           ],
@@ -788,5 +788,6 @@
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-24"
 }

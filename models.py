@@ -75,6 +75,7 @@ class CityRecord(BaseModel):
     normalized: NormalizedCity
     slug: str
     categories: dict[str, dict[str, StoredFieldValue]]
+    first_evaluated_date: Optional[str] = None
 
 
 def load_schema() -> dict:

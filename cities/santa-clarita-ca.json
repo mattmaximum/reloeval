@@ -254,7 +254,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This zone enjoys a year-round 365-day growing season with no snow, but summers are intensely hot (93°F+ in July-August) and extremely dry (virtually no rain June-September). Winters are mild with brief frost windows in early January.",
+        "value": "This zone enjoys a year-round 365-day growing season with no snow, but summers are intensely hot (93\u00b0F+ in July-August) and extremely dry (virtually no rain June-September). Winters are mild with brief frost windows in early January.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -265,11 +265,11 @@
           "pros": [
             "Year-round growing season",
             "No snow or winter storms",
-            "Mild winters (44-65°F)",
+            "Mild winters (44-65\u00b0F)",
             "Frost-free by late January"
           ],
           "cons": [
-            "Extreme summer heat (93°F+)",
+            "Extreme summer heat (93\u00b0F+)",
             "Severe summer drought (June-Aug near zero rain)",
             "Limited sunshine (278 days)",
             "Intense irrigation demands"
@@ -394,7 +394,7 @@
             "Above-average solar potential (7.8)"
           ],
           "cons": [
-            "14.5¢/kWh is above US average"
+            "14.5\u00a2/kWh is above US average"
           ]
         },
         "source_url": null,
@@ -482,7 +482,7 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": "This is a mid-sized city (230k residents) in a large county (10M+) with a diverse population including substantial Filipino and Korean demographics. Crime rates are very low—violent crime of 2.1 and property crime of 11.3 with a safety index of 88.7—making it a notably safe area for relocation.",
+        "value": "This is a mid-sized city (230k residents) in a large county (10M+) with a diverse population including substantial Filipino and Korean demographics. Crime rates are very low\u2014violent crime of 2.1 and property crime of 11.3 with a safety index of 88.7\u2014making it a notably safe area for relocation.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
@@ -783,12 +783,13 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Santa Clarita, California emerges as a mixed-profile relocation destination offering notable strengths in safety, amenities, and infrastructure alongside significant natural hazard concerns. The mid-sized city of 230,000 residents boasts excellent public safety (violent crime rate of 2.1, safety index of 88.7), strong grocery infrastructure and farmers market access, solid healthcare options including Henry Mayo Newhall Hospital, and reliable power infrastructure with competitive electricity costs and strong solar potential. The year-round growing season and mild winters appeal to those seeking warmer climates, while excellent broadband connectivity and moderate walkability (65/100) support both remote work and local mobility. However, prospective residents must carefully weigh substantial natural hazard risks: Santa Clarita faces a 96.93% probability of a major earthquake within 50 years due to proximity to the San Andreas Fault, and exceptionally high wildfire risk affecting 94% of buildings—worse than 97% of U.S. communities—with 40 smoke days annually. Additionally, median home prices of $820,000 reflect the Southern California premium, coupled with California's 9.3% state income tax and 9.5% sales tax. The below-average school district rating (56) may concern families, though select schools offer stronger local reputations. Overall, Santa Clarita suits climate-seeking relocators and those prioritizing safety and convenience, but is best suited for earthquake and wildfire-resilient households or those with adequate insurance and risk tolerance.",
+        "value": "Santa Clarita, California emerges as a mixed-profile relocation destination offering notable strengths in safety, amenities, and infrastructure alongside significant natural hazard concerns. The mid-sized city of 230,000 residents boasts excellent public safety (violent crime rate of 2.1, safety index of 88.7), strong grocery infrastructure and farmers market access, solid healthcare options including Henry Mayo Newhall Hospital, and reliable power infrastructure with competitive electricity costs and strong solar potential. The year-round growing season and mild winters appeal to those seeking warmer climates, while excellent broadband connectivity and moderate walkability (65/100) support both remote work and local mobility. However, prospective residents must carefully weigh substantial natural hazard risks: Santa Clarita faces a 96.93% probability of a major earthquake within 50 years due to proximity to the San Andreas Fault, and exceptionally high wildfire risk affecting 94% of buildings\u2014worse than 97% of U.S. communities\u2014with 40 smoke days annually. Additionally, median home prices of $820,000 reflect the Southern California premium, coupled with California's 9.3% state income tax and 9.5% sales tax. The below-average school district rating (56) may concern families, though select schools offer stronger local reputations. Overall, Santa Clarita suits climate-seeking relocators and those prioritizing safety and convenience, but is best suited for earthquake and wildfire-resilient households or those with adequate insurance and risk tolerance.",
         "source_url": null,
         "fetched_date": null,
         "status": "valid",
         "schema_version": 1
       }
     }
-  }
+  },
+  "first_evaluated_date": "2026-07-23"
 }
