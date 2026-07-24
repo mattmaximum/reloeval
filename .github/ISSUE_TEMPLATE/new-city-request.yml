@@ -1,14 +1,23 @@
 name: New city request
-description: Evaluate a new city (or re-evaluate/backfill an existing one)
+description: "Evaluate a new city — owner-only, see warning inside"
 title: "City, ST"
 labels: ["evaluate"]
 body:
   - type: markdown
     attributes:
       value: |
-        Replace the issue title above with the city and state you want
-        evaluated, in the format `City, ST` (e.g. `Austin, TX`) — this is
-        the same format `evaluate.py` takes as a command-line argument.
+        **Owner-only — this won't do anything if you're not the repo
+        owner.** Every evaluation makes real, billed API calls, so the
+        workflow silently ignores this issue unless it's opened by the
+        repo owner: no run, no cost, no error message, just a
+        normal-looking issue that never gets picked up. If you're not the
+        owner and want a city added, please don't open this — there's
+        currently no way for anyone else to trigger a run.
+
+        If you *are* the owner: replace the issue title above with the
+        city and state you want evaluated, in the format `City, ST` (e.g.
+        `Austin, TX`) — this is the same format `evaluate.py` takes as a
+        command-line argument.
   - type: input
     id: notes
     attributes:
