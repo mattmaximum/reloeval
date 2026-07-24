@@ -33,6 +33,7 @@ will likely differ &mdash; feel free to ignore the scores and just read the data
     <label for="city-sort">Sort by:</label>
     <select id="city-sort">
       <option value="default">Default order</option>
+      <option value="best-overall-desc">Best Overall Fit (Family + Self-Sufficiency)</option>
       <option value="bd-desc">BD Score: High to Low</option>
       <option value="family-desc">Family Fit: High to Low</option>
       <option value="self-suff-desc">Self-Sufficiency: High to Low</option>
@@ -104,6 +105,11 @@ will likely differ &mdash; feel free to ignore the scores and just read the data
 
   var sorters = {
     "default": function (a, b) { return originalOrder.indexOf(a) - originalOrder.indexOf(b); },
+    "best-overall-desc": function (a, b) {
+      var aMin = Math.min(parseFloat(a.dataset.familyScore), parseFloat(a.dataset.selfSuffScore));
+      var bMin = Math.min(parseFloat(b.dataset.familyScore), parseFloat(b.dataset.selfSuffScore));
+      return bMin - aMin;
+    },
     "bd-desc": function (a, b) { return parseFloat(b.dataset.bdScore) - parseFloat(a.dataset.bdScore); },
     "family-desc": function (a, b) { return parseFloat(b.dataset.familyScore) - parseFloat(a.dataset.familyScore); },
     "self-suff-desc": function (a, b) { return parseFloat(b.dataset.selfSuffScore) - parseFloat(a.dataset.selfSuffScore); },
