@@ -17,19 +17,14 @@
 {% for lens_key, lens in lens_scores.items() %}
   {% if lens.state == "scored" %}
     {% set css_class = "fit-strong" if lens.fit_label == "Strong Fit" else ("fit-good" if lens.fit_label == "Good Fit" else "fit-weak") %}
-    <span class="fit-badge {{ css_class }}"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}</span>
+    <span class="fit-badge has-tooltip {{ css_class }}" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> {{ lens.fit_label }}{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
   {% elif lens.state == "dealbreaker" %}
-    <span class="fit-badge fit-dealbreaker"><span class="fit-lens-name">{{ lens.label }}:</span> Dealbreaker</span>
+    <span class="fit-badge has-tooltip fit-dealbreaker" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> Dealbreaker{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
   {% elif lens.state == "needs_data" %}
-    <span class="fit-badge fit-needs-data"><span class="fit-lens-name">{{ lens.label }}:</span> Needs data</span>
+    <span class="fit-badge has-tooltip fit-needs-data" tabindex="0"><span class="fit-lens-name">{{ lens.label }}:</span> Needs data{% if lens.reason %}<span class="tooltip-text">{{ lens.reason }}</span>{% endif %}</span>
   {% endif %}
 {% endfor %}
 </div>
-{% for lens_key, lens in lens_scores.items() %}
-  {% if lens.state == "dealbreaker" %}
-  <div class="fit-reason">{{ lens.label }} dealbreaker: {{ lens.reason }}</div>
-  {% endif %}
-{% endfor %}
 {% endif %}
 
 {% if overall_summary %}

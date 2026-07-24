@@ -12,6 +12,11 @@
     --risk-unknown: #8a8578;
     --flagged-bg: #fbeee9;
     --flagged-border: #c0603f;
+    --fit-strong: #4a7a5a;
+    --fit-good: #7d9a44;
+    --fit-weak: #c17f3a;
+    --fit-dealbreaker: #b3452b;
+    --fit-needs-data: #8a8578;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -27,6 +32,11 @@
       --risk-unknown: #9b9686;
       --flagged-bg: #3a2a24;
       --flagged-border: #d3805f;
+      --fit-strong: #82b494;
+      --fit-good: #a8c26a;
+      --fit-weak: #dc9c5f;
+      --fit-dealbreaker: #e08064;
+      --fit-needs-data: #9b9686;
     }
   }
   * { box-sizing: border-box; }
@@ -114,11 +124,11 @@
     color: #fff;
   }
   .fit-badge .fit-lens-name { font-weight: 400; opacity: 0.85; }
-  .fit-strong { background: var(--risk-low); }
-  .fit-good { background: var(--risk-moderate); }
-  .fit-weak, .fit-dealbreaker { background: var(--risk-high); }
-  .fit-needs-data { background: var(--risk-unknown); }
-  .fit-reason { font-size: 0.8rem; color: var(--muted); margin: -8px 0 16px; }
+  .fit-strong { background: var(--fit-strong); }
+  .fit-good { background: var(--fit-good); }
+  .fit-weak { background: var(--fit-weak); }
+  .fit-dealbreaker { background: var(--fit-dealbreaker); }
+  .fit-needs-data { background: var(--fit-needs-data); }
   .scorecard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -177,16 +187,18 @@
   .field-table--fields th:nth-child(2), .field-table--fields td:nth-child(2) { width: 58%; }
   .field-table--fields th:nth-child(3), .field-table--fields td:nth-child(3) { width: 22%; }
   .field-label { white-space: nowrap; color: var(--muted); }
-  .info-icon {
+  .info-icon, .has-tooltip {
     position: relative;
+    cursor: help;
+  }
+  .info-icon {
     display: inline-block;
     color: var(--muted);
-    cursor: help;
     font-size: 0.82em;
     margin-left: 4px;
     border-bottom: 1px dotted var(--muted);
   }
-  .info-icon .tooltip-text {
+  .tooltip-text {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.12s;
@@ -205,7 +217,8 @@
     line-height: 1.35;
     pointer-events: none;
   }
-  .info-icon:hover .tooltip-text, .info-icon:focus .tooltip-text {
+  .info-icon:hover .tooltip-text, .info-icon:focus .tooltip-text,
+  .has-tooltip:hover .tooltip-text, .has-tooltip:focus .tooltip-text {
     visibility: visible;
     opacity: 1;
   }

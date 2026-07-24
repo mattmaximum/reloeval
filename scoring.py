@@ -112,7 +112,9 @@ def category_score(
 
 def _check_dealbreaker(schema: dict, record: CityRecord, dealbreaker: dict) -> Optional[str]:
     """None = passed. "UNKNOWN" = data not available yet. Otherwise the
-    dealbreaker's own description, as the violation reason."""
+    dealbreaker's own description plus the actual value that failed it,
+    as the violation reason -- "BD score must be at least 2000 (actual:
+    150)" is a real answer to "why," not just a restated rule."""
     value = get_field_value(schema, record, dealbreaker["category"], dealbreaker["field"])
     if value is None:
         return "UNKNOWN"
@@ -122,21 +124,55 @@ def _check_dealbreaker(schema: dict, record: CityRecord, dealbreaker: dict) -> O
         "gte": value >= threshold, "gt": value > threshold,
         "lte": value <= threshold, "lt": value < threshold,
     }[condition]
-    return None if passed else dealbreaker["description"]
+    if passed:
+        return None
+    return f"{dealbreaker['description']} (actual: {value:g})"
 
 
 def _lens_dealbreaker_status(schema: dict, record: CityRecord, dealbreakers: list[dict]) -> tuple[Optional[str], Optional[str]]:
     """A definite violation wins even if another dealbreaker's data is
     still unknown -- we already know enough to fail it. Only falls back
     to "needs_data" when nothing definite has been found yet."""
-    any_unknown = False
+    unknown_descriptions = []
     for dealbreaker in dealbreakers:
         result = _check_dealbreaker(schema, record, dealbreaker)
         if result == "UNKNOWN":
-            any_unknown = True
+            unknown_descriptions.append(dealbreaker["description"])
         elif result is not None:
             return "dealbreaker", result
-    return ("needs_data", None) if any_unknown else (None, None)
+    if unknown_descriptions:
+        return "needs_data", "Still waiting on: " + "; ".join(unknown_descriptions)
+    return None, None
+
+
+def _top_pros_cons_item(record: CityRecord, category_key: str, key: str) -> Optional[str]:
+    stored = record.categories.get(category_key, {}).get("category_pros_cons")
+    if stored is None or stored.status != FieldStatus.VALID or not isinstance(stored.value, dict):
+        return None
+    items = stored.value.get(key) or []
+    return items[0] if items else None
+
+
+def _build_scored_reason(schema: dict, record: CityRecord, category_scores: dict[str, float]) -> Optional[str]:
+    """A 1-sentence 'why' naming the biggest positive and negative factor
+    -- reuses category_pros_cons (already fetched, zero new API cost)
+    rather than re-explaining the score in the abstract."""
+    if not category_scores:
+        return None
+    best_key = max(category_scores, key=category_scores.get)
+    worst_key = min(category_scores, key=category_scores.get)
+    best_label = schema["categories"][best_key]["label"]
+
+    if best_key == worst_key:
+        return f"Primarily driven by {best_label}."
+
+    worst_label = schema["categories"][worst_key]["label"]
+    best_detail = _top_pros_cons_item(record, best_key, "pros")
+    worst_detail = _top_pros_cons_item(record, worst_key, "cons")
+
+    best_part = f"{best_label} is a strength" + (f" ({best_detail})" if best_detail else "")
+    worst_part = f"{worst_label} is a weak point" + (f" ({worst_detail})" if worst_detail else "")
+    return f"{best_part}; {worst_part}."
 
 
 def _score_to_label(score: float, label_thresholds: list[dict]) -> str:
@@ -154,8 +190,9 @@ def lens_score(schema: dict, preferences: dict, lens_key: str, record: CityRecor
     if status == "dealbreaker":
         return {"label": lens_prefs["label"], "score": None, "state": "dealbreaker", "reason": reason}
     if status == "needs_data":
-        return {"label": lens_prefs["label"], "score": None, "state": "needs_data", "reason": None}
+        return {"label": lens_prefs["label"], "score": None, "state": "needs_data", "reason": reason}
 
+    category_scores = {}
     weighted_sum = 0.0
     weight_total = 0.0
     for category_key, weight in lens_prefs["category_weights"].items():
@@ -164,15 +201,17 @@ def lens_score(schema: dict, preferences: dict, lens_key: str, record: CityRecor
         cat_score = category_score(schema, category_key, record, field_ranges, risk_severity_scores)
         if cat_score is None:
             continue
+        category_scores[category_key] = cat_score
         weighted_sum += cat_score * weight
         weight_total += weight
 
     if weight_total == 0:
-        return {"label": lens_prefs["label"], "score": None, "state": "needs_data", "reason": None}
+        return {"label": lens_prefs["label"], "score": None, "state": "needs_data", "reason": "No scorable data yet."}
 
     score = weighted_sum / weight_total
     fit_label = _score_to_label(score, preferences["label_thresholds"])
-    return {"label": lens_prefs["label"], "score": score, "state": "scored", "fit_label": fit_label, "reason": None}
+    reason = _build_scored_reason(schema, record, category_scores)
+    return {"label": lens_prefs["label"], "score": score, "state": "scored", "fit_label": fit_label, "reason": reason}
 
 
 def compute_all_scores(schema: dict, records: list[CityRecord]) -> dict[str, dict]:

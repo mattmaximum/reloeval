@@ -1,8 +1,10 @@
 from models import CityRecord, FieldStatus, NormalizedCity, StoredFieldValue, load_schema
 from scoring import (
+    _build_scored_reason,
     _check_dealbreaker,
     _lens_dealbreaker_status,
     _score_to_label,
+    _top_pros_cons_item,
     category_score,
     compute_all_scores,
     compute_field_ranges,
@@ -155,7 +157,7 @@ def test_check_dealbreaker_violation_returns_description():
         "distance_to_ocean_mi": StoredFieldValue(value=50.0, status=FieldStatus.VALID, schema_version=1),
     }})
     db = {"description": "BD score must be at least 2000", "category": "geographic_hazards", "field": "bd_score", "condition": "gte", "value": 2000}
-    assert _check_dealbreaker(schema, record, db) == "BD score must be at least 2000"  # bd_score=150 < 2000
+    assert _check_dealbreaker(schema, record, db) == "BD score must be at least 2000 (actual: 150)"
 
 
 def test_check_dealbreaker_unknown_when_data_missing():
@@ -178,7 +180,7 @@ def test_lens_dealbreaker_status_definite_violation_wins_over_unknown():
     ]
     status, reason = _lens_dealbreaker_status(schema, record, dealbreakers)
     assert status == "dealbreaker"
-    assert reason == "BD too low"
+    assert reason == "BD too low (actual: 150)"
 
 
 def test_lens_dealbreaker_status_needs_data_when_only_unknown():
@@ -189,7 +191,7 @@ def test_lens_dealbreaker_status_needs_data_when_only_unknown():
     ]
     status, reason = _lens_dealbreaker_status(schema, record, dealbreakers)
     assert status == "needs_data"
-    assert reason is None
+    assert reason == "Still waiting on: BD too low"
 
 
 def test_score_to_label_picks_correct_tier():
@@ -261,3 +263,77 @@ def test_compute_all_scores_end_to_end_across_multiple_cities():
     cheap_econ = results["cheap"]["family"]["score"]
     pricey_econ = results["pricey"]["family"]["score"]
     assert cheap_econ > pricey_econ
+
+
+def test_top_pros_cons_item_returns_first_item():
+    record = _record("a", "A", "TX", {"power_energy": {
+        "category_pros_cons": StoredFieldValue(
+            value={"pros": ["cheap electricity", "reliable grid"], "cons": []},
+            status=FieldStatus.VALID, schema_version=1),
+    }})
+    assert _top_pros_cons_item(record, "power_energy", "pros") == "cheap electricity"
+    assert _top_pros_cons_item(record, "power_energy", "cons") is None
+
+
+def test_top_pros_cons_item_none_when_missing():
+    record = _record("a", "A", "TX", {})
+    assert _top_pros_cons_item(record, "power_energy", "pros") is None
+
+
+def test_build_scored_reason_names_best_and_worst_category_with_detail():
+    schema = load_schema()
+    record = _record("a", "A", "TX", {
+        "power_energy": {
+            "category_pros_cons": StoredFieldValue(
+                value={"pros": ["cheap electricity"], "cons": []},
+                status=FieldStatus.VALID, schema_version=1),
+        },
+        "water_supply": {
+            "category_pros_cons": StoredFieldValue(
+                value={"pros": [], "cons": ["elevated drought risk"]},
+                status=FieldStatus.VALID, schema_version=1),
+        },
+    })
+    category_scores = {"power_energy": 90.0, "water_supply": 20.0}
+    reason = _build_scored_reason(schema, record, category_scores)
+    assert "Power, Energy & Grid Infrastructure is a strength (cheap electricity)" in reason
+    assert "Water Supply & Security is a weak point (elevated drought risk)" in reason
+
+
+def test_build_scored_reason_single_category_has_no_contrast():
+    schema = load_schema()
+    record = _record("a", "A", "TX", {})
+    reason = _build_scored_reason(schema, record, {"power_energy": 75.0})
+    assert reason == "Primarily driven by Power, Energy & Grid Infrastructure."
+
+
+def test_build_scored_reason_none_when_no_categories_scored():
+    schema = load_schema()
+    record = _record("a", "A", "TX", {})
+    assert _build_scored_reason(schema, record, {}) is None
+
+
+def test_lens_score_scored_state_includes_reason():
+    schema = load_schema()
+    prefs = load_preferences()
+    record = _record("a", "A", "TX", {
+        "education_healthcare": {
+            "district_rating": StoredFieldValue(value=9.0, status=FieldStatus.VALID, schema_version=1),
+            "category_pros_cons": StoredFieldValue(
+                value={"pros": ["top-rated district"], "cons": []},
+                status=FieldStatus.VALID, schema_version=1),
+        },
+        "power_energy": {
+            "solar_score": StoredFieldValue(value=10.0, status=FieldStatus.VALID, schema_version=1),
+            "category_pros_cons": StoredFieldValue(
+                value={"pros": [], "cons": ["poor solar potential"]},
+                status=FieldStatus.VALID, schema_version=1),
+        },
+    })
+    ranges = {
+        ("education_healthcare", "district_rating"): (5.0, 9.0),
+        ("power_energy", "solar_score"): (10.0, 90.0),
+    }
+    result = lens_score(schema, prefs, "family", record, ranges)
+    assert result["state"] == "scored"
+    assert "top-rated district" in result["reason"]
