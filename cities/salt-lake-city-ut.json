@@ -1,0 +1,796 @@
+{
+  "input_city_state": "Salt Lake City, UT",
+  "normalized": {
+    "city": "Salt Lake City",
+    "state": "UT",
+    "county": "Salt Lake County"
+  },
+  "slug": "salt-lake-city-ut",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Salt Lake County",
+        "source_url": "https://riskbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 4300.0,
+        "source_url": "https://www.slc.gov/sustainability/wp-content/uploads/sites/20/2026/05/Final-Climate-Forward-SLC-Existing-Conditions-Report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 840.0,
+        "source_url": "https://geology.utah.gov/hazards/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 0.5,
+        "source_url": "https://ugspub.nr.utah.gov/publications/reports_of_investigations/ri-280/ri-280.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "No active volcanoes proximal to Salt Lake City",
+        "source_url": "https://geology.utah.gov/hazards/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Very Low",
+        "source_url": "https://riskbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High (98th percentile)",
+        "source_url": "https://riskbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Very High (100th percentile)",
+        "source_url": "https://riskbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "High (93rd percentile)",
+        "source_url": "https://riskbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 85.0,
+        "source_url": "https://www.slc.gov/sustainability/wp-content/uploads/sites/20/2026/05/Final-Climate-Forward-SLC-Existing-Conditions-Report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 32.0,
+        "source_url": "https://www.slc.gov/sustainability/wp-content/uploads/sites/20/2026/05/Final-Climate-Forward-SLC-Existing-Conditions-Report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 0.0,
+        "source_url": "https://www.slc.gov/sustainability/wp-content/uploads/sites/20/2026/05/Final-Climate-Forward-SLC-Existing-Conditions-Report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Salt Lake City (is the largest metro in Utah)",
+        "source_url": "https://www.slc.gov/sustainability/wp-content/uploads/sites/20/2026/05/Final-Climate-Forward-SLC-Existing-Conditions-Report.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Salt Lake County sits on an active fault line just 0.5 miles away with the very highest earthquake risk in the nation (100th percentile), paired with high wildfire risk (98th percentile) and high flood risk (93rd percentile)—making it one of the most hazard-prone locations. The region also experiences poor air quality averaging 85 AQI with 32 wildfire smoke days per year.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No active volcanoes nearby",
+            "Very low hurricane risk",
+            "Major metro area access"
+          ],
+          "cons": [
+            "Fault line 0.5 miles away, 100th percentile earthquake risk",
+            "98th percentile wildfire risk",
+            "93rd percentile flood risk",
+            "Poor air quality (AQI 85), 32 smoke days/year"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "7b",
+        "source_url": "https://www.growableground.com/what-grows-in/utah/county/salt-lake",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "2024-10-09",
+        "source_url": "https://www.growableground.com/what-grows-in/utah/county/salt-lake",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "2026-04-29",
+        "source_url": "https://weatherbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 249.0,
+        "source_url": "https://www.growableground.com/what-grows-in/utah/county/salt-lake",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 37.0,
+            "avg_low_f": 19.8,
+            "avg_rainfall_in": 0.0,
+            "avg_snowfall_in": 5.1
+          },
+          {
+            "month": "February",
+            "avg_high_f": 40.0,
+            "avg_low_f": 23.0,
+            "avg_rainfall_in": 0.0,
+            "avg_snowfall_in": 4.8
+          },
+          {
+            "month": "March",
+            "avg_high_f": 50.0,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 1.74,
+            "avg_snowfall_in": 3.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 59.0,
+            "avg_low_f": 37.0,
+            "avg_rainfall_in": 1.2,
+            "avg_snowfall_in": 1.5
+          },
+          {
+            "month": "May",
+            "avg_high_f": 70.0,
+            "avg_low_f": 46.0,
+            "avg_rainfall_in": 0.6,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 82.0,
+            "avg_low_f": 56.0,
+            "avg_rainfall_in": 0.46,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 86.7,
+            "avg_low_f": 63.4,
+            "avg_rainfall_in": 0.9,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 85.0,
+            "avg_low_f": 62.0,
+            "avg_rainfall_in": 0.8,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 77.0,
+            "avg_low_f": 51.0,
+            "avg_rainfall_in": 0.7,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 63.0,
+            "avg_low_f": 40.0,
+            "avg_rainfall_in": 1.0,
+            "avg_snowfall_in": 0.5
+          },
+          {
+            "month": "November",
+            "avg_high_f": 48.0,
+            "avg_low_f": 29.0,
+            "avg_rainfall_in": 0.7,
+            "avg_snowfall_in": 2.5
+          },
+          {
+            "month": "December",
+            "avg_high_f": 37.0,
+            "avg_low_f": 20.0,
+            "avg_rainfall_in": 0.0,
+            "avg_snowfall_in": 4.8
+          }
+        ],
+        "source_url": "https://weatherandclimate.com/united-states/utah/salt-lake-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 230.0,
+        "source_url": "https://weatherandclimate.com/united-states/utah/salt-lake-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This zone 7b area has a 249-day growing season with moderate winters averaging 22 inches of snow annually, and very dry conditions overall with most months getting little to no rainfall. Summers are warm (mid-80s) but the region gets only 230 sunshine days per year, which is notably below average for the continental US.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Long growing season (249 days)",
+            "Moderate winter cold (lows 20-23°F)",
+            "Warm, dry summers"
+          ],
+          "cons": [
+            "Only 230 sunshine days/year (cloudy)",
+            "Very low rainfall most months",
+            "Heavy winter snowfall (22 in. annual)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Surface water from Provo River Project (via Metropolitan Water District of Sandy) and Deer Creek and Jordanelle Reservoirs, supplemented by groundwater and future Aquifer Storage and Recovery (ASR) systems",
+        "source_url": "https://conservewater.utah.gov/wp-content/uploads/SubmittedWaterPlans/Salt-Lake-City-Water-Conservation-Plan-2025.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "High - 2026 conditions shaped by low snowpack (76% of average in Little Cottonwood Creek), below-average temperatures, and likely conservation measures; drought risk increasing due to climate change impacts",
+        "source_url": "https://www.publicmeetings.org/articles/salt-lake-city/salt-lake-city-utilities-report-low-snowpack-steady-reservoirs-and-likely-2026-conservation-measures/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Groundwater extraction regulated by State Engineer; Aquifer Storage and Recovery (ASR) systems under investigation with state documentation requirements for injected water",
+        "source_url": "https://conservewater.utah.gov/wp-content/uploads/SubmittedWaterPlans/Salt-Lake-City-Water-Conservation-Plan-2025.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 1500.0,
+        "source_url": "https://conservewater.utah.gov/wp-content/uploads/SubmittedWaterPlans/Salt-Lake-City-Water-Conservation-Plan-2025.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Current MWDSLS Provo River Project allotment reduced to 43.5% during recent drought; Central Utah Project (CUP) water being petitioned through Central Utah Water Conservancy District; current production 87,000 acre-feet annually, projected to increase to 127,200 acre-feet by 2060 without additional conservation",
+        "source_url": "https://conservewater.utah.gov/wp-content/uploads/SubmittedWaterPlans/Salt-Lake-City-Water-Conservation-Plan-2025.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Planned Utah Lake System (ULS) completed in 2026 providing 3,100 acre-feet; Aquifer Storage and Recovery (ASR) estimated potential of 5,900 acre-feet in dry years; conservation goal targets 15% reduction by 2030 and 25% by 2035 to reduce extraction demand",
+        "source_url": "https://conservewater.utah.gov/wp-content/uploads/SubmittedWaterPlans/Salt-Lake-City-Water-Conservation-Plan-2025.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area faces high drought risk with Provo River allocations already slashed to 43.5% of normal demand due to low snowpack (76% of average), and groundwater is 1,500 feet deep, making wells challenging. However, new Utah Lake System capacity (3,100 acre-feet by 2026) and Aquifer Storage & Recovery systems (up to 5,900 acre-feet) are being developed to offset supply gaps.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "New Utah Lake System online 2026",
+            "ASR backup capacity 5,900 acre-feet",
+            "Diversified supply sources (surface + groundwater)"
+          ],
+          "cons": [
+            "Drought risk high, snowpack only 76% normal",
+            "Provo River allocation cut to 43.5%",
+            "Groundwater 1,500 feet deep",
+            "Conservation mandates 15-25% reduction by 2035"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.5,
+        "source_url": "https://www.kpcw.org/state-regional/2026-07-06/rocky-mountain-powers-utah-rate-conflict-may-be-settled-with-an-additional-4-2-hike",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Good - experiencing stress during extreme heat events",
+        "source_url": "https://kutv.com/news/local/record-heat-puts-stress-on-power-equipment-causing-thousands-of-outages",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 85.0,
+        "source_url": "https://docs.nlr.gov/docs/fy24osti/90135.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Net metering available through Rocky Mountain Power schedules 135, 136, and 137 with excess generation credits dispersed to programs and energy balance accounts",
+        "source_url": "https://pscdocs.utah.gov/electric/26docs/2603529/345859RMP2026NetMtrngIntrcnctnRprt6-23-2026.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.5¢/kWh with generally good grid reliability, though the system experiences stress during extreme heat events. An 85 solar score and available net metering (Rocky Mountain Power schedules 135–137) make this area favorable for solar installations.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "High solar score (85)",
+            "Net metering available",
+            "Below-average electricity rates"
+          ],
+          "cons": [
+            "Grid stress during extreme heat"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 203888.0,
+        "source_url": "https://www.populationreview.org/city/salt-lake-city-city-ut",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 1187078.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/saltlakecountyutah,saltlakecitycityutah,US/HSG010222",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 33.0,
+        "source_url": "https://www.populationreview.org/city/salt-lake-city-city-ut",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White alone, not Hispanic: 64.4%, Hispanic (any race): 21.8%, Asian alone: 5.7%, Black or African American alone: 3.1%, Other races: 5.0%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/saltlakecitycityutah,saltlakecountyutah,UT/PST040217",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Conservative/Republican-leaning. 2024 presidential election: Donald J. Trump 59.4%, Kamala Harris 37.8%, Chase Oliver 1.14%",
+        "source_url": "https://datausa.io/profile/geo/salt-lake-city-ut-31000US41620",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 864.2,
+        "source_url": "https://crimebycity.com/city/utah/salt-lake-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 5200.0,
+        "source_url": "https://crimebycity.com/city/utah/salt-lake-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 2.0,
+        "source_url": "https://crimebycity.com/city/utah/salt-lake-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Permitless (Constitutional) Carry. Both open carry and concealed carry of loaded firearms legal for anyone 21+ who may lawfully possess a firearm, with no permit required.",
+        "source_url": "https://www.usconcealedcarry.com/resources/ccw_reciprocity_map/ut-gun-laws/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No restrictions. Utah has no law regulating large capacity ammunition magazines.",
+        "source_url": "https://giffords.org/lawcenter/state-laws/large-capacity-magazines-in-utah/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Stand Your Ground and Castle Doctrine. No duty to retreat in lawful self-defense; criminal and civil immunity when force is justified. Castle Doctrine allows deadly force in home defense.",
+        "source_url": "https://giffords.org/lawcenter/state-laws/stand-your-ground-in-utah/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This conservative-leaning city of ~204,000 has high violent crime (864.2 per 100k) and property crime (5,200 per 100k) rates with a low safety index of 2.0. It offers permissionless firearm carry, no magazine restrictions, and strong self-defense protections under Stand Your Ground and Castle Doctrine laws.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Permitless carry for adults 21+",
+            "No magazine capacity limits",
+            "Strong self-defense legal protections"
+          ],
+          "cons": [
+            "Violent crime rate 864.2 per 100k",
+            "Property crime rate 5,200 per 100k",
+            "Safety index only 2.0"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 319.0,
+        "source_url": "https://schoolsbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 19.9,
+        "source_url": "https://schoolsbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Granger High School (3,481 students - largest single school in county)",
+        "source_url": "https://schoolsbycounty.com/utah/salt-lake-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate",
+        "source_url": "https://ibis.utah.gov/epht-view/indicator/related/SystemFactors/EduLevPop.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Present",
+        "source_url": "https://www.slc.gov/ed/wp-content/uploads/sites/21/2025/09/SLCHI-Report-Feb2022.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 2.5,
+        "source_url": "https://www.slc.gov/ed/wp-content/uploads/sites/21/2025/09/SLCHI-Report-Feb2022.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "University of Utah Health and Intermountain Healthcare",
+        "source_url": "https://www.slc.gov/ed/wp-content/uploads/sites/21/2025/09/SLCHI-Report-Feb2022.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "The area has robust public education with 319 schools and strong hospital infrastructure including a trauma center just 2.5 miles away and two major health networks (University of Utah Health and Intermountain Healthcare). The district rating is low at 19.9, and Granger High School is the county's largest school with 3,481 students.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Trauma center 2.5 miles away",
+            "Two major hospital networks",
+            "Homeschool co-op available",
+            "319 public schools"
+          ],
+          "cons": [
+            "District rating only 19.9",
+            "Largest school has 3,481 students"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 645000.0,
+        "source_url": "https://www.utahbusiness.com/press-releases/2026/07/22/high-demand-salt-lake-county-home-price-utah-alpine-huntsville-eden/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 350000.0,
+        "source_url": "https://www.mwranches.com/blog/ultimate-guide-to-buying-land-in-utah-in-2025",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 657060.0,
+        "source_url": "https://www.landsearch.com/properties/salt-lake-county-ut",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://www.steadily.com/blog/residential-zoning-laws-regulations-salt-lake-city",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "High (80% of new construction)",
+        "source_url": "https://www.abc4.com/news/politics/inside-utah-politics/homeowners-association-working-group/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.45,
+        "source_url": "https://taxfoundation.org/location/utah/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 8.45,
+        "source_url": "https://www.avalara.com/taxrates/en/state-rates/utah/cities/salt-lake-city.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "85.4%",
+        "source_url": "https://www.highspeedinternet.com/providers/utah-broadband",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 59.0,
+        "source_url": "https://www.walkscore.com/UT/Salt_Lake_City",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Excellent (Transit Score 44)",
+        "source_url": "https://www.redfin.com/city/17150/UT/Salt-Lake-City/most-transit-friendly-neighborhoods",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area has steep housing costs (median $645k, improved land $657k/acre) and high HOA prevalence (80% of new construction), though moderate permitting and good broadband coverage (85.4%) offer some advantages. It features decent urban transit (Transit Score 44) and moderate walkability (59), balanced by moderate-to-high overall tax burden (4.45% state income + 8.45% sales tax).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Excellent transit availability (score 44)",
+            "Strong broadband coverage (85.4%)",
+            "Moderate permitting process"
+          ],
+          "cons": [
+            "Very high housing costs ($645k median)",
+            "Expensive unimproved land ($350k/acre)",
+            "High HOA prevalence (80% of new builds)",
+            "Combined tax burden 12.9%"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.slc.gov/transportation/wp-content/uploads/sites/11/2026/02/SLC-West-East-Connections-Existing-and-Future-Conditions.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.slcdocs.com/Planning/Projects/Walkable%20SLC/community-profiles/community-profiles-combined.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.slcdocs.com/Planning/Projects/Walkable%20SLC/community-profiles/community-profiles-combined.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.slcdocs.com/Planning/Projects/Walkable%20SLC/community-profiles/community-profiles-combined.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.slcdocs.com/Planning/Projects/Walkable%20SLC/community-profiles/community-profiles-combined.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Legal with restrictions",
+        "source_url": "http://www.slcdocs.com/slcgreen/slc_food_assessment_report_complete.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Moderate - concentrated in downtown and eastside areas",
+        "source_url": "http://www.slcdocs.com/slcgreen/slc_food_assessment_report_complete.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Salt Lake City International Airport - approximately 0.5 hours from downtown",
+        "source_url": "https://slcairport.com/assets/pdfDocuments/Media-Publications/SLC-International-Airport-Guide.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Salt Lake City serves as primary metro hub; secondary destinations include Ogden and Provo within region",
+        "source_url": "https://wfrc.utah.gov/RegionalPlans/TransitFreshLook/WFRC_TFL_Action_Plan_1.6.2026.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "You'll have excellent access to major grocery chains (Target, Whole Foods, Trader Joe's, Costco, Sprouts) plus moderate farmers market options in downtown/eastside. Salt Lake City International Airport is just 30 minutes away, with Salt Lake City, Ogden, and Provo as regional metro hubs within 6 hours.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "All major grocery chains available",
+            "30-min airport access",
+            "Multiple regional metros nearby"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Salt Lake City, UT presents a compelling but hazard-intensive relocation destination marked by significant natural disaster risks alongside strong civic infrastructure and favorable solar potential. While the region suffers from extreme earthquake risk (100th percentile), elevated wildfire and flood exposure, and persistent air quality challenges (85 AQI with 32 smoke days annually), it compensates with robust educational and healthcare systems, permissionless firearm carry and strong self-defense protections appealing to Second Amendment advocates, and an 85 solar score with reasonable electricity costs at 12.5¢/kWh. However, prospective residents must contend with steep housing costs (median $645k), high crime rates (864.2 violent crimes per 100k), acute drought stress requiring water-conservation mindset despite emerging solutions like Utah Lake System expansion, and a moderate tax burden (12.9% combined income/sales tax). The city's zone 7b climate offers a respectable 249-day growing season and mid-80s summers but delivers below-average sunshine (230 days) and minimal rainfall, while convenient airport access (30 minutes) and excellent grocery options provide lifestyle amenities. Overall, Salt Lake City suits relocators prioritizing strong schools and healthcare access, renewable energy potential, and Second Amendment freedoms who can absorb or mitigate substantial natural hazard risks and afford the premium housing market in an increasingly water-stressed region.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
