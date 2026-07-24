@@ -14,7 +14,9 @@
         "earthquake_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local earthquake risk score/description"},
         "flood_risk": {"type": "string", "risk_field": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Local flood risk score/description"},
         "avg_aqi": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Historical average Air Quality Index"},
-        "wildfire_smoke_days_per_year": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average annual days impacted by wildfire smoke"}
+        "wildfire_smoke_days_per_year": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average annual days impacted by wildfire smoke"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "geographic_climate": {
@@ -25,7 +27,9 @@
         "last_frost_date": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average last frost date"},
         "growing_season_length_days": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Total length of the growing season, in days"},
         "monthly_climate_table": {"type": "table", "table_columns": ["month", "avg_high_f", "avg_low_f", "avg_rainfall_in", "avg_snowfall_in"], "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "12-month table of average high/low temp, rainfall, snowfall. One citation for the whole table (e.g. NOAA climate normals), not per-cell."},
-        "annual_sunshine_days": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average days of sunshine per year"}
+        "annual_sunshine_days": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average days of sunshine per year"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "water_supply": {
@@ -36,7 +40,9 @@
         "well_legality": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Legal ability to drill a private residential well, state/county restrictions"},
         "well_depth_to_water_table_ft": {"type": "number", "requires_citation": true, "low_confidence": true, "caveat": "Depth to water table varies parcel-to-parcel within a county — consult a local driller before relying on this figure.", "schema_version": 1, "description": "Typical depth to water table, in feet"},
         "water_rights_restrictions": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State/county restrictions on private water shares"},
-        "backup_water_availability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Availability of emergency secondary water sources in the region"}
+        "backup_water_availability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Availability of emergency secondary water sources in the region"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "power_energy": {
@@ -45,7 +51,9 @@
         "electricity_rate_cents_per_kwh": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Average residential electricity rate, cents per kWh"},
         "grid_reliability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Frequency of power outages/rolling blackouts/seasonal grid failures"},
         "solar_score": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Solar electricity score (Sun Number 1-100 or average peak sun hours)"},
-        "net_metering_policy": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State net metering policy (e.g. 1:1 vs wholesale buyback)"}
+        "net_metering_policy": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State net metering policy (e.g. 1:1 vs wholesale buyback)"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "civic_demographic_legal": {
@@ -61,7 +69,9 @@
         "safety_index": {"type": "number", "highlight": true, "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Overall safety index (1-100)"},
         "carry_law_type": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State carry law (Constitutional/Permitless vs. Concealed Carry Permit required)"},
         "firearm_magazine_restrictions": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Firearm and magazine capacity restrictions"},
-        "self_defense_legal_status": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Self-defense legal protections (Stand Your Ground / Castle Doctrine status)"}
+        "self_defense_legal_status": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Self-defense legal protections (Stand Your Ground / Castle Doctrine status)"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "education_healthcare": {
@@ -73,7 +83,9 @@
         "homeschool_regulation_strictness": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "State-level homeschool regulation strictness (Low/None, Moderate, Strict) + key requirements"},
         "homeschool_co_op_presence": {"type": "string", "requires_citation": true, "low_confidence": true, "caveat": "Homeschool co-op/umbrella-school presence is sparse and hard to verify via generic search — expect this field to often land as unresolved.", "schema_version": 1, "description": "Presence of local co-ops, umbrella schools, state-funded hybrid charter programs"},
         "trauma_center_distance_mi": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Distance to nearest Level 1 or Level 2 Trauma Center, in miles (LLM-estimated)"},
-        "dominant_hospital_network": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Dominant local hospital network"}
+        "dominant_hospital_network": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Dominant local hospital network"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "economy_housing_land": {
@@ -88,7 +100,9 @@
         "combined_sales_tax_rate": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Total combined sales tax rate (state + local)"},
         "broadband_availability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Availability of high-speed fiber / major broadband providers"},
         "walkability_score": {"type": "number", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "General walkability score"},
-        "transit_availability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Public transit availability"}
+        "transit_availability": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Public transit availability"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
       }
     },
     "amenities_food_travel": {
@@ -102,7 +116,15 @@
         "raw_dairy_legality": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Raw dairy legality / herd-share laws for buying meat directly from ranchers"},
         "farmers_market_density": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Density of year-round farmers markets or local butchers"},
         "airports_within_2hr": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Major commercial airports within a 2-hour drive, with approximate drive times (LLM-estimated)"},
-        "metro_hubs_within_6hr": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Major cities/metro areas within a 6-hour driving radius, with approximate drive times (LLM-estimated)"}
+        "metro_hubs_within_6hr": {"type": "string", "requires_citation": true, "low_confidence": false, "schema_version": 1, "description": "Major cities/metro areas within a 6-hour driving radius, with approximate drive times (LLM-estimated)"},
+        "category_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "1-2 sentence LLM summary of this category's fields, generated in a follow-up call once they're fetched — not independently researched."},
+        "category_pros_cons": {"type": "pros_cons", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "Concise pros/cons list for this category, generated in the same follow-up call as category_summary."}
+      }
+    },
+    "summary": {
+      "label": "Overall Summary",
+      "fields": {
+        "overall_summary": {"type": "string", "synthesized": true, "requires_citation": false, "low_confidence": false, "schema_version": 1, "description": "One-paragraph LLM synthesis of all 8 category summaries. Generated only once every category has a valid category_summary."}
       }
     }
   }

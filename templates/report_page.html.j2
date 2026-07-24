@@ -12,6 +12,10 @@
 <div class="meta">{{ normalized.county }} &middot; Generated {{ generated_date }}</div>
 <div class="completion-badge">{{ completion.valid }}/{{ completion.total }} fields complete ({{ completion.percent }}%)</div>
 
+{% if overall_summary %}
+<p class="overall-summary">{{ overall_summary }}</p>
+{% endif %}
+
 {% if scorecard %}
 <div class="scorecard">
 {% for field in scorecard %}
@@ -32,6 +36,27 @@
 {% for category in categories %}
 <details class="category" id="{{ category.key }}" open>
   <summary>{{ category.label }}</summary>
+
+  {% if category.summary %}
+  <p class="category-summary">{{ category.summary }}</p>
+  {% endif %}
+
+  {% if category.pros_cons and (category.pros_cons.pros or category.pros_cons.cons) %}
+  <div class="pros-cons">
+    {% if category.pros_cons.pros %}
+    <ul class="pros">
+      {% for item in category.pros_cons.pros %}<li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if category.pros_cons.cons %}
+    <ul class="cons">
+      {% for item in category.pros_cons.cons %}<li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endif %}
 
   {% set scalar_fields = category.fields | selectattr("is_table", "equalto", false) | list %}
   {% if scalar_fields %}

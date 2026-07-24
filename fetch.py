@@ -29,12 +29,15 @@ from models import (
     CityRecord,
     FieldStatus,
     NormalizedCity,
+    ProsCons,
     StoredFieldValue,
     build_category_response_model,
     build_field_value_model,
-    fetchable_fields,
     load_schema,
+    synthesized_fields,
+    web_search_fields,
 )
+from render import humanize
 
 CITIES_DIR = Path(__file__).parent / "cities"
 MODEL = "anthropic/claude-sonnet-5"
@@ -149,7 +152,7 @@ async def fetch_category(
     same call succeeds at when run alone — a rate limit or timeout under
     concurrent load, not a structural problem with the category's schema.
     """
-    field_defs = fetchable_fields(schema, category_key)
+    field_defs = web_search_fields(schema, category_key)
     category_label = schema["categories"][category_key]["label"]
     response_model = build_category_response_model(schema, category_key)
 
@@ -221,6 +224,131 @@ async def fetch_category(
     return result
 
 
+async def summarize_category(
+    client: AsyncOpenAI,
+    category_label: str,
+    category_fields: dict[str, StoredFieldValue],
+    field_defs: dict,
+) -> Optional[dict]:
+    """1-2 sentence summary plus a short pros/cons list, both from one
+    call over one category's already-fetched, already-validated fields.
+    A follow-up call, not part of fetch_category's own response --
+    summarizing from the final validated StoredFieldValues (not the
+    model's raw same-turn output) guarantees the summary never describes
+    a field that later failed validation. No web search: this synthesizes
+    data already in hand, it doesn't research anything new.
+
+    Returns {"summary": str, "pros_cons": ProsCons | None} on success (a
+    malformed pros/cons in the response drops just that part, keeping the
+    summary), or None if the whole call failed."""
+    facts = [
+        f"{humanize(key)}: {category_fields[key].value}"
+        for key in field_defs
+        if key in category_fields and category_fields[key].status == FieldStatus.VALID
+        and category_fields[key].value is not None
+    ]
+    if not facts:
+        return None
+    tools = [{
+        "type": "function",
+        "function": {
+            "name": "report_summary",
+            "description": "Write a 1-2 sentence summary plus concise pros/cons for the given facts.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "summary": {"type": "string"},
+                    "pros": {
+                        "type": "array", "items": {"type": "string"},
+                        "description": "2-4 short standout positives, each a few words",
+                    },
+                    "cons": {
+                        "type": "array", "items": {"type": "string"},
+                        "description": "2-4 short standout negatives/tradeoffs, each a few words",
+                    },
+                },
+                "required": ["summary", "pros", "cons"],
+            },
+        },
+    }]
+    try:
+        response = await client.chat.completions.create(
+            model=CATEGORY_MODEL,
+            max_tokens=400,
+            tools=tools,
+            tool_choice={"type": "function", "function": {"name": "report_summary"}},
+            messages=[{
+                "role": "user",
+                "content": (
+                    f"Summarize these '{category_label}' facts in 1-2 plain-English "
+                    "sentences, for someone deciding whether to relocate here, plus a "
+                    "short pros/cons list. Be concrete, not generic: name the specific "
+                    "standout levels/values from the facts below (e.g. \"wildfire risk "
+                    "is moderate, flood risk is high\" or \"electricity runs 11.2 "
+                    "cents/kWh with rare outages\"), not a vague description of the "
+                    "category as a whole. Only mention what's actually notable -- skip "
+                    "unremarkable/average facts. Each pro/con should be a few words, "
+                    "not a full sentence -- if there's nothing notably good or bad, "
+                    "return an empty list rather than inventing one.\n\n"
+                    + "\n".join(facts)
+                ),
+            }],
+        )
+        tool_call = response.choices[0].message.tool_calls[0]
+        result = json.loads(tool_call.function.arguments)
+        try:
+            pros_cons = ProsCons(pros=result.get("pros", []), cons=result.get("cons", []))
+        except ValidationError:
+            pros_cons = None
+        return {"summary": result["summary"], "pros_cons": pros_cons}
+    except Exception as e:
+        print(f"WARNING: category_summary failed for {category_label}: {type(e).__name__}: {e}", file=sys.stderr)
+        return None
+
+
+async def summarize_overall(
+    client: AsyncOpenAI,
+    normalized: NormalizedCity,
+    category_summaries: dict[str, str],
+) -> Optional[str]:
+    """One paragraph synthesizing the 8 category summaries -- not the raw
+    65 fields. Cheaper and logically cleaner: summarizing already-condensed
+    text rather than re-digesting everything from scratch."""
+    facts = "\n".join(f"{label}: {text}" for label, text in category_summaries.items())
+    tools = [{
+        "type": "function",
+        "function": {
+            "name": "report_overall_summary",
+            "description": "Write one paragraph summarizing a city relocation research report.",
+            "parameters": {
+                "type": "object",
+                "properties": {"summary": {"type": "string"}},
+                "required": ["summary"],
+            },
+        },
+    }]
+    try:
+        response = await client.chat.completions.create(
+            model=CATEGORY_MODEL,
+            max_tokens=500,
+            tools=tools,
+            tool_choice={"type": "function", "function": {"name": "report_overall_summary"}},
+            messages=[{
+                "role": "user",
+                "content": (
+                    f"Write one paragraph summarizing {normalized.city}, {normalized.state} "
+                    "as a potential relocation destination, based on these category "
+                    f"summaries:\n\n{facts}"
+                ),
+            }],
+        )
+        tool_call = response.choices[0].message.tool_calls[0]
+        return json.loads(tool_call.function.arguments)["summary"]
+    except Exception as e:
+        print(f"WARNING: overall_summary failed for {normalized.city}, {normalized.state}: {type(e).__name__}: {e}", file=sys.stderr)
+        return None
+
+
 def load_city_record(slug: str) -> Optional[CityRecord]:
     path = CITIES_DIR / f"{slug}.json"
     if not path.exists():
@@ -234,11 +362,95 @@ def save_city_record(record: CityRecord) -> Path:
     return path
 
 
+async def _fill_category_summaries(
+    client: AsyncOpenAI, schema: dict, merged_categories: dict[str, dict[str, StoredFieldValue]],
+) -> None:
+    """Mutates merged_categories in place: generates category_summary +
+    category_pros_cons (one call, both fields) for any category that (a)
+    has those synthesized fields, (b) has zero real (web-search) gaps
+    left, and (c) doesn't already have both valid/current. A missing
+    summary never gets checked against category_needs_fetch's web-search
+    trigger — that's the whole point of separating web_search_fields from
+    fetchable_fields."""
+    to_summarize = []
+    for category_key, category in schema["categories"].items():
+        summary_defs = synthesized_fields(schema, category_key)
+        if "category_summary" not in summary_defs:
+            continue
+        research_defs = web_search_fields(schema, category_key)
+        if category_needs_fetch(merged_categories.get(category_key, {}), research_defs):
+            continue  # real fields still incomplete -- nothing to summarize yet
+        existing_cat = merged_categories.get(category_key, {})
+        summary_stale = needs_fetch(existing_cat.get("category_summary"), summary_defs["category_summary"]["schema_version"])
+        pros_cons_stale = needs_fetch(existing_cat.get("category_pros_cons"), summary_defs["category_pros_cons"]["schema_version"])
+        if not summary_stale and not pros_cons_stale:
+            continue
+        to_summarize.append((category_key, category["label"], research_defs, summary_defs))
+
+    if not to_summarize:
+        return
+
+    results = await asyncio.gather(*[
+        summarize_category(client, label, merged_categories[category_key], research_defs)
+        for category_key, label, research_defs, _ in to_summarize
+    ])
+    for (category_key, _, _, summary_defs), result in zip(to_summarize, results):
+        summary_version = summary_defs["category_summary"]["schema_version"]
+        pros_cons_version = summary_defs["category_pros_cons"]["schema_version"]
+        if result is None:
+            merged_categories[category_key]["category_summary"] = StoredFieldValue(
+                status=FieldStatus.UNRESOLVED, schema_version=summary_version)
+            merged_categories[category_key]["category_pros_cons"] = StoredFieldValue(
+                status=FieldStatus.UNRESOLVED, schema_version=pros_cons_version)
+            continue
+        merged_categories[category_key]["category_summary"] = StoredFieldValue(
+            value=result["summary"], status=FieldStatus.VALID, schema_version=summary_version)
+        if result["pros_cons"] is None:
+            merged_categories[category_key]["category_pros_cons"] = StoredFieldValue(
+                status=FieldStatus.UNRESOLVED, schema_version=pros_cons_version)
+        else:
+            merged_categories[category_key]["category_pros_cons"] = StoredFieldValue(
+                value=result["pros_cons"].model_dump(), status=FieldStatus.VALID, schema_version=pros_cons_version)
+
+
+async def _fill_overall_summary(
+    client: AsyncOpenAI, schema: dict, normalized: NormalizedCity,
+    merged_categories: dict[str, dict[str, StoredFieldValue]],
+) -> None:
+    """Mutates merged_categories in place: generates overall_summary once
+    every regular category (everything but the "summary" pseudo-category
+    itself) has a valid category_summary."""
+    if "summary" not in schema["categories"] or "overall_summary" not in schema["categories"]["summary"]["fields"]:
+        return
+    other_category_keys = [k for k in schema["categories"] if k != "summary"]
+    summaries_by_label = {}
+    for category_key in other_category_keys:
+        stored = merged_categories.get(category_key, {}).get("category_summary")
+        if stored is None or stored.status != FieldStatus.VALID:
+            return  # not every category has a summary yet
+        summaries_by_label[schema["categories"][category_key]["label"]] = stored.value
+
+    field_def = schema["categories"]["summary"]["fields"]["overall_summary"]
+    existing_overall = merged_categories.get("summary", {}).get("overall_summary")
+    if not needs_fetch(existing_overall, field_def["schema_version"]):
+        return
+
+    summary_text = await summarize_overall(client, normalized, summaries_by_label)
+    merged_categories.setdefault("summary", {})
+    if summary_text is None:
+        merged_categories["summary"]["overall_summary"] = StoredFieldValue(
+            status=FieldStatus.UNRESOLVED, schema_version=field_def["schema_version"])
+    else:
+        merged_categories["summary"]["overall_summary"] = StoredFieldValue(
+            value=summary_text, status=FieldStatus.VALID, schema_version=field_def["schema_version"])
+
+
 async def fetch_city_bulk(client: AsyncOpenAI, schema: dict, city_state_input: str) -> CityRecord:
     """Evaluate a city end to end: normalize input, fetch only what's
-    missing/stale (merge, never overwrite valid/flagged fields), write.
-    Safe to call repeatedly on the same city — a fully up-to-date city
-    makes zero API calls."""
+    missing/stale (merge, never overwrite valid/flagged fields), generate
+    any category/overall summaries that are now unblocked, write. Safe to
+    call repeatedly on the same city — a fully up-to-date city makes zero
+    API calls."""
     normalized = await normalize_city(client, city_state_input)
     slug = slugify(normalized)
     existing = load_city_record(slug)
@@ -249,7 +461,7 @@ async def fetch_city_bulk(client: AsyncOpenAI, schema: dict, city_state_input: s
         for category_key in schema["categories"]
         if category_needs_fetch(
             existing_categories.get(category_key, {}),
-            fetchable_fields(schema, category_key),
+            web_search_fields(schema, category_key),
         )
     ]
 
@@ -262,7 +474,7 @@ async def fetch_city_bulk(client: AsyncOpenAI, schema: dict, city_state_input: s
 
     merged_categories: dict[str, dict[str, StoredFieldValue]] = {}
     for category_key in schema["categories"]:
-        field_defs = fetchable_fields(schema, category_key)
+        field_defs = web_search_fields(schema, category_key)
         existing_cat = existing_categories.get(category_key, {})
         new_cat = fetched_by_category.get(category_key, {})
         merged = dict(existing_cat)
@@ -270,6 +482,9 @@ async def fetch_city_bulk(client: AsyncOpenAI, schema: dict, city_state_input: s
             if needs_fetch(existing_cat.get(field_key), field_def["schema_version"]) and field_key in new_cat:
                 merged[field_key] = new_cat[field_key]
         merged_categories[category_key] = merged
+
+    await _fill_category_summaries(client, schema, merged_categories)
+    await _fill_overall_summary(client, schema, normalized, merged_categories)
 
     record = CityRecord(
         input_city_state=city_state_input,

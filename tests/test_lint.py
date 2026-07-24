@@ -49,7 +49,7 @@ def test_find_gaps_stale_schema_version():
 
 def test_find_gaps_empty_when_all_fields_valid_and_current():
     schema = load_schema()
-    from fetch import fetchable_fields
+    from models import fetchable_fields
     fields = {
         key: StoredFieldValue(value="x", status=FieldStatus.VALID, schema_version=field_def["schema_version"])
         for key, field_def in fetchable_fields(schema, "power_energy").items()
@@ -69,7 +69,7 @@ def test_find_gaps_empty_when_all_fields_valid_and_current():
 
 def test_run_lint_omits_cities_with_zero_gaps_and_includes_cities_with_gaps():
     clean = make_record({})
-    from fetch import fetchable_fields
+    from models import fetchable_fields
     all_valid_categories = {}
     schema = load_schema()
     for cat_key in schema["categories"]:

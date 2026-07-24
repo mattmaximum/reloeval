@@ -2,9 +2,24 @@
 
 *{{ normalized.county }} · Generated {{ generated_date }}*
 
+{% if overall_summary %}
+{{ overall_summary }}
+
+{% endif %}
 {% for category in categories %}
 ## {{ category.label }}
 
+{% if category.summary %}
+*{{ category.summary }}*
+
+{% endif %}
+{% if category.pros_cons and (category.pros_cons.pros or category.pros_cons.cons) %}
+{% if category.pros_cons.pros %}**Pros:** {{ category.pros_cons.pros | join(", ") }}
+{% endif %}
+{% if category.pros_cons.cons %}**Cons:** {{ category.pros_cons.cons | join(", ") }}
+{% endif %}
+
+{% endif %}
 {% set scalar_fields = category.fields | selectattr("is_table", "equalto", false) | list %}
 {% if scalar_fields %}
 | Field | Value | Source |

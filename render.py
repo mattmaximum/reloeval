@@ -147,20 +147,49 @@ def build_derived_field_context(field_key: str, field_def: dict, category_fields
 
 
 def build_render_context(schema: dict, record: CityRecord) -> dict:
+    """Synthesized fields (category_summary, overall_summary) are pulled
+    out of the normal field list here -- they're prose, not a fact to show
+    as a table row, and the "summary" pseudo-category has no fields worth
+    its own section, just the one overall_summary value surfaced at the
+    top of the report instead."""
     categories = []
+    overall_summary = None
     for category_key, category in schema["categories"].items():
         stored_fields = record.categories.get(category_key, {})
+
+        if category_key == "summary":
+            for field_key, field_def in category["fields"].items():
+                if field_def.get("synthesized"):
+                    stored = stored_fields.get(field_key)
+                    if stored and stored.status == FieldStatus.VALID:
+                        overall_summary = stored.value
+            continue
+
         field_contexts = []
+        category_summary = None
+        pros_cons = None
         for field_key, field_def in category["fields"].items():
+            if field_def.get("synthesized"):
+                stored = stored_fields.get(field_key)
+                if stored and stored.status == FieldStatus.VALID:
+                    if field_key == "category_summary":
+                        category_summary = stored.value
+                    elif field_key == "category_pros_cons":
+                        pros_cons = stored.value
+                continue
             if field_def.get("derived"):
                 field_contexts.append(build_derived_field_context(field_key, field_def, stored_fields))
             else:
                 field_contexts.append(build_field_context(field_key, field_def, stored_fields.get(field_key)))
-        categories.append({"key": category_key, "label": category["label"], "fields": field_contexts})
+        categories.append({
+            "key": category_key, "label": category["label"],
+            "summary": category_summary, "pros_cons": pros_cons, "fields": field_contexts,
+        })
     return {
         "normalized": record.normalized,
         "generated_date": date.today().isoformat(),
         "categories": categories,
+        "overall_summary": overall_summary,
     }
 
 

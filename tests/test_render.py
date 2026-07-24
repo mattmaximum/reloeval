@@ -178,6 +178,49 @@ def test_render_city_end_to_end(isolated_dirs):
     assert "| Field | Value | Source |" in content
 
 
+def test_build_render_context_excludes_summary_pseudo_category_from_categories_list():
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={},
+    )
+    context = build_render_context(schema, record)
+    assert "summary" not in [c["key"] for c in context["categories"]]
+    assert len(context["categories"]) == 8
+
+
+def test_build_render_context_surfaces_category_and_overall_summaries():
+    schema = load_schema()
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories={
+            "power_energy": {
+                "category_summary": StoredFieldValue(
+                    value="Power is cheap and reliable here.", status=FieldStatus.VALID, schema_version=1),
+                "category_pros_cons": StoredFieldValue(
+                    value={"pros": ["cheap electricity"], "cons": []}, status=FieldStatus.VALID, schema_version=1),
+            },
+            "summary": {
+                "overall_summary": StoredFieldValue(
+                    value="Overall, a solid choice.", status=FieldStatus.VALID, schema_version=1),
+            },
+        },
+    )
+    context = build_render_context(schema, record)
+    power = next(c for c in context["categories"] if c["key"] == "power_energy")
+    assert power["summary"] == "Power is cheap and reliable here."
+    assert power["pros_cons"] == {"pros": ["cheap electricity"], "cons": []}
+    assert context["overall_summary"] == "Overall, a solid choice."
+    # neither synthesized field shows up as a regular field row
+    field_keys = [f["key"] for f in power["fields"]]
+    assert "category_summary" not in field_keys
+    assert "category_pros_cons" not in field_keys
+
+
 def test_render_city_escapes_pipe_in_field_value(isolated_dirs):
     from fetch import save_city_record
     schema = load_schema()

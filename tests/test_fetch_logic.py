@@ -4,6 +4,8 @@ import pytest
 
 from fetch import (
     CityNotFoundError,
+    _fill_category_summaries,
+    _fill_overall_summary,
     category_needs_fetch,
     fetch_category,
     fetch_city_bulk,
@@ -13,9 +15,52 @@ from fetch import (
     save_city_record,
     slugify,
 )
-from models import FieldStatus, NormalizedCity, StoredFieldValue, load_schema
+from models import CityRecord, FieldStatus, NormalizedCity, StoredFieldValue, load_schema
 
 from .fakes import FakeAsyncOpenAI
+
+
+_MONTHS = ["January", "February", "March", "April", "May", "June",
+           "July", "August", "September", "October", "November", "December"]
+
+
+def _field_type_lookup(schema):
+    lookup = {}
+    for category in schema["categories"].values():
+        for key, field_def in category["fields"].items():
+            lookup[key] = field_def["type"]
+    return lookup
+
+
+def _plausible_value(field_type):
+    if field_type == "number":
+        return 42.0
+    if field_type == "retail_presence":
+        return {"available": True, "distance_mi": 3.0}
+    if field_type == "table":
+        return [
+            {"month": m, "avg_high_f": 70.0, "avg_low_f": 50.0, "avg_rainfall_in": 1.0, "avg_snowfall_in": 0.0}
+            for m in _MONTHS
+        ]
+    return "placeholder text"
+
+
+def _fully_valid_research_categories(schema):
+    """Every web-search field valid, every category_summary and
+    overall_summary still missing -- the exact state fetch_city_bulk hits
+    right after merging real data, before the summary pass runs."""
+    from fetch import web_search_fields
+    categories = {}
+    for category_key in schema["categories"]:
+        field_defs = web_search_fields(schema, category_key)
+        categories[category_key] = {
+            key: StoredFieldValue(
+                value=_plausible_value(field_def["type"]), source_url="https://x.com",
+                fetched_date="2026-07-22", status=FieldStatus.VALID, schema_version=field_def["schema_version"],
+            )
+            for key, field_def in field_defs.items()
+        }
+    return categories
 
 
 def test_slugify_is_case_and_space_insensitive():
@@ -82,7 +127,8 @@ def test_fetch_category_total_failure_marks_every_field_unresolved(monkeypatch):
 
     result = asyncio.run(fetch_category(client, schema, "power_energy", normalized))
 
-    field_defs = schema["categories"]["power_energy"]["fields"]
+    from fetch import web_search_fields
+    field_defs = web_search_fields(schema, "power_energy")  # fetch_category never handles category_summary
     assert set(result.keys()) == set(field_defs.keys())
     assert all(v.status == FieldStatus.UNRESOLVED for v in result.values())
 
@@ -177,7 +223,7 @@ def test_fetch_city_bulk_skips_categories_that_are_fully_valid_and_current(isola
 
     # Pre-populate a city where every fetchable field in every category is
     # already valid at the current schema_version.
-    from fetch import fetchable_fields
+    from models import fetchable_fields
     categories = {}
     for cat_key in schema["categories"]:
         field_defs = fetchable_fields(schema, cat_key)
@@ -203,7 +249,7 @@ def test_fetch_city_bulk_skips_categories_that_are_fully_valid_and_current(isola
 
 def test_fetch_city_bulk_never_overwrites_flagged_field_even_when_category_refetched(isolated_dirs):
     schema = load_schema()
-    from fetch import fetchable_fields
+    from models import fetchable_fields
     field_defs = fetchable_fields(schema, "power_energy")
 
     # electricity_rate_cents_per_kwh is flagged (user found it wrong);
@@ -244,3 +290,183 @@ def test_fetch_city_bulk_never_overwrites_flagged_field_even_when_category_refet
     other_field = result.categories["power_energy"]["solar_score"]
     assert other_field.status == FieldStatus.VALID
     assert other_field.value == 12.5
+
+
+def test_fill_category_summaries_generates_summary_when_category_fully_valid():
+    schema = load_schema()
+    merged = _fully_valid_research_categories(schema)
+
+    def handler(name, kw):
+        return {"summary": "A short summary.", "pros": ["cheap power"], "cons": ["moderate flood risk"]}
+
+    client = FakeAsyncOpenAI(handler=handler)
+    asyncio.run(_fill_category_summaries(client, schema, merged))
+
+    for category_key in schema["categories"]:
+        if category_key == "summary":
+            continue
+        assert merged[category_key]["category_summary"].value == "A short summary."
+        assert merged[category_key]["category_summary"].status == FieldStatus.VALID
+        assert merged[category_key]["category_pros_cons"].status == FieldStatus.VALID
+        assert merged[category_key]["category_pros_cons"].value == {"pros": ["cheap power"], "cons": ["moderate flood risk"]}
+
+
+def test_summarize_category_falls_back_to_summary_only_when_pros_cons_malformed():
+    from fetch import summarize_category
+    schema = load_schema()
+    from fetch import web_search_fields
+    field_defs = web_search_fields(schema, "power_energy")
+    category_fields = {
+        key: StoredFieldValue(value=42.0, status=FieldStatus.VALID, schema_version=1)
+        for key in field_defs
+    }
+
+    # Malformed: "pros" is a string, not a list -- ProsCons validation should reject it.
+    client = FakeAsyncOpenAI(handler=lambda name, kw: {"summary": "Still a valid summary.", "pros": "not a list", "cons": []})
+    result = asyncio.run(summarize_category(client, "Power, Energy & Grid Infrastructure", category_fields, field_defs))
+
+    assert result["summary"] == "Still a valid summary."
+    assert result["pros_cons"] is None
+
+
+def test_summarize_category_returns_none_when_no_valid_facts():
+    from fetch import summarize_category
+    schema = load_schema()
+    from fetch import web_search_fields
+    field_defs = web_search_fields(schema, "power_energy")
+    category_fields = {}  # nothing valid to summarize
+
+    calls = []
+    client = FakeAsyncOpenAI(handler=lambda name, kw: calls.append(name) or {"summary": "x", "pros": [], "cons": []})
+    result = asyncio.run(summarize_category(client, "Power, Energy & Grid Infrastructure", category_fields, field_defs))
+    assert result is None
+    assert calls == []  # confirms it returned early, not that a call happened to fail silently
+
+
+def test_fill_category_summaries_skips_category_with_real_gaps():
+    schema = load_schema()
+    merged = _fully_valid_research_categories(schema)
+    # Break one field in power_energy so the category still has a gap.
+    merged["power_energy"]["solar_score"] = StoredFieldValue(status=FieldStatus.UNRESOLVED, schema_version=1)
+
+    def fail_if_power_energy(name, kw):
+        raise AssertionError("should not summarize power_energy while it still has a gap")
+
+    client = FakeAsyncOpenAI(handler=lambda name, kw: {"summary": "A short summary."})
+    asyncio.run(_fill_category_summaries(client, schema, merged))
+
+    assert "category_summary" not in merged["power_energy"]
+    # every other, still-fully-valid category did get summarized
+    assert merged["water_supply"]["category_summary"].status == FieldStatus.VALID
+
+
+def test_fill_category_summaries_makes_no_calls_when_summary_already_current():
+    schema = load_schema()
+    merged = _fully_valid_research_categories(schema)
+    for category_key in schema["categories"]:
+        if category_key == "summary":
+            continue
+        merged[category_key]["category_summary"] = StoredFieldValue(
+            value="Already summarized.", status=FieldStatus.VALID, schema_version=1)
+        merged[category_key]["category_pros_cons"] = StoredFieldValue(
+            value={"pros": [], "cons": []}, status=FieldStatus.VALID, schema_version=1)
+
+    calls = []
+    client = FakeAsyncOpenAI(handler=lambda name, kw: calls.append(name) or {"summary": "x", "pros": [], "cons": []})
+    asyncio.run(_fill_category_summaries(client, schema, merged))
+    assert calls == []  # confirms the API was never actually called, not just that nothing raised
+
+
+def test_fill_overall_summary_waits_for_every_category_summary():
+    schema = load_schema()
+    merged = _fully_valid_research_categories(schema)
+    category_keys = [k for k in schema["categories"] if k != "summary"]
+    for category_key in category_keys[:-1]:  # all but one
+        merged[category_key]["category_summary"] = StoredFieldValue(
+            value="Summary.", status=FieldStatus.VALID, schema_version=1)
+
+    def fail_if_called(name, kw):
+        raise AssertionError("should not generate the overall summary until every category has one")
+
+    client = FakeAsyncOpenAI(handler=fail_if_called)
+    normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
+    asyncio.run(_fill_overall_summary(client, schema, normalized, merged))
+    assert "overall_summary" not in merged.get("summary", {})
+
+
+def test_fill_overall_summary_generates_once_every_category_has_one():
+    schema = load_schema()
+    merged = _fully_valid_research_categories(schema)
+    for category_key in schema["categories"]:
+        if category_key == "summary":
+            continue
+        merged[category_key]["category_summary"] = StoredFieldValue(
+            value=f"Summary for {category_key}.", status=FieldStatus.VALID, schema_version=1)
+
+    client = FakeAsyncOpenAI(handler=lambda name, kw: {"summary": "The overall paragraph."})
+    normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
+    asyncio.run(_fill_overall_summary(client, schema, normalized, merged))
+    assert merged["summary"]["overall_summary"].value == "The overall paragraph."
+    assert merged["summary"]["overall_summary"].status == FieldStatus.VALID
+
+
+def test_fetch_city_bulk_generates_category_and_overall_summaries_end_to_end(isolated_dirs):
+    schema = load_schema()
+    type_lookup = _field_type_lookup(schema)
+
+    def handler(name, kw):
+        if name == "resolve_city":
+            return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
+        if name == "report_summary":
+            return {"summary": "A short category summary."}
+        if name == "report_overall_summary":
+            return {"summary": "A one-paragraph overall summary."}
+        props = kw["response_format"]["json_schema"]["schema"]["properties"]
+        return {
+            field_key: {"value": _plausible_value(type_lookup[field_key]), "source_url": "https://x.com", "fetched_date": "2026-07-22"}
+            for field_key in props
+        }
+
+    client = FakeAsyncOpenAI(handler=handler)
+    record = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
+
+    for category_key in schema["categories"]:
+        if category_key == "summary":
+            continue
+        assert record.categories[category_key]["category_summary"].value == "A short category summary."
+    assert record.categories["summary"]["overall_summary"].value == "A one-paragraph overall summary."
+
+
+def test_fetch_city_bulk_makes_zero_calls_when_fully_summarized_and_current(isolated_dirs):
+    schema = load_schema()
+    categories = _fully_valid_research_categories(schema)
+    for category_key in schema["categories"]:
+        if category_key == "summary":
+            categories.setdefault("summary", {})["overall_summary"] = StoredFieldValue(
+                value="Already summarized.", status=FieldStatus.VALID, schema_version=1)
+        else:
+            categories[category_key]["category_summary"] = StoredFieldValue(
+                value="Already summarized.", status=FieldStatus.VALID, schema_version=1)
+            categories[category_key]["category_pros_cons"] = StoredFieldValue(
+                value={"pros": ["cheap"], "cons": ["hot"]}, status=FieldStatus.VALID, schema_version=1)
+
+    record = CityRecord(
+        input_city_state="Austin, TX",
+        normalized=NormalizedCity(city="Austin", state="TX", county="Travis County"),
+        slug="austin-tx",
+        categories=categories,
+    )
+    save_city_record(record)
+
+    calls = []
+
+    def track_calls(name, kw):
+        calls.append(name)
+        if name == "resolve_city":
+            return {"resolved": True, "city": "Austin", "state": "TX", "county": "Travis County"}
+        raise AssertionError(f"should not have called the API for {name}")
+
+    client = FakeAsyncOpenAI(handler=track_calls)
+    result = asyncio.run(fetch_city_bulk(client, schema, "Austin, TX"))
+    assert calls == ["resolve_city"]  # confirms report_summary/report_overall_summary were never invoked
+    assert result.categories["summary"]["overall_summary"].value == "Already summarized."
