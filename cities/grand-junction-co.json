@@ -3,7 +3,7 @@
   "normalized": {
     "city": "Grand Junction",
     "state": "CO",
-    "county": "Mesa County"
+    "county": "Mesa"
   },
   "slug": "grand-junction-co",
   "categories": {
@@ -254,17 +254,28 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": null,
+        "value": "This USDA Zone 7a area has mild winters (lows around 19–25°F in winter months), hot summers peaking near 94°F in July, essentially no snow, and a 175-day growing season with 245 sunshine days annually. Rainfall is light overall, concentrated in fall and spring.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": null,
+        "value": {
+          "pros": [
+            "175-day growing season",
+            "Hot summers (93–94°F peak)",
+            "245 annual sunshine days",
+            "No winter snow"
+          ],
+          "cons": [
+            "Light annual rainfall",
+            "Hard freeze risk (0–5°F lows possible)"
+          ]
+        },
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     },
@@ -779,10 +790,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": null,
+        "value": "Grand Junction, Colorado presents a nuanced relocation opportunity marked by strong natural advantages and affordable living alongside significant infrastructure and environmental constraints. The area offers appealing climate characteristics—mild winters, hot summers, and a solid 175-day growing season—coupled with good air quality, low seismic risk, and reasonable electricity costs (12.5 cents/kWh) backed by reliable grid infrastructure. Housing remains relatively affordable at a median of $430,000, and the city benefits from excellent regional airport connectivity and proximity to major metropolitan areas. However, prospective relocators should carefully weigh several critical drawbacks: the most pressing concern is severe and worsening drought stress, with record-low snowpack and the state's driest five-year period in 132 years creating urgent water supply uncertainty and imminent municipal restrictions; additionally, the area faces above-average violent crime (546.1 per 100k) and notably high property crime (3,170.4 per 100k), limited educational resources outside of select high schools, significant wildfire risk affecting 38% of properties, and regular flood hazards. The city's car-dependent design (walkability score of 34), limited grocery infrastructure locally, and impending policy changes to solar net metering further complicate the relocation calculus. Grand Junction is best suited for those prioritizing affordability, climate, and airport access who can tolerate water scarcity concerns, elevated crime rates, and car-dependent living; it is less ideal for individuals whose priorities center on long-term water security, walkability, comprehensive educational options, or low-crime communities.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     }

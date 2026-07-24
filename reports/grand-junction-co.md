@@ -1,8 +1,8 @@
 # Grand Junction, CO — Relocation Report
 
-*Mesa County · Generated 2026-07-24*
+*Mesa · Generated 2026-07-24*
 
-Grand Junction, Colorado presents a mixed relocation profile with notable strengths in climate, energy infrastructure, and regional connectivity, but significant challenges in water security and public safety that warrant careful consideration. The city offers excellent growing conditions (175-day season, 3200 annual sunshine days), moderate housing costs ($430,000 median), low state income tax (4.4%), and good access to major regional hubs via its own airport—making it attractive for remote workers and those seeking outdoor lifestyle amenities. However, prospective relocators must confront severe water supply stress stemming from record-low snowpack and an unprecedented five-month drought that triggered Phase 2 state restrictions in 2026, with municipal suppliers warning of imminent rate hikes and watering restrictions that threaten long-term sustainability. Additionally, the city's above-average violent crime rate (546.1 per 100k) and notably high property crime rate (3,170.4 per 100k)—significantly exceeding national averages—present public safety concerns, while car-dependent infrastructure (walkability score 34), limited local grocery options, and modest school district ratings (3.5) further complicate the calculus. The area's natural hazards are relatively manageable (low seismic activity, good air quality), and strong healthcare services via a nearby Level II trauma center are definite assets, but the combination of water scarcity, crime, and limited walkability suggests Grand Junction works best for self-sufficient, security-conscious relocators prioritizing climate and energy considerations over urban amenities and public safety metrics.
+Grand Junction, Colorado presents a nuanced relocation opportunity marked by strong natural advantages and affordable living alongside significant infrastructure and environmental constraints. The area offers appealing climate characteristics—mild winters, hot summers, and a solid 175-day growing season—coupled with good air quality, low seismic risk, and reasonable electricity costs (12.5 cents/kWh) backed by reliable grid infrastructure. Housing remains relatively affordable at a median of $430,000, and the city benefits from excellent regional airport connectivity and proximity to major metropolitan areas. However, prospective relocators should carefully weigh several critical drawbacks: the most pressing concern is severe and worsening drought stress, with record-low snowpack and the state's driest five-year period in 132 years creating urgent water supply uncertainty and imminent municipal restrictions; additionally, the area faces above-average violent crime (546.1 per 100k) and notably high property crime (3,170.4 per 100k), limited educational resources outside of select high schools, significant wildfire risk affecting 38% of properties, and regular flood hazards. The city's car-dependent design (walkability score of 34), limited grocery infrastructure locally, and impending policy changes to solar net metering further complicate the relocation calculus. Grand Junction is best suited for those prioritizing affordability, climate, and airport access who can tolerate water scarcity concerns, elevated crime rates, and car-dependent living; it is less ideal for individuals whose priorities center on long-term water security, walkability, comprehensive educational options, or low-crime communities.
 
 ## Geographic & Natural Hazards
 
@@ -16,7 +16,7 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 | County | Mesa County | [source](https://en.wikipedia.org/wiki/Grand_Junction,_Colorado), checked 2026-07-22 |
 | Elevation (ft) | 4,646 | [source](https://en.wikipedia.org/wiki/Grand_Junction,_Colorado), checked 2026-07-22 |
 | Distance To Ocean (mi) | 598 | [source](https://www.nileguide.com/ocean/Grand-Junction), checked 2026-07-22 |
-| BD Score | 5,244 |  |
+| BD Score | 🟢 5,244 |  |
 | Fault Line Distance (mi) | 13 | [source](https://jwgrandjunction.com/hidden-fault-lines-beneath-colorado-national-monument-diy-mapping-adventure/), checked 2026-07-22 |
 | Volcano Proximity | No active volcanoes are near Grand Junction itself. The nearest volcanic feature is the Dotsero maar/volcano (Colorado's only Holocene-age volcano, last erupted ~4,000 years ago), located roughly 100 driving miles east near Eagle County along I-70. Volcanic hazard to Grand Junction is negligible. | [source](https://www.blm.gov/visit/dotsero-crater-rec-site), checked 2026-07-22 |
 | Hurricane Risk | None/Very Low - Grand Junction is landlocked in western Colorado with no direct hurricane exposure. Occasionally, remnant moisture from decaying Pacific hurricanes/tropical storms (e.g., Hurricane Priscilla remnants in 2025) can bring heavy rain and flash-flood risk, but there is no tropical storm or hurricane wind/surge threat. | [source](https://countryherald.com/news/grand-junction-co-weather-heavy-rainfall-could-trigger-flash-flooding/), checked 2026-07-22 |
@@ -30,10 +30,10 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 
 ## Climate & Growing Conditions
 
-*This location features USDA Zone 7a winters (lows near 19°F) with virtually no snow, hot but not extreme summers peaking at 93.7°F in July, and an excellent 175-day growing season. Expect abundant sunshine (3200 days annually) with moderate rainfall concentrated in fall (1.22" in September) and a dry June (0.47").*
+*This USDA Zone 7a area has mild winters (lows around 19–25°F in winter months), hot summers peaking near 94°F in July, essentially no snow, and a 175-day growing season with 245 sunshine days annually. Rainfall is light overall, concentrated in fall and spring.*
 
-**Pros:** Long 175-day growing season, Abundant sunshine: 3200 days/year, Virtually no snow or ice, Moderate winter lows (~19°F)
-**Cons:** July highs reach 93.7°F, Low rainfall June (0.47")
+**Pros:** 175-day growing season, Hot summers (93–94°F peak), 245 annual sunshine days, No winter snow
+**Cons:** Light annual rainfall, Hard freeze risk (0–5°F lows possible)
 
 | Field | Value | Source |
 |---|---|---|
@@ -41,7 +41,7 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 | First Frost Date | October 11 - October 20 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data), checked 2026-07-22 |
 | Last Frost Date | April 11 - April 20 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data), checked 2026-07-22 |
 | Growing Season Length Days | 175 | [source](https://agsci.colostate.edu/research-and-engagement/research-centers/western-colorado-research-center/), checked 2026-07-22 |
-| Annual Sunshine Days | 3,200 | [source](https://www.weather.gov/media/gjt/history/GJT_Station_Digest.pdf), checked 2026-07-22 |
+| Annual Sunshine Days | 245 | [source](https://www.bestplaces.net/climate/city/colorado/grand_junction), checked 2026-07-24 |
 
 **Monthly Climate Table** ([source](https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data), checked 2026-07-22)
 | Month | Avg High (°F) | Avg Low (°F) | Avg Rainfall (in) | Avg Snowfall (in) |
