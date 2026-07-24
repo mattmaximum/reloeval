@@ -187,3 +187,22 @@ def test_build_site_compare_page_shows_message_when_fewer_than_two_cities(isolat
 
     index_html = (isolated_site["site"] / "index.html").read_text()
     assert "Compare two cities" not in index_html  # link only shown with 2+ cities
+
+
+def test_build_site_writes_scoring_page_linked_from_index_and_compare(isolated_site):
+    _write_city(isolated_site["cities"], "a-tx", "A", "TX")
+    _write_city(isolated_site["cities"], "b-tx", "B", "TX")
+
+    build_pages_site.build_site()
+
+    scoring_html = (isolated_site["site"] / "scoring.html").read_text()
+    assert "Family Fit" in scoring_html
+    assert "Self-Sufficiency" in scoring_html
+    assert "BD score must be at least 2000" in scoring_html
+    assert "Walkability Score" in scoring_html
+
+    index_html = (isolated_site["site"] / "index.html").read_text()
+    assert 'href="scoring.html"' in index_html
+
+    compare_html = (isolated_site["site"] / "compare.html").read_text()
+    assert 'href="scoring.html"' in compare_html

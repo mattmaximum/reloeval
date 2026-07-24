@@ -31,7 +31,7 @@ from build_index import gather_cities
 from lint import find_gaps
 from models import fetchable_fields, load_schema
 from render import build_render_context
-from scoring import compute_all_scores
+from scoring import compute_all_scores, scoring_methodology
 from severity import classify_severity
 
 ROOT = Path(__file__).parent.parent.parent
@@ -149,6 +149,7 @@ def build_site() -> Path:
     report_template = env.get_template("report_page.html.j2")
     index_template = env.get_template("index_page.html.j2")
     compare_template = env.get_template("compare_page.html.j2")
+    scoring_template = env.get_template("scoring_page.html.j2")
 
     records = gather_cities()
     # Relative scoring needs every city at once (min-max normalization),
@@ -179,6 +180,7 @@ def build_site() -> Path:
 
     (SITE_DIR / "index.html").write_text(index_template.render(cities=index_cities))
     (SITE_DIR / "compare.html").write_text(compare_template.render(city_count=len(records)))
+    (SITE_DIR / "scoring.html").write_text(scoring_template.render(**scoring_methodology(schema)))
     (SITE_DIR / "cities-data.json").write_text(json.dumps(comparison_data))
     return SITE_DIR
 

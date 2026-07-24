@@ -1,4 +1,4 @@
-"""Per-lens fit scores (Family Fit / Self-Sufficiency & Resilience),
+"""Per-lens fit scores (Family Fit / Self-Sufficiency),
 computed relative to the cities you've actually evaluated -- not against
 some invented absolute scale. $430K isn't objectively good or bad, only
 relative to your other options, so numeric fields are min-max normalized
@@ -23,7 +23,7 @@ from pathlib import Path
 from typing import Optional
 
 from models import CityRecord, FieldStatus
-from render import compute_bd_score
+from render import compute_bd_score, humanize
 from severity import classify_severity
 
 PREFERENCES_PATH = Path(__file__).parent / "preferences.json"
@@ -225,4 +225,61 @@ def compute_all_scores(schema: dict, records: list[CityRecord]) -> dict[str, dic
             for lens_key in preferences["lenses"]
         }
         for record in records
+    }
+
+
+_WEIGHT_TIER_NAMES = {3: "Critical", 2: "Important", 1: "Minor", 0: "Not scored"}
+
+
+def _unscored_fields(schema: dict) -> list[dict]:
+    """Fields that exist and are shown in reports but never contribute to
+    any score -- no reliable direction (walkability_score), or a
+    free-text legal/regulatory field with no controlled vocabulary to
+    classify against (carry_law_type and friends). Derived from schema.json
+    directly rather than hardcoded, so this list can never go stale."""
+    result = []
+    for category_key, category in schema["categories"].items():
+        if category_key == "summary":
+            continue
+        unscored_labels = [
+            field_key
+            for field_key, field_def in category["fields"].items()
+            if not field_def.get("derived") and not field_def.get("synthesized")
+            and not field_def.get("risk_field") and field_def.get("type") != "retail_presence"
+            and field_def.get("score_direction") is None
+        ]
+        if unscored_labels:
+            result.append({
+                "category_label": category["label"],
+                "fields": [humanize(key) for key in unscored_labels],
+            })
+    return result
+
+
+def scoring_methodology(schema: dict) -> dict:
+    """Everything needed to render a human-readable explanation of how
+    fit scores are actually computed, straight from preferences.json --
+    if you edit your weights later, this page updates itself, nothing to
+    keep in sync by hand."""
+    preferences = load_preferences()
+    lenses = []
+    for lens_key, lens_prefs in preferences["lenses"].items():
+        categories = [
+            {
+                "label": schema["categories"][category_key]["label"],
+                "weight": weight,
+                "tier": _WEIGHT_TIER_NAMES.get(weight, str(weight)),
+            }
+            for category_key, weight in lens_prefs["category_weights"].items()
+        ]
+        lenses.append({
+            "label": lens_prefs["label"],
+            "categories": categories,
+            "dealbreakers": [d["description"] for d in lens_prefs.get("dealbreakers", [])],
+        })
+    return {
+        "lenses": lenses,
+        "risk_severity_scores": preferences["risk_severity_scores"],
+        "label_thresholds": sorted(preferences["label_thresholds"], key=lambda t: -t["min"]),
+        "unscored_fields": _unscored_fields(schema),
     }

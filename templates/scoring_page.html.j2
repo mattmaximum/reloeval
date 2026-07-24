@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Scoring Works</title>
+{% include "_style.html.j2" %}
+</head>
+<body>
+<a class="back" href="index.html">&larr; All cities</a>
+<h1>How Scoring Works</h1>
+
+<p class="overall-summary">
+Every city gets two independent fit scores, not one blended number: <strong>Family Fit</strong>
+(day-to-day life for the family) and <strong>Self-Sufficiency</strong> (homestead/resilience
+concerns). A city can score well on one and poorly on the other &mdash; that tension is shown,
+not averaged away. Numeric fields are scored <strong>relative to the cities actually
+evaluated</strong> (the cheapest home price in the set scores highest, not against some fixed
+"good" price), so scores can shift slightly as new cities are added. This page is generated
+directly from <code>preferences.json</code> &mdash; if the weights below ever change, this page
+updates itself.
+</p>
+
+{% for lens in lenses %}
+<details class="category" open>
+  <summary>{{ lens.label }} &mdash; category weights</summary>
+  <table class="field-table field-table--fields">
+    <tr><th>Category</th><th>Weight</th><th></th></tr>
+    {% for cat in lens.categories %}
+    <tr>
+      <td class="field-label">{{ cat.label }}</td>
+      <td>{{ cat.tier }}</td>
+      <td class="source-link">{{ cat.weight }}x</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% if lens.dealbreakers %}
+  <p><strong>Dealbreakers</strong> for this lens &mdash; any one of these overrides the score
+  entirely, regardless of everything else:</p>
+  <ul>
+    {% for db in lens.dealbreakers %}<li>{{ db }}</li>{% endfor %}
+  </ul>
+  {% else %}
+  <p class="caveat">No dealbreakers for this lens.</p>
+  {% endif %}
+</details>
+{% endfor %}
+
+<details class="category" open>
+  <summary>Shared rules</summary>
+  <p><strong>Risk severity fields</strong> (wildfire/flood/earthquake risk, homeschool and
+  permitting strictness, etc.) are read from free text and mapped to a score:</p>
+  <table class="field-table field-table--fields">
+    <tr><th>Level</th><th>Score</th></tr>
+    <tr><td class="field-label">Low</td><td>{{ risk_severity_scores.low }}</td><td></td></tr>
+    <tr><td class="field-label">Moderate</td><td>{{ risk_severity_scores.moderate }}</td><td></td></tr>
+    <tr><td class="field-label">High</td><td>{{ risk_severity_scores.high }}</td><td></td></tr>
+  </table>
+
+  <p><strong>Final label</strong>, from the 0-100 internal score (only the label is shown on
+  reports, not the number):</p>
+  <table class="field-table field-table--fields">
+    <tr><th>Score</th><th>Label</th><th></th></tr>
+    {% for tier in label_thresholds %}
+    <tr><td class="field-label">{{ tier.min }}+</td><td>{{ tier.label }}</td><td></td></tr>
+    {% endfor %}
+  </table>
+
+  <p><strong>Missing data:</strong> a category with some unresolved fields is scored on just
+  the fields that do have data &mdash; a gap narrows what's being measured, it doesn't count
+  against the city.</p>
+</details>
+
+<details class="category">
+  <summary>Fields not included in any score</summary>
+  <p class="caveat">
+  Still shown in every report, just not counted &mdash; either no reliable "better/worse"
+  direction (population, hardiness zone), or free-text legal/regulatory fields with no
+  controlled vocabulary to classify against yet (carry law, firearm restrictions, well
+  legality, raw dairy legality, and similar).
+  </p>
+  {% for cat in unscored_fields %}
+  <p><strong>{{ cat.category_label }}:</strong> {{ cat.fields | join(", ") }}</p>
+  {% endfor %}
+</details>
+
+</body>
+</html>

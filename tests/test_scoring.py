@@ -337,3 +337,43 @@ def test_lens_score_scored_state_includes_reason():
     result = lens_score(schema, prefs, "family", record, ranges)
     assert result["state"] == "scored"
     assert "top-rated district" in result["reason"]
+
+
+def test_scoring_methodology_reflects_preferences_json():
+    from scoring import scoring_methodology
+    schema = load_schema()
+    result = scoring_methodology(schema)
+
+    lens_labels = [lens["label"] for lens in result["lenses"]]
+    assert lens_labels == ["Family Fit", "Self-Sufficiency"]
+
+    family = result["lenses"][0]
+    education = next(c for c in family["categories"] if c["label"] == "Education & Healthcare")
+    assert education["weight"] == 3
+    assert education["tier"] == "Critical"
+
+    self_suff = result["lenses"][1]
+    education_ss = next(c for c in self_suff["categories"] if c["label"] == "Education & Healthcare")
+    assert education_ss["weight"] == 0
+    assert education_ss["tier"] == "Not scored"
+    assert len(self_suff["dealbreakers"]) == 2
+    assert any("BD score" in db for db in self_suff["dealbreakers"])
+
+    assert result["risk_severity_scores"]["low"] == 90
+    assert result["label_thresholds"][0]["label"] == "Strong Fit"  # sorted highest-first
+
+
+def test_scoring_methodology_lists_unscored_fields_with_readable_labels():
+    from scoring import scoring_methodology
+    schema = load_schema()
+    result = scoring_methodology(schema)
+
+    econ = next(c for c in result["unscored_fields"] if c["category_label"] == "Economy, Housing & Land Development")
+    assert "Walkability Score" in econ["fields"]
+
+    civic = next(c for c in result["unscored_fields"] if c["category_label"] == "Civic, Demographic & Legal Profile")
+    assert "Carry Law Type" in civic["fields"]
+
+    # A category with zero unscored fields shouldn't appear at all.
+    all_labels = [c["category_label"] for c in result["unscored_fields"]]
+    assert len(all_labels) == len(set(all_labels))  # no duplicates, one entry per category max
