@@ -195,6 +195,44 @@ def test_fetch_category_partial_validation_failure_isolated_to_one_field():
     assert result["grid_reliability"].value == "rare outages"
 
 
+def test_fetch_category_includes_closed_metro_list_for_geographic_hazards():
+    # Regression test: the model repeatedly answered nearest_large_metro_name
+    # with the nearest city of ANY size (Grand Junction for Collbran CO,
+    # Spokane for Coeur d'Alene ID) instead of one actually clearing the
+    # field's own "population over 1,000,000" bar, producing false
+    # Self-Sufficiency dealbreakers. The prompt now hands the model a closed
+    # list to choose from instead of trusting it to verify population itself.
+    schema = load_schema()
+    captured = {}
+
+    def handler(name, kw):
+        captured["content"] = kw["messages"][0]["content"]
+        return None  # content capture is all this test needs; let it fail fast
+
+    client = FakeAsyncOpenAI(handler=handler)
+    normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
+    asyncio.run(fetch_category(client, schema, "geographic_hazards", normalized))
+
+    assert "closed list" in captured["content"]
+    assert "Denver-Aurora-Centennial, CO" in captured["content"]
+    assert "Seattle-Tacoma-Bellevue, WA" in captured["content"]
+
+
+def test_fetch_category_omits_metro_list_for_categories_without_that_field():
+    schema = load_schema()
+    captured = {}
+
+    def handler(name, kw):
+        captured["content"] = kw["messages"][0]["content"]
+        return None
+
+    client = FakeAsyncOpenAI(handler=handler)
+    normalized = NormalizedCity(city="Austin", state="TX", county="Travis County")
+    asyncio.run(fetch_category(client, schema, "power_energy", normalized))
+
+    assert "closed list" not in captured["content"]
+
+
 def test_fetch_city_bulk_new_city_writes_all_categories(isolated_dirs):
     schema = load_schema()
 

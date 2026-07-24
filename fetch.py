@@ -49,6 +49,45 @@ CATEGORY_MODEL = "anthropic/claude-haiku-4.5"
 # results, then $0.001/additional result -- 10 is the ceiling where more
 # grounding is free, so there's no reason to ask for fewer.
 WEB_PLUGIN_MAX_RESULTS = 10
+
+# Every US Metropolitan Statistical Area with population >= 1,000,000
+# (Census Bureau, July 2025 estimates), largest first. nearest_large_metro_name
+# used to ask the model to research "the nearest large metro" as one open
+# task -- in practice it kept answering with the nearest city of any size
+# (Grand Junction for Collbran CO, Spokane for Coeur d'Alene ID, Missoula
+# for Bozeman MT, Hickory NC for West Jefferson NC), none of which clear
+# this bar, silently producing false Self-Sufficiency dealbreakers. Giving
+# the model a closed list to pick from -- instead of trusting it to also
+# verify a population threshold from memory -- turns "does this city
+# qualify" from a judgment call into a lookup.
+US_METROS_OVER_1M = [
+    "New York-Newark-Jersey City, NY-NJ", "Los Angeles-Long Beach-Anaheim, CA",
+    "Chicago-Naperville-Elgin, IL-IN", "Dallas-Fort Worth-Arlington, TX",
+    "Houston-Pasadena-The Woodlands, TX", "Atlanta-Sandy Springs-Roswell, GA",
+    "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+    "Miami-Fort Lauderdale-West Palm Beach, FL",
+    "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD", "Phoenix-Mesa-Chandler, AZ",
+    "Boston-Cambridge-Newton, MA-NH", "Riverside-San Bernardino-Ontario, CA",
+    "San Francisco-Oakland-Fremont, CA", "Detroit-Warren-Dearborn, MI",
+    "Seattle-Tacoma-Bellevue, WA", "Minneapolis-St. Paul-Bloomington, MN-WI",
+    "Tampa-St. Petersburg-Clearwater, FL", "San Diego-Chula Vista-Carlsbad, CA",
+    "Denver-Aurora-Centennial, CO", "Orlando-Kissimmee-Sanford, FL",
+    "Charlotte-Concord-Gastonia, NC-SC", "Baltimore-Columbia-Towson, MD",
+    "St. Louis, MO-IL", "San Antonio-New Braunfels, TX",
+    "Austin-Round Rock-San Marcos, TX", "Portland-Vancouver-Hillsboro, OR-WA",
+    "Sacramento-Roseville-Folsom, CA", "Pittsburgh, PA",
+    "Las Vegas-Henderson-North Las Vegas, NV", "Cincinnati, OH-KY-IN",
+    "Kansas City, MO-KS", "Columbus, OH", "Indianapolis-Carmel-Greenwood, IN",
+    "Nashville-Davidson-Murfreesboro-Franklin, TN", "Cleveland, OH",
+    "San Jose-Sunnyvale-Santa Clara, CA", "Virginia Beach-Norfolk-Newport News, VA-NC",
+    "Jacksonville, FL", "Providence-Warwick, RI-MA", "Raleigh-Cary, NC",
+    "Milwaukee-Waukesha, WI", "Oklahoma City, OK", "Louisville/Jefferson County, KY-IN",
+    "Richmond, VA", "Memphis, TN-MS-AR", "Salt Lake City-Murray, UT",
+    "Fresno, CA", "Birmingham, AL", "Grand Rapids-Wyoming-Kentwood, MI",
+    "Hartford-West Hartford-East Hartford, CT", "Buffalo-Cheektowaga, NY",
+    "Tucson, AZ", "Tulsa, OK", "Rochester, NY", "Greenville-Anderson-Greer, SC",
+    "Omaha, NE-IA",
+]
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
@@ -163,6 +202,18 @@ async def fetch_category(
     category_label = schema["categories"][category_key]["label"]
     response_model = build_category_response_model(schema, category_key)
 
+    metro_instruction = ""
+    if "nearest_large_metro_name" in field_defs:
+        metro_instruction = (
+            "\n\nFor nearest_large_metro_name and nearest_large_metro_drive_time_min: "
+            "choose ONLY from this closed list of US metros with population over "
+            "1,000,000 -- do not name any other city or metro, even one that's "
+            "geographically closer, since it doesn't qualify: "
+            + ", ".join(US_METROS_OVER_1M)
+            + ". Determine which one of these is nearest by drive time, then research "
+            "that specific route's drive time via web search."
+        )
+
     raw: dict = {}
     last_error: Optional[Exception] = None
     for attempt in range(2):
@@ -187,6 +238,7 @@ async def fetch_category(
                         "not answer from memory alone. Every field needs a "
                         "source_url and fetched_date "
                         f"(today is {date.today().isoformat()}) alongside its value."
+                        + metro_instruction
                     ),
                 }],
             )
