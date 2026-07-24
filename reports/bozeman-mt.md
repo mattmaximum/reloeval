@@ -1,15 +1,15 @@
 # Bozeman, MT — Relocation Report
 
-*Gallatin County · Generated 2026-07-24*
+*Gallatin · Generated 2026-07-24*
 
-Bozeman, Montana presents a compelling relocation destination for those prioritizing outdoor amenities, security, and community character, though it demands careful consideration of significant climate and resource vulnerabilities. The mid-sized city of ~59,000 offers exceptional safety (2.3 violent crimes per 100k), robust healthcare and education infrastructure anchored by Montana State University and a Level III Trauma Center, strong local food systems with year-round farmers markets, and excellent regional air connectivity. However, prospective residents must contend with critical challenges: the region sits on an active fault line with extreme earthquake risk (FEMA score 94.1/100), faces its sixth consecutive drought year with only 16 inches annual precipitation, and despite cold winters, receives almost no snowfall while experiencing limited sunshine (121 days annually). Water security is particularly precarious, with the city consuming 60% of its reliable water supply in 2024 drought conditions, though proactive management tools and Hyalite Reservoir provide some mitigation. The housing market is expensive at a $592,600 median home price with a 13.75% combined tax burden and moderate-to-high permitting barriers, while the lack of major national grocery chains and relatively weak solar potential (3.7 score) compound lifestyle adjustments. Bozeman suits those seeking a Republican-leaning, security-conscious community with world-class outdoor recreation and educational opportunities, yet it requires resilience toward environmental stressors and financial commitment to thrive in this high-risk, high-cost mountain setting.
+Bozeman, Montana presents a compelling relocation destination for those prioritizing natural amenities, educational opportunity, and civic safety, though it requires careful consideration of natural hazards and resource constraints. This mid-sized community of ~59,000 benefits from a strong school district, excellent healthcare infrastructure including a Level III Trauma Center, very low violent crime rates, and robust higher education through Montana State University, alongside constitutional carry protections and reasonable walkability scores. However, prospective residents must weigh significant vulnerabilities: the region sits on a major fault line with FEMA earthquake risk of 94.1/100, faces ongoing drought conditions (sixth consecutive year with only 16 inches annual precipitation), and relies almost entirely on snowpack-fed surface water despite consuming 60% of its reliable supply during recent dry years. Additional concerns include extremely limited sunshine (121 days annually), weak solar potential, high wildfire risk (~30 smoke days yearly), substantial wildfire and earthquake exposure costs, elevated housing costs ($592,600 median), and a combined tax burden of 13.75% alongside moderate-to-high permitting barriers. The absence of major national grocery chains (Whole Foods, Trader Joe's, Costco, Sprouts) and distant access to major metropolitan areas (11+ hours to Seattle-Tacoma) further compound logistics challenges, though the city's proactive water management, tiered drought planning, excellent regional air connectivity, strong local food infrastructure, and low property crime rates partially offset these drawbacks. Bozeman suits affluent, nature-focused professionals and retirees who prioritize outdoor recreation, educational access, and safety over climate resilience and resource abundance, with careful attention to earthquake/wildfire insurance and drought adaptation strategies essential for long-term stability.
 
 ## Geographic & Natural Hazards
 
-*Gallatin County sits on an active fault line with exceptional earthquake risk (FEMA score 94.1/100) and high wildfire risk with 30 annual smoke days, while benefiting from excellent air quality and zero hurricane risk due to its interior mountain location 550+ miles from the ocean.*
+*Gallatin County sits on a major fault line with high earthquake risk (FEMA 94.1/100) and near Yellowstone Caldera (~80-90 miles south), plus high wildfire risk with ~30 smoke days annually. It's a remote, high-elevation location (4,817 ft) with very low hurricane risk but distant access to major metros (11+ hours to Seattle-Tacoma).*
 
-**Pros:** Zero hurricane risk, Excellent air quality (AQI 45), Safe from coastal hazards
-**Cons:** Extreme earthquake risk (FEMA 94.1/100), High wildfire risk, 30 wildfire smoke days/year, On active fault line
+**Pros:** Very low hurricane risk, Clean air quality (AQI 45), Low flood risk (moderate)
+**Cons:** Major fault line at 0.0 mi distance, High earthquake risk (FEMA 94.1/100), High wildfire risk with 30 smoke days/year, Yellowstone Caldera proximity (80-90 mi)
 
 | Field | Value | Source |
 |---|---|---|
@@ -25,8 +25,8 @@ Bozeman, Montana presents a compelling relocation destination for those prioriti
 | Flood Risk | Moderate - FEMA NRI Score 64.2/100 | [source](https://riskbycounty.com/montana/gallatin-county), checked 2026-07-24 |
 | Avg AQI | 45 | [source](https://www.aqi.in/us/dashboard/united-states/montana/bozeman), checked 2026-07-24 |
 | Wildfire Smoke Days Per Year | 30 | [source](https://www.bozeman.net/departments/strategic-services/sustainability/community-resiliency/heat-wildfire-smoke), checked 2026-07-24 |
-| Nearest Large Metro Drive Time Min | 180 | [source](https://www.trippy.com/distance/Missoula-to-Bozeman), checked 2026-07-24 |
-| Nearest Large Metro Name | Missoula, Montana | [source](https://www.trippy.com/distance/Missoula-to-Bozeman), checked 2026-07-24 |
+| Nearest Large Metro Drive Time Min | 660 | [source](https://riskbycounty.com/montana/gallatin-county), checked 2026-07-24 |
+| Nearest Large Metro Name | Seattle-Tacoma-Bellevue, WA | [source](https://riskbycounty.com/montana/gallatin-county), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 
