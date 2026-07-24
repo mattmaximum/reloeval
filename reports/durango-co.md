@@ -25,6 +25,8 @@ Durango, Colorado presents a compelling mountain relocation destination for thos
 | Flood Risk | Moderate - Animas River corridor subject to seasonal flooding | [source](https://csfs.colostate.edu/wp-content/uploads/2023/09/La_Plata_County_CWPP_2023_FINAL.pdf), checked 2026-07-24 |
 | Avg AQI | 42 | [source](https://csfs.colostate.edu/wp-content/uploads/2023/09/La_Plata_County_CWPP_2023_FINAL.pdf), checked 2026-07-24 |
 | Wildfire Smoke Days Per Year | 18 | [source](https://csfs.colostate.edu/wp-content/uploads/2023/09/La_Plata_County_CWPP_2023_FINAL.pdf), checked 2026-07-24 |
+| Nearest Large Metro Drive Time Min | 368 | [source](https://www.distance-cities.com/distance-durango-co-to-denver-co), checked 2026-07-24 |
+| Nearest Large Metro Name | Denver | [source](https://www.distance-cities.com/distance-durango-co-to-denver-co), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 

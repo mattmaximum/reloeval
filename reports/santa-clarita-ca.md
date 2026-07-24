@@ -14,9 +14,9 @@ Santa Clarita, California emerges as a mixed-profile relocation destination offe
 | Field | Value | Source |
 |---|---|---|
 | County | Los Angeles County | [source](https://en.wikipedia.org/wiki/Santa_Clarita_Valley), checked 2026-07-24 |
-| Elevation (ft) | 1207 | [source](https://www.topozone.com/california/los-angeles-ca/city/santa-clarita/), checked 2026-07-24 |
+| Elevation (ft) | 1,207 | [source](https://www.topozone.com/california/los-angeles-ca/city/santa-clarita/), checked 2026-07-24 |
 | Distance To Ocean (mi) | 27.02 | [source](https://www.distantias.com/what-is-the-nearest-beach-to-santa_clarita-california-united_states.php), checked 2026-07-24 |
-| BD Score | 1234.02 |  |
+| BD Score | 1,234.02 |  |
 | Fault Line Distance (mi) | 13 | [source](https://filecenter.santa-clarita.com/Planning/via-princessa/4_4_GeoSoils060112.pdf), checked 2026-07-24 |
 | Volcano Proximity | Low - No active volcanoes in immediate region; California's active volcanic zones are in northern and southeastern CA, far from Santa Clarita | [source](https://usgs.gov/observatories/calvo/science/california-has-active-and-hazardous-volcanoes), checked 2026-07-24 |
 | Hurricane Risk | Very Low - Santa Clarita's inland location (27 miles from coast, elevated terrain) provides minimal hurricane exposure | [source](https://climatecheck.com/california/santa-clarita), checked 2026-07-24 |
@@ -25,6 +25,8 @@ Santa Clarita, California emerges as a mixed-profile relocation destination offe
 | Flood Risk | Moderate - 26% of buildings at risk; 42% chance of 3-foot flood over 30 years; 3,600 acres of floodplain | [source](https://climatecheck.com/california/santa-clarita), checked 2026-07-24 |
 | Avg AQI | 64 | [source](https://www.iqair.com/us/usa/california/santa-clarita), checked 2026-07-24 |
 | Wildfire Smoke Days Per Year | 40 | [source](https://today.ucsd.edu/story/california-communities-recovery-time-between-wildfire-smoke-events-is-shrinking), checked 2026-07-24 |
+| Nearest Large Metro Drive Time Min | 32 | [source](https://filecenter.santa-clarita.com/EmergencyMgmt/2026%20Santa%20Clarita%20LHMP%20-%20Public%20Review%20Final%20Draft.pdf), checked 2026-07-24 |
+| Nearest Large Metro Name | Los Angeles | [source](https://filecenter.santa-clarita.com/EmergencyMgmt/2026%20Santa%20Clarita%20LHMP%20-%20Public%20Review%20Final%20Draft.pdf), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 
@@ -96,8 +98,8 @@ Santa Clarita, California emerges as a mixed-profile relocation destination offe
 
 | Field | Value | Source |
 |---|---|---|
-| City Population | 230428 | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
-| County Population | 1.0014e+07 | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
+| City Population | 230,428 | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
+| County Population | 10,014,009 | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
 | Median Age | 38.2 | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
 | Demographic Breakdown | 76% White, 28% Hispanic, 36% Filipino among Asian population, 16% Korean among Asian population, 16% Asian Indian among Asian population, 11% Chinese among Asian population, 10% Japanese among Asian population | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
 | Political Leaning | Not available in search results | [source](https://santaclarita.gov/community-development/demographics/), checked 2026-07-23T21:07:43.740Z |
@@ -134,13 +136,13 @@ Santa Clarita, California emerges as a mixed-profile relocation destination offe
 
 | Field | Value | Source |
 |---|---|---|
-| Median Home Price | 820000 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
-| Cost Per Acre Unimproved | 0 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
-| Cost Per Acre Improved | 0 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
+| Median Home Price | $820,000 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
+| Cost Per Acre Unimproved | $0 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
+| Cost Per Acre Improved | $0 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
 | Permitting Strictness | Moderate | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
 | HOA Prevalence | High | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
-| State Income Tax Rate | 9.3 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
-| Combined Sales Tax Rate | 9.5 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
+| State Income Tax Rate | 9.3% | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
+| Combined Sales Tax Rate | 9.5% | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
 | Broadband Availability | Excellent | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
 | Walkability Score | 65 | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |
 | Transit Availability | Good | [source](https://www.scvedc.org/hubfs/Snapshot/Updated%20Snapshot%20-%20Use%20this%20one.pdf), checked 2026-07-23 |

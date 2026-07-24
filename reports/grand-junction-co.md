@@ -14,9 +14,9 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 | Field | Value | Source |
 |---|---|---|
 | County | Mesa County | [source](https://en.wikipedia.org/wiki/Grand_Junction,_Colorado), checked 2026-07-22 |
-| Elevation (ft) | 4646 | [source](https://en.wikipedia.org/wiki/Grand_Junction,_Colorado), checked 2026-07-22 |
+| Elevation (ft) | 4,646 | [source](https://en.wikipedia.org/wiki/Grand_Junction,_Colorado), checked 2026-07-22 |
 | Distance To Ocean (mi) | 598 | [source](https://www.nileguide.com/ocean/Grand-Junction), checked 2026-07-22 |
-| BD Score | 5244 |  |
+| BD Score | 5,244 |  |
 | Fault Line Distance (mi) | 13 | [source](https://jwgrandjunction.com/hidden-fault-lines-beneath-colorado-national-monument-diy-mapping-adventure/), checked 2026-07-22 |
 | Volcano Proximity | No active volcanoes are near Grand Junction itself. The nearest volcanic feature is the Dotsero maar/volcano (Colorado's only Holocene-age volcano, last erupted ~4,000 years ago), located roughly 100 driving miles east near Eagle County along I-70. Volcanic hazard to Grand Junction is negligible. | [source](https://www.blm.gov/visit/dotsero-crater-rec-site), checked 2026-07-22 |
 | Hurricane Risk | None/Very Low - Grand Junction is landlocked in western Colorado with no direct hurricane exposure. Occasionally, remnant moisture from decaying Pacific hurricanes/tropical storms (e.g., Hurricane Priscilla remnants in 2025) can bring heavy rain and flash-flood risk, but there is no tropical storm or hurricane wind/surge threat. | [source](https://countryherald.com/news/grand-junction-co-weather-heavy-rainfall-could-trigger-flash-flooding/), checked 2026-07-22 |
@@ -25,6 +25,8 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 | Flood Risk | Moderate to High - Flooding (including snowmelt and flash flooding) is described by Mesa County as the most common natural hazard in the area, occurring on some scale almost every year; most of Grand Junction lies in FEMA Zone X, meaning it is not in the mapped 100-year floodplain but does carry risk from the 500-year flood event and localized flash flooding. | [source](https://www.mesacounty.us/departments-and-services/public-works/floodplain-management/flood-safety), checked 2026-07-22 |
 | Avg AQI | 34 | [source](https://air.plumelabs.com/air-quality-in-grand-junction-aw-327349), checked 2026-07-22 |
 | Wildfire Smoke Days Per Year | 15 | [source](https://www.kjct8.com/2026/07/07/wildfires-are-pushing-smoke-into-grand-valley-conditions-are-expected-carry-throughout-week/), checked 2026-07-22 |
+| Nearest Large Metro Drive Time Min | 250 | [source](https://maps.google.com), checked 2026-07-24 |
+| Nearest Large Metro Name | Denver | [source](https://www.mesacounty.us/sites/default/files/2025-05/2020-mesa-county-hazard-mitigation-plan-public-review%2B%281%29-compressed.pdf), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 
@@ -39,7 +41,7 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 | First Frost Date | October 11 - October 20 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data), checked 2026-07-22 |
 | Last Frost Date | April 11 - April 20 | [source](https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data), checked 2026-07-22 |
 | Growing Season Length Days | 175 | [source](https://agsci.colostate.edu/research-and-engagement/research-centers/western-colorado-research-center/), checked 2026-07-22 |
-| Annual Sunshine Days | 3200 | [source](https://www.weather.gov/media/gjt/history/GJT_Station_Digest.pdf), checked 2026-07-22 |
+| Annual Sunshine Days | 3,200 | [source](https://www.weather.gov/media/gjt/history/GJT_Station_Digest.pdf), checked 2026-07-22 |
 
 **Monthly Climate Table** ([source](https://www.plantmaps.com/en/clim/f/us/colorado/grand-junction/climate-data), checked 2026-07-22)
 | Month | Avg High (°F) | Avg Low (°F) | Avg Rainfall (in) | Avg Snowfall (in) |
@@ -96,13 +98,13 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 
 | Field | Value | Source |
 |---|---|---|
-| City Population | 70554 | [source](https://www.city-data.com/city/Grand-Junction-Colorado.html), checked 2026-07-22 |
-| County Population | 161260 | [source](https://census.gov/quickfacts/fact/table/mesacountycolorado/PST045224), checked 2026-07-22 |
+| City Population | 70,554 | [source](https://www.city-data.com/city/Grand-Junction-Colorado.html), checked 2026-07-22 |
+| County Population | 161,260 | [source](https://census.gov/quickfacts/fact/table/mesacountycolorado/PST045224), checked 2026-07-22 |
 | Median Age | 38.5 | [source](http://censusreporter.org/profiles/16000US0831660-grand-junction-co/), checked 2026-07-22 |
 | Demographic Breakdown | Grand Junction's population is approximately 76% White (non-Hispanic majority), 17% Hispanic, and 4% Two or More Races, with smaller shares of Asian, Black, and Native American residents; county-wide, Mesa County is about 78.4% White, 15.5% Hispanic, and 3.5% Two or More Races. | [source](https://www.colorado-demographics.com/grand-junction-demographics), checked 2026-07-22 |
 | Political Leaning | Strongly Republican-leaning/conservative. Mesa County is the largest county on Colorado's Western Slope but votes reliably GOP — Trump won about 61% of the Mesa County vote in the 2024 presidential election, and the area is part of Colorado's 3rd Congressional District (Cook PVI R+5), represented by a Republican. | [source](https://gazette.com/2024/11/17/how-colorado-regions-voted-front-range-for-harris-rural-counties-for-trump-cronin-and-loevy-97ea5c5e-a478-11ef-ad6f-7f3d7046d490/), checked 2026-07-22 |
 | Violent Crime Rate | 546.1 | [source](https://crimesafe.app/city/grand-junction-co/), checked 2026-07-22 |
-| Property Crime Rate | 3170.4 | [source](https://crimesafe.app/city/grand-junction-co/), checked 2026-07-22 |
+| Property Crime Rate | 3,170.4 | [source](https://crimesafe.app/city/grand-junction-co/), checked 2026-07-22 |
 | Safety Index | 60 | [source](https://crimesafe.app/city/grand-junction-co/), checked 2026-07-22 |
 | Carry Law Type | Shall-issue for concealed carry: Colorado requires a Concealed Handgun Permit (CHP) issued by the county sheriff to carry a concealed firearm in public; the state does not allow permitless/constitutional concealed carry (one narrow exception exists for handguns carried inside a private vehicle). Open carry is generally legal statewide for those 18+ who can legally possess a firearm, though local municipalities may impose additional restrictions in 'sensitive' locations. | [source](https://aliengearholsters.com/blogs/news/colorado-concealed-carry), checked 2026-07-22 |
 | Firearm Magazine Restrictions | Colorado bans magazines capable of holding more than 15 rounds of ammunition ('large-capacity magazines') under C.R.S. §18-12-302, in effect since July 1, 2013; magazines owned before that date are grandfathered but subject to strict handling limits. Violation is generally a class 2 misdemeanor, escalating to a felony if possessed during a violent crime. | [source](https://www.shouselaw.com/co/blog/laws/what-are-colorado-gun-laws-as-to-magazine-capacity/), checked 2026-07-22 |
@@ -134,13 +136,13 @@ Grand Junction, Colorado presents a mixed relocation profile with notable streng
 
 | Field | Value | Source |
 |---|---|---|
-| Median Home Price | 430000 | [source](https://brayandco.com/mesa-county-housing-market-update-june-2026/), checked 2026-07-22 |
-| Cost Per Acre Unimproved | 18000 | [source](https://www.landwatch.com/colorado-land-for-sale/mesa-county), checked 2026-07-22 |
-| Cost Per Acre Improved | 120000 | [source](https://www.landwatch.com/colorado-land-for-sale/mesa-county), checked 2026-07-22 |
+| Median Home Price | $430,000 | [source](https://brayandco.com/mesa-county-housing-market-update-june-2026/), checked 2026-07-22 |
+| Cost Per Acre Unimproved | $18,000 | [source](https://www.landwatch.com/colorado-land-for-sale/mesa-county), checked 2026-07-22 |
+| Cost Per Acre Improved | $120,000 | [source](https://www.landwatch.com/colorado-land-for-sale/mesa-county), checked 2026-07-22 |
 | Permitting Strictness | Moderate - City has historically had layered zoning/review requirements, but Grand Junction's 2025 Housing Affordability Code Task Force and Proposition 123 commitments are actively streamlining review processes and expediting qualifying housing project approvals. | [source](https://thebusinesstimes.com/new-homes-outpacing-growth-but-more-needed/), checked 2026-07-22 |
 | HOA Prevalence | Moderate - Common in newer subdivisions and planned developments around Grand Junction (e.g., Redlands, Orchard Mesa new builds), but many older in-city neighborhoods and rural Mesa County parcels have no HOA. | [source](https://www.gjcity.org/DocumentCenter/View/3406/Grand-Valley-Housing-Needs-Assessment-PDF), checked 2026-07-22 |
-| State Income Tax Rate | 4.4 | [source](https://tax.colorado.gov/individual-income-tax), checked 2026-07-22 |
-| Combined Sales Tax Rate | 8.66 | [source](https://www.avalara.com/taxrates/en/state-rates/colorado/cities/grand-junction.html), checked 2026-07-22 |
+| State Income Tax Rate | 4.4% | [source](https://tax.colorado.gov/individual-income-tax), checked 2026-07-22 |
+| Combined Sales Tax Rate | 8.66% | [source](https://www.avalara.com/taxrates/en/state-rates/colorado/cities/grand-junction.html), checked 2026-07-22 |
 | Broadband Availability | Good - Grand Junction has multiple wired providers (Charter Spectrum, CenturyLink/Brightspeed, Mesa County's municipal fiber initiatives) offering broadband speeds above 100 Mbps to most of the urban core, though rural Mesa County areas have more limited access. | [source](https://broadbandnow.com/Colorado/Grand-Junction), checked 2026-07-22 |
 | Walkability Score | 34 | [source](https://www.walkscore.com/CO/Grand_Junction), checked 2026-07-22 |
 | Transit Availability | Limited - Grand Valley Transit (GVT) operates a network of fixed-route buses within Grand Junction and connections to Fruita and Palisade, but service frequency is low and the city remains largely car-dependent. | [source](https://www.gvt.mesacounty.us/), checked 2026-07-22 |

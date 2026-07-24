@@ -14,9 +14,9 @@ Boise, Idaho emerges as a compelling mid-sized relocation destination (populatio
 | Field | Value | Source |
 |---|---|---|
 | County | Ada County, Idaho | [source](https://en-us.topographic-map.com/map-4dcw1h/Boise/), checked 2026-07-22 |
-| Elevation (ft) | 2704 | [source](https://en-us.topographic-map.com/map-4dcw1h/Boise/), checked 2026-07-22 |
+| Elevation (ft) | 2,704 | [source](https://en-us.topographic-map.com/map-4dcw1h/Boise/), checked 2026-07-22 |
 | Distance To Ocean (mi) | 393 | [source](https://www.nileguide.com/ocean/Boise), checked 2026-07-22 |
-| BD Score | 3097 |  |
+| BD Score | 3,097 |  |
 | Fault Line Distance (mi) | 25 | [source](https://www.shakeout.org/idaho/southwest/), checked 2026-07-22 |
 | Volcano Proximity | No active, historically-erupting volcano lies near Boise. The nearest volcanic feature is the dormant Mountain Home-Kuna Lava Field, whose basalt flows extend to within roughly 20-25 miles southeast of the Boise River Valley; the nearest well-known monogenetic volcanic field, Craters of the Moon, is about 170 miles east of Boise. No Holocene eruptions have occurred from these fields. | [source](https://volcano.si.edu/volcano.cfm?vn=324801), checked 2026-07-22 |
 | Hurricane Risk | Negligible/None - Boise is an inland city roughly 390+ miles from the Pacific coast and is not exposed to tropical cyclone/hurricane activity. | [source](https://www.nileguide.com/ocean/Boise), checked 2026-07-22 |
@@ -25,6 +25,8 @@ Boise, Idaho emerges as a compelling mid-sized relocation destination (populatio
 | Flood Risk | Moderate - Despite three flood-control dams upstream, the Boise River and several foothill gulches (Cottonwood, Hulls, Crane, Stuart) create flash-flood and riverine flood exposure; FEMA has designated Special Flood Hazard Areas along the river through parts of Boise, including Garden City, Harris Ranch, and Southeast Boise. | [source](https://adacounty.id.gov/emergencymanagement/how-to-prepare-resources/flood/), checked 2026-07-22 |
 | Avg AQI | 40 | [source](https://www.aqi.in/us/dashboard/united-states/idaho/boise/historical-analysis), checked 2026-07-22 |
 | Wildfire Smoke Days Per Year | 2.8 | [source](https://www.iqair.com/air-quality/usa/idaho/boise), checked 2026-07-22 |
+| Nearest Large Metro Drive Time Min | _(not yet evaluated — run backfill)_ |  |
+| Nearest Large Metro Name | _(not yet evaluated — run backfill)_ |  |
 
 ## Climate & Growing Conditions
 
@@ -96,13 +98,13 @@ Boise, Idaho emerges as a compelling mid-sized relocation destination (populatio
 
 | Field | Value | Source |
 |---|---|---|
-| City Population | 238853 | [source](https://worldpopulationreview.com/us-cities/idaho/boise), checked 2026-07-22 |
-| County Population | 546141 | [source](https://en.wikipedia.org/wiki/Ada_County,_Idaho), checked 2026-07-22 |
+| City Population | 238,853 | [source](https://worldpopulationreview.com/us-cities/idaho/boise), checked 2026-07-22 |
+| County Population | 546,141 | [source](https://en.wikipedia.org/wiki/Ada_County,_Idaho), checked 2026-07-22 |
 | Median Age | 38.6 | [source](https://worldpopulationreview.com/us-cities/idaho/boise), checked 2026-07-22 |
 | Demographic Breakdown | Boise's population is approximately 79.5% White, 9.6% Hispanic or Latino, 4.7% Two or More Races, with smaller shares of Asian, Black, and Native American residents; median household income ~$83,904. | [source](https://www.idaho-demographics.com/boise-city-demographics), checked 2026-07-22 |
 | Political Leaning | Boise city proper leans Democratic (electing a Democratic mayor and most local legislators), functioning as a blue urban enclave, while surrounding Ada County has trended Republican-leaning and the state of Idaho overall is strongly Republican. | [source](https://legalclarity.org/is-boise-red-or-blue-the-citys-political-identity/), checked 2026-07-22 |
 | Violent Crime Rate | 222.5 | [source](https://www.doorprofit.com/crime-statistics/city/Boise-ID/), checked 2026-07-22 |
-| Property Crime Rate | 1335 | [source](https://www.doorprofit.com/crime-statistics/city/Boise-ID/), checked 2026-07-22 |
+| Property Crime Rate | 1,335 | [source](https://www.doorprofit.com/crime-statistics/city/Boise-ID/), checked 2026-07-22 |
 | Safety Index | 65.42 | [source](https://www.numbeo.com/quality-of-life/in/Boise), checked 2026-07-22 |
 | Carry Law Type | Permitless/Constitutional Carry — Idaho allows any U.S. citizen (or active-duty service member) age 18 or older who is not otherwise disqualified to carry a concealed or open firearm without a license anywhere in the state, including within Boise city limits; a voluntary Concealed Weapons License (CWL) is also available for reciprocity purposes in other states. | [source](https://en.wikipedia.org/wiki/Gun_laws_in_Idaho), checked 2026-07-22 |
 | Firearm Magazine Restrictions | None — Idaho has no state law restricting magazine capacity for long guns or handguns, and the state's firearms preemption statute (Idaho Code § 18-3302J) prevents Boise or any other local jurisdiction from enacting its own magazine capacity limits. | [source](https://giffords.org/lawcenter/state-laws/large-capacity-magazines-in-idaho/), checked 2026-07-22 |
@@ -133,13 +135,13 @@ Boise, Idaho emerges as a compelling mid-sized relocation destination (populatio
 
 | Field | Value | Source |
 |---|---|---|
-| Median Home Price | 525000 | [source](https://www.redfin.com/city/2287/ID/Boise/housing-market), checked 2026-07-22 |
-| Cost Per Acre Unimproved | 58344 | [source](https://www.land.com/Ada-County-ID/undeveloped-land/), checked 2026-07-22 |
-| Cost Per Acre Improved | 238483 | [source](https://www.landsearch.com/properties/ada-county-id), checked 2026-07-22 |
+| Median Home Price | $525,000 | [source](https://www.redfin.com/city/2287/ID/Boise/housing-market), checked 2026-07-22 |
+| Cost Per Acre Unimproved | $58,344 | [source](https://www.land.com/Ada-County-ID/undeveloped-land/), checked 2026-07-22 |
+| Cost Per Acre Improved | $238,483 | [source](https://www.landsearch.com/properties/ada-county-id), checked 2026-07-22 |
 | Permitting Strictness | Moderate-to-strict: Boise requires building permits for most structures over 200 sq ft, floodplain development permits near the Boise River, Certificate of Appropriateness review for North End/historic districts, and zoning/design-overlay review; fast growth has led to longer review times and occasional phased development limits in Boise/Meridian. | [source](https://www.cityofboise.org/departments/planning-and-development-services/building/homeowners-guide/), checked 2026-07-22 |
 | HOA Prevalence | Moderate and rising: about 30.9% of Idaho households pay HOA or condo dues (median fee ~$61/month); Boise itself has no citywide HOA (over 30 separate voluntary neighborhood associations exist), but most newer suburban subdivisions in Ada County (e.g., Eagle, East Boise, Meridian) are built with mandatory HOAs, while older core neighborhoods like North End and Downtown are largely HOA-free. | [source](https://ipropertymanagement.com/research/hoa-statistics), checked 2026-07-22 |
-| State Income Tax Rate | 5.3 | [source](https://taxfoundation.org/location/idaho/), checked 2026-07-22 |
-| Combined Sales Tax Rate | 6 | [source](https://www.avalara.com/taxrates/en/state-rates/idaho/cities/boise.html), checked 2026-07-22 |
+| State Income Tax Rate | 5.3% | [source](https://taxfoundation.org/location/idaho/), checked 2026-07-22 |
+| Combined Sales Tax Rate | 6% | [source](https://www.avalara.com/taxrates/en/state-rates/idaho/cities/boise.html), checked 2026-07-22 |
 | Broadband Availability | Strong wired coverage but limited fiber: cable internet available to about 97-100% of Boise addresses, DSL to roughly 71%, fiber (e.g., Quantum Fiber/EarthLink) to only about 17-30%, and satellite (Starlink/HughesNet) near 99-100%; statewide Idaho wired/fixed-wireless broadband access is about 82%, among the lower-ranked states nationally. | [source](https://broadbandnow.com/Idaho/Boise), checked 2026-07-22 |
 | Walkability Score | 38 | [source](https://www.walkscore.com/ID/Boise), checked 2026-07-22 |
 | Transit Availability | Limited but expanding: Valley Regional Transit (VRT) operates about 19-21 fixed bus routes plus on-demand and ACCESS paratransit service across Ada and Canyon counties (Boise, Meridian, Garden City, Eagle, Nampa, Caldwell), with roughly 1.08 million annual riders (2024); Boise itself is rated 'minimal public transportation' and is largely car-dependent outside downtown. | [source](https://en.wikipedia.org/wiki/Valley_Regional_Transit), checked 2026-07-22 |

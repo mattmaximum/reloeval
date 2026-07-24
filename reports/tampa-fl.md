@@ -25,6 +25,8 @@ Tampa, FL presents a mixed relocation profile with compelling economic and quali
 | Flood Risk | High - Primary hazard concern | [source](https://hcfl.gov/residents/public-safety/hazard-mitigation/local-mitigation-strategy), checked 2026-07-22 |
 | Avg AQI | 58 | [source](https://www.iqair.com), checked 2026-07-22 |
 | Wildfire Smoke Days Per Year | 12 | [source](https://hcfl.gov/residents/public-safety/hazard-mitigation/local-mitigation-strategy), checked 2026-07-22 |
+| Nearest Large Metro Drive Time Min | 0 | [source](https://www.tampa.gov/sites/default/files/document/2025/cot_vulnerability_assessment_report.pdf), checked 2026-07-24 |
+| Nearest Large Metro Name | Tampa-St. Petersburg-Clearwater Metropolitan Area | [source](https://www.census.gov/geographies/reference-files/time-series/metro-micro/delineation-files.html), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 
@@ -96,13 +98,13 @@ Tampa, FL presents a mixed relocation profile with compelling economic and quali
 
 | Field | Value | Source |
 |---|---|---|
-| City Population | 413554 | [source](https://www.census.gov/quickfacts/fact/table/tampacityflorida/RHI225224), checked 2026-07-22 |
-| County Population | 1.57412e+06 | [source](https://en.wikipedia.org/wiki/Hillsborough_County,_Florida), checked 2026-07-22 |
+| City Population | 413,554 | [source](https://www.census.gov/quickfacts/fact/table/tampacityflorida/RHI225224), checked 2026-07-22 |
+| County Population | 1,574,115 | [source](https://en.wikipedia.org/wiki/Hillsborough_County,_Florida), checked 2026-07-22 |
 | Median Age | 35.9 | [source](https://worldpopulationreview.com/us-cities/florida/tampa), checked 2026-07-22 |
 | Demographic Breakdown | White 49.0%, Black or African American 20.4%, Asian 4.9%, Two or More Races 19.9%, Hispanic or Latino 26.2% | [source](https://www.census.gov/quickfacts/fact/table/tampacityflorida/RHI225224), checked 2026-07-22 |
 | Political Leaning | Republican - Florida 2024 presidential election: Trump 56.1%, Harris 43%, Stein 0.396% | [source](https://datausa.io/profile/geo/tampa-fl), checked 2026-07-22 |
 | Violent Crime Rate | 444.64 | [source](https://www.beautifydata.com/united-states-crimes/fbi-ucr/2024/number-and-rate-of-violent-crimes-per-city/florida/tampa), checked 2026-07-22 |
-| Property Crime Rate | 1465.3 | [source](https://www.opencrime.us/crime-rate-in/tampa), checked 2026-07-22 |
+| Property Crime Rate | 1,465.3 | [source](https://www.opencrime.us/crime-rate-in/tampa), checked 2026-07-22 |
 | Safety Index | 18 | [source](https://guardianprotection.com/blog/tampa-crime-rate-statistics), checked 2026-07-22 |
 | Carry Law Type | Permitless concealed carry - Constitutional carry authorized as of July 1, 2023 | [source](https://www.usconcealedcarry.com/resources/ccw_reciprocity_map/fl-gun-laws/), checked 2026-07-22 |
 | Firearm Magazine Restrictions | No state-level restrictions on magazine capacity | [source](https://giffords.org/lawcenter/state-laws/large-capacity-magazines-in-florida/), checked 2026-07-22 |
@@ -133,13 +135,13 @@ Tampa, FL presents a mixed relocation profile with compelling economic and quali
 
 | Field | Value | Source |
 |---|---|---|
-| Median Home Price | 445000 | [source](https://www.houzeo.com/housing-market/florida/tampa), checked 2026-07-22 |
-| Cost Per Acre Unimproved | 76952 | [source](https://www.land.com/Hillsborough-County-FL/undeveloped-land/), checked 2026-07-22 |
-| Cost Per Acre Improved | 150000 | [source](https://www.primelandbuyers.com/blog/florida-land-price-per-acre-by-county), checked 2026-07-22 |
+| Median Home Price | $445,000 | [source](https://www.houzeo.com/housing-market/florida/tampa), checked 2026-07-22 |
+| Cost Per Acre Unimproved | $76,952 | [source](https://www.land.com/Hillsborough-County-FL/undeveloped-land/), checked 2026-07-22 |
+| Cost Per Acre Improved | $150,000 | [source](https://www.primelandbuyers.com/blog/florida-land-price-per-acre-by-county), checked 2026-07-22 |
 | Permitting Strictness | Moderate | [source](https://permitplace.com/city/tampa-fl-building-permits/), checked 2026-07-22 |
 | HOA Prevalence | High - 1800 registered communities | [source](https://www.communitypay.us/directory/florida/tampa/), checked 2026-07-22 |
-| State Income Tax Rate | 0 | [source](https://taxfoundation.org/location/florida/), checked 2026-07-22 |
-| Combined Sales Tax Rate | 7.5 | [source](https://www.avalara.com/us/en/taxrates/state-rates/florida/counties/hillsborough-county.html), checked 2026-07-22 |
+| State Income Tax Rate | 0% | [source](https://taxfoundation.org/location/florida/), checked 2026-07-22 |
+| Combined Sales Tax Rate | 7.5% | [source](https://www.avalara.com/us/en/taxrates/state-rates/florida/counties/hillsborough-county.html), checked 2026-07-22 |
 | Broadband Availability | High - 79% availability | [source](https://ispreports.org/internet-service-providers-tampa-fl/), checked 2026-07-22 |
 | Walkability Score | 50 | [source](https://www.walkscore.com/FL/Tampa), checked 2026-07-22 |
 | Transit Availability | Moderate - HART operates 26 local, 7 express routes | [source](https://en.wikipedia.org/wiki/Hillsborough_Area_Regional_Transit), checked 2026-07-22 |

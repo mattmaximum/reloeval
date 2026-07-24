@@ -109,6 +109,20 @@
         "fetched_date": null,
         "status": "valid",
         "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 32.0,
+        "source_url": "https://filecenter.santa-clarita.com/EmergencyMgmt/2026%20Santa%20Clarita%20LHMP%20-%20Public%20Review%20Final%20Draft.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Los Angeles",
+        "source_url": "https://filecenter.santa-clarita.com/EmergencyMgmt/2026%20Santa%20Clarita%20LHMP%20-%20Public%20Review%20Final%20Draft.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
       }
     },
     "geographic_climate": {
