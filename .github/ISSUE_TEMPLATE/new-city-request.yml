@@ -1,4 +1,4 @@
-name: New city request
+name: New city request (owner only)
 description: "Evaluate a new city — owner-only, see warning inside"
 title: "City, ST"
 labels: ["evaluate"]
