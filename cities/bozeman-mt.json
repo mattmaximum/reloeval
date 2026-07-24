@@ -1,0 +1,794 @@
+{
+  "input_city_state": "Bozeman, MT",
+  "normalized": {
+    "city": "Bozeman",
+    "state": "MT",
+    "county": "Gallatin County"
+  },
+  "slug": "bozeman-mt",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Gallatin",
+        "source_url": "https://en.wikipedia.org/wiki/Bozeman,_Montana",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 4817.0,
+        "source_url": "https://en.wikipedia.org/wiki/Bozeman,_Montana",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 552.0,
+        "source_url": "https://www.nileguide.com/ocean/Bozeman",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 0.0,
+        "source_url": "https://www.bozemandailychronicle.com/news/earthquakes-flooding-threaten-gallatin-county-residents/article_c147c004-d716-5eaf-8486-6f85d38d2f6f.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "Yellowstone Caldera approximately 80-90 miles south",
+        "source_url": "https://www.fs.usda.gov/r01/custergallatin/about-area",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Very Low - Interior location, over 550 miles from Pacific Ocean",
+        "source_url": "https://www.augurisk.com/city/montana/bozeman/45.682878174033675/-111.05587118875764",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High",
+        "source_url": "https://riskbycounty.com/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "High - FEMA NRI Score 94.1/100",
+        "source_url": "https://riskbycounty.com/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate - FEMA NRI Score 64.2/100",
+        "source_url": "https://riskbycounty.com/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 45.0,
+        "source_url": "https://www.aqi.in/us/dashboard/united-states/montana/bozeman",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 30.0,
+        "source_url": "https://www.bozeman.net/departments/strategic-services/sustainability/community-resiliency/heat-wildfire-smoke",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 180.0,
+        "source_url": "https://www.trippy.com/distance/Missoula-to-Bozeman",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Missoula, Montana",
+        "source_url": "https://www.trippy.com/distance/Missoula-to-Bozeman",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Gallatin County sits on an active fault line with exceptional earthquake risk (FEMA score 94.1/100) and high wildfire risk with 30 annual smoke days, while benefiting from excellent air quality and zero hurricane risk due to its interior mountain location 550+ miles from the ocean.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Zero hurricane risk",
+            "Excellent air quality (AQI 45)",
+            "Safe from coastal hazards"
+          ],
+          "cons": [
+            "Extreme earthquake risk (FEMA 94.1/100)",
+            "High wildfire risk",
+            "30 wildfire smoke days/year",
+            "On active fault line"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "Zone 5a",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/montana/bozeman/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "Sep. 21 - Sep. 30",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/montana/bozeman/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "May 21 - May 31",
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/montana/bozeman/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 165.0,
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/montana/bozeman/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 34.8,
+            "avg_low_f": 14.7,
+            "avg_rainfall_in": 0.81,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 37.5,
+            "avg_low_f": 16.4,
+            "avg_rainfall_in": 0.79,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 46.4,
+            "avg_low_f": 23.0,
+            "avg_rainfall_in": 1.25,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 54.5,
+            "avg_low_f": 29.8,
+            "avg_rainfall_in": 2.24,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 63.6,
+            "avg_low_f": 37.7,
+            "avg_rainfall_in": 2.72,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 72.2,
+            "avg_low_f": 44.4,
+            "avg_rainfall_in": 3.02,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 83.1,
+            "avg_low_f": 50.2,
+            "avg_rainfall_in": 1.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 82.7,
+            "avg_low_f": 48.4,
+            "avg_rainfall_in": 1.23,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 72.3,
+            "avg_low_f": 41.4,
+            "avg_rainfall_in": 1.36,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 59.0,
+            "avg_low_f": 31.0,
+            "avg_rainfall_in": 1.37,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 42.3,
+            "avg_low_f": 22.1,
+            "avg_rainfall_in": 1.5,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 34.3,
+            "avg_low_f": 14.4,
+            "avg_rainfall_in": 0.78,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/en/clim/f/us/montana/bozeman/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 121.32,
+        "source_url": "https://weatherandclimate.com/united-states/montana/bozeman",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This Zone 5a location has a 165-day growing season with moderate summer heat (peaking at 83°F in July) and relatively dry conditions year-round; notably, it receives almost no snowfall despite cold winters (lows near 15°F), and sunshine is limited to just 121 days annually.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "165-day growing season",
+            "No snow despite cold winters",
+            "Moderate July highs (83°F)"
+          ],
+          "cons": [
+            "Only 121 annual sunshine days",
+            "Dry climate, minimal June rainfall (3.02 in peak)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Bozeman relies on snowpack from the Gallatin Range for approximately 80% of its water supply, with about 40% from Hyalite Creek watershed, 40% from Bozeman Creek watershed, and 20% from a developed spring at the headwaters of Lyman Creek in the Bridger Range",
+        "source_url": "https://www.bozeman.net/departments/utilities/water-conservation/drought-management",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "High drought risk - Bozeman is semi-arid and drought-prone with an average of 16 inches of precipitation annually. The region is experiencing climate change impacts with more precipitation falling as rain instead of snow and earlier snowmelt. In 2024, the city consumed 43% of legal water rights and 60% of reliable supply during drought conditions. Montana is currently in its sixth straight year of drought conditions as of the search date",
+        "source_url": "https://www.bozeman.net/departments/utilities/water-conservation/drought-management",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Not applicable - Bozeman's water supply comes from surface water sources (creeks, reservoirs, and springs) rather than groundwater wells. The city does not rely on private well water for municipal supply",
+        "source_url": "https://engage.bozemanmt.gov/ward/widgets/103019/faqs",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://engage.bozemanmt.gov/ward/widgets/103019/faqs",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Bozeman has legal water rights of 16,517 acre-feet per year with a reliable supply of 11,920 acre-feet per year during a 1 in 50-year drought condition. The city has adopted a Drought Management Plan (updated in 2022) with tiered response measures and conservation restrictions that can be implemented when drought stages are declared",
+        "source_url": "https://www.bozeman.net/departments/utilities/water-conservation/drought-management",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Hyalite Reservoir serves as primary backup storage; it was at full capacity during recent drought conditions. The City has implemented a Water Supply Optimization Tool for proactive forecasting and management. Additional water supply expansion projects are projected to add 1,575 acre-feet over the next 5 years",
+        "source_url": "https://nbcmontana.com/news/local/bozeman-promotes-conservation-tools-free-irrigation-audits-as-long-term-drought-strategy",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Bozeman relies almost entirely on snowpack-fed surface water (80% from mountain creeks), making it highly vulnerable to drought—the city consumed 60% of its reliable supply in 2024 during drought conditions while the region faces its sixth consecutive drought year with only 16 inches annual precipitation. However, the city has proactive management tools, a drought plan with tiered restrictions, and backup storage capacity in Hyalite Reservoir.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Hyalite Reservoir backup storage at full capacity",
+            "Proactive forecasting with Supply Optimization Tool",
+            "Drought plan with tiered conservation measures",
+            "5-year expansion projects adding 1,575 acre-feet"
+          ],
+          "cons": [
+            "High drought risk, 6th consecutive drought year",
+            "Semi-arid climate, only 16 inches precipitation annually",
+            "Already used 60% of reliable supply in 2024 drought",
+            "80% dependent on snowpack, vulnerable to earlier snowmelt"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.58,
+        "source_url": "https://www.gridinfo.com/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Good - actively maintained with ongoing infrastructure replacement program",
+        "source_url": "https://www.kbzk.com/news/local-news/northwestern-energy-talks-about-power-pole-replacement-program-and-planning-for-growth",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 3.7,
+        "source_url": "https://www.gridinfo.com/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Montana Green Power Program - voluntary renewable energy tariff available through NorthWestern Energy",
+        "source_url": "https://matr.net/news/missoula-and-bozeman-launch-montanas-first-green-power-program-with-northwestern-energy/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.58¢/kWh with good grid reliability and active infrastructure maintenance. Solar potential is weak (3.7 score), but voluntary renewable energy options are available through Montana Green Power Program.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good grid reliability",
+            "Active infrastructure maintenance"
+          ],
+          "cons": [
+            "Weak solar potential (3.7)",
+            "Electricity above national average"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 58814.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/bozemancitymontana/RHI625224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 122000.0,
+        "source_url": "https://datausa.io/profile/geo/gallatin-county-mt",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 31.4,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/bozemancitymontana/RHI625224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White 84.6%, Two or More Races 7.3%, Asian 2.1%, Hispanic 6.2%, Black 0.8%, American Indian 0.9%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/bozemancitymontana/RHI625224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Republican - Donald Trump 58.4%, Kamala Harris 38.5%, Robert Kennedy 1.96% (2024 Montana statewide results)",
+        "source_url": "https://datausa.io/profile/geo/gallatin-county-mt",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 2.3,
+        "source_url": "https://www.city-data.com/city/Bozeman-Montana.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 15.8,
+        "source_url": "https://www.city-data.com/city/Bozeman-Montana.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 72.0,
+        "source_url": "https://www.city-data.com/city/Bozeman-Montana.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Constitutional Carry - Montana allows permitless carry for concealed handguns",
+        "source_url": "https://montana.hometownlocator.com/mt/gallatin/bozeman.cfm",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No state restrictions on magazine capacity in Montana",
+        "source_url": "https://datausa.io/profile/geo/gallatin-county-mt",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Montana has duty-free self-defense laws permitting use of force in defense of self, others, and property",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/bozemancitymontana/RHI625224",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a mid-sized city of ~59,000 in a Republican-leaning county with very low violent crime (2.3 per 100k) and moderate property crime (15.8 per 100k). Montana law permits constitutional carry, unrestricted magazines, and duty-free self-defense rights.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low violent crime rate",
+            "Constitutional carry + no magazine limits",
+            "Broad self-defense legal protections"
+          ],
+          "cons": [
+            "Heavily Republican area (58% Trump)",
+            "Moderate property crime at 15.8 per 100k"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 19.0,
+        "source_url": "https://resources.finalsite.net/images/v1737155306/bsd7org/gvlv0d1gdqnolexwer21/BozemanPublicSchools-FinalAnnualReport2024-20255.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 85.0,
+        "source_url": "https://healthbycounty.com/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Bozeman Public Schools System; Montana State University (MSU); Gallatin College MSU",
+        "source_url": "https://resources.finalsite.net/images/v1737155306/bsd7org/gvlv0d1gdqnolexwer21/BozemanPublicSchools-FinalAnnualReport2024-20255.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate - Montana allows homeschooling with parental supervision and curriculum standards",
+        "source_url": "https://gallatincountymt.pt7.civic-cms.com/sites/g/files/vyhlif606/f/uploads/2022_hrdc_community_needs_assessment.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Present - Multiple homeschool co-ops operate in Gallatin County supporting families",
+        "source_url": "https://www.healthygallatin.org/wp-content/uploads/2025/01/Report_CHAFullReport_Eng.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.0,
+        "source_url": "https://bozemanhealth.org/wp-content/uploads/2025/01/final-commuity-health-action-plan_web-compressed.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Bozeman Health - Level III Trauma Center (Deaconess Regional Medical Center); 2,900+ employees; 270 medical providers across 40+ specialties",
+        "source_url": "https://bozemanhealth.org/bozeman-health-and-community-partners-launch-2026-community-health-needs-assessment-invite-gallatin-county-residents-to-share-their-voice/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Bozeman offers a strong school district (rating 85) with 19 public schools and notable higher education through MSU, plus excellent emergency healthcare with a Level III Trauma Center on-site and 270+ medical providers across 40+ specialties through Bozeman Health.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "District rating 85",
+            "Level III Trauma Center onsite",
+            "270+ providers, 40+ specialties",
+            "MSU presence for higher education"
+          ],
+          "cons": []
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 592600.0,
+        "source_url": "https://www.realtor.com/local/market/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://www.realtor.com/local/market/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://www.realtor.com/local/market/montana/gallatin-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate to High",
+        "source_url": "https://nbcmontana.com/resources/pdf/89a6e244-c57a-4614-8c11-4e5d292e4b17-Bozeman_MT_Pop_and_Housing_Forecast_81425.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Moderate",
+        "source_url": "https://www.bozemanmt.gov/departments/economic-development",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 5.75,
+        "source_url": "https://www.kbzk.com/news/local-news/lets-break-down-the-2026-gallatin-valley-housing-report",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 8.0,
+        "source_url": "https://www.kbzk.com/news/local-news/lets-break-down-the-2026-gallatin-valley-housing-report",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Good",
+        "source_url": "https://www.bozemanmt.gov/departments/economic-development",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 72.0,
+        "source_url": "https://www.bozemanmt.gov/departments/economic-development",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Moderate Public Transit",
+        "source_url": "https://www.bozemanmt.gov/departments/economic-development",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "The area has a median home price of $592,600 with good broadband and reasonable walkability (72 score), but faces moderate-to-high permitting barriers and a combined 13.75% tax burden (5.75% state income + 8% sales tax).",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Good broadband availability",
+            "Walkable neighborhoods (score 72)",
+            "Moderate HOA prevalence"
+          ],
+          "cons": [
+            "Median home price $592.6k",
+            "Moderate-to-high permitting strictness",
+            "13.75% combined tax rate"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.bozeman.net/home/showpublisheddocument/15546/638975174254100000",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bozemanairport.com/content/documents/FY2024-Annual-Comprehensive-Financial-Report-2.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bozemanairport.com/content/documents/FY2024-Annual-Comprehensive-Financial-Report-2.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bozemanairport.com/content/documents/FY2024-Annual-Comprehensive-Financial-Report-2.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://bozemanairport.com/content/documents/FY2024-Annual-Comprehensive-Financial-Report-2.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Montana allows the sale of raw milk and raw milk products through licensed producers",
+        "source_url": "https://commerce.mt.gov/_shared/brand/Regions-CVBs/docs/Marketing-Plans/FY24-Marketing-Plans/June-2024-Final/Bozeman-DMO-FY24-Plan-final.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "High - Bozeman hosts year-round farmers markets with strong local agricultural community presence",
+        "source_url": "https://bozemanrealestate.group/blog/new-restaurants-2026",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Bozeman Yellowstone International Airport (BZN) with 27 non-stop destinations including Seattle, Portland, San Francisco, Los Angeles, Las Vegas, Phoenix, Salt Lake City, Denver, Minneapolis-St Paul, Dallas-Fort Worth, Chicago, and Atlanta",
+        "source_url": "https://bozemanairport.com/content/documents/FY2024-Annual-Comprehensive-Financial-Report-2.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Multiple major metropolitan hubs accessible: Denver, Minneapolis-St Paul, Salt Lake City, and Dallas-Fort Worth via direct flights; additional regional connectivity through expanded terminal with 27 destinations",
+        "source_url": "https://bozemanairport.com/content/documents/FY2024-Annual-Comprehensive-Financial-Report-2.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Bozeman offers strong local food infrastructure with year-round farmers markets and legal raw dairy access, plus excellent regional air connectivity via 27 non-stop flights from Bozeman Yellowstone International Airport. However, major national chains (Whole Foods, Trader Joe's, Costco, Sprouts) are unavailable locally—only Target is present—requiring either farmers market/local shopping or driving for specialty groceries.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "27 non-stop flight destinations",
+            "Year-round farmers markets",
+            "Legal raw dairy sales"
+          ],
+          "cons": [
+            "No Whole Foods, Trader Joe's, Costco, or Sprouts",
+            "Limited national retail chains"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Bozeman, Montana presents a compelling relocation destination for those prioritizing outdoor amenities, security, and community character, though it demands careful consideration of significant climate and resource vulnerabilities. The mid-sized city of ~59,000 offers exceptional safety (2.3 violent crimes per 100k), robust healthcare and education infrastructure anchored by Montana State University and a Level III Trauma Center, strong local food systems with year-round farmers markets, and excellent regional air connectivity. However, prospective residents must contend with critical challenges: the region sits on an active fault line with extreme earthquake risk (FEMA score 94.1/100), faces its sixth consecutive drought year with only 16 inches annual precipitation, and despite cold winters, receives almost no snowfall while experiencing limited sunshine (121 days annually). Water security is particularly precarious, with the city consuming 60% of its reliable water supply in 2024 drought conditions, though proactive management tools and Hyalite Reservoir provide some mitigation. The housing market is expensive at a $592,600 median home price with a 13.75% combined tax burden and moderate-to-high permitting barriers, while the lack of major national grocery chains and relatively weak solar potential (3.7 score) compound lifestyle adjustments. Bozeman suits those seeking a Republican-leaning, security-conscious community with world-class outdoor recreation and educational opportunities, yet it requires resilience toward environmental stressors and financial commitment to thrive in this high-risk, high-cost mountain setting.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  },
+  "first_evaluated_date": "2026-07-24"
+}
