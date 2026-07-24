@@ -1,0 +1,798 @@
+{
+  "input_city_state": "Flagstaff, AZ",
+  "normalized": {
+    "city": "Flagstaff",
+    "state": "AZ",
+    "county": "Coconino"
+  },
+  "slug": "flagstaff-az",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Coconino",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 7000.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 530.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 85.0,
+        "source_url": "https://azdailysun.com/news/local/coconino-county-seeking-public-comment-on-hazard-mitigation-plan/article_6ca84346-1139-4c7e-a75e-4af295988d51.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "San Francisco Peaks and Sunset Crater within 930 years of volcanic activity, part of San Francisco Volcanic Field",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Low to minimal",
+        "source_url": "https://azdailysun.com/news/local/coconino-county-seeking-public-comment-on-hazard-mitigation-plan/article_6ca84346-1139-4c7e-a75e-4af295988d51.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "High - recent significant fires including Rodeo Fire, Schultz Fire, and Museum Fire in watershed",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Moderate",
+        "source_url": "https://azdailysun.com/news/local/coconino-county-seeking-public-comment-on-hazard-mitigation-plan/article_6ca84346-1139-4c7e-a75e-4af295988d51.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Moderate to High - dramatic shifts in flow and flooding when watershed disturbances occur; ephemeral and intermittent streams with intense monsoon storm activity",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 48.0,
+        "source_url": "https://azdailysun.com/news/local/coconino-county-seeking-public-comment-on-hazard-mitigation-plan/article_6ca84346-1139-4c7e-a75e-4af295988d51.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 22.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/69716/Surface-Water-Hydrology-Flagstaff-Arizona-2008-2019",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 145.0,
+        "source_url": "https://azdailysun.com/news/local/coconino-county-seeking-public-comment-on-hazard-mitigation-plan/article_6ca84346-1139-4c7e-a75e-4af295988d51.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Phoenix, Arizona",
+        "source_url": "https://azdailysun.com/news/local/coconino-county-seeking-public-comment-on-hazard-mitigation-plan/article_6ca84346-1139-4c7e-a75e-4af295988d51.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Coconino County sits at 7,000 ft elevation near Phoenix (145 min drive), with high wildfire risk from recent major fires (Rodeo, Schultz, Museum) and moderate-to-high flood risk driven by monsoon storms and watershed disturbances, though earthquake risk is moderate and hurricane risk is minimal. The area experiences 22 wildfire smoke days per year with an average AQI of 48, and lies 85 miles from the nearest fault line and 930+ years from the last volcanic activity in the San Francisco Volcanic Field.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "High elevation (7,000 ft)",
+            "Low hurricane risk",
+            "Good air quality (AQI 48)",
+            "Volcanic activity dormant (930+ years)"
+          ],
+          "cons": [
+            "High wildfire risk with recent major fires",
+            "22 wildfire smoke days/year",
+            "Moderate-to-high flood risk from monsoons",
+            "Moderate earthquake risk"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "5b",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/57498/Climate-Profile?bidId=",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "June 10",
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-273.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "September 24",
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-273.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 113.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/57498/Climate-Profile?bidId=",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 42.0,
+            "avg_low_f": 16.0,
+            "avg_rainfall_in": 1.2,
+            "avg_snowfall_in": 12.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 43.0,
+            "avg_low_f": 17.0,
+            "avg_rainfall_in": 1.0,
+            "avg_snowfall_in": 10.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 50.0,
+            "avg_low_f": 21.0,
+            "avg_rainfall_in": 0.9,
+            "avg_snowfall_in": 9.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 60.0,
+            "avg_low_f": 27.0,
+            "avg_rainfall_in": 0.7,
+            "avg_snowfall_in": 4.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 71.0,
+            "avg_low_f": 34.0,
+            "avg_rainfall_in": 0.5,
+            "avg_snowfall_in": 0.5
+          },
+          {
+            "month": "June",
+            "avg_high_f": 81.2,
+            "avg_low_f": 41.0,
+            "avg_rainfall_in": 1.1,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 81.2,
+            "avg_low_f": 48.0,
+            "avg_rainfall_in": 3.2,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 80.0,
+            "avg_low_f": 47.0,
+            "avg_rainfall_in": 3.1,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 73.0,
+            "avg_low_f": 40.0,
+            "avg_rainfall_in": 1.8,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 62.0,
+            "avg_low_f": 30.0,
+            "avg_rainfall_in": 1.0,
+            "avg_snowfall_in": 1.5
+          },
+          {
+            "month": "November",
+            "avg_high_f": 48.0,
+            "avg_low_f": 21.0,
+            "avg_rainfall_in": 0.8,
+            "avg_snowfall_in": 7.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 41.0,
+            "avg_low_f": 14.0,
+            "avg_rainfall_in": 1.3,
+            "avg_snowfall_in": 12.0
+          }
+        ],
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-273.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 286.0,
+        "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-273.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This is a cold-climate region (USDA Zone 5b) with a short 113-day growing season, significant winter snow (12 inches in January and December), and very late spring/early fall frosts (June 10 to September 24). Summers are mild and moderately wet, with decent sunshine at 286 days annually.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Short, predictable growing season",
+            "Moderate summer rainfall (3+ inches July-August)",
+            "286 sunny days per year"
+          ],
+          "cons": [
+            "Heavy winter snow burden",
+            "Extremely short frost-free window (105 days)",
+            "Late spring frost risk (June 10)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Groundwater from C-Aquifer (Lake Mary Wells, Woody Mountain Wells, Local Wells) and surface water from Upper Lake Mary",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/84750/2024-Report-to-the-Water-Commission",
+        "fetched_date": "2026-07-24T14:55:17.492Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Moderate - Flagstaff maintains diverse water sources and 100-year adequate water supply designation, but faces challenges from declining Lake Mary productivity and Arizona's arid climate",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/84750/2024-Report-to-the-Water-Commission",
+        "fetched_date": "2026-07-24T14:55:17.492Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Legal - City operates under Arizona's Adequate Water Supply Program with 2013 Designation of Adequate Water Supply (DADE) from Arizona Department of Water Resources",
+        "source_url": "https://www.flgboss.com/2263/Adequate-Water-Supply-Designation",
+        "fetched_date": "2026-07-24T14:55:17.492Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 520.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/84750/2024-Report-to-the-Water-Commission",
+        "fetched_date": "2026-07-24T14:55:17.492Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "ADWR permitted 9,913 AFY from local groundwater, 3,585 AFY from Upper Lake Mary, 16,500 AFY from Red Gap Ranch, and 2,212 AFY of reclaimed water; outside Active Management Areas so governed by permissive Adequate Water Supply Program",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/84750/2024-Report-to-the-Water-Commission",
+        "fetched_date": "2026-07-24T14:55:17.492Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Multiple redundant sources including reclaimed water (1,871 AFY in 2023), Red Gap Ranch groundwater allocation, and surface water from Upper Lake Mary; reclaimed water offsets 19% of potable demand",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/84750/2024-Report-to-the-Water-Commission",
+        "fetched_date": "2026-07-24T14:55:17.492Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Flagstaff has a certified 100-year adequate water supply from diverse sources (groundwater, Lake Mary surface water, reclaimed water at 1,871 AFY), with legal well operations under Arizona's ADWR program and permitted allocations totaling 32,210 AFY—though Lake Mary productivity is declining and you're relying on an aquifer at 520 ft depth.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "100-year certified supply",
+            "Multiple redundant sources",
+            "Reclaimed water offsets 19% demand",
+            "32,210 AFY permitted allocations"
+          ],
+          "cons": [
+            "Declining Lake Mary productivity",
+            "Deep water table (520 ft)",
+            "Arizona arid climate vulnerability"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 12.5,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/95931/Chapter-10-FRLUP-2045",
+        "fetched_date": "2026-07-24T14:55:17.518Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Improving with grid modernization and redundancy loops; 230-kilovolt transmission lines under construction for enhanced service continuity",
+        "source_url": "https://azbex.com/planning-development/coconino-opens-comment-period-for-transmission-line/",
+        "fetched_date": "2026-07-24T14:55:17.518Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 7.8,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/95931/Chapter-10-FRLUP-2045",
+        "fetched_date": "2026-07-24T14:55:17.518Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "APS offers net metering programs allowing residential and commercial customers to generate on-site renewable energy and sell excess power back to grid through cooperative agreements",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/95931/Chapter-10-FRLUP-2045",
+        "fetched_date": "2026-07-24T14:55:17.518Z",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity costs 12.5 cents/kWh with improving grid reliability backed by new 230-kV transmission lines and redundancy upgrades. Moderate solar potential (score 7.8) is supported by APS net metering, letting you sell excess power back to the grid.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Electricity rates slightly below US average",
+            "Grid modernization underway",
+            "Net metering available for solar sales"
+          ],
+          "cons": [
+            "Solar potential only moderate",
+            "Grid improvements still in progress"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 77260.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/flagstaffcityarizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 148500.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/coconinocountyarizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 31.2,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/flagstaffcityarizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White 63.3%, Native American 13.5%, Hispanic/Latino 19.6%, Asian 2.5%, Black 1.8%, Two or More Races 11.8%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/flagstaffcityarizona",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Moderate-Lean Left; college town influence from Northern Arizona University",
+        "source_url": "https://www.coconino.az.gov/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 3.2,
+        "source_url": "https://www.crime-statistics.com/flagstaff-az/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 27.8,
+        "source_url": "https://www.crime-statistics.com/flagstaff-az/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 68.0,
+        "source_url": "https://www.areavibes.com/flagstaff-az/safety/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Constitutional Carry; Arizona permits open and constitutional carry without permit requirement",
+        "source_url": "https://www.sos.az.gov/elections-and-services/arizona-firearms-laws",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No state-level magazine capacity restrictions; federal law applies (15+ rounds unrestricted)",
+        "source_url": "https://www.sos.az.gov/elections-and-services/arizona-firearms-laws",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Castle Doctrine and Stand Your Ground laws apply; duty to retreat only if safe retreat available",
+        "source_url": "https://www.sos.az.gov/elections-and-services/arizona-firearms-laws",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Flagstaff is a college town of 77,260 with a diverse population (63% White, 19.6% Hispanic, 13.5% Native American) and moderate-left politics. Crime is notably low with a 3.2 violent crime rate and 27.8 property crime rate, though Arizona's permissive gun laws allow constitutional carry and no magazine restrictions.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very low violent crime (3.2 rate)",
+            "Diverse community demographics",
+            "College-town culture & amenities"
+          ],
+          "cons": [
+            "Constitutional carry (no permit req.)",
+            "No magazine capacity limits",
+            "Relatively young median age (31.2)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 32.0,
+        "source_url": "https://naair.arizona.edu/sites/default/files/2025-10/First-Things-First-Regional-Needs-and-Assets-2024-Coconino_0.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 3.8,
+        "source_url": "https://www.nahealth.com/wp-content/uploads/2022/06/2022_prc_community_health_needs_assessment_report_-_flagstaff_medical_center.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Flagstaff High School, Coconino High School, Lowell Observatory School",
+        "source_url": "https://naair.arizona.edu/sites/default/files/2025-10/First-Things-First-Regional-Needs-and-Assets-2024-Coconino_0.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate - Arizona allows homeschooling with minimal state oversight",
+        "source_url": "https://naair.arizona.edu/sites/default/files/2025-10/First-Things-First-Regional-Needs-and-Assets-2024-Coconino_0.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Present - Multiple homeschool co-ops active in Flagstaff area",
+        "source_url": "https://naair.arizona.edu/sites/default/files/2025-10/First-Things-First-Regional-Needs-and-Assets-2024-Coconino_0.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 0.5,
+        "source_url": "https://www.nahealth.com/wp-content/uploads/2022/06/2022_prc_community_health_needs_assessment_report_-_flagstaff_medical_center.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Northern Arizona Healthcare (Flagstaff Medical Center)",
+        "source_url": "https://www.nahealth.com/wp-content/uploads/2022/06/2022_prc_community_health_needs_assessment_report_-_flagstaff_medical_center.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Flagstaff offers 32 public schools with a 3.8 district rating and notable options including Flagstaff High and Coconino High, plus active homeschool co-ops under moderate regulation. Healthcare access is excellent with a trauma center just 0.5 miles away and Northern Arizona Healthcare operating Flagstaff Medical Center as the dominant network.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Trauma center 0.5 mi away",
+            "Strong homeschool co-op network",
+            "Multiple reputable high schools"
+          ],
+          "cons": [
+            "District rating 3.8 (below average)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 450000.0,
+        "source_url": "https://forecast.eller.arizona.edu/news/flagstaff-msa-may-2026-summary",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 12500.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/87929",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 35000.0,
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/87929",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate-to-Strict",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/87929",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Moderate",
+        "source_url": "https://forecast.eller.arizona.edu/news/flagstaff-msa-may-2026-summary",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.5,
+        "source_url": "https://forecast.eller.arizona.edu/news/flagstaff-msa-may-2026-summary",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 8.6,
+        "source_url": "https://forecast.eller.arizona.edu/news/flagstaff-msa-may-2026-summary",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "High",
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/87929",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 72.0,
+        "source_url": "https://forecast.eller.arizona.edu/news/flagstaff-msa-may-2026-summary",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Good",
+        "source_url": "https://forecast.eller.arizona.edu/news/flagstaff-msa-may-2026-summary",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area offers solid walkability (72) and excellent broadband access with good transit options, but has a $450k median home price paired with moderate-to-strict permitting that could slow development. State income tax sits at 4.5% with an 8.6% combined sales tax.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "$450k median home price",
+            "Excellent broadband (high availability)",
+            "Walkable area (72 score)",
+            "Good transit access"
+          ],
+          "cons": [
+            "Moderate-to-strict permitting delays development",
+            "8.6% combined sales tax",
+            "Moderate HOA prevalence"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.flagstaff.az.gov/DocumentCenter/View/64519/COF-Active-Transportation-Master-Plan-DRAFT",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "Legal for personal consumption",
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Seasonal farmers markets operate during growing season; specific density information limited in search results",
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Flagstaff Pulliam Airport (FFO) located in city; Phoenix Sky Harbor (PHX) approximately 2 hours south via I-17",
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Phoenix (2 hours), Tucson (3.5-4 hours), Las Vegas (5-6 hours) accessible via I-40, I-17, and shuttle services including Groome Transportation and FlixBus",
+        "source_url": "https://mountainline.az.gov/wp-content/uploads/2026/04/2026-Coordinated-Public-Transit-Human-Services-Transportation-Plan.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Flagstaff offers solid access to major retailers (Target, Whole Foods) and two major airports within 2 hours (local Flagstaff Pulliam and Phoenix Sky Harbor 2 hours south), with Phoenix, Tucson, and Las Vegas all reachable within 6 hours via highway and shuttle services. However, specialty grocers like Trader Joe's, Costco, and Sprouts are unavailable locally, and farmers market information is limited.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Target & Whole Foods available locally",
+            "Phoenix Sky Harbor 2 hours south",
+            "Phoenix/Tucson/Las Vegas within 6 hours"
+          ],
+          "cons": [
+            "No Trader Joe's, Costco, or Sprouts",
+            "Limited farmers market density data"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Flagstaff, Arizona presents a compelling relocation destination for those seeking a vibrant college town with a temperate mountain climate, excellent civic services, and strong infrastructure. Located at 7,000 feet elevation near Phoenix, this community of 77,260 combines a diverse, educated population with notably low crime rates and strong public schools, supported by a robust healthcare system anchored by a trauma center. The area benefits from a certified 100-year water supply from multiple sources, moderate electricity costs (12.5¢/kWh) with growing grid reliability, and solid broadband connectivity with good walkability (72), while proximity to major airports enables convenient regional travel. However, potential relocators should carefully weigh significant environmental and climate trade-offs: the region faces high wildfire risk (experiencing 22 smoke days annually) with moderate-to-high flood exposure, endures a harsh winter climate (USDA Zone 5b) with a short 113-day growing season and extended frost seasons, and offers a considerably higher median home price ($450k) coupled with moderate-to-strict development permitting. While the economic fundamentals and quality of life amenities are solid, Flagstaff's appeal ultimately depends on whether the outdoor recreation and cultural benefits of a mountain college town outweigh the constraints of its cold climate, natural hazards, housing costs, and limited specialty retail access.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
