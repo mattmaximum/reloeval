@@ -46,18 +46,30 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python backfill.py
 
-      - name: Rebuild index and Pages site
-        run: |
-          python build_index.py
-          python .github/scripts/build_pages_site.py
-
-      - name: Commit results
+      - name: Rebuild, commit, and push (retries on a concurrent-push race)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cities/ reports/ index.html
-          git diff --staged --quiet || git commit -m "Backfill + redeploy (manual trigger)"
-          git push
+          for attempt in 1 2 3 4 5; do
+            python build_index.py
+            python .github/scripts/build_pages_site.py
+            git add cities/ reports/ index.html
+            if git diff --staged --quiet; then
+              break
+            fi
+            git commit -m "Backfill + redeploy (manual trigger)"
+            if git push; then
+              break
+            fi
+            if [ "$attempt" = 5 ]; then
+              echo "::error::git push kept getting rejected after 5 attempts -- giving up"
+              exit 1
+            fi
+            echo "Push rejected (attempt $attempt/5) -- resyncing with origin/main and rebuilding"
+            git fetch origin main
+            git reset --mixed origin/main
+            sleep $((attempt * 5))
+          done
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

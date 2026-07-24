@@ -16,11 +16,12 @@
 #     │                                                          commit/deploy
 #     │
 #     ▼ success
-#   build_index.py (repo index.html, .md links)
-#   build_pages_site.py (_site/ with converted .html reports, deploy-only)
-#     │
-#     ▼
-#   commit cities/*.json + reports/*.md + index.html back to main
+#   build_index.py + build_pages_site.py, commit, push -- retried up to 5x
+#   (rebuilding each time) if push is rejected by a concurrent run that
+#   landed on main first; concurrency below serializes job START, but a
+#   git-backend replication lag can still let two runs' checkouts both
+#   see themselves as "latest", so this is a real, observed race, not
+#   theoretical
 #     │
 #     ▼
 #   upload-pages-artifact (_site/) → deploy-pages
@@ -71,34 +72,48 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python .github/scripts/run_evaluation.py "${{ github.event.issue.title }}"
 
-      - name: Rebuild index and Pages site
-        if: steps.run_eval.outcome == 'success'
-        run: |
-          python build_index.py
-          python .github/scripts/build_pages_site.py
-
-      - name: Commit results
+      - name: Rebuild, commit, and push (retries on a concurrent-push race)
         if: steps.run_eval.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cities/ reports/ index.html
-          git diff --staged --quiet || git commit -m "Evaluate ${{ github.event.issue.title }} (issue #${{ github.event.issue.number }})"
-          git push
+          for attempt in 1 2 3 4 5; do
+            python build_index.py
+            python .github/scripts/build_pages_site.py
+            git add cities/ reports/ index.html
+            if git diff --staged --quiet; then
+              break
+            fi
+            git commit -m "Evaluate ${{ github.event.issue.title }} (issue #${{ github.event.issue.number }})"
+            if git push; then
+              break
+            fi
+            if [ "$attempt" = 5 ]; then
+              echo "::error::git push kept getting rejected after 5 attempts -- giving up"
+              exit 1
+            fi
+            echo "Push rejected (attempt $attempt/5) -- resyncing with origin/main and rebuilding"
+            git fetch origin main
+            # --mixed, not --hard: keeps the just-fetched city's json/md on
+            # disk so the next loop iteration's build_index.py picks it up
+            # alongside whatever the other run just landed.
+            git reset --mixed origin/main
+            sleep $((attempt * 5))
+          done
 
       - name: Upload Pages artifact
-        if: steps.run_eval.outcome == 'success'
+        if: success() && steps.run_eval.outcome == 'success'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: Deploy to Pages
-        if: steps.run_eval.outcome == 'success'
+        if: success() && steps.run_eval.outcome == 'success'
         id: deployment
         uses: actions/deploy-pages@v4
 
       - name: Comment success and close issue
-        if: steps.run_eval.outcome == 'success'
+        if: success() && steps.run_eval.outcome == 'success'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
