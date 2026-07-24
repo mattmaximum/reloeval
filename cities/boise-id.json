@@ -111,17 +111,17 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": 350.0,
+        "source_url": "https://www.travelmath.com/distance/from/SEA/to/Boise,+ID",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": null,
-        "source_url": null,
-        "fetched_date": null,
-        "status": "unresolved",
+        "value": "Seattle, Washington",
+        "source_url": "https://www.travelmath.com/distance/from/SEA/to/Boise,+ID",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
         "schema_version": 1
       }
     },

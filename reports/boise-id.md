@@ -25,8 +25,8 @@ Boise, Idaho emerges as a compelling mid-sized relocation destination (populatio
 | Flood Risk | Moderate - Despite three flood-control dams upstream, the Boise River and several foothill gulches (Cottonwood, Hulls, Crane, Stuart) create flash-flood and riverine flood exposure; FEMA has designated Special Flood Hazard Areas along the river through parts of Boise, including Garden City, Harris Ranch, and Southeast Boise. | [source](https://adacounty.id.gov/emergencymanagement/how-to-prepare-resources/flood/), checked 2026-07-22 |
 | Avg AQI | 40 | [source](https://www.aqi.in/us/dashboard/united-states/idaho/boise/historical-analysis), checked 2026-07-22 |
 | Wildfire Smoke Days Per Year | 2.8 | [source](https://www.iqair.com/air-quality/usa/idaho/boise), checked 2026-07-22 |
-| Nearest Large Metro Drive Time Min | _(not yet evaluated — run backfill)_ |  |
-| Nearest Large Metro Name | _(not yet evaluated — run backfill)_ |  |
+| Nearest Large Metro Drive Time Min | 350 | [source](https://www.travelmath.com/distance/from/SEA/to/Boise,+ID), checked 2026-07-24 |
+| Nearest Large Metro Name | Seattle, Washington | [source](https://www.travelmath.com/distance/from/SEA/to/Boise,+ID), checked 2026-07-24 |
 
 ## Climate & Growing Conditions
 
