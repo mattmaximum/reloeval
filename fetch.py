@@ -42,11 +42,13 @@ from render import humanize
 CITIES_DIR = Path(__file__).parent / "cities"
 MODEL = "anthropic/claude-sonnet-5"
 # Category fetches are search-and-extract, not multi-step reasoning -- a
-# cheaper model handles it fine and the web plugin's search results are the
-# real cost driver anyway. normalize_city stays on the pricier MODEL since
-# it's a single cheap forced tool-call regardless of model.
+# cheaper model handles it fine. normalize_city stays on the pricier MODEL
+# since it's a single cheap forced tool-call regardless of model.
 CATEGORY_MODEL = "anthropic/claude-haiku-4.5"
-WEB_PLUGIN_MAX_RESULTS = 2
+# OpenRouter's web plugin (Exa) charges a flat $0.005/request for up to 10
+# results, then $0.001/additional result -- 10 is the ceiling where more
+# grounding is free, so there's no reason to ask for fewer.
+WEB_PLUGIN_MAX_RESULTS = 10
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
