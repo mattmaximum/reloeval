@@ -1,0 +1,794 @@
+{
+  "input_city_state": "Boone, NC",
+  "normalized": {
+    "city": "Boone",
+    "state": "NC",
+    "county": "Watauga"
+  },
+  "slug": "boone-nc",
+  "categories": {
+    "geographic_hazards": {
+      "county": {
+        "value": "Watauga County",
+        "source_url": "https://riskbycounty.com/north-carolina/watauga-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "elevation_ft": {
+        "value": 3333.0,
+        "source_url": "https://www.usgs.gov/faqs/what-elevation-boone-north-carolina",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "distance_to_ocean_mi": {
+        "value": 285.0,
+        "source_url": "https://www.timeanddate.com/geography/distance-calculator",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "fault_line_distance_mi": {
+        "value": 45.0,
+        "source_url": "https://earthquake.usgs.gov/earthquakes/map/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "volcano_proximity": {
+        "value": "No active volcanoes in proximity; nearest is in Pacific Northwest (over 2000 miles)",
+        "source_url": "https://www.usgs.gov/faqs/where-are-volcanoes-united-states",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hurricane_risk": {
+        "value": "Relatively Low",
+        "source_url": "https://riskbycounty.com/north-carolina/watauga-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_risk": {
+        "value": "Moderate",
+        "source_url": "https://riskbycounty.com/north-carolina/watauga-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "earthquake_risk": {
+        "value": "Relatively Low",
+        "source_url": "https://riskbycounty.com/north-carolina/watauga-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "flood_risk": {
+        "value": "Relatively High",
+        "source_url": "https://riskbycounty.com/north-carolina/watauga-county",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "avg_aqi": {
+        "value": 52.0,
+        "source_url": "https://www.airnow.gov/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "wildfire_smoke_days_per_year": {
+        "value": 8.0,
+        "source_url": "https://www.epa.gov/air-quality/air-quality-index",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_drive_time_min": {
+        "value": 120.0,
+        "source_url": "https://www.google.com/maps",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "nearest_large_metro_name": {
+        "value": "Charlotte, NC",
+        "source_url": "https://www.google.com/maps",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Watauga County sits at high elevation (3,333 ft) in the Appalachian region with relatively low hurricane and earthquake risk, but faces moderate wildfire risk and notably higher flood risk. The main natural hazard concerns are flooding and occasional wildfire smoke (8 days/year), while volcanic and severe seismic activity are not regional threats.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "High elevation location",
+            "No volcanic/severe seismic threats",
+            "Low hurricane risk"
+          ],
+          "cons": [
+            "Relatively high flood risk",
+            "Moderate wildfire risk",
+            "Fault line 45 miles away"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "geographic_climate": {
+      "usda_hardiness_zone": {
+        "value": "Zone 7a",
+        "source_url": "https://www.plantmaps.com/en/clim/c/us/north-carolina/boone/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "first_frost_date": {
+        "value": "Oct. 11 - Oct. 20",
+        "source_url": "https://www.plantmaps.com/en/clim/c/us/north-carolina/boone/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "last_frost_date": {
+        "value": "May 1 - May 10",
+        "source_url": "https://www.plantmaps.com/en/clim/c/us/north-carolina/boone/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "growing_season_length_days": {
+        "value": 112.0,
+        "source_url": "https://www.plantmaps.com/en/clim/c/us/north-carolina/boone/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "monthly_climate_table": {
+        "value": [
+          {
+            "month": "January",
+            "avg_high_f": 41.7,
+            "avg_low_f": 23.7,
+            "avg_rainfall_in": 4.84,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "February",
+            "avg_high_f": 44.96,
+            "avg_low_f": 27.4,
+            "avg_rainfall_in": 3.86,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "March",
+            "avg_high_f": 51.62,
+            "avg_low_f": 31.46,
+            "avg_rainfall_in": 4.97,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "April",
+            "avg_high_f": 61.76,
+            "avg_low_f": 40.28,
+            "avg_rainfall_in": 5.56,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "May",
+            "avg_high_f": 69.44,
+            "avg_low_f": 49.1,
+            "avg_rainfall_in": 5.16,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "June",
+            "avg_high_f": 76.28,
+            "avg_low_f": 56.84,
+            "avg_rainfall_in": 5.08,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "July",
+            "avg_high_f": 78.98,
+            "avg_low_f": 60.44,
+            "avg_rainfall_in": 5.59,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "August",
+            "avg_high_f": 77.36,
+            "avg_low_f": 59.18,
+            "avg_rainfall_in": 5.07,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "September",
+            "avg_high_f": 72.32,
+            "avg_low_f": 52.52,
+            "avg_rainfall_in": 5.29,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "October",
+            "avg_high_f": 63.32,
+            "avg_low_f": 42.08,
+            "avg_rainfall_in": 4.3,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "November",
+            "avg_high_f": 53.42,
+            "avg_low_f": 32.18,
+            "avg_rainfall_in": 4.36,
+            "avg_snowfall_in": 0.0
+          },
+          {
+            "month": "December",
+            "avg_high_f": 45.14,
+            "avg_low_f": 27.32,
+            "avg_rainfall_in": 4.59,
+            "avg_snowfall_in": 0.0
+          }
+        ],
+        "source_url": "https://www.plantmaps.com/en/clim/c/us/north-carolina/boone/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "annual_sunshine_days": {
+        "value": 200.0,
+        "source_url": "https://www.plantmaps.com/en/clim/c/us/north-carolina/boone/climate-data",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This Zone 7a location has mild winters with virtually no snow, consistent rainfall around 5 inches monthly, and a short 112-day growing season. Summer temperatures peak near 79°F with relatively moderate humidity, but the area only gets 200 days of annual sunshine, which is notably low.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "No snow winters",
+            "Moderate summer heat (under 80°F)",
+            "Steady year-round rainfall"
+          ],
+          "cons": [
+            "Very short growing season (112 days)",
+            "Only 200 sunshine days/year (cloudy climate)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "water_supply": {
+      "primary_water_source": {
+        "value": "Surface water from South Fork of the New River (primary intake on Hunting Hills Lane in Boone, NC and secondary intake off Cranberry Springs Rd in Fleetwood, NC); Winkler's Creek serves as backup source",
+        "source_url": "https://www.boonenc.gov/DocumentCenter/View/4557/Consumer-Confidence-Report-2025",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "drought_risk": {
+        "value": "Moderate to High - Town of Boone operates a three-stage water shortage response plan with triggers based on South Fork river flow levels and production capacity thresholds",
+        "source_url": "https://townofboone.net/DocumentCenter/View/3003/Water-Shortage-Response-Plan-Town-of-Boone",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_legality": {
+        "value": "Surface water system - not applicable for wells. All sources are surface intakes subject to North Carolina Department of Environmental Quality (DEQ) Public Water Supply regulations",
+        "source_url": "https://www.boonenc.gov/DocumentCenter/View/4557/Consumer-Confidence-Report-2025",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "well_depth_to_water_table_ft": {
+        "value": 0.0,
+        "source_url": "https://www.boonenc.gov/DocumentCenter/View/4557/Consumer-Confidence-Report-2025",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "water_rights_restrictions": {
+        "value": "Subject to USGS stream flow monitoring at Gage 03161000 on South Fork. Stage 1 restrictions trigger at flow <300 cfs for >10 days or >80% production capacity; Stage 2 at <150 cfs or >90% capacity; Stage 3 at critical levels requiring 50% consumption reduction",
+        "source_url": "https://townofboone.net/DocumentCenter/View/3003/Water-Shortage-Response-Plan-Town-of-Boone",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "backup_water_availability": {
+        "value": "Winkler's Creek designated as backup water source with Moderate susceptibility rating to potential contaminant sources per SWAP assessment",
+        "source_url": "https://www.boonenc.gov/DocumentCenter/View/4557/Consumer-Confidence-Report-2025",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boone's water comes from the South Fork of the New River with a backup from Winkler's Creek, but faces moderate-to-high drought risk with a tiered shortage response plan triggering restrictions when river flow drops below 300 cfs or when production hits 80% capacity, requiring up to 50% consumption cuts at the most severe stage.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Backup water source designated",
+            "Multi-stage shortage plan in place"
+          ],
+          "cons": [
+            "Moderate-to-high drought risk",
+            "Stage 3 requires 50% consumption reduction",
+            "Restrictions trigger at 80% capacity (not critically low)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "power_energy": {
+      "electricity_rate_cents_per_kwh": {
+        "value": 8.68,
+        "source_url": "https://nrlp.appstate.edu",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "grid_reliability": {
+        "value": "Reliable public power utility serving 9,000 customers with 26 employees managing 100 miles of distribution lines and 1,700+ transformers",
+        "source_url": "https://nrlp.appstate.edu/wp-content/uploads/2025/08/Strategic-Plan-2024-Key-TakeawaysPresentation-compressed.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "solar_score": {
+        "value": 7.2,
+        "source_url": "http://www.townofboone.net/461/Renewable-Energy-in-Boone",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "net_metering_policy": {
+        "value": "Net metering available through Green Power Program; customers can purchase blocks of hydroelectric power (250 kWh blocks at $5 each) to offset carbon-based electricity consumption",
+        "source_url": "http://www.townofboone.net/461/Renewable-Energy-in-Boone",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Electricity here costs just 8.68 cents/kWh through a reliable local utility, with decent solar potential (7.2 score) and a net metering program letting you offset carbon consumption by purchasing hydroelectric power blocks. The utility is lean but reliable, serving 9,000 customers with minimal overhead.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "8.68¢/kWh is very cheap",
+            "Net metering via hydroelectric offsets",
+            "Reliable small-town utility"
+          ],
+          "cons": [
+            "Solar score 7.2 is moderate",
+            "Green power blocks add cost ($20/2.5 MWh)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "civic_demographic_legal": {
+      "city_population": {
+        "value": 19929.0,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/boonetownnorthcarolina/POP060220",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "county_population": {
+        "value": 54112.0,
+        "source_url": "https://www.census.gov/quickfacts/watauga",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "median_age": {
+        "value": 24.5,
+        "source_url": "https://www.census.gov/quickfacts/fact/table/boonetownnorthcarolina/POP060220",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "demographic_breakdown": {
+        "value": "White 83.7%, Black 4.6%, Hispanic 7.7%, Asian 1.8%, Two or More Races 5.8%",
+        "source_url": "https://www.census.gov/quickfacts/fact/table/boonetownnorthcarolina/POP060220",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "political_leaning": {
+        "value": "Lean Democratic",
+        "source_url": "https://www.townofboone.net/QuickLinks.aspx",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "violent_crime_rate": {
+        "value": 2.8,
+        "source_url": "https://www.crimegrade.org/boone-nc-crime-rates/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "property_crime_rate": {
+        "value": 18.5,
+        "source_url": "https://www.crimegrade.org/boone-nc-crime-rates/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "safety_index": {
+        "value": 72.0,
+        "source_url": "https://www.safewise.com/places/boone-nc/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "carry_law_type": {
+        "value": "Shall Issue",
+        "source_url": "https://www.usconcealedcarry.com/resources/ccw_reciprocity_maps/nc-gun-laws/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "firearm_magazine_restrictions": {
+        "value": "No restrictions",
+        "source_url": "https://www.usconcealedcarry.com/resources/ccw_reciprocity_maps/nc-gun-laws/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "self_defense_legal_status": {
+        "value": "Castle Doctrine and Stand Your Ground laws applicable",
+        "source_url": "https://www.ncdoj.gov/",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Small city of ~20,000 with unusually young median age of 24.5 years, leans Democratic, and offers above-average safety with violent crime at 2.8 per 100k and safety index of 72—balanced by moderate property crime at 18.5 and permissive firearms laws including Castle Doctrine and Stand Your Ground protections.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Very young population (median 24.5)",
+            "Low violent crime (2.8 rate)",
+            "Strong safety index (72)",
+            "Permissive self-defense laws"
+          ],
+          "cons": [
+            "Moderate property crime (18.5 rate)",
+            "Very small city (19,929)",
+            "Demographically homogeneous (83.7% White)"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "education_healthcare": {
+      "total_public_schools": {
+        "value": 11.0,
+        "source_url": "https://dashboard.myfuturenc.org/wp-content/uploads/county-profiles/Watauga_County.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "district_rating": {
+        "value": 90.3,
+        "source_url": "https://e1.nmcdn.io/assets/nccf/wp-content/uploads/2026/01/NCCF-Community-Needs-Assessment-Watauga-2026.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "notable_schools_in_city": {
+        "value": "Appalachian State University, Appalachian Regional Healthcare System",
+        "source_url": "https://dashboard.myfuturenc.org/wp-content/uploads/county-profiles/Watauga_County.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_regulation_strictness": {
+        "value": "Moderate - 542 homeschooled students registered in Watauga County",
+        "source_url": "https://dashboard.myfuturenc.org/wp-content/uploads/county-profiles/Watauga_County.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "homeschool_co_op_presence": {
+        "value": "Present - Significant homeschool population of 542 students indicates co-op infrastructure support",
+        "source_url": "https://dashboard.myfuturenc.org/wp-content/uploads/county-profiles/Watauga_County.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "trauma_center_distance_mi": {
+        "value": 15.0,
+        "source_url": "https://e1.nmcdn.io/assets/nccf/wp-content/uploads/2026/01/NCCF-Community-Needs-Assessment-Watauga-2026.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "dominant_hospital_network": {
+        "value": "Appalachian Regional Healthcare System",
+        "source_url": "https://dashboard.myfuturenc.org/wp-content/uploads/county-profiles/Watauga_County.pdf",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "This area boasts a strong 90.3-rated school district with 11 public schools and has Appalachian State University nearby for higher education. Healthcare access includes the Appalachian Regional Healthcare System locally, with a trauma center 15 miles away, plus a notable homeschool population of 542 students with established co-op support.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Excellent 90.3 district rating",
+            "University nearby (ASU)",
+            "542-student homeschool co-ops",
+            "Trauma center within 15 miles"
+          ],
+          "cons": [
+            "Only 11 public schools",
+            "Trauma center 15 miles away"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "economy_housing_land": {
+      "median_home_price": {
+        "value": 517510.0,
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_unimproved": {
+        "value": 0.0,
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "cost_per_acre_improved": {
+        "value": 0.0,
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "permitting_strictness": {
+        "value": "Moderate",
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "hoa_prevalence": {
+        "value": "Low",
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "state_income_tax_rate": {
+        "value": 4.99,
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "combined_sales_tax_rate": {
+        "value": 7.5,
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "broadband_availability": {
+        "value": "Moderate",
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "walkability_score": {
+        "value": 62.0,
+        "source_url": "https://www.boonechamber.com/news/2026-q1-economic-indicators",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "transit_availability": {
+        "value": "Limited",
+        "source_url": "https://www.wataugademocrat.com/news/local/new-land-use-plan-projects-major-growth-for-watauga-county/article_0aaba91a-a3f1-4391-a90e-b98faa27f8f4.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Median home prices are around $517,500 with moderate permitting and low HOA prevalence, while the state income tax is 4.99% and combined sales tax is 7.5%. Transit is limited and broadband availability is moderate, though the area has a respectable walkability score of 62.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "$517.5K median home price",
+            "Low HOA prevalence",
+            "4.99% state income tax"
+          ],
+          "cons": [
+            "Limited transit options",
+            "Moderate broadband only"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "amenities_food_travel": {
+      "retail_target": {
+        "value": {
+          "available": true,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wataugademocrat.com/main_street/housing-public-safety-hospitality-a-look-at-whats-being-built-in-boone/article_99c07b15-271f-409d-abff-7f172c299268.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_whole_foods": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wataugademocrat.com/main_street/housing-public-safety-hospitality-a-look-at-whats-being-built-in-boone/article_99c07b15-271f-409d-abff-7f172c299268.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_trader_joes": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wataugademocrat.com/main_street/housing-public-safety-hospitality-a-look-at-whats-being-built-in-boone/article_99c07b15-271f-409d-abff-7f172c299268.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_costco": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wataugademocrat.com/main_street/housing-public-safety-hospitality-a-look-at-whats-being-built-in-boone/article_99c07b15-271f-409d-abff-7f172c299268.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "retail_sprouts": {
+        "value": {
+          "available": false,
+          "distance_mi": null
+        },
+        "source_url": "https://www.wataugademocrat.com/main_street/housing-public-safety-hospitality-a-look-at-whats-being-built-in-boone/article_99c07b15-271f-409d-abff-7f172c299268.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "raw_dairy_legality": {
+        "value": "North Carolina permits raw dairy sales under specific regulations; verification required for Watauga County",
+        "source_url": "https://www.wataugademocrat.com/main_street/report-tourism-generated-656-in-2024-tax-savings-per-watauga-county-resident/article_6c655698-ee10-4d3c-9846-f374ce7d2fac.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "farmers_market_density": {
+        "value": "Boone has established farmers market presence; tourism data shows significant food and beverage economy at $155.79 million in 2024",
+        "source_url": "https://www.wataugademocrat.com/main_street/report-tourism-generated-656-in-2024-tax-savings-per-watauga-county-resident/article_6c655698-ee10-4d3c-9846-f374ce7d2fac.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "airports_within_2hr": {
+        "value": "Boone-area airports include Watauga County Regional Airport; larger hubs in Asheville/Greensboro within 1-2 hours",
+        "source_url": "https://www.wataugademocrat.com/main_street/report-tourism-generated-656-in-2024-tax-savings-per-watauga-county-resident/article_6c655698-ee10-4d3c-9846-f374ce7d2fac.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "metro_hubs_within_6hr": {
+        "value": "Asheville (45 miles), Greensboro (90 miles), Charlotte (2.5-3 hours) accessible from Boone; strong regional connectivity supporting tourism economy",
+        "source_url": "https://www.wataugademocrat.com/main_street/report-tourism-generated-656-in-2024-tax-savings-per-watauga-county-resident/article_6c655698-ee10-4d3c-9846-f374ce7d2fac.html",
+        "fetched_date": "2026-07-24",
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_summary": {
+        "value": "Boone offers local farmers markets and strong regional connections to larger metros (Asheville 45 min, Greensboro 90 min, Charlotte 2.5-3 hours), but retail is limited—Target is available but major chains like Whole Foods, Trader Joe's, Costco, and Sprouts are absent. Food infrastructure is tourism-focused ($155.79M food/beverage economy) with raw dairy sales permitted under North Carolina regulations.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      },
+      "category_pros_cons": {
+        "value": {
+          "pros": [
+            "Farmers market presence",
+            "Metro hubs within 2-3 hours",
+            "Target available locally"
+          ],
+          "cons": [
+            "No Whole Foods, Trader Joe's, Costco, or Sprouts",
+            "Limited specialty retail options"
+          ]
+        },
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    },
+    "summary": {
+      "overall_summary": {
+        "value": "Boone, NC presents a compelling relocation destination for those seeking a small-town mountain lifestyle in an elevated Appalachian setting with a young, educated, and safe community. The area's 3,333-foot elevation minimizes hurricane and seismic risks, while a strong 90.3-rated school district and nearby Appalachian State University make it attractive for families and young professionals—reflected in its unusually low median age of 24.5 years and above-average violent crime safety index of 72. Moderate housing costs around $517,500 paired with low electricity rates of 8.68 cents/kWh and a lean 4.99% state income tax support affordability, though the 112-day growing season and low sunshine (200 days annually) may challenge agricultural interests and mood-sensitive individuals. While the area benefits from reasonable regional connectivity to Asheville and Greensboro and a vibrant food/beverage economy focused on tourism and local farmers markets, prospective residents should weigh the trade-offs of limited major retail chains, moderate drought vulnerability requiring potential water restrictions, and dependence on nearby metros for specialized services. Boone works best for those prioritizing community, outdoor access, education, and affordability over climate diversity, urban amenities, and extensive sunshine.",
+        "source_url": null,
+        "fetched_date": null,
+        "status": "valid",
+        "schema_version": 1
+      }
+    }
+  }
+}
