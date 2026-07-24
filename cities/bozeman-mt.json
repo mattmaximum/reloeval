@@ -100,17 +100,29 @@
         "schema_version": 1
       },
       "category_summary": {
-        "value": null,
+        "value": "Gallatin County sits at high elevation (4,817 ft) near Yellowstone Caldera (80-90 miles south) with significant earthquake risk (FEMA score 94.1/100), high wildfire risk with ~30 smoke days annually, and moderate flood risk, while benefiting from very low hurricane risk and good air quality (AQI 45).",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": null,
+        "value": {
+          "pros": [
+            "Very low hurricane risk",
+            "Good air quality (AQI 45)",
+            "Earthquake-resistant building focus"
+          ],
+          "cons": [
+            "High earthquake risk (94.1 FEMA score)",
+            "High wildfire risk, 30 smoke days/year",
+            "On fault line (0.0 mi distance)",
+            "Yellowstone proximity"
+          ]
+        },
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     },
@@ -770,10 +782,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": null,
+        "value": "Bozeman, Montana presents a compelling relocation destination for those prioritizing natural amenities, safety, and community character, though it demands careful consideration of environmental and financial constraints. The mid-sized mountain city (~59,000 residents) excels in public safety (exceptionally low violent crime at 2.3 per 100k), educational quality (strong schools and Montana State University), and healthcare infrastructure (Level III Trauma Center with 270+ providers), while offering distinctive advantages like constitutional carry rights, legal raw dairy access, year-round farmers markets, and excellent regional air connectivity. However, prospective residents must weigh significant drawbacks: acute water vulnerability with the region in its sixth consecutive drought year and already consuming 60% of reliable supply, substantial earthquake risk (94.1/100 FEMA score), high wildfire exposure (~30 smoke days annually), and considerable financial barriers including a median home price of $592,600 combined with a 13.75% tax burden and limited access to major retail chains. The high elevation (4,817 ft) location near Yellowstone Caldera offers stunning natural beauty and low hurricane risk but delivers limited sunshine (121 days annually), minimal solar potential (3.7 score), and despite cold winters, surprisingly little snowfall. Best suited for those prioritizing outdoor lifestyle, small-town community, and safety over urban convenience and financial affordability, Bozeman requires adaptability to water conservation constraints and willingness to engage with local food systems and supply chains.",
         "source_url": null,
         "fetched_date": null,
-        "status": "unresolved",
+        "status": "valid",
         "schema_version": 1
       }
     }
