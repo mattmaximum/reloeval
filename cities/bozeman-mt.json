@@ -86,43 +86,31 @@
         "schema_version": 1
       },
       "nearest_large_metro_drive_time_min": {
-        "value": 180.0,
-        "source_url": "https://www.trippy.com/distance/Missoula-to-Bozeman",
-        "fetched_date": "2026-07-24",
-        "status": "valid",
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
         "schema_version": 1
       },
       "nearest_large_metro_name": {
-        "value": "Missoula, Montana",
-        "source_url": "https://www.trippy.com/distance/Missoula-to-Bozeman",
-        "fetched_date": "2026-07-24",
-        "status": "valid",
+        "value": null,
+        "source_url": null,
+        "fetched_date": null,
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_summary": {
-        "value": "Gallatin County sits on an active fault line with exceptional earthquake risk (FEMA score 94.1/100) and high wildfire risk with 30 annual smoke days, while benefiting from excellent air quality and zero hurricane risk due to its interior mountain location 550+ miles from the ocean.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       },
       "category_pros_cons": {
-        "value": {
-          "pros": [
-            "Zero hurricane risk",
-            "Excellent air quality (AQI 45)",
-            "Safe from coastal hazards"
-          ],
-          "cons": [
-            "Extreme earthquake risk (FEMA 94.1/100)",
-            "High wildfire risk",
-            "30 wildfire smoke days/year",
-            "On active fault line"
-          ]
-        },
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     },
@@ -782,10 +770,10 @@
     },
     "summary": {
       "overall_summary": {
-        "value": "Bozeman, Montana presents a compelling relocation destination for those prioritizing outdoor amenities, security, and community character, though it demands careful consideration of significant climate and resource vulnerabilities. The mid-sized city of ~59,000 offers exceptional safety (2.3 violent crimes per 100k), robust healthcare and education infrastructure anchored by Montana State University and a Level III Trauma Center, strong local food systems with year-round farmers markets, and excellent regional air connectivity. However, prospective residents must contend with critical challenges: the region sits on an active fault line with extreme earthquake risk (FEMA score 94.1/100), faces its sixth consecutive drought year with only 16 inches annual precipitation, and despite cold winters, receives almost no snowfall while experiencing limited sunshine (121 days annually). Water security is particularly precarious, with the city consuming 60% of its reliable water supply in 2024 drought conditions, though proactive management tools and Hyalite Reservoir provide some mitigation. The housing market is expensive at a $592,600 median home price with a 13.75% combined tax burden and moderate-to-high permitting barriers, while the lack of major national grocery chains and relatively weak solar potential (3.7 score) compound lifestyle adjustments. Bozeman suits those seeking a Republican-leaning, security-conscious community with world-class outdoor recreation and educational opportunities, yet it requires resilience toward environmental stressors and financial commitment to thrive in this high-risk, high-cost mountain setting.",
+        "value": null,
         "source_url": null,
         "fetched_date": null,
-        "status": "valid",
+        "status": "unresolved",
         "schema_version": 1
       }
     }
